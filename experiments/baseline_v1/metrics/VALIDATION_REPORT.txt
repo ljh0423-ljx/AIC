@@ -1,0 +1,13 @@
+EXIF 修复副本校验报告 — validate_exiffix.py
+============================================================
+[PASS] 1a. clean 错位清单 (11 张基线): 11 张 EXIF 错位图全部定位 (train 9 / val 1 / test 1)
+[PASS] 1b. 副本 train+val 尺寸一致: train+val 全部 cv2 尺寸 == JSON (0 错位)
+[PASS] 1c. 副本 test 尺寸 (预期 1 张错位): 仅 TRAIN_000064 保持原始错位 (test 封闭, 未烘焙)
+[PASS] 2. bbox 合法性: 全部 bbox 正宽高且位于图像内 (0 非法)
+[PASS] 3. EXIF Orientation: 10 张烘焙后 Orientation 已清除; 其余图(含 O=0 两图、TRAIN_000064 O=6)与 clean 一致
+[PASS] 4. 烘焙正确性: 10 张逆变换最大 MAE=1.401 (<3, 仅 JPEG 重压缩噪声)
+[PASS] 5. YOLO↔COCO 交叉比对: 全部分片 txt→bbox 与 COCO 逐条一致 (≤1px), 0 差异
+[PASS] 6. 数量守恒 + JSON 一致: 915/113/114 图=txt, 3079/350/423 对象; train/val/test JSON 与 clean 逐字节一致
+[PASS] 7. clean 未被触碰: clean 的 10 张 EXIF 图仍为原始错位尺寸 (内容未改, 烘焙仅作用于副本)
+============================================================
+总结果: ALL PASS

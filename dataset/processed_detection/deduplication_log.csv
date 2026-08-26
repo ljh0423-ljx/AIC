@@ -1,0 +1,23 @@
+﻿md5,split,filename,action,reason
+f163947415e9d4e42bdc23720bec8a49,TRAIN,1421_0.jpeg_itok=FMtmgePj.jpg,removed_dup,保留 TEST/1421_0.jpeg_itok=FMtmgePj.jpg; 跨split泄露=True
+33eb423bdbbc3a6ce8941be10a278a72,TRAIN,24064_1.jpg,removed_dup,保留 TRAIN/18028_1.jpg; 跨split泄露=False
+8edd2518767e8b140ffe3c6f3d37609d,TRAIN,2015070295153021.jpg,removed_dup,保留 TEST/2015070295153021.jpg; 跨split泄露=True
+e4aff68ead58ba22a411c93db3a630af,TRAIN,5816740026_d42ef24413_Phytophthora-Infestans.jpg,removed_dup,保留 TEST/5816740026_d42ef24413_Phytophthora-Infestans.jpg; 跨split泄露=True
+ce0ad99cdbbf5dedccd96061c88a6d99,TRAIN,backus-056-potato-blight.jpg,removed_dup,保留 TEST/backus-056-potato-blight.jpg; 跨split泄露=True
+ba5dcc6822fe97d13578703e2988b2ce,TRAIN,blueberry-leaves-normal-above-and-iron-deficient-below-bgahf8.jpg,removed_dup,保留 TEST/blueberry-leaves-normal-above-and-iron-deficient-below-bgahf8.jpg; 跨split泄露=True
+a5c506de47aa579eb224f2c2c398fb7f,TRAIN,corn-gray-leaf-spot-f4.jpg,removed_dup,保留 TEST/corn-gray-leaf-spot-f4.jpg; 跨split泄露=True
+3311a7162f523ef7dc4f5b02033d6ecf,TRAIN,early-blight-septoria-ls-fig-3.jpg,removed_dup,保留 TEST/early-blight-septoria-ls-fig-3.jpg; 跨split泄露=True
+43ba8a87d9053032195c7c59bc01f1fc,TRAIN,IMG_42231.jpg,removed_dup,保留 TEST/IMG_42231.jpg; 跨split泄露=True
+bd890a743a88bd8a8a3046bc74a3eda3,TEST,irish-blight-symptoms-on-potato-leaves-atmf8b.jpg,removed_dup,保留 TRAIN/irish-blight-symptoms-on-potato-leaves-atmf8b.jpg; 跨split泄露=True
+1fc7b6d3ecba2fe90bbf8f6078fd7e45,TRAIN,tomato_V8.jpg,removed_dup,保留 TEST/tomato_V8.jpg; 跨split泄露=True
+5b4163adb2bd89b453328e8063b16f37,TRAIN,tylcv-seminar-1-638.jpg,removed_dup,保留 TEST/tylcv-seminar-1-638.jpg; 跨split泄露=True
+52db59c45e5f75097a3e7b49ec419906,TRAIN,0.jpg,kept_same_name_diff_content,"同名=0 但 MD5 不同, 内容不同, 保留"
+a27db6dc8df5f08762c1d32c2ebafc0f,TEST,0.jpg,kept_same_name_diff_content,"同名=0 但 MD5 不同, 内容不同, 保留"
+6abe79059f1563cf11178a5bafd15281,TRAIN,0000.jpg,kept_same_name_diff_content,"同名=0000 但 MD5 不同, 内容不同, 保留"
+d00039d3f7398a8b6e07093f3327c0d9,TEST,0000.jpg,kept_same_name_diff_content,"同名=0000 但 MD5 不同, 内容不同, 保留"
+f7f8ebb8fa1097337b94e17f9dda7ef0,TRAIN,2013Corn_GrayLeafSpot_0815_0003.JPG.jpg,kept_same_name_diff_content,"同名=2013Corn_GrayLeafSpot_0815_0003.JPG 但 MD5 不同, 内容不同, 保留"
+d49b8d5a1f58620598194d58784a2c19,TEST,2013Corn_GrayLeafSpot_0815_0003.JPG.jpg,kept_same_name_diff_content,"同名=2013Corn_GrayLeafSpot_0815_0003.JPG 但 MD5 不同, 内容不同, 保留"
+d2c45e81c5de5a2f731829ed491e8df5,TRAIN,earlyblightpotato.jpg,kept_same_name_diff_content,"同名=earlyblightpotato 但 MD5 不同, 内容不同, 保留"
+be11519577cb929d21a68170b2ec88f1,TEST,earlyblightpotato.jpg,kept_same_name_diff_content,"同名=earlyblightpotato 但 MD5 不同, 内容不同, 保留"
+911ff21e29b38a61747f2377b50be42e,TRAIN,image.jpg,kept_same_name_diff_content,"同名=image 但 MD5 不同, 内容不同, 保留"
+212647f1476c618f8c40e33c14f1e5d3,TEST,image.jpg,kept_same_name_diff_content,"同名=image 但 MD5 不同, 内容不同, 保留"

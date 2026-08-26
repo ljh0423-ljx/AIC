@@ -1,0 +1,38 @@
+PP-YOLOE+-s Baseline v1 — 训练命令记录 (实际执行 2026-08-14)
+==================================================
+配置文件: configs/ppyoloe_plus_crn_s_100e_agrivision.yml
+数据集:   dataset/processed_detection_clean (COCO 格式, 13类,
+          train915/val113/test114; 软链 dataset/processed_detection 指向清洁副本)
+
+# 实际执行命令 (bs=16, lr=0.002, epoch=100):
+cd /root/autodl-tmp/AIC2026_AgriVision
+BATCH_SIZE=16 BASE_LR=0.002 bash scripts/train_baseline.sh 2>&1 | tee experiments/baseline_v1/train.log
+
+# 等价展开命令 (PaddleDetection 根目录):
+cd PaddleDetection
+python -u tools/train.py \
+  -c ../configs/ppyoloe_plus_crn_s_100e_agrivision.yml \
+  --eval \
+  --use_vdl=true \
+  --vdl_log_dir=../experiments/baseline_v1/logs \
+  -o save_dir=../experiments/baseline_v1/checkpoints \
+     TrainReader.batch_size=16 \
+     LearningRate.base_lr=0.002
+
+关键参数:
+  epoch: 100
+  CosineDecay.max_epochs: 100  (= epoch, lr 余弦衰减到 0)
+  LinearWarmup.epochs: 5
+  snapshot_epoch: 5  (每5 epoch 存 checkpoint)
+  batch_size: 16 (train) / 2 (eval)
+  base_lr: 0.002  (线性缩放: 0.001 * 16/8)
+  --eval: 每 epoch 在 val 集评估 (test 集不参与训练)
+
+输出:
+  checkpoints -> experiments/baseline_v1/checkpoints/ppyoloe_plus_crn_s_100e_agrivision/
+  VDL 曲线    -> experiments/baseline_v1/logs/
+  训练日志    -> experiments/baseline_v1/train.log
+
+数据准备说明:
+  原始 processed_detection 未修改; 训练用清洁副本 processed_detection_clean
+  (移除 2 张 0 字节损坏图 + 记录 11 张 EXIF 旋转), 详见 data_prep_notes.txt

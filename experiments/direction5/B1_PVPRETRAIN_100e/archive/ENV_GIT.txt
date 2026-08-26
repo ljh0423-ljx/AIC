@@ -1,0 +1,16 @@
+B1 实验环境与版本记录 Mon Aug 17 05:36:48 CST 2026
+=====================
+[Paddle]
+paddle 2.6.2 | cuda 11.8 | cudnn 8.6.0
+torch 2.5.1+cu124 (存在, 非本实验使用)
+opencv 4.5.5
+numpy 1.26.4
+[GPU]
+NVIDIA GeForce RTX 4090, 24564 MiB, 580.76.05
+[PaddleDetection git]
+b25522a0f4bde8c80603f3ba5e3472059972e3b5
+b25522a 2026-03-16 15:42:54 +0800 fix single gpu batch size to 4, total 32, for lr 0.0002 when using 8 gpus
+[Python]
+Python 3.12.3
+[OS]
+Linux autodl-container-dd9f46bdad-59beb7b8 5.15.0-84-generic #93-Ubuntu SMP Tue Sep 5 17:16:10 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux

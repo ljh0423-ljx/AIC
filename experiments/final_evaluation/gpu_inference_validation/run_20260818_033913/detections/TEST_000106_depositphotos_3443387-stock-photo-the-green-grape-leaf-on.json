@@ -1,0 +1,17 @@
+{
+  "image_name": "TEST_000106_depositphotos_3443387-stock-photo-the-green-grape-leaf-on.jpg",
+  "total_targets": 1,
+  "inference_ms": 45.18,
+  "detections": [
+    {
+      "image_name": "TEST_000106_depositphotos_3443387-stock-photo-the-green-grape-leaf-on.jpg",
+      "class_id": 12,
+      "class_name": "grape leaf",
+      "confidence": 0.926409,
+      "x": 186.02,
+      "y": 55.4,
+      "width": 574.21,
+      "height": 553.14
+    }
+  ]
+}

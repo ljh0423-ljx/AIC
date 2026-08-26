@@ -1,0 +1,2937 @@
+{
+ "1": {
+  "image_id": 1,
+  "file": "TEST_000018_0605_Rust-induced_leafspot.jpg",
+  "n_gt": 1,
+  "n_det": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": []
+ },
+ "2": {
+  "image_id": 2,
+  "file": "TEST_000022_20130802_111632.jpg",
+  "n_gt": 1,
+  "n_det": 2,
+  "tp": 1,
+  "fp": 1,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": [
+   {
+    "pred": 9,
+    "score": 0.513,
+    "best_iou": 0.0
+   }
+  ]
+ },
+ "3": {
+  "image_id": 3,
+  "file": "TEST_000024_02.-Rust-2017-207u24s.jpg",
+  "n_gt": 1,
+  "n_det": 2,
+  "tp": 1,
+  "fp": 1,
+  "fn": 0,
+  "confusion": [
+   {
+    "gt": 11,
+    "pred": 9,
+    "iou": 0.604,
+    "score": 0.632
+   }
+  ],
+  "missed": [],
+  "false": [
+   {
+    "pred": 10,
+    "score": 0.503,
+    "best_iou": 0.0
+   }
+  ]
+ },
+ "4": {
+  "image_id": 4,
+  "file": "TEST_000028_early_blight1-150x150.jpg",
+  "n_gt": 1,
+  "n_det": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": []
+ },
+ "5": {
+  "image_id": 5,
+  "file": "TEST_000058_%2320+Bacterial+Spot+and+Speck.jpg",
+  "n_gt": 1,
+  "n_det": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [
+   {
+    "gt": 4,
+    "pred": 2,
+    "iou": 0.94,
+    "score": 0.921
+   }
+  ],
+  "missed": [],
+  "false": []
+ },
+ "6": {
+  "image_id": 6,
+  "file": "TEST_000063_Tomato%2BBacterial%2BSpot%2Bon%2BLeaves.jpg",
+  "n_gt": 1,
+  "n_det": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [
+   {
+    "gt": 4,
+    "pred": 2,
+    "iou": 0.891,
+    "score": 0.517
+   }
+  ],
+  "missed": [],
+  "false": []
+ },
+ "7": {
+  "image_id": 7,
+  "file": "TEST_000079_9511.img.jpg",
+  "n_gt": 12,
+  "n_det": 3,
+  "tp": 2,
+  "fp": 1,
+  "fn": 10,
+  "confusion": [
+   {
+    "gt": 6,
+    "pred": 3,
+    "iou": 0.648,
+    "score": 0.539
+   },
+   {
+    "gt": 6,
+    "pred": 3,
+    "iou": 0.874,
+    "score": 0.504
+   }
+  ],
+  "missed": [
+   {
+    "gt": 6,
+    "area": 7504.0
+   },
+   {
+    "gt": 6,
+    "area": 2400.0
+   },
+   {
+    "gt": 6,
+    "area": 3350.0
+   },
+   {
+    "gt": 6,
+    "area": 6552.0
+   },
+   {
+    "gt": 6,
+    "area": 2967.0
+   },
+   {
+    "gt": 6,
+    "area": 2109.0
+   },
+   {
+    "gt": 6,
+    "area": 2592.0
+   },
+   {
+    "gt": 6,
+    "area": 4240.0
+   },
+   {
+    "gt": 6,
+    "area": 4455.0
+   },
+   {
+    "gt": 6,
+    "area": 8349.0
+   }
+  ],
+  "false": [
+   {
+    "pred": 3,
+    "score": 0.56,
+    "best_iou": 0.37
+   }
+  ]
+ },
+ "8": {
+  "image_id": 8,
+  "file": "TEST_000083_toma_TMV.jpg",
+  "n_gt": 4,
+  "n_det": 4,
+  "tp": 3,
+  "fp": 1,
+  "fn": 1,
+  "confusion": [
+   {
+    "gt": 6,
+    "pred": 8,
+    "iou": 0.86,
+    "score": 0.706
+   }
+  ],
+  "missed": [
+   {
+    "gt": 6,
+    "area": 25029.0
+   }
+  ],
+  "false": [
+   {
+    "pred": 6,
+    "score": 0.623,
+    "best_iou": 0.045
+   }
+  ]
+ },
+ "9": {
+  "image_id": 9,
+  "file": "TEST_000088_tylcv-seminar-1-638.jpg",
+  "n_gt": 5,
+  "n_det": 4,
+  "tp": 2,
+  "fp": 2,
+  "fn": 3,
+  "confusion": [
+   {
+    "gt": 7,
+    "pred": 6,
+    "iou": 0.688,
+    "score": 0.56
+   }
+  ],
+  "missed": [
+   {
+    "gt": 7,
+    "area": 4028.0
+   },
+   {
+    "gt": 7,
+    "area": 4116.0
+   },
+   {
+    "gt": 7,
+    "area": 8855.0
+   }
+  ],
+  "false": [
+   {
+    "pred": 6,
+    "score": 0.549,
+    "best_iou": 0.0
+   },
+   {
+    "pred": 6,
+    "score": 0.533,
+    "best_iou": 0.0
+   }
+  ]
+ },
+ "10": {
+  "image_id": 10,
+  "file": "TEST_000099_fungus-univ-of-minnesoeta.jpg",
+  "n_gt": 4,
+  "n_det": 3,
+  "tp": 3,
+  "fp": 0,
+  "fn": 1,
+  "confusion": [
+   {
+    "gt": 8,
+    "pred": 1,
+    "iou": 0.871,
+    "score": 0.582
+   },
+   {
+    "gt": 8,
+    "pred": 1,
+    "iou": 0.806,
+    "score": 0.577
+   },
+   {
+    "gt": 8,
+    "pred": 1,
+    "iou": 0.702,
+    "score": 0.56
+   }
+  ],
+  "missed": [
+   {
+    "gt": 8,
+    "area": 51460.0
+   }
+  ],
+  "false": []
+ },
+ "11": {
+  "image_id": 11,
+  "file": "TEST_000105_P1130286.jpg",
+  "n_gt": 1,
+  "n_det": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": []
+ },
+ "12": {
+  "image_id": 12,
+  "file": "TEST_000106_depositphotos_3443387-stock-photo-the-green-grape-leaf-on.jpg",
+  "n_gt": 1,
+  "n_det": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": []
+ },
+ "13": {
+  "image_id": 13,
+  "file": "TEST_000108_5-29black-rot-chardRR.jpg",
+  "n_gt": 1,
+  "n_det": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": []
+ },
+ "14": {
+  "image_id": 14,
+  "file": "TEST_000112_Black%20rot%20on%20foliage.jpg",
+  "n_gt": 1,
+  "n_det": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": []
+ },
+ "15": {
+  "image_id": 15,
+  "file": "TRAIN_000000_seriously-unwell-apple-tree-fruit-brown-and-split-yellow-spots-on-leaves-scab-P67H27.jpg",
+  "n_gt": 2,
+  "n_det": 4,
+  "tp": 2,
+  "fp": 2,
+  "fn": 0,
+  "confusion": [
+   {
+    "gt": 9,
+    "pred": 10,
+    "iou": 0.881,
+    "score": 0.699
+   }
+  ],
+  "missed": [],
+  "false": [
+   {
+    "pred": 10,
+    "score": 0.655,
+    "best_iou": 0.0
+   },
+   {
+    "pred": 10,
+    "score": 0.562,
+    "best_iou": 0.0
+   }
+  ]
+ },
+ "16": {
+  "image_id": 16,
+  "file": "TRAIN_000001_12-20_apple_scab1.jpg",
+  "n_gt": 8,
+  "n_det": 8,
+  "tp": 6,
+  "fp": 2,
+  "fn": 2,
+  "confusion": [
+   {
+    "gt": 9,
+    "pred": 11,
+    "iou": 0.874,
+    "score": 0.734
+   },
+   {
+    "gt": 9,
+    "pred": 11,
+    "iou": 0.794,
+    "score": 0.7
+   },
+   {
+    "gt": 9,
+    "pred": 11,
+    "iou": 0.926,
+    "score": 0.598
+   },
+   {
+    "gt": 9,
+    "pred": 11,
+    "iou": 0.848,
+    "score": 0.595
+   }
+  ],
+  "missed": [
+   {
+    "gt": 9,
+    "area": 4970.0
+   },
+   {
+    "gt": 9,
+    "area": 2183.0
+   }
+  ],
+  "false": [
+   {
+    "pred": 9,
+    "score": 0.602,
+    "best_iou": 0.0
+   },
+   {
+    "pred": 9,
+    "score": 0.565,
+    "best_iou": 0.0
+   }
+  ]
+ },
+ "17": {
+  "image_id": 17,
+  "file": "TRAIN_000002_apples_apple-scab_03_zoom.jpg",
+  "n_gt": 1,
+  "n_det": 0,
+  "tp": 0,
+  "fp": 0,
+  "fn": 1,
+  "confusion": [],
+  "missed": [
+   {
+    "gt": 9,
+    "area": 561372.0
+   }
+  ],
+  "false": []
+ },
+ "18": {
+  "image_id": 18,
+  "file": "TRAIN_000003_Apple%20scab%20-%20early%20infection%20on%20leaves.JPG.jpg",
+  "n_gt": 1,
+  "n_det": 2,
+  "tp": 0,
+  "fp": 2,
+  "fn": 1,
+  "confusion": [],
+  "missed": [
+   {
+    "gt": 9,
+    "area": 338725.0
+   }
+  ],
+  "false": [
+   {
+    "pred": 10,
+    "score": 0.662,
+    "best_iou": 0.0
+   },
+   {
+    "pred": 10,
+    "score": 0.542,
+    "best_iou": 0.033
+   }
+  ]
+ },
+ "19": {
+  "image_id": 19,
+  "file": "TRAIN_000004_apple_scab.jpg",
+  "n_gt": 6,
+  "n_det": 3,
+  "tp": 3,
+  "fp": 0,
+  "fn": 3,
+  "confusion": [],
+  "missed": [
+   {
+    "gt": 9,
+    "area": 13020.0
+   },
+   {
+    "gt": 9,
+    "area": 5796.0
+   },
+   {
+    "gt": 9,
+    "area": 3760.0
+   }
+  ],
+  "false": []
+ },
+ "20": {
+  "image_id": 20,
+  "file": "TRAIN_000005_Apple-Scab-image-01.jpg",
+  "n_gt": 6,
+  "n_det": 5,
+  "tp": 5,
+  "fp": 0,
+  "fn": 1,
+  "confusion": [],
+  "missed": [
+   {
+    "gt": 9,
+    "area": 15400.0
+   }
+  ],
+  "false": []
+ },
+ "21": {
+  "image_id": 21,
+  "file": "TRAIN_000006_500_F_125294801_k0A2teQwKxZfTV1pcaerZFf9Th04F04q.jpg",
+  "n_gt": 3,
+  "n_det": 4,
+  "tp": 2,
+  "fp": 2,
+  "fn": 1,
+  "confusion": [],
+  "missed": [
+   {
+    "gt": 9,
+    "area": 9225.0
+   }
+  ],
+  "false": [
+   {
+    "pred": 9,
+    "score": 0.645,
+    "best_iou": 0.0
+   },
+   {
+    "pred": 9,
+    "score": 0.511,
+    "best_iou": 0.0
+   }
+  ]
+ },
+ "22": {
+  "image_id": 22,
+  "file": "TRAIN_000007_image0002.jpg",
+  "n_gt": 2,
+  "n_det": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 1,
+  "confusion": [],
+  "missed": [
+   {
+    "gt": 9,
+    "area": 2310089.0
+   }
+  ],
+  "false": []
+ },
+ "23": {
+  "image_id": 23,
+  "file": "TRAIN_000008_img_1920.jpg",
+  "n_gt": 1,
+  "n_det": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": []
+ },
+ "24": {
+  "image_id": 24,
+  "file": "TRAIN_000009_leaves-isolated-on-white-background-picture-id537925565_k=6&m=537925565&s=612x612&w=0&h=Ogzc4YHTI4i4q9aiTIG6Zq2sAMv6xTKiDlCmYANlzK8=.jpg",
+  "n_gt": 2,
+  "n_det": 2,
+  "tp": 2,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": []
+ },
+ "25": {
+  "image_id": 25,
+  "file": "TRAIN_000010_green-apple-leaf-white-background-33503979.jpg",
+  "n_gt": 1,
+  "n_det": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": []
+ },
+ "26": {
+  "image_id": 26,
+  "file": "TRAIN_000011_green-apple-leaf-slice-isolated-white-ripe-background-clipping-path-44598638.jpg",
+  "n_gt": 1,
+  "n_det": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": []
+ },
+ "27": {
+  "image_id": 27,
+  "file": "TRAIN_000012_green-apple-leaf-cut-white-ripe-background-clipping-path-42422046.jpg",
+  "n_gt": 1,
+  "n_det": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": []
+ },
+ "28": {
+  "image_id": 28,
+  "file": "TRAIN_000013_appleleaf+trial+007.JPG.jpg",
+  "n_gt": 5,
+  "n_det": 4,
+  "tp": 4,
+  "fp": 0,
+  "fn": 1,
+  "confusion": [],
+  "missed": [
+   {
+    "gt": 10,
+    "area": 92200.0
+   }
+  ],
+  "false": []
+ },
+ "29": {
+  "image_id": 29,
+  "file": "TRAIN_000014_stock-photo-green-apple-leaf-clipping-path-258728936.jpg",
+  "n_gt": 1,
+  "n_det": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": []
+ },
+ "30": {
+  "image_id": 30,
+  "file": "TRAIN_000015_stock-photo-apple-leaf-isolated-on-white-background-287560226.jpg",
+  "n_gt": 1,
+  "n_det": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": []
+ },
+ "31": {
+  "image_id": 31,
+  "file": "TRAIN_000016_ripe-red-apple-with-green-leaf-isolated-on-white-picture-id184640296_s=612x612.jpg",
+  "n_gt": 1,
+  "n_det": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": []
+ },
+ "32": {
+  "image_id": 32,
+  "file": "TRAIN_000017_Malus+sylvestris+-+Crab+Apple+04.jpg",
+  "n_gt": 1,
+  "n_det": 2,
+  "tp": 1,
+  "fp": 1,
+  "fn": 0,
+  "confusion": [
+   {
+    "gt": 10,
+    "pred": 9,
+    "iou": 0.895,
+    "score": 0.814
+   }
+  ],
+  "missed": [],
+  "false": [
+   {
+    "pred": 10,
+    "score": 0.665,
+    "best_iou": 0.0
+   }
+  ]
+ },
+ "33": {
+  "image_id": 33,
+  "file": "TRAIN_000019_crab-apple-tree-leaves.jpg",
+  "n_gt": 1,
+  "n_det": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": []
+ },
+ "34": {
+  "image_id": 34,
+  "file": "TRAIN_000020_PLPATH-FRU-02-cedar-apple-rust-figure-1.jpg",
+  "n_gt": 1,
+  "n_det": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": []
+ },
+ "35": {
+  "image_id": 35,
+  "file": "TRAIN_000021_B2750027-Cedar-apple_rust-SPL.jpg",
+  "n_gt": 1,
+  "n_det": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": []
+ },
+ "36": {
+  "image_id": 36,
+  "file": "TRAIN_000023_apples_black-rot_01_zoom.jpg",
+  "n_gt": 1,
+  "n_det": 2,
+  "tp": 1,
+  "fp": 1,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": [
+   {
+    "pred": 13,
+    "score": 0.516,
+    "best_iou": 0.0
+   }
+  ]
+ },
+ "37": {
+  "image_id": 37,
+  "file": "TRAIN_000025_rust-0450.jpg",
+  "n_gt": 1,
+  "n_det": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": []
+ },
+ "38": {
+  "image_id": 38,
+  "file": "TRAIN_000026_a82e389f8b5da4758a747c32ef8af6f9--rust-apples.jpg",
+  "n_gt": 4,
+  "n_det": 2,
+  "tp": 2,
+  "fp": 0,
+  "fn": 2,
+  "confusion": [],
+  "missed": [
+   {
+    "gt": 11,
+    "area": 16848.0
+   },
+   {
+    "gt": 11,
+    "area": 37680.0
+   }
+  ],
+  "false": []
+ },
+ "39": {
+  "image_id": 39,
+  "file": "TRAIN_000027_MPC105550.jpg.rendition.largest.ss.jpg",
+  "n_gt": 3,
+  "n_det": 3,
+  "tp": 2,
+  "fp": 1,
+  "fn": 1,
+  "confusion": [
+   {
+    "gt": 1,
+    "pred": 2,
+    "iou": 0.812,
+    "score": 0.663
+   },
+   {
+    "gt": 1,
+    "pred": 4,
+    "iou": 0.76,
+    "score": 0.586
+   }
+  ],
+  "missed": [
+   {
+    "gt": 1,
+    "area": 2244.0
+   }
+  ],
+  "false": [
+   {
+    "pred": 4,
+    "score": 0.522,
+    "best_iou": 0.0
+   }
+  ]
+ },
+ "40": {
+  "image_id": 40,
+  "file": "TRAIN_000029_early-blight-of-tomato-tomato-1.jpg",
+  "n_gt": 1,
+  "n_det": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [
+   {
+    "gt": 1,
+    "pred": 4,
+    "iou": 0.859,
+    "score": 0.661
+   }
+  ],
+  "missed": [],
+  "false": []
+ },
+ "41": {
+  "image_id": 41,
+  "file": "TRAIN_000030_tomato-blight-soil-treatment-early-tomato-blight-in-a-microcosm-lower-leaves-curl-up-and-die-bulls-eye-lesions-tomato-fungus-soil-treatment.jpg",
+  "n_gt": 2,
+  "n_det": 2,
+  "tp": 2,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [
+   {
+    "gt": 1,
+    "pred": 8,
+    "iou": 0.9,
+    "score": 0.662
+   },
+   {
+    "gt": 1,
+    "pred": 8,
+    "iou": 0.88,
+    "score": 0.639
+   }
+  ],
+  "missed": [],
+  "false": []
+ },
+ "42": {
+  "image_id": 42,
+  "file": "TRAIN_000031_tomatoblight.jpg",
+  "n_gt": 1,
+  "n_det": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": []
+ },
+ "43": {
+  "image_id": 43,
+  "file": "TRAIN_000032_IMG_0591.jpg",
+  "n_gt": 1,
+  "n_det": 2,
+  "tp": 1,
+  "fp": 1,
+  "fn": 0,
+  "confusion": [
+   {
+    "gt": 1,
+    "pred": 4,
+    "iou": 0.91,
+    "score": 0.628
+   }
+  ],
+  "missed": [],
+  "false": [
+   {
+    "pred": 8,
+    "score": 0.545,
+    "best_iou": 0.0
+   }
+  ]
+ },
+ "44": {
+  "image_id": 44,
+  "file": "TRAIN_000033_early-blight-or-target-spot-alternaria-solani-lesions-on-a-tomato-BH3TH0.jpg",
+  "n_gt": 1,
+  "n_det": 0,
+  "tp": 0,
+  "fp": 0,
+  "fn": 1,
+  "confusion": [],
+  "missed": [
+   {
+    "gt": 1,
+    "area": 980800.0
+   }
+  ],
+  "false": []
+ },
+ "45": {
+  "image_id": 45,
+  "file": "TRAIN_000034_droppedImage_3-1.jpg",
+  "n_gt": 11,
+  "n_det": 4,
+  "tp": 4,
+  "fp": 0,
+  "fn": 7,
+  "confusion": [],
+  "missed": [
+   {
+    "gt": 1,
+    "area": 18511.0
+   },
+   {
+    "gt": 1,
+    "area": 8200.0
+   },
+   {
+    "gt": 1,
+    "area": 6466.0
+   },
+   {
+    "gt": 1,
+    "area": 5871.0
+   },
+   {
+    "gt": 1,
+    "area": 13080.0
+   },
+   {
+    "gt": 1,
+    "area": 6050.0
+   },
+   {
+    "gt": 1,
+    "area": 4620.0
+   }
+  ],
+  "false": []
+ },
+ "46": {
+  "image_id": 46,
+  "file": "TRAIN_000035_x3-most-common-types-tomato-blight.jpg.pagespeed.ic.5cLJi6TXEi.jpg",
+  "n_gt": 1,
+  "n_det": 2,
+  "tp": 1,
+  "fp": 1,
+  "fn": 0,
+  "confusion": [
+   {
+    "gt": 2,
+    "pred": 4,
+    "iou": 0.937,
+    "score": 0.625
+   }
+  ],
+  "missed": [],
+  "false": [
+   {
+    "pred": 2,
+    "score": 0.617,
+    "best_iou": 0.0
+   }
+  ]
+ },
+ "47": {
+  "image_id": 47,
+  "file": "TRAIN_000036_28018723549_3a16c1467b_b.jpg",
+  "n_gt": 2,
+  "n_det": 1,
+  "tp": 0,
+  "fp": 1,
+  "fn": 2,
+  "confusion": [],
+  "missed": [
+   {
+    "gt": 2,
+    "area": 110105.0
+   },
+   {
+    "gt": 2,
+    "area": 149669.0
+   }
+  ],
+  "false": [
+   {
+    "pred": 13,
+    "score": 0.651,
+    "best_iou": 0.368
+   }
+  ]
+ },
+ "48": {
+  "image_id": 48,
+  "file": "TRAIN_000037_Tomato+Problems+Septoria+Leaf+Spot.jpg",
+  "n_gt": 3,
+  "n_det": 2,
+  "tp": 2,
+  "fp": 0,
+  "fn": 1,
+  "confusion": [],
+  "missed": [
+   {
+    "gt": 2,
+    "area": 13348.0
+   }
+  ],
+  "false": []
+ },
+ "49": {
+  "image_id": 49,
+  "file": "TRAIN_000038_bnX8Q.jpg",
+  "n_gt": 2,
+  "n_det": 2,
+  "tp": 1,
+  "fp": 1,
+  "fn": 1,
+  "confusion": [],
+  "missed": [
+   {
+    "gt": 2,
+    "area": 6164.0
+   }
+  ],
+  "false": [
+   {
+    "pred": 2,
+    "score": 0.519,
+    "best_iou": 0.0
+   }
+  ]
+ },
+ "50": {
+  "image_id": 50,
+  "file": "TRAIN_000039_septoria-leaf-spot-tomato-1.jpg",
+  "n_gt": 1,
+  "n_det": 2,
+  "tp": 1,
+  "fp": 1,
+  "fn": 0,
+  "confusion": [
+   {
+    "gt": 2,
+    "pred": 4,
+    "iou": 0.884,
+    "score": 0.579
+   }
+  ],
+  "missed": [],
+  "false": [
+   {
+    "pred": 2,
+    "score": 0.523,
+    "best_iou": 0.0
+   }
+  ]
+ },
+ "51": {
+  "image_id": 51,
+  "file": "TRAIN_000040_Septoria_leaf_spot_tomato.jpg",
+  "n_gt": 1,
+  "n_det": 2,
+  "tp": 1,
+  "fp": 1,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": [
+   {
+    "pred": 4,
+    "score": 0.531,
+    "best_iou": 0.0
+   }
+  ]
+ },
+ "52": {
+  "image_id": 52,
+  "file": "TRAIN_000041_tomato_septoria_05_zoom.jpg",
+  "n_gt": 6,
+  "n_det": 8,
+  "tp": 6,
+  "fp": 2,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": [
+   {
+    "pred": 2,
+    "score": 0.597,
+    "best_iou": 0.0
+   },
+   {
+    "pred": 2,
+    "score": 0.509,
+    "best_iou": 0.0
+   }
+  ]
+ },
+ "53": {
+  "image_id": 53,
+  "file": "TRAIN_000042_tomato-septoria-leaf-spot.jpg",
+  "n_gt": 1,
+  "n_det": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": []
+ },
+ "54": {
+  "image_id": 54,
+  "file": "TRAIN_000043_septoria_leaf_spot_of_tomato-1500x750.jpg",
+  "n_gt": 2,
+  "n_det": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 1,
+  "confusion": [],
+  "missed": [
+   {
+    "gt": 2,
+    "area": 71400.0
+   }
+  ],
+  "false": []
+ },
+ "55": {
+  "image_id": 55,
+  "file": "TRAIN_000044_4853086777_bc41d29801.jpg",
+  "n_gt": 9,
+  "n_det": 4,
+  "tp": 4,
+  "fp": 0,
+  "fn": 5,
+  "confusion": [
+   {
+    "gt": 2,
+    "pred": 1,
+    "iou": 0.676,
+    "score": 0.605
+   }
+  ],
+  "missed": [
+   {
+    "gt": 2,
+    "area": 7171.0
+   },
+   {
+    "gt": 2,
+    "area": 7242.0
+   },
+   {
+    "gt": 2,
+    "area": 18753.0
+   },
+   {
+    "gt": 2,
+    "area": 9200.0
+   },
+   {
+    "gt": 2,
+    "area": 5320.0
+   }
+  ],
+  "false": []
+ },
+ "56": {
+  "image_id": 56,
+  "file": "TRAIN_000045_closeup-of-tomato-leaf-y4af51-1024x768.jpg",
+  "n_gt": 1,
+  "n_det": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": []
+ },
+ "57": {
+  "image_id": 57,
+  "file": "TRAIN_000046_septoria_tom_seedlings2x1200.jpg",
+  "n_gt": 4,
+  "n_det": 3,
+  "tp": 3,
+  "fp": 0,
+  "fn": 1,
+  "confusion": [
+   {
+    "gt": 2,
+    "pred": 9,
+    "iou": 0.938,
+    "score": 0.607
+   },
+   {
+    "gt": 2,
+    "pred": 9,
+    "iou": 0.848,
+    "score": 0.566
+   },
+   {
+    "gt": 2,
+    "pred": 5,
+    "iou": 0.944,
+    "score": 0.54
+   }
+  ],
+  "missed": [
+   {
+    "gt": 2,
+    "area": 109500.0
+   }
+  ],
+  "false": []
+ },
+ "58": {
+  "image_id": 58,
+  "file": "TRAIN_000047_slide21-n.jpg",
+  "n_gt": 1,
+  "n_det": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": []
+ },
+ "59": {
+  "image_id": 59,
+  "file": "TRAIN_000048_b54d0e40027ff5e90e8ba7e1e9abf9bd.jpg",
+  "n_gt": 1,
+  "n_det": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": []
+ },
+ "60": {
+  "image_id": 60,
+  "file": "TRAIN_000049_tomato-plant-is-infected-with-septoria-leaf-spot.jpg",
+  "n_gt": 2,
+  "n_det": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 1,
+  "confusion": [],
+  "missed": [
+   {
+    "gt": 2,
+    "area": 937280.0
+   }
+  ],
+  "false": []
+ },
+ "61": {
+  "image_id": 61,
+  "file": "TRAIN_000050_tomato-leaves-9025906.jpg",
+  "n_gt": 5,
+  "n_det": 7,
+  "tp": 5,
+  "fp": 2,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": [
+   {
+    "pred": 3,
+    "score": 0.63,
+    "best_iou": 0.0
+   },
+   {
+    "pred": 3,
+    "score": 0.531,
+    "best_iou": 0.0
+   }
+  ]
+ },
+ "62": {
+  "image_id": 62,
+  "file": "TRAIN_000051_PxWBE.jpg",
+  "n_gt": 4,
+  "n_det": 2,
+  "tp": 2,
+  "fp": 0,
+  "fn": 2,
+  "confusion": [],
+  "missed": [
+   {
+    "gt": 3,
+    "area": 407165.0
+   },
+   {
+    "gt": 3,
+    "area": 346626.0
+   }
+  ],
+  "false": []
+ },
+ "63": {
+  "image_id": 63,
+  "file": "TRAIN_000052_late_blight_tomato_leaf4x1200.jpg",
+  "n_gt": 10,
+  "n_det": 8,
+  "tp": 5,
+  "fp": 3,
+  "fn": 5,
+  "confusion": [
+   {
+    "gt": 3,
+    "pred": 5,
+    "iou": 0.833,
+    "score": 0.701
+   },
+   {
+    "gt": 3,
+    "pred": 5,
+    "iou": 0.849,
+    "score": 0.585
+   },
+   {
+    "gt": 3,
+    "pred": 8,
+    "iou": 0.718,
+    "score": 0.565
+   },
+   {
+    "gt": 3,
+    "pred": 8,
+    "iou": 0.957,
+    "score": 0.563
+   }
+  ],
+  "missed": [
+   {
+    "gt": 3,
+    "area": 28178.0
+   },
+   {
+    "gt": 3,
+    "area": 36395.0
+   },
+   {
+    "gt": 3,
+    "area": 58588.0
+   },
+   {
+    "gt": 3,
+    "area": 12264.0
+   },
+   {
+    "gt": 3,
+    "area": 52309.0
+   }
+  ],
+  "false": [
+   {
+    "pred": 8,
+    "score": 0.581,
+    "best_iou": 0.248
+   },
+   {
+    "pred": 8,
+    "score": 0.508,
+    "best_iou": 0.0
+   },
+   {
+    "pred": 5,
+    "score": 0.502,
+    "best_iou": 0.0
+   }
+  ]
+ },
+ "64": {
+  "image_id": 64,
+  "file": "TRAIN_000053_9bfac1dea7f401e3b379dab33f535bb4.jpg",
+  "n_gt": 8,
+  "n_det": 22,
+  "tp": 5,
+  "fp": 17,
+  "fn": 3,
+  "confusion": [],
+  "missed": [
+   {
+    "gt": 3,
+    "area": 7047.0
+   },
+   {
+    "gt": 3,
+    "area": 4888.0
+   },
+   {
+    "gt": 3,
+    "area": 4840.0
+   }
+  ],
+  "false": [
+   {
+    "pred": 3,
+    "score": 0.778,
+    "best_iou": 0.0
+   },
+   {
+    "pred": 3,
+    "score": 0.772,
+    "best_iou": 0.0
+   },
+   {
+    "pred": 3,
+    "score": 0.765,
+    "best_iou": 0.0
+   },
+   {
+    "pred": 3,
+    "score": 0.744,
+    "best_iou": 0.0
+   },
+   {
+    "pred": 3,
+    "score": 0.691,
+    "best_iou": 0.0
+   },
+   {
+    "pred": 3,
+    "score": 0.666,
+    "best_iou": 0.0
+   },
+   {
+    "pred": 3,
+    "score": 0.644,
+    "best_iou": 0.0
+   },
+   {
+    "pred": 3,
+    "score": 0.619,
+    "best_iou": 0.0
+   },
+   {
+    "pred": 3,
+    "score": 0.606,
+    "best_iou": 0.0
+   },
+   {
+    "pred": 3,
+    "score": 0.602,
+    "best_iou": 0.0
+   },
+   {
+    "pred": 3,
+    "score": 0.591,
+    "best_iou": 0.031
+   },
+   {
+    "pred": 3,
+    "score": 0.574,
+    "best_iou": 0.0
+   },
+   {
+    "pred": 3,
+    "score": 0.57,
+    "best_iou": 0.0
+   },
+   {
+    "pred": 3,
+    "score": 0.554,
+    "best_iou": 0.032
+   },
+   {
+    "pred": 3,
+    "score": 0.553,
+    "best_iou": 0.0
+   },
+   {
+    "pred": 3,
+    "score": 0.529,
+    "best_iou": 0.0
+   },
+   {
+    "pred": 3,
+    "score": 0.528,
+    "best_iou": 0.0
+   }
+  ]
+ },
+ "65": {
+  "image_id": 65,
+  "file": "TRAIN_000054_happier-inside.jpg",
+  "n_gt": 7,
+  "n_det": 7,
+  "tp": 0,
+  "fp": 7,
+  "fn": 7,
+  "confusion": [],
+  "missed": [
+   {
+    "gt": 3,
+    "area": 955832.0
+   },
+   {
+    "gt": 3,
+    "area": 804379.0
+   },
+   {
+    "gt": 3,
+    "area": 594048.0
+   },
+   {
+    "gt": 3,
+    "area": 540000.0
+   },
+   {
+    "gt": 3,
+    "area": 907046.0
+   },
+   {
+    "gt": 3,
+    "area": 339368.0
+   },
+   {
+    "gt": 3,
+    "area": 575485.0
+   }
+  ],
+  "false": [
+   {
+    "pred": 10,
+    "score": 0.683,
+    "best_iou": 0.27
+   },
+   {
+    "pred": 10,
+    "score": 0.661,
+    "best_iou": 0.144
+   },
+   {
+    "pred": 10,
+    "score": 0.601,
+    "best_iou": 0.021
+   },
+   {
+    "pred": 10,
+    "score": 0.552,
+    "best_iou": 0.0
+   },
+   {
+    "pred": 10,
+    "score": 0.548,
+    "best_iou": 0.077
+   },
+   {
+    "pred": 3,
+    "score": 0.533,
+    "best_iou": 0.077
+   },
+   {
+    "pred": 10,
+    "score": 0.529,
+    "best_iou": 0.185
+   }
+  ]
+ },
+ "66": {
+  "image_id": 66,
+  "file": "TRAIN_000055_stock-photo-tomato-leaf-isolated-on-white-background-580281301.jpg",
+  "n_gt": 3,
+  "n_det": 3,
+  "tp": 3,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": []
+ },
+ "67": {
+  "image_id": 67,
+  "file": "TRAIN_000056_10-3-bacterial-speck-on-tomato-RON.jpg",
+  "n_gt": 1,
+  "n_det": 2,
+  "tp": 1,
+  "fp": 1,
+  "fn": 0,
+  "confusion": [
+   {
+    "gt": 4,
+    "pred": 2,
+    "iou": 0.96,
+    "score": 0.651
+   }
+  ],
+  "missed": [],
+  "false": [
+   {
+    "pred": 9,
+    "score": 0.513,
+    "best_iou": 0.0
+   }
+  ]
+ },
+ "68": {
+  "image_id": 68,
+  "file": "TRAIN_000057_bacterial-spot-of-tomato-7-638.jpg",
+  "n_gt": 1,
+  "n_det": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": []
+ },
+ "69": {
+  "image_id": 69,
+  "file": "TRAIN_000059_bacterial%20leaf%20spot.jpg",
+  "n_gt": 4,
+  "n_det": 3,
+  "tp": 3,
+  "fp": 0,
+  "fn": 1,
+  "confusion": [],
+  "missed": [
+   {
+    "gt": 4,
+    "area": 25239.0
+   }
+  ],
+  "false": []
+ },
+ "70": {
+  "image_id": 70,
+  "file": "TRAIN_000060_Leaf-spots-on-tomato-leaves-Credits-Hank-Dankers_Q320.jpg",
+  "n_gt": 2,
+  "n_det": 0,
+  "tp": 0,
+  "fp": 0,
+  "fn": 2,
+  "confusion": [],
+  "missed": [
+   {
+    "gt": 4,
+    "area": 27300.0
+   },
+   {
+    "gt": 4,
+    "area": 21120.0
+   }
+  ],
+  "false": []
+ },
+ "71": {
+  "image_id": 71,
+  "file": "TRAIN_000061_Figure-3-7.jpg",
+  "n_gt": 2,
+  "n_det": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 1,
+  "confusion": [
+   {
+    "gt": 4,
+    "pred": 2,
+    "iou": 0.904,
+    "score": 0.679
+   }
+  ],
+  "missed": [
+   {
+    "gt": 4,
+    "area": 97319.0
+   }
+  ],
+  "false": []
+ },
+ "72": {
+  "image_id": 72,
+  "file": "TRAIN_000062_bacterial-speck-tomato-2.jpg",
+  "n_gt": 1,
+  "n_det": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [
+   {
+    "gt": 4,
+    "pred": 2,
+    "iou": 0.93,
+    "score": 0.697
+   }
+  ],
+  "missed": [],
+  "false": []
+ },
+ "73": {
+  "image_id": 73,
+  "file": "TRAIN_000064_110608-01-8356c-lg.jpg",
+  "n_gt": 1,
+  "n_det": 2,
+  "tp": 1,
+  "fp": 1,
+  "fn": 0,
+  "confusion": [
+   {
+    "gt": 4,
+    "pred": 8,
+    "iou": 0.932,
+    "score": 0.887
+   }
+  ],
+  "missed": [],
+  "false": [
+   {
+    "pred": 4,
+    "score": 0.501,
+    "best_iou": 0.0
+   }
+  ]
+ },
+ "74": {
+  "image_id": 74,
+  "file": "TRAIN_000065_LyraEDISServlet.jpg",
+  "n_gt": 1,
+  "n_det": 2,
+  "tp": 1,
+  "fp": 1,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": [
+   {
+    "pred": 2,
+    "score": 0.534,
+    "best_iou": 0.0
+   }
+  ]
+ },
+ "75": {
+  "image_id": 75,
+  "file": "TRAIN_000066_latest_cb=20100808132744.jpg",
+  "n_gt": 1,
+  "n_det": 1,
+  "tp": 0,
+  "fp": 1,
+  "fn": 1,
+  "confusion": [],
+  "missed": [
+   {
+    "gt": 4,
+    "area": 83265.0
+   }
+  ],
+  "false": [
+   {
+    "pred": 4,
+    "score": 0.64,
+    "best_iou": 0.456
+   }
+  ]
+ },
+ "76": {
+  "image_id": 76,
+  "file": "TRAIN_000067_LateBlight-Tomato-JJ-2009-17nxg4q.jpg",
+  "n_gt": 1,
+  "n_det": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": []
+ },
+ "77": {
+  "image_id": 77,
+  "file": "TRAIN_000068_late_blight_tomato_leaf_.jpg",
+  "n_gt": 7,
+  "n_det": 5,
+  "tp": 3,
+  "fp": 2,
+  "fn": 4,
+  "confusion": [
+   {
+    "gt": 5,
+    "pred": 8,
+    "iou": 0.881,
+    "score": 0.529
+   }
+  ],
+  "missed": [
+   {
+    "gt": 5,
+    "area": 22692.0
+   },
+   {
+    "gt": 5,
+    "area": 22344.0
+   },
+   {
+    "gt": 5,
+    "area": 91200.0
+   },
+   {
+    "gt": 5,
+    "area": 75884.0
+   }
+  ],
+  "false": [
+   {
+    "pred": 8,
+    "score": 0.563,
+    "best_iou": 0.103
+   },
+   {
+    "pred": 8,
+    "score": 0.503,
+    "best_iou": 0.005
+   }
+  ]
+ },
+ "78": {
+  "image_id": 78,
+  "file": "TRAIN_000069_IMG_5360.jpg",
+  "n_gt": 2,
+  "n_det": 2,
+  "tp": 2,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": []
+ },
+ "79": {
+  "image_id": 79,
+  "file": "TRAIN_000070_lateblightTom_lesion3.jpg",
+  "n_gt": 2,
+  "n_det": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 1,
+  "confusion": [],
+  "missed": [
+   {
+    "gt": 5,
+    "area": 71232.0
+   }
+  ],
+  "false": []
+ },
+ "80": {
+  "image_id": 80,
+  "file": "TRAIN_000071_a7710b5901ba1f8e9759ef7576cd9f09.jpg",
+  "n_gt": 1,
+  "n_det": 2,
+  "tp": 1,
+  "fp": 1,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": [
+   {
+    "pred": 5,
+    "score": 0.569,
+    "best_iou": 0.0
+   }
+  ]
+ },
+ "81": {
+  "image_id": 81,
+  "file": "TRAIN_000072_FS547-6-big.jpg",
+  "n_gt": 1,
+  "n_det": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": []
+ },
+ "82": {
+  "image_id": 82,
+  "file": "TRAIN_000073_118A_Tom_Late.jpg",
+  "n_gt": 1,
+  "n_det": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": []
+ },
+ "83": {
+  "image_id": 83,
+  "file": "TRAIN_000074_924977LateBlightLeaf.jpg",
+  "n_gt": 1,
+  "n_det": 2,
+  "tp": 1,
+  "fp": 1,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": [
+   {
+    "pred": 8,
+    "score": 0.663,
+    "best_iou": 0.0
+   }
+  ]
+ },
+ "84": {
+  "image_id": 84,
+  "file": "TRAIN_000075_tomato-late-blight-phytophthora-infestans-necrosis-sporulation-on-a-tomato-leaf-underside-XA233C.jpg",
+  "n_gt": 1,
+  "n_det": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": []
+ },
+ "85": {
+  "image_id": 85,
+  "file": "TRAIN_000076_late_blight_tomato_unusual-symptomsx1200.jpg",
+  "n_gt": 6,
+  "n_det": 6,
+  "tp": 5,
+  "fp": 1,
+  "fn": 1,
+  "confusion": [
+   {
+    "gt": 5,
+    "pred": 1,
+    "iou": 0.916,
+    "score": 0.696
+   },
+   {
+    "gt": 5,
+    "pred": 8,
+    "iou": 0.832,
+    "score": 0.664
+   },
+   {
+    "gt": 5,
+    "pred": 1,
+    "iou": 0.668,
+    "score": 0.628
+   },
+   {
+    "gt": 5,
+    "pred": 4,
+    "iou": 0.885,
+    "score": 0.506
+   }
+  ],
+  "missed": [
+   {
+    "gt": 5,
+    "area": 211200.0
+   }
+  ],
+  "false": [
+   {
+    "pred": 1,
+    "score": 0.529,
+    "best_iou": 0.022
+   }
+  ]
+ },
+ "86": {
+  "image_id": 86,
+  "file": "TRAIN_000077_Late-Blight-A.jpg",
+  "n_gt": 2,
+  "n_det": 2,
+  "tp": 2,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": []
+ },
+ "87": {
+  "image_id": 87,
+  "file": "TRAIN_000078_mosaic_virus_tomato_small.jpg",
+  "n_gt": 1,
+  "n_det": 0,
+  "tp": 0,
+  "fp": 0,
+  "fn": 1,
+  "confusion": [],
+  "missed": [
+   {
+    "gt": 6,
+    "area": 2772.0
+   }
+  ],
+  "false": []
+ },
+ "88": {
+  "image_id": 88,
+  "file": "TRAIN_000080_d41c86a650e49b8066d6b347d8e9d3ad.jpg",
+  "n_gt": 7,
+  "n_det": 1,
+  "tp": 0,
+  "fp": 1,
+  "fn": 7,
+  "confusion": [],
+  "missed": [
+   {
+    "gt": 6,
+    "area": 714.0
+   },
+   {
+    "gt": 6,
+    "area": 1530.0
+   },
+   {
+    "gt": 6,
+    "area": 1666.0
+   },
+   {
+    "gt": 6,
+    "area": 1428.0
+   },
+   {
+    "gt": 6,
+    "area": 1848.0
+   },
+   {
+    "gt": 6,
+    "area": 2580.0
+   },
+   {
+    "gt": 6,
+    "area": 2496.0
+   }
+  ],
+  "false": [
+   {
+    "pred": 1,
+    "score": 0.507,
+    "best_iou": 0.11
+   }
+  ]
+ },
+ "89": {
+  "image_id": 89,
+  "file": "TRAIN_000081_dahliaviralsymptoms2lowresjpg.jpg",
+  "n_gt": 4,
+  "n_det": 2,
+  "tp": 2,
+  "fp": 0,
+  "fn": 2,
+  "confusion": [
+   {
+    "gt": 6,
+    "pred": 8,
+    "iou": 0.899,
+    "score": 0.629
+   },
+   {
+    "gt": 6,
+    "pred": 11,
+    "iou": 0.919,
+    "score": 0.609
+   }
+  ],
+  "missed": [
+   {
+    "gt": 6,
+    "area": 14022.0
+   },
+   {
+    "gt": 6,
+    "area": 12099.0
+   }
+  ],
+  "false": []
+ },
+ "90": {
+  "image_id": 90,
+  "file": "TRAIN_000082_Tomato+mosaic+virus.jpg",
+  "n_gt": 5,
+  "n_det": 6,
+  "tp": 5,
+  "fp": 1,
+  "fn": 0,
+  "confusion": [
+   {
+    "gt": 6,
+    "pred": 7,
+    "iou": 0.962,
+    "score": 0.751
+   },
+   {
+    "gt": 6,
+    "pred": 7,
+    "iou": 0.9,
+    "score": 0.641
+   },
+   {
+    "gt": 6,
+    "pred": 7,
+    "iou": 0.822,
+    "score": 0.64
+   },
+   {
+    "gt": 6,
+    "pred": 7,
+    "iou": 0.863,
+    "score": 0.62
+   },
+   {
+    "gt": 6,
+    "pred": 7,
+    "iou": 0.897,
+    "score": 0.617
+   }
+  ],
+  "missed": [],
+  "false": [
+   {
+    "pred": 6,
+    "score": 0.535,
+    "best_iou": 0.0
+   }
+  ]
+ },
+ "91": {
+  "image_id": 91,
+  "file": "TRAIN_000084_14456.img.jpg",
+  "n_gt": 8,
+  "n_det": 7,
+  "tp": 6,
+  "fp": 1,
+  "fn": 2,
+  "confusion": [],
+  "missed": [
+   {
+    "gt": 7,
+    "area": 10108.0
+   },
+   {
+    "gt": 7,
+    "area": 7742.0
+   }
+  ],
+  "false": [
+   {
+    "pred": 7,
+    "score": 0.661,
+    "best_iou": 0.431
+   }
+  ]
+ },
+ "92": {
+  "image_id": 92,
+  "file": "TRAIN_000085_DSC01999.JPG.jpg",
+  "n_gt": 19,
+  "n_det": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 18,
+  "confusion": [
+   {
+    "gt": 7,
+    "pred": 3,
+    "iou": 0.875,
+    "score": 0.527
+   }
+  ],
+  "missed": [
+   {
+    "gt": 7,
+    "area": 8400.0
+   },
+   {
+    "gt": 7,
+    "area": 13230.0
+   },
+   {
+    "gt": 7,
+    "area": 5712.0
+   },
+   {
+    "gt": 7,
+    "area": 10773.0
+   },
+   {
+    "gt": 7,
+    "area": 9680.0
+   },
+   {
+    "gt": 7,
+    "area": 6132.0
+   },
+   {
+    "gt": 7,
+    "area": 7854.0
+   },
+   {
+    "gt": 7,
+    "area": 14325.0
+   },
+   {
+    "gt": 7,
+    "area": 9984.0
+   },
+   {
+    "gt": 7,
+    "area": 4648.0
+   },
+   {
+    "gt": 7,
+    "area": 2905.0
+   },
+   {
+    "gt": 7,
+    "area": 5046.0
+   },
+   {
+    "gt": 7,
+    "area": 3675.0
+   },
+   {
+    "gt": 7,
+    "area": 17680.0
+   },
+   {
+    "gt": 7,
+    "area": 2448.0
+   },
+   {
+    "gt": 7,
+    "area": 11877.0
+   },
+   {
+    "gt": 7,
+    "area": 21054.0
+   },
+   {
+    "gt": 7,
+    "area": 34112.0
+   }
+  ],
+  "false": []
+ },
+ "93": {
+  "image_id": 93,
+  "file": "TRAIN_000086_tomato-yellow-leaf-curl-virus-pdf-78kb.jpg",
+  "n_gt": 6,
+  "n_det": 0,
+  "tp": 0,
+  "fp": 0,
+  "fn": 6,
+  "confusion": [],
+  "missed": [
+   {
+    "gt": 7,
+    "area": 675.0
+   },
+   {
+    "gt": 7,
+    "area": 1980.0
+   },
+   {
+    "gt": 7,
+    "area": 980.0
+   },
+   {
+    "gt": 7,
+    "area": 1804.0
+   },
+   {
+    "gt": 7,
+    "area": 1054.0
+   },
+   {
+    "gt": 7,
+    "area": 648.0
+   }
+  ],
+  "false": []
+ },
+ "94": {
+  "image_id": 94,
+  "file": "TRAIN_000087_Figure-4.jpg",
+  "n_gt": 8,
+  "n_det": 6,
+  "tp": 3,
+  "fp": 3,
+  "fn": 5,
+  "confusion": [],
+  "missed": [
+   {
+    "gt": 7,
+    "area": 158646.0
+   },
+   {
+    "gt": 7,
+    "area": 102424.0
+   },
+   {
+    "gt": 7,
+    "area": 261088.0
+   },
+   {
+    "gt": 7,
+    "area": 182095.0
+   },
+   {
+    "gt": 7,
+    "area": 248724.0
+   }
+  ],
+  "false": [
+   {
+    "pred": 7,
+    "score": 0.566,
+    "best_iou": 0.0
+   },
+   {
+    "pred": 7,
+    "score": 0.539,
+    "best_iou": 0.0
+   },
+   {
+    "pred": 7,
+    "score": 0.533,
+    "best_iou": 0.056
+   }
+  ]
+ },
+ "95": {
+  "image_id": 95,
+  "file": "TRAIN_000089_tomato-yellow-closeup-4.jpg",
+  "n_gt": 6,
+  "n_det": 8,
+  "tp": 4,
+  "fp": 4,
+  "fn": 2,
+  "confusion": [
+   {
+    "gt": 7,
+    "pred": 6,
+    "iou": 0.555,
+    "score": 0.513
+   }
+  ],
+  "missed": [
+   {
+    "gt": 7,
+    "area": 7684.0
+   },
+   {
+    "gt": 7,
+    "area": 7920.0
+   }
+  ],
+  "false": [
+   {
+    "pred": 7,
+    "score": 0.616,
+    "best_iou": 0.027
+   },
+   {
+    "pred": 7,
+    "score": 0.591,
+    "best_iou": 0.015
+   },
+   {
+    "pred": 7,
+    "score": 0.568,
+    "best_iou": 0.0
+   },
+   {
+    "pred": 8,
+    "score": 0.523,
+    "best_iou": 0.041
+   }
+  ]
+ },
+ "96": {
+  "image_id": 96,
+  "file": "TRAIN_000090_tomato-yellow-leaf-curl-virus-tylcv_950983.jpg",
+  "n_gt": 2,
+  "n_det": 4,
+  "tp": 1,
+  "fp": 3,
+  "fn": 1,
+  "confusion": [],
+  "missed": [
+   {
+    "gt": 7,
+    "area": 24300.0
+   }
+  ],
+  "false": [
+   {
+    "pred": 7,
+    "score": 0.543,
+    "best_iou": 0.0
+   },
+   {
+    "pred": 7,
+    "score": 0.541,
+    "best_iou": 0.0
+   },
+   {
+    "pred": 7,
+    "score": 0.509,
+    "best_iou": 0.231
+   }
+  ]
+ },
+ "97": {
+  "image_id": 97,
+  "file": "TRAIN_000091_tomato-yellow-leaf-curl-virus-symptoms-on-tomato-leaves-on-plants-AXKWFY.jpg",
+  "n_gt": 3,
+  "n_det": 9,
+  "tp": 1,
+  "fp": 8,
+  "fn": 2,
+  "confusion": [],
+  "missed": [
+   {
+    "gt": 7,
+    "area": 7168.0
+   },
+   {
+    "gt": 7,
+    "area": 7918.0
+   }
+  ],
+  "false": [
+   {
+    "pred": 7,
+    "score": 0.593,
+    "best_iou": 0.0
+   },
+   {
+    "pred": 7,
+    "score": 0.577,
+    "best_iou": 0.0
+   },
+   {
+    "pred": 7,
+    "score": 0.575,
+    "best_iou": 0.0
+   },
+   {
+    "pred": 3,
+    "score": 0.565,
+    "best_iou": 0.0
+   },
+   {
+    "pred": 7,
+    "score": 0.53,
+    "best_iou": 0.0
+   },
+   {
+    "pred": 3,
+    "score": 0.524,
+    "best_iou": 0.0
+   },
+   {
+    "pred": 7,
+    "score": 0.521,
+    "best_iou": 0.0
+   },
+   {
+    "pred": 6,
+    "score": 0.517,
+    "best_iou": 0.0
+   }
+  ]
+ },
+ "98": {
+  "image_id": 98,
+  "file": "TRAIN_000092_leaf_mold_tomato6x1200.jpg",
+  "n_gt": 7,
+  "n_det": 4,
+  "tp": 3,
+  "fp": 1,
+  "fn": 4,
+  "confusion": [
+   {
+    "gt": 8,
+    "pred": 5,
+    "iou": 0.77,
+    "score": 0.692
+   }
+  ],
+  "missed": [
+   {
+    "gt": 8,
+    "area": 60401.0
+   },
+   {
+    "gt": 8,
+    "area": 72912.0
+   },
+   {
+    "gt": 8,
+    "area": 125856.0
+   },
+   {
+    "gt": 8,
+    "area": 44330.0
+   }
+  ],
+  "false": [
+   {
+    "pred": 8,
+    "score": 0.542,
+    "best_iou": 0.259
+   }
+  ]
+ },
+ "99": {
+  "image_id": 99,
+  "file": "TRAIN_000093_BlackLeafMold2.jpg",
+  "n_gt": 6,
+  "n_det": 4,
+  "tp": 3,
+  "fp": 1,
+  "fn": 3,
+  "confusion": [
+   {
+    "gt": 8,
+    "pred": 3,
+    "iou": 0.671,
+    "score": 0.537
+   },
+   {
+    "gt": 8,
+    "pred": 3,
+    "iou": 0.974,
+    "score": 0.528
+   },
+   {
+    "gt": 8,
+    "pred": 6,
+    "iou": 0.845,
+    "score": 0.507
+   }
+  ],
+  "missed": [
+   {
+    "gt": 8,
+    "area": 1739.0
+   },
+   {
+    "gt": 8,
+    "area": 2520.0
+   },
+   {
+    "gt": 8,
+    "area": 2774.0
+   }
+  ],
+  "false": [
+   {
+    "pred": 6,
+    "score": 0.519,
+    "best_iou": 0.0
+   }
+  ]
+ },
+ "100": {
+  "image_id": 100,
+  "file": "TRAIN_000094_607-155-1.jpg",
+  "n_gt": 1,
+  "n_det": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": []
+ },
+ "101": {
+  "image_id": 101,
+  "file": "TRAIN_000095_Fig.%2015_opta.jpg",
+  "n_gt": 9,
+  "n_det": 2,
+  "tp": 2,
+  "fp": 0,
+  "fn": 7,
+  "confusion": [
+   {
+    "gt": 8,
+    "pred": 6,
+    "iou": 0.933,
+    "score": 0.524
+   }
+  ],
+  "missed": [
+   {
+    "gt": 8,
+    "area": 36803.0
+   },
+   {
+    "gt": 8,
+    "area": 44197.0
+   },
+   {
+    "gt": 8,
+    "area": 34569.0
+   },
+   {
+    "gt": 8,
+    "area": 10706.0
+   },
+   {
+    "gt": 8,
+    "area": 10989.0
+   },
+   {
+    "gt": 8,
+    "area": 65603.0
+   },
+   {
+    "gt": 8,
+    "area": 23460.0
+   }
+  ],
+  "false": []
+ },
+ "102": {
+  "image_id": 102,
+  "file": "TRAIN_000096_dscn6690.jpg",
+  "n_gt": 1,
+  "n_det": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": []
+ },
+ "103": {
+  "image_id": 103,
+  "file": "TRAIN_000097_gray-mold-on-tomato-leaf.jpg",
+  "n_gt": 1,
+  "n_det": 1,
+  "tp": 1,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [
+   {
+    "gt": 8,
+    "pred": 5,
+    "iou": 0.805,
+    "score": 0.846
+   }
+  ],
+  "missed": [],
+  "false": []
+ },
+ "104": {
+  "image_id": 104,
+  "file": "TRAIN_000098_100_4542.jpg",
+  "n_gt": 1,
+  "n_det": 2,
+  "tp": 1,
+  "fp": 1,
+  "fn": 0,
+  "confusion": [
+   {
+    "gt": 8,
+    "pred": 13,
+    "iou": 0.966,
+    "score": 0.892
+   }
+  ],
+  "missed": [],
+  "false": [
+   {
+    "pred": 13,
+    "score": 0.605,
+    "best_iou": 0.0
+   }
+  ]
+ },
+ "105": {
+  "image_id": 105,
+  "file": "TRAIN_000100_image233.jpg",
+  "n_gt": 2,
+  "n_det": 2,
+  "tp": 2,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [
+   {
+    "gt": 8,
+    "pred": 6,
+    "iou": 0.823,
+    "score": 0.558
+   }
+  ],
+  "missed": [],
+  "false": []
+ },
+ "106": {
+  "image_id": 106,
+  "file": "TRAIN_000101_grapeleaf4.JPG.jpg",
+  "n_gt": 3,
+  "n_det": 2,
+  "tp": 2,
+  "fp": 0,
+  "fn": 1,
+  "confusion": [],
+  "missed": [
+   {
+    "gt": 12,
+    "area": 233285.0
+   }
+  ],
+  "false": []
+ },
+ "107": {
+  "image_id": 107,
+  "file": "TRAIN_000102_grape-leaves1.jpg",
+  "n_gt": 3,
+  "n_det": 3,
+  "tp": 3,
+  "fp": 0,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": []
+ },
+ "108": {
+  "image_id": 108,
+  "file": "TRAIN_000103_mourvedre3.jpg",
+  "n_gt": 5,
+  "n_det": 3,
+  "tp": 3,
+  "fp": 0,
+  "fn": 2,
+  "confusion": [],
+  "missed": [
+   {
+    "gt": 12,
+    "area": 1460650.0
+   },
+   {
+    "gt": 12,
+    "area": 429387.0
+   }
+  ],
+  "false": []
+ },
+ "110": {
+  "image_id": 110,
+  "file": "TRAIN_000107_grape-leaves-03-1103349.jpg",
+  "n_gt": 1,
+  "n_det": 2,
+  "tp": 1,
+  "fp": 1,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": [
+   {
+    "pred": 12,
+    "score": 0.808,
+    "best_iou": 0.0
+   }
+  ]
+ },
+ "111": {
+  "image_id": 111,
+  "file": "TRAIN_000109_2009+07+034+black+rot+leaf+and+berry.jpg",
+  "n_gt": 1,
+  "n_det": 3,
+  "tp": 1,
+  "fp": 2,
+  "fn": 0,
+  "confusion": [],
+  "missed": [],
+  "false": [
+   {
+    "pred": 13,
+    "score": 0.668,
+    "best_iou": 0.0
+   },
+   {
+    "pred": 13,
+    "score": 0.583,
+    "best_iou": 0.0
+   }
+  ]
+ },
+ "112": {
+  "image_id": 112,
+  "file": "TRAIN_000110_image_original.jpeg_1495058318.jpg",
+  "n_gt": 10,
+  "n_det": 4,
+  "tp": 4,
+  "fp": 0,
+  "fn": 6,
+  "confusion": [],
+  "missed": [
+   {
+    "gt": 13,
+    "area": 1245260.0
+   },
+   {
+    "gt": 13,
+    "area": 134940.0
+   },
+   {
+    "gt": 13,
+    "area": 222313.0
+   },
+   {
+    "gt": 13,
+    "area": 294892.0
+   },
+   {
+    "gt": 13,
+    "area": 240994.0
+   },
+   {
+    "gt": 13,
+    "area": 204327.0
+   }
+  ],
+  "false": []
+ },
+ "113": {
+  "image_id": 113,
+  "file": "TRAIN_000111_brshoot2_zoom.jpg",
+  "n_gt": 2,
+  "n_det": 3,
+  "tp": 2,
+  "fp": 1,
+  "fn": 0,
+  "confusion": [
+   {
+    "gt": 13,
+    "pred": 11,
+    "iou": 0.739,
+    "score": 0.646
+   }
+  ],
+  "missed": [],
+  "false": [
+   {
+    "pred": 12,
+    "score": 0.592,
+    "best_iou": 0.0
+   }
+  ]
+ },
+ "114": {
+  "image_id": 114,
+  "file": "TRAIN_000113_00gb.jpg",
+  "n_gt": 7,
+  "n_det": 16,
+  "tp": 6,
+  "fp": 10,
+  "fn": 1,
+  "confusion": [],
+  "missed": [
+   {
+    "gt": 13,
+    "area": 75756.0
+   }
+  ],
+  "false": [
+   {
+    "pred": 13,
+    "score": 0.817,
+    "best_iou": 0.157
+   },
+   {
+    "pred": 13,
+    "score": 0.738,
+    "best_iou": 0.458
+   },
+   {
+    "pred": 13,
+    "score": 0.651,
+    "best_iou": 0.106
+   },
+   {
+    "pred": 13,
+    "score": 0.633,
+    "best_iou": 0.0
+   },
+   {
+    "pred": 13,
+    "score": 0.589,
+    "best_iou": 0.495
+   },
+   {
+    "pred": 13,
+    "score": 0.588,
+    "best_iou": 0.0
+   },
+   {
+    "pred": 13,
+    "score": 0.554,
+    "best_iou": 0.0
+   },
+   {
+    "pred": 13,
+    "score": 0.548,
+    "best_iou": 0.0
+   },
+   {
+    "pred": 13,
+    "score": 0.541,
+    "best_iou": 0.374
+   },
+   {
+    "pred": 13,
+    "score": 0.501,
+    "best_iou": 0.0
+   }
+  ]
+ }
+}

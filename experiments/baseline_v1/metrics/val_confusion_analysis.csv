@@ -1,0 +1,31 @@
+gt_class,pred_class,count,frac_of_gt
+Tomato leaf bacterial spot,Tomato Septoria leaf spot,5,0.312
+Tomato leaf mosaic virus,Tomato leaf yellow virus,5,0.152
+Apple Scab Leaf,Apple rust leaf,4,0.133
+Tomato Early blight leaf,Tomato leaf bacterial spot,3,0.143
+Tomato mold leaf,Tomato Early blight leaf,3,0.094
+Tomato mold leaf,Tomato leaf mosaic virus,3,0.094
+Tomato Early blight leaf,Tomato mold leaf,2,0.095
+Tomato Septoria leaf spot,Tomato leaf bacterial spot,2,0.054
+Tomato Septoria leaf spot,Apple Scab Leaf,2,0.054
+Tomato leaf,Tomato leaf late blight,2,0.056
+Tomato leaf,Tomato mold leaf,2,0.056
+Tomato leaf late blight,Tomato Early blight leaf,2,0.077
+Tomato leaf late blight,Tomato mold leaf,2,0.077
+Tomato leaf mosaic virus,Tomato leaf,2,0.061
+Tomato leaf mosaic virus,Tomato mold leaf,2,0.061
+Tomato leaf yellow virus,Tomato leaf mosaic virus,2,0.035
+Tomato mold leaf,Tomato leaf,2,0.062
+Tomato mold leaf,Tomato leaf late blight,2,0.062
+Tomato Early blight leaf,Tomato Septoria leaf spot,1,0.048
+Tomato Septoria leaf spot,Tomato Early blight leaf,1,0.027
+Tomato Septoria leaf spot,Tomato leaf late blight,1,0.027
+Tomato leaf bacterial spot,Tomato mold leaf,1,0.062
+Tomato leaf late blight,Tomato leaf bacterial spot,1,0.038
+Tomato leaf mosaic virus,Apple rust leaf,1,0.03
+Tomato leaf yellow virus,Tomato leaf,1,0.018
+Tomato mold leaf,grape leaf black rot,1,0.031
+Apple Scab Leaf,Apple leaf,1,0.033
+Apple leaf,Apple Scab Leaf,1,0.071
+Apple rust leaf,Apple Scab Leaf,1,0.083
+grape leaf black rot,Apple rust leaf,1,0.045

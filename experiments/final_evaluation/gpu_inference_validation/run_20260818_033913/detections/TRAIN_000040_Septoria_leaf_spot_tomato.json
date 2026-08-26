@@ -1,0 +1,17 @@
+{
+  "image_name": "TRAIN_000040_Septoria_leaf_spot_tomato.jpg",
+  "total_targets": 1,
+  "inference_ms": 31.53,
+  "detections": [
+    {
+      "image_name": "TRAIN_000040_Septoria_leaf_spot_tomato.jpg",
+      "class_id": 2,
+      "class_name": "Tomato Septoria leaf spot",
+      "confidence": 0.533621,
+      "x": 17.42,
+      "y": 16.94,
+      "width": 275.34,
+      "height": 284.41
+    }
+  ]
+}

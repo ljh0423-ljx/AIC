@@ -1,0 +1,2 @@
+cd /root/autodl-tmp/AIC2026_AgriVision
+python -u scripts/train_cgacs.py -c configs/ppyoloe_plus_crn_s_100e_cgacs.yml --epoch 100 --det_batch 16 --cls_batch 16 --snapshot_epoch 5 --eval --cls_stream 1 --cls_workers 4 --seed 0 --save_dir experiments/direction5/S1_CG_ACS_100e/checkpoints --cls_index experiments/direction5/pv_cls_index.csv --log_file experiments/direction5/S1_CG_ACS_100e/train.log --vdl_log_dir experiments/direction5/S1_CG_ACS_100e/logs -o LearningRate.base_lr=0.002

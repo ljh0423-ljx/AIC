@@ -1,0 +1,27 @@
+{
+  "image_name": "TRAIN_000029_early-blight-of-tomato-tomato-1.jpg",
+  "total_targets": 2,
+  "inference_ms": 31.84,
+  "detections": [
+    {
+      "image_name": "TRAIN_000029_early-blight-of-tomato-tomato-1.jpg",
+      "class_id": 2,
+      "class_name": "Tomato Septoria leaf spot",
+      "confidence": 0.609751,
+      "x": 50.33,
+      "y": 9.36,
+      "width": 248.51,
+      "height": 272.39
+    },
+    {
+      "image_name": "TRAIN_000029_early-blight-of-tomato-tomato-1.jpg",
+      "class_id": 4,
+      "class_name": "Tomato leaf bacterial spot",
+      "confidence": 0.523734,
+      "x": 50.33,
+      "y": 9.36,
+      "width": 248.51,
+      "height": 272.39
+    }
+  ]
+}

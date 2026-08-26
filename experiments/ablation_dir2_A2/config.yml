@@ -1,0 +1,27 @@
+# ============================================================
+# A2 — Arm B(exiffix) + 统一固定 margin (同一类别对, 普通 margin 增强对照)
+# 唯一变量: 分类损失机制。与 A1 的类别对/实验设置完全相同, 仅 margin 统一固定。
+# 数据: dataset/processed_detection_exiffix | epoch=100 | bs=16 | lr=0.002 | seed=0
+# ============================================================
+_BASE_: [
+  './ppyoloe_plus_crn_s_100e_agrivision.yml',
+]
+
+epoch: 100
+
+LearningRate:
+  base_lr: 0.002   # bs=16 线性缩放 (0.001 * 16/8)
+
+TrainReader:
+  batch_size: 16
+
+EvalReader:
+  batch_size: 2
+
+# CGPM fixed: 与 A1 相同 pairs (同一 prior), 但 margin = margin_base 常量
+PPYOLOEHead:
+  use_cgpm: True
+  cgpm_mode: fixed
+  cgpm_prior_path: /root/autodl-tmp/AIC2026_AgriVision/experiments/direction2/confusion_prior_train_only.json
+  cgpm_lambda: 0.25
+  cgpm_margin_base: 0.2

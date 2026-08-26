@@ -1,0 +1,12 @@
+image_name,class_id,class_name,confidence,x,y,width,height
+TEST_000018_0605_Rust-induced_leafspot.jpg,11,Apple rust leaf,0.83604,0.4,7.89,304.56,175.95
+TEST_000079_9511.img.jpg,3,Tomato leaf,0.57168,276.97,176.73,136.67,130.35
+TEST_000079_9511.img.jpg,3,Tomato leaf,0.542335,276.0,175.86,93.33,131.56
+TEST_000079_9511.img.jpg,3,Tomato leaf,0.508498,46.24,266.97,72.76,125.47
+TEST_000106_depositphotos_3443387-stock-photo-the-green-grape-leaf-on.jpg,12,grape leaf,0.926409,186.02,55.4,574.21,553.14
+TRAIN_000004_apple_scab.jpg,9,Apple Scab Leaf,0.569851,166.68,105.84,104.96,87.61
+TRAIN_000029_early-blight-of-tomato-tomato-1.jpg,2,Tomato Septoria leaf spot,0.609751,50.33,9.36,248.51,272.39
+TRAIN_000029_early-blight-of-tomato-tomato-1.jpg,4,Tomato leaf bacterial spot,0.523734,50.33,9.36,248.51,272.39
+TRAIN_000037_Tomato+Problems+Septoria+Leaf+Spot.jpg,2,Tomato Septoria leaf spot,0.670609,71.03,184.91,209.86,188.58
+TRAIN_000037_Tomato+Problems+Septoria+Leaf+Spot.jpg,2,Tomato Septoria leaf spot,0.642136,19.9,429.08,186.8,185.91
+TRAIN_000040_Septoria_leaf_spot_tomato.jpg,2,Tomato Septoria leaf spot,0.533621,17.42,16.94,275.34,284.41

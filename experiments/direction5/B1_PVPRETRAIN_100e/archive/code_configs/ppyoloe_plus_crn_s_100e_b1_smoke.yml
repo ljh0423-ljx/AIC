@@ -1,0 +1,40 @@
+# ============================================================
+# PP-YOLOE+ B1 SMOKE TEST (2 epoch) — 仅用于验证加载/梯度/loss/VAL 管线
+# ============================================================
+# 与 B1 正式配置唯一差异: epoch=2 / snapshot_epoch=1 /
+# CosineDecay.max_epochs=2 / LinearWarmup.epochs=1 / weights 指向 smoke 输出。
+# 通过后即弃用, 正式训练使用 ppyoloe_plus_crn_s_100e_b1.yml。
+# ============================================================
+_BASE_: [
+  './datasets/agrivision_detection.yml',
+  '../PaddleDetection/configs/runtime.yml',
+  '../PaddleDetection/configs/ppyoloe/_base_/optimizer_80e.yml',
+  '../PaddleDetection/configs/ppyoloe/_base_/ppyoloe_plus_crn.yml',
+  '../PaddleDetection/configs/ppyoloe/_base_/ppyoloe_plus_reader.yml',
+]
+
+log_iter: 20
+snapshot_epoch: 1
+weights: output/ppyoloe_plus_crn_s_100e_b1_smoke/model_final
+
+# 预训练: 与 B1 正式配置相同的合并权重
+pretrain_weights: /root/autodl-tmp/AIC2026_AgriVision/experiments/direction5/B1_PVPRETRAIN_100e/merge/B1_pretrain_combined.pdparams
+depth_mult: 0.33
+width_mult: 0.50
+
+epoch: 2
+
+LearningRate:
+  base_lr: 0.001
+  schedulers:
+    - name: CosineDecay
+      max_epochs: 2
+    - name: LinearWarmup
+      start_factor: 0.
+      epochs: 1
+
+TrainReader:
+  batch_size: 8
+
+EvalReader:
+  batch_size: 2

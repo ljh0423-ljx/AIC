@@ -1,0 +1,40 @@
+WARNING: OMP_NUM_THREADS set to 12, not 1. The computation speed will not be optimized if you use data parallel. It will fail if this PaddlePaddle binary is compiled with OpenBlas since OpenBlas does not support multi-threads.
+PLEASE USE OMP_NUM_THREADS WISELY.
+Warning: Unable to use numba in PP-Tracking, please install numba, for example(python3.7): `pip install numba==0.56.4`
+Warning: Unable to use numba in PP-Tracking, please install numba, for example(python3.7): `pip install numba==0.56.4`
+[08/15 19:58:39] ppdet.utils.checkpoint INFO: Skipping import of the encryption module.
+W0815 19:58:39.908880 375223 gpu_resources.cc:119] Please NOTE: device: 0, GPU Compute Capability: 8.9, Driver API Version: 13.0, Runtime API Version: 11.8
+W0815 19:58:39.909596 375223 gpu_resources.cc:164] device: 0, cuDNN Version: 9.1.
+=== [1] use_cls_weight 默认关闭 / A0 行为与原始 VFL 一致 ===
+  head_off.use_cls_weight = False
+  head_off.cls_weight    = None
+  off loss     = 46.093616
+  off 参考公式  = 46.093620   Δ=3.81e-06
+  ✅ 默认关闭, 与原始 VFL 逐元素一致
+=== [2] weighted VFL == w_c 手动加权参考 ===
+  on  loss     = 46.767639
+  on  参考公式  = 46.767635   Δ=3.81e-06
+  on−off = 0.674023  (≠0 → 权重确实改变 loss)
+  ✅ 仅乘 cls_weight[None,None,:]; assigned_scores.sum() 归一化代码未动 (见 grep)
+=== [3] class_id 对齐校验 (逐类单正样本, 与含负样本的全参考对比) ===
+  cat_id  1 (idx  0) Tomato Early blight leaf     w=1.1043  实测=43.574593 参考=43.574593  ✅
+  cat_id  2 (idx  1) Tomato Septoria leaf spot    w=0.5587  实测=43.141273 参考=43.141281  ✅
+  cat_id  3 (idx  2) Tomato leaf                  w=0.6423  实测=43.292030 参考=43.292030  ✅
+  cat_id  4 (idx  3) Tomato leaf bacterial spot   w=0.8319  实测=43.450150 参考=43.450153  ✅
+  cat_id  5 (idx  4) Tomato leaf late blight      w=1.1876  实测=43.872910 参考=43.872910  ✅
+  cat_id  6 (idx  5) Tomato leaf mosaic virus     w=0.9079  实测=43.321503 参考=43.321507  ✅
+  cat_id  7 (idx  6) Tomato leaf yellow virus     w=0.2698  实测=43.227951 参考=43.227959  ✅
+  cat_id  8 (idx  7) Tomato mold leaf             w=0.7901  实测=42.864754 参考=42.864761  ✅
+  cat_id  9 (idx  8) Apple Scab Leaf              w=1.5107  实测=42.392387 参考=42.392387  ✅
+  cat_id 10 (idx  9) Apple leaf                   w=0.9684  实测=43.788460 参考=43.788460  ✅
+  cat_id 11 (idx 10) Apple rust leaf              w=1.2673  实测=43.058060 参考=43.058060  ✅
+  cat_id 12 (idx 11) grape leaf                   w=1.0915  实测=43.606628 参考=43.606628  ✅
+  cat_id 13 (idx 12) grape leaf black rot         w=1.8696  实测=43.876808 参考=43.876808  ✅
+  ✅ class_id 0~12 ↔ category_id 1~13 严格一致 (索引即权重下标)
+=== [4] class weight 进入梯度 (非未用变量) ===
+  逐类 |grad| = [3.25   1.6442 1.8903 2.4483 3.4953 2.6719 0.7939 2.3253 4.446  2.85
+ 3.7299 3.2125 5.5025]
+  |grad| 与 w_c 相关系数 = 1.0000
+  ✅ class weight 进入梯度计算, 逐类反向梯度 ∝ w_c, 真实传导
+
+=== ALL CHECKS PASSED ===

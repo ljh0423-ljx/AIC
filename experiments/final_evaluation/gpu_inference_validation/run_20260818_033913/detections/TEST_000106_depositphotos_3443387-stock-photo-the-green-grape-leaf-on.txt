@@ -1,0 +1,3 @@
+image: TEST_000106_depositphotos_3443387-stock-photo-the-green-grape-leaf-on.jpg
+total_targets: 1
+  class_id=12 name=grape leaf count=1 avg_conf=0.9264

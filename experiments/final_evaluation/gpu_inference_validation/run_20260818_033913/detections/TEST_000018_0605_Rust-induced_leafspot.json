@@ -1,0 +1,17 @@
+{
+  "image_name": "TEST_000018_0605_Rust-induced_leafspot.jpg",
+  "total_targets": 1,
+  "inference_ms": 31.64,
+  "detections": [
+    {
+      "image_name": "TEST_000018_0605_Rust-induced_leafspot.jpg",
+      "class_id": 11,
+      "class_name": "Apple rust leaf",
+      "confidence": 0.83604,
+      "x": 0.4,
+      "y": 7.89,
+      "width": 304.56,
+      "height": 175.95
+    }
+  ]
+}

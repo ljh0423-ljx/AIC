@@ -1,0 +1,65 @@
+PP-YOLOE+-s Baseline v1 — 数据准备记录
+==================================================
+日期: 2026-08-14
+记录人: AutoDL 训练流程 (Claude)
+
+一、原始数据集检查结论 (dataset/processed_detection, 只读, 未做任何修改)
+--------------------------------------------------
+符合预期:
+  train=916 / val=114 / test=114 / 总计 1144 张
+  总目标数 3861 (train 3084 + val 354 + test 423)
+  类别数 13, COCO category_id 1~13, 与 label_list.txt 名称逐一对齐
+  train/val/test 无交集; 图片与标签一一对应; bbox 全部合法
+  YOLO txt 与 COCO 标注交叉比对 0 差异
+
+差异 (与预期不符, 按规程未擅自修改原始数据):
+  存在 2 张 0 字节损坏图片 (PIL 无法打开, 无系统内备份可恢复):
+    [train] TRAIN_000133_apple-tree-branch-blossom-plant-fruit-berry-leaf-flower-food-green-
+            produce-evergreen-flora-sad-shrub-apples-branch-with-apples-flowering-plant-rose-
+            family-acerola-malpighia-woody-plant-land-plant-928225.jpg
+            对应 COCO image_id=208, 5 个标注 (cat=10 Apple leaf), 空 txt
+    [val]   TRAIN_000104_nature-plant-grape-vine-wine-fruit-food-green-produce-agriculture-
+            grapevine-vines-shrub-grapes-winegrowing-rebstock-flowering-plant-vitis-grape-
+            leaves-green-grapes-swiss-francs-land-plant-grapevine-family-556232.jpg
+            对应 COCO image_id=109, 4 个标注 (cat=12 grape leaf), 空 txt
+  影响: PaddleDetection 用 cv2.imread 读图, 0 字节文件返回 None, 训练/验证遇之必崩。
+
+二、处理决策 (用户确认: 建清洁副本训练)
+--------------------------------------------------
+  dataset/processed_detection_clean = processed_detection 的清洁副本:
+    - 图像/标签: 硬链接复制 (零额外空间, 副本内删除不影响原件)
+    - 标注 JSON: 普通复制后重写 (train/val 移除上述 2 图及对应标注)
+    - 原始 processed_detection 保持 100% 原样
+
+  清洁副本最终统计:
+    train=915 / val=113 / test=114 / 总计 1142 张
+    总目标数 3852 (train 3079 + val 350 + test 423)
+    复检全部通过: 无交集 / 图片-标签-标注一一对应 / 无损坏图 / 无空标签 /
+                  bbox 全合法 / YOLO txt 与 COCO 一致
+
+三、脚本改动 (指向清洁副本, 软链名不变 dataset/processed_detection)
+--------------------------------------------------
+  scripts/train_baseline.sh : DS=dataset/processed_detection_clean
+  scripts/eval_baseline.sh  : 软链 -> processed_detection_clean
+  scripts/infer_baseline.sh : 软链 -> processed_detection_clean
+  配置文件 configs/** 与 PaddleDetection/dataset/processed_detection 软链名不变,
+  训练/评估无需改动配置即可使用清洁副本。
+
+四、EXIF 旋转数据质量项 (追加记录 2026-08-14)
+--------------------------------------------------
+  检查发现 11 张 (0.96%) 图像标注尺寸与实际像素宽高对调:
+    例: 标注 (3264,2448), cv2 实际 (2448,3264) — EXIF 旋转未烘焙进像素。
+  cv2.imread 不应用 EXIF 旋转 → 这 11 张的 bbox 与内容存在 90° 错位风险。
+  训练管线仅更新 sample h/w, 不转置 bbox (ppdet.data.transform.operators 警告)。
+  用户决策: 保持现状, 仅记录 (严格 Baseline, 不修改数据)。作为已知噪声接受。
+  影响: 11/1142 ≈ 0.96% 训练监督信号错位, 预期对 mAP 影响极小。
+  涉及图像清单 (train/val 分布): 见下 (由 cv2 尺寸≠标注尺寸定位):
+    train: TEST_000185_20130610_110514 / TEST_000266_Shoemaker_7068.JPG /
+           TRAIN_000172_20130802_111648 / TRAIN_000198_20130610_110525 /
+           TRAIN_000225_early-blight-in-high-tunnel-tomatoes / TRAIN_000325_tomato-septoria-3 ...
+  (完整清单可复现: cv2.imread 尺寸 != COCO 标注宽高 的图像)
+
+五、复现提示
+--------------------------------------------------
+  若要复现"清洁副本"构建: 上述损坏图由文件大小=0 定位, JSON 按 image_id 移除。
+  若未来获得这两张图的真实备份, 可回填原始 processed_detection 恢复到 1144 张。

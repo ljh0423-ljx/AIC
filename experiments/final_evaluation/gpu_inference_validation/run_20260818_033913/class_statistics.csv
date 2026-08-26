@@ -1,0 +1,7 @@
+class_id,class_name,num_images,num_targets,avg_confidence,max_confidence
+2,Tomato Septoria leaf spot,3,4,0.614029,0.670609
+3,Tomato leaf,1,3,0.540838,0.57168
+4,Tomato leaf bacterial spot,1,1,0.523734,0.523734
+9,Apple Scab Leaf,1,1,0.569851,0.569851
+11,Apple rust leaf,1,1,0.83604,0.83604
+12,grape leaf,1,1,0.926409,0.926409

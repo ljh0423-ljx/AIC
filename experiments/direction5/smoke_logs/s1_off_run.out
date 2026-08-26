@@ -1,0 +1,265 @@
+WARNING: OMP_NUM_THREADS set to 12, not 1. The computation speed will not be optimized if you use data parallel. It will fail if this PaddlePaddle binary is compiled with OpenBlas since OpenBlas does not support multi-threads.
+PLEASE USE OMP_NUM_THREADS WISELY.
+Warning: Unable to use numba in PP-Tracking, please install numba, for example(python3.7): `pip install numba==0.56.4`
+Warning: Unable to use numba in PP-Tracking, please install numba, for example(python3.7): `pip install numba==0.56.4`
+[08/16 18:59:25] ppdet.utils.checkpoint INFO: Skipping import of the encryption module.
+=== S1 CG-ACS dual-stream train (stage-0 smoke) ===
+config: /root/autodl-tmp/AIC2026_AgriVision/configs/ppyoloe_plus_crn_s_2e_smoke.yml | aux_cls_head: False | cls_stream: False | seed: 0
+det_batch: 8 | cls_batch: 8 | epoch: 2
+W0816 18:59:25.957597 12927 gpu_resources.cc:119] Please NOTE: device: 0, GPU Compute Capability: 8.9, Driver API Version: 13.0, Runtime API Version: 11.8
+W0816 18:59:25.958526 12927 gpu_resources.cc:164] device: 0, cuDNN Version: 9.1.
+[08/16 18:59:26] ppdet.utils.checkpoint INFO: The shape [365] in pretrained weight yolo_head.pred_cls.0.bias is unmatched with the shape [13] in model yolo_head.pred_cls.0.bias. And the weight yolo_head.pred_cls.0.bias will not be loaded
+[08/16 18:59:26] ppdet.utils.checkpoint INFO: The shape [365, 384, 3, 3] in pretrained weight yolo_head.pred_cls.0.weight is unmatched with the shape [13, 384, 3, 3] in model yolo_head.pred_cls.0.weight. And the weight yolo_head.pred_cls.0.weight will not be loaded
+[08/16 18:59:26] ppdet.utils.checkpoint INFO: The shape [365] in pretrained weight yolo_head.pred_cls.1.bias is unmatched with the shape [13] in model yolo_head.pred_cls.1.bias. And the weight yolo_head.pred_cls.1.bias will not be loaded
+[08/16 18:59:26] ppdet.utils.checkpoint INFO: The shape [365, 192, 3, 3] in pretrained weight yolo_head.pred_cls.1.weight is unmatched with the shape [13, 192, 3, 3] in model yolo_head.pred_cls.1.weight. And the weight yolo_head.pred_cls.1.weight will not be loaded
+[08/16 18:59:26] ppdet.utils.checkpoint INFO: The shape [365] in pretrained weight yolo_head.pred_cls.2.bias is unmatched with the shape [13] in model yolo_head.pred_cls.2.bias. And the weight yolo_head.pred_cls.2.bias will not be loaded
+[08/16 18:59:26] ppdet.utils.checkpoint INFO: The shape [365, 96, 3, 3] in pretrained weight yolo_head.pred_cls.2.weight is unmatched with the shape [13, 96, 3, 3] in model yolo_head.pred_cls.2.weight. And the weight yolo_head.pred_cls.2.weight will not be loaded
+[08/16 18:59:26] ppdet.utils.checkpoint INFO: Finish loading model weights: /root/.cache/paddle/weights/ppyoloe_crn_s_obj365_pretrained.pdparams
+[model] loaded pretrain: https://bj.bcebos.com/v1/paddledet/models/pretrained/ppyoloe_crn_s_obj365_pretrained.pdparams
+[model] total trainable params: Tensor(shape=[], dtype=int64, place=Place(gpu:0), stop_gradient=True,
+       7700106)
+loading annotations into memory...
+Done (t=0.01s)
+creating index...
+index created!
+[08/16 18:59:26] ppdet.data.source.coco INFO: Load [915 samples valid, 0 samples invalid] in file dataset/processed_detection/annotations/train.json.
+[det-loader] samples: 915 | steps/epoch: 114
+[ema] enabled decay=0.9998
+--- epoch 0 start (steps/epoch=114) ---
+[epoch 0 step 0/114] lr=0.000000 det:loss=4.70893 | loss_cls=2.98629 | loss_iou=0.36219 | loss_dfl=1.63431 | loss_l1=1.27569 | det_total=4.70893 | finite=True
+[epoch 0 step 1/114] lr=0.000009 det:loss=4.80562 | loss_cls=3.54856 | loss_iou=0.23714 | loss_dfl=1.32844 | loss_l1=0.71158 | det_total=4.80562 | finite=True
+[epoch 0 step 2/114] lr=0.000018 det:loss=4.77294 | loss_cls=2.90937 | loss_iou=0.38656 | loss_dfl=1.79432 | loss_l1=1.44969 | det_total=4.77294 | finite=True
+[epoch 0 step 3/114] lr=0.000026 det:loss=4.91125 | loss_cls=3.39409 | loss_iou=0.26990 | loss_dfl=1.68481 | loss_l1=1.84285 | det_total=4.91125 | finite=True
+[epoch 0 step 4/114] lr=0.000035 det:loss=4.66108 | loss_cls=3.38836 | loss_iou=0.27038 | loss_dfl=1.19352 | loss_l1=0.91155 | det_total=4.66108 | finite=True
+[epoch 0 step 5/114] lr=0.000044 det:loss=4.70496 | loss_cls=2.86997 | loss_iou=0.38878 | loss_dfl=1.72610 | loss_l1=1.33693 | det_total=4.70496 | finite=True
+[epoch 0 step 6/114] lr=0.000053 det:loss=4.59014 | loss_cls=2.84525 | loss_iou=0.39375 | loss_dfl=1.52106 | loss_l1=1.13100 | det_total=4.59014 | finite=True
+[epoch 0 step 7/114] lr=0.000061 det:loss=4.59619 | loss_cls=3.46017 | loss_iou=0.25475 | loss_dfl=0.99827 | loss_l1=0.47238 | det_total=4.59619 | finite=True
+[epoch 0 step 8/114] lr=0.000070 det:loss=4.83254 | loss_cls=3.15752 | loss_iou=0.31962 | loss_dfl=1.75195 | loss_l1=1.26652 | det_total=4.83254 | finite=True
+[epoch 0 step 9/114] lr=0.000079 det:loss=4.62859 | loss_cls=2.74995 | loss_iou=0.42815 | loss_dfl=1.61655 | loss_l1=1.11924 | det_total=4.62859 | finite=True
+[epoch 0 step 10/114] lr=0.000088 det:loss=4.64594 | loss_cls=3.21746 | loss_iou=0.29918 | loss_dfl=1.36108 | loss_l1=0.95128 | det_total=4.64594 | finite=True
+[epoch 0 step 11/114] lr=0.000096 det:loss=4.44726 | loss_cls=2.63218 | loss_iou=0.44903 | loss_dfl=1.38499 | loss_l1=0.86492 | det_total=4.44726 | finite=True
+[epoch 0 step 12/114] lr=0.000105 det:loss=4.70466 | loss_cls=3.60956 | loss_iou=0.19601 | loss_dfl=1.21013 | loss_l1=0.55025 | det_total=4.70466 | finite=True
+[epoch 0 step 13/114] lr=0.000114 det:loss=4.39589 | loss_cls=3.05415 | loss_iou=0.31299 | loss_dfl=1.11854 | loss_l1=0.64188 | det_total=4.39589 | finite=True
+[epoch 0 step 14/114] lr=0.000123 det:loss=4.51975 | loss_cls=3.61976 | loss_iou=0.16600 | loss_dfl=0.97000 | loss_l1=0.41302 | det_total=4.51975 | finite=True
+[epoch 0 step 15/114] lr=0.000132 det:loss=4.65691 | loss_cls=3.21848 | loss_iou=0.24781 | loss_dfl=1.63780 | loss_l1=0.99140 | det_total=4.65691 | finite=True
+[epoch 0 step 16/114] lr=0.000140 det:loss=4.45394 | loss_cls=3.36883 | loss_iou=0.20268 | loss_dfl=1.15681 | loss_l1=0.62974 | det_total=4.45394 | finite=True
+[epoch 0 step 17/114] lr=0.000149 det:loss=4.33588 | loss_cls=2.75745 | loss_iou=0.33655 | loss_dfl=1.47411 | loss_l1=0.84641 | det_total=4.33588 | finite=True
+[epoch 0 step 18/114] lr=0.000158 det:loss=4.15636 | loss_cls=2.82820 | loss_iou=0.26645 | loss_dfl=1.32408 | loss_l1=0.74191 | det_total=4.15636 | finite=True
+[epoch 0 step 19/114] lr=0.000167 det:loss=4.29095 | loss_cls=3.23304 | loss_iou=0.17764 | loss_dfl=1.22764 | loss_l1=0.58747 | det_total=4.29095 | finite=True
+[epoch 0 step 20/114] lr=0.000175 det:loss=4.26905 | loss_cls=2.72163 | loss_iou=0.28238 | loss_dfl=1.68292 | loss_l1=1.12228 | det_total=4.26905 | finite=True
+[epoch 0 step 21/114] lr=0.000184 det:loss=4.02138 | loss_cls=2.80123 | loss_iou=0.25300 | loss_dfl=1.17529 | loss_l1=0.66373 | det_total=4.02138 | finite=True
+[epoch 0 step 22/114] lr=0.000193 det:loss=3.99041 | loss_cls=2.74269 | loss_iou=0.21478 | loss_dfl=1.42155 | loss_l1=0.65925 | det_total=3.99041 | finite=True
+[epoch 0 step 23/114] lr=0.000202 det:loss=3.85006 | loss_cls=2.47520 | loss_iou=0.29670 | loss_dfl=1.26619 | loss_l1=0.69533 | det_total=3.85006 | finite=True
+[epoch 0 step 24/114] lr=0.000211 det:loss=3.69245 | loss_cls=2.44761 | loss_iou=0.23119 | loss_dfl=1.33376 | loss_l1=0.81855 | det_total=3.69245 | finite=True
+[epoch 0 step 25/114] lr=0.000219 det:loss=4.21393 | loss_cls=2.94969 | loss_iou=0.23860 | loss_dfl=1.33551 | loss_l1=0.64905 | det_total=4.21393 | finite=True
+[epoch 0 step 26/114] lr=0.000228 det:loss=3.85948 | loss_cls=2.58539 | loss_iou=0.23612 | loss_dfl=1.36760 | loss_l1=0.72189 | det_total=3.85948 | finite=True
+[epoch 0 step 27/114] lr=0.000237 det:loss=3.88379 | loss_cls=2.62366 | loss_iou=0.25778 | loss_dfl=1.23134 | loss_l1=0.66071 | det_total=3.88379 | finite=True
+[epoch 0 step 28/114] lr=0.000246 det:loss=3.97227 | loss_cls=2.77434 | loss_iou=0.23763 | loss_dfl=1.20769 | loss_l1=0.81130 | det_total=3.97227 | finite=True
+[epoch 0 step 29/114] lr=0.000254 det:loss=3.31207 | loss_cls=2.27965 | loss_iou=0.20593 | loss_dfl=1.03518 | loss_l1=0.51418 | det_total=3.31207 | finite=True
+[epoch 0 step 30/114] lr=0.000263 det:loss=3.98143 | loss_cls=2.43441 | loss_iou=0.31077 | loss_dfl=1.54020 | loss_l1=1.04264 | det_total=3.98143 | finite=True
+[epoch 0 step 31/114] lr=0.000272 det:loss=4.23704 | loss_cls=2.83292 | loss_iou=0.29528 | loss_dfl=1.33185 | loss_l1=0.71452 | det_total=4.23704 | finite=True
+[epoch 0 step 32/114] lr=0.000281 det:loss=3.59695 | loss_cls=2.32739 | loss_iou=0.27028 | loss_dfl=1.18771 | loss_l1=1.10249 | det_total=3.59695 | finite=True
+[epoch 0 step 33/114] lr=0.000289 det:loss=3.57202 | loss_cls=2.43966 | loss_iou=0.22599 | loss_dfl=1.13478 | loss_l1=0.56688 | det_total=3.57202 | finite=True
+[epoch 0 step 34/114] lr=0.000298 det:loss=3.69258 | loss_cls=2.38353 | loss_iou=0.28007 | loss_dfl=1.21775 | loss_l1=0.61760 | det_total=3.69258 | finite=True
+[epoch 0 step 35/114] lr=0.000307 det:loss=3.49510 | loss_cls=2.37965 | loss_iou=0.23171 | loss_dfl=1.07233 | loss_l1=0.48104 | det_total=3.49510 | finite=True
+[epoch 0 step 36/114] lr=0.000316 det:loss=4.13432 | loss_cls=2.74387 | loss_iou=0.27405 | loss_dfl=1.41064 | loss_l1=1.37543 | det_total=4.13432 | finite=True
+[epoch 0 step 37/114] lr=0.000325 det:loss=3.09674 | loss_cls=2.02506 | loss_iou=0.23590 | loss_dfl=0.96384 | loss_l1=0.47757 | det_total=3.09674 | finite=True
+[epoch 0 step 38/114] lr=0.000333 det:loss=3.85643 | loss_cls=2.52821 | loss_iou=0.26136 | loss_dfl=1.34964 | loss_l1=0.92198 | det_total=3.85643 | finite=True
+[epoch 0 step 39/114] lr=0.000342 det:loss=3.92583 | loss_cls=2.55787 | loss_iou=0.29810 | loss_dfl=1.24542 | loss_l1=0.67352 | det_total=3.92583 | finite=True
+[epoch 0 step 40/114] lr=0.000351 det:loss=3.36863 | loss_cls=2.26243 | loss_iou=0.21330 | loss_dfl=1.14592 | loss_l1=0.62135 | det_total=3.36863 | finite=True
+[epoch 0 step 41/114] lr=0.000360 det:loss=3.48586 | loss_cls=2.21993 | loss_iou=0.27161 | loss_dfl=1.17383 | loss_l1=0.55398 | det_total=3.48586 | finite=True
+[epoch 0 step 42/114] lr=0.000368 det:loss=3.61842 | loss_cls=2.46301 | loss_iou=0.25443 | loss_dfl=1.03869 | loss_l1=0.48344 | det_total=3.61842 | finite=True
+[epoch 0 step 43/114] lr=0.000377 det:loss=3.49685 | loss_cls=2.30100 | loss_iou=0.27359 | loss_dfl=1.02376 | loss_l1=0.49908 | det_total=3.49685 | finite=True
+[epoch 0 step 44/114] lr=0.000386 det:loss=3.26256 | loss_cls=2.23325 | loss_iou=0.19079 | loss_dfl=1.10465 | loss_l1=0.44048 | det_total=3.26256 | finite=True
+[epoch 0 step 45/114] lr=0.000395 det:loss=3.60274 | loss_cls=2.35959 | loss_iou=0.25609 | loss_dfl=1.20584 | loss_l1=0.57952 | det_total=3.60274 | finite=True
+[epoch 0 step 46/114] lr=0.000404 det:loss=3.14548 | loss_cls=2.08536 | loss_iou=0.21699 | loss_dfl=1.03529 | loss_l1=0.52443 | det_total=3.14548 | finite=True
+[epoch 0 step 47/114] lr=0.000412 det:loss=3.16351 | loss_cls=2.23124 | loss_iou=0.16469 | loss_dfl=1.04109 | loss_l1=0.46410 | det_total=3.16351 | finite=True
+[epoch 0 step 48/114] lr=0.000421 det:loss=3.84156 | loss_cls=2.37244 | loss_iou=0.30126 | loss_dfl=1.43194 | loss_l1=0.73274 | det_total=3.84156 | finite=True
+[epoch 0 step 49/114] lr=0.000430 det:loss=3.58771 | loss_cls=2.44283 | loss_iou=0.25416 | loss_dfl=1.01896 | loss_l1=0.52232 | det_total=3.58771 | finite=True
+[epoch 0 step 50/114] lr=0.000439 det:loss=3.59555 | loss_cls=2.26081 | loss_iou=0.26288 | loss_dfl=1.35507 | loss_l1=0.73551 | det_total=3.59555 | finite=True
+[epoch 0 step 51/114] lr=0.000447 det:loss=3.93870 | loss_cls=2.43805 | loss_iou=0.29021 | loss_dfl=1.55026 | loss_l1=1.16932 | det_total=3.93870 | finite=True
+[epoch 0 step 52/114] lr=0.000456 det:loss=3.46959 | loss_cls=1.98684 | loss_iou=0.32283 | loss_dfl=1.35135 | loss_l1=0.74116 | det_total=3.46959 | finite=True
+[epoch 0 step 53/114] lr=0.000465 det:loss=3.48579 | loss_cls=2.09316 | loss_iou=0.26401 | loss_dfl=1.46521 | loss_l1=1.00003 | det_total=3.48579 | finite=True
+[epoch 0 step 54/114] lr=0.000474 det:loss=3.21481 | loss_cls=2.04036 | loss_iou=0.24275 | loss_dfl=1.13517 | loss_l1=0.68155 | det_total=3.21481 | finite=True
+[epoch 0 step 55/114] lr=0.000482 det:loss=3.27867 | loss_cls=1.99690 | loss_iou=0.22916 | loss_dfl=1.41773 | loss_l1=1.01252 | det_total=3.27867 | finite=True
+[epoch 0 step 56/114] lr=0.000491 det:loss=3.43564 | loss_cls=2.25086 | loss_iou=0.22638 | loss_dfl=1.23768 | loss_l1=0.78285 | det_total=3.43564 | finite=True
+[epoch 0 step 57/114] lr=0.000500 det:loss=3.77922 | loss_cls=2.28213 | loss_iou=0.35094 | loss_dfl=1.23949 | loss_l1=0.78470 | det_total=3.77922 | finite=True
+[epoch 0 step 58/114] lr=0.000509 det:loss=3.36440 | loss_cls=2.05176 | loss_iou=0.25748 | loss_dfl=1.33789 | loss_l1=0.78819 | det_total=3.36440 | finite=True
+[epoch 0 step 59/114] lr=0.000518 det:loss=3.01151 | loss_cls=2.08980 | loss_iou=0.18812 | loss_dfl=0.90284 | loss_l1=0.49248 | det_total=3.01151 | finite=True
+[epoch 0 step 60/114] lr=0.000526 det:loss=3.52249 | loss_cls=2.19402 | loss_iou=0.24144 | loss_dfl=1.44975 | loss_l1=1.09680 | det_total=3.52249 | finite=True
+[epoch 0 step 61/114] lr=0.000535 det:loss=3.38145 | loss_cls=2.33286 | loss_iou=0.18560 | loss_dfl=1.16921 | loss_l1=0.56663 | det_total=3.38145 | finite=True
+[epoch 0 step 62/114] lr=0.000544 det:loss=3.26371 | loss_cls=2.13237 | loss_iou=0.21960 | loss_dfl=1.16467 | loss_l1=0.82568 | det_total=3.26371 | finite=True
+[epoch 0 step 63/114] lr=0.000553 det:loss=3.87445 | loss_cls=2.31020 | loss_iou=0.28785 | loss_dfl=1.68923 | loss_l1=1.74233 | det_total=3.87445 | finite=True
+[epoch 0 step 64/114] lr=0.000561 det:loss=3.40951 | loss_cls=2.09827 | loss_iou=0.28989 | loss_dfl=1.17301 | loss_l1=0.76849 | det_total=3.40951 | finite=True
+[epoch 0 step 65/114] lr=0.000570 det:loss=3.57195 | loss_cls=2.02665 | loss_iou=0.30087 | loss_dfl=1.58625 | loss_l1=1.11155 | det_total=3.57195 | finite=True
+[epoch 0 step 66/114] lr=0.000579 det:loss=3.42856 | loss_cls=2.27406 | loss_iou=0.23118 | loss_dfl=1.15310 | loss_l1=0.53248 | det_total=3.42856 | finite=True
+[epoch 0 step 67/114] lr=0.000588 det:loss=3.40408 | loss_cls=1.90491 | loss_iou=0.29091 | loss_dfl=1.54379 | loss_l1=1.18478 | det_total=3.40408 | finite=True
+[epoch 0 step 68/114] lr=0.000596 det:loss=3.36449 | loss_cls=1.92664 | loss_iou=0.29608 | loss_dfl=1.39531 | loss_l1=0.87884 | det_total=3.36449 | finite=True
+[epoch 0 step 69/114] lr=0.000605 det:loss=3.39360 | loss_cls=2.19744 | loss_iou=0.22571 | loss_dfl=1.26376 | loss_l1=0.70057 | det_total=3.39360 | finite=True
+[epoch 0 step 70/114] lr=0.000614 det:loss=3.86687 | loss_cls=2.19315 | loss_iou=0.37381 | loss_dfl=1.47842 | loss_l1=0.96936 | det_total=3.86687 | finite=True
+[epoch 0 step 71/114] lr=0.000623 det:loss=3.77640 | loss_cls=2.23633 | loss_iou=0.30857 | loss_dfl=1.53732 | loss_l1=1.27603 | det_total=3.77640 | finite=True
+[epoch 0 step 72/114] lr=0.000632 det:loss=3.17431 | loss_cls=1.95445 | loss_iou=0.25839 | loss_dfl=1.14776 | loss_l1=0.62436 | det_total=3.17431 | finite=True
+[epoch 0 step 73/114] lr=0.000640 det:loss=3.36830 | loss_cls=2.01295 | loss_iou=0.26378 | loss_dfl=1.39182 | loss_l1=0.88491 | det_total=3.36830 | finite=True
+[epoch 0 step 74/114] lr=0.000649 det:loss=3.35987 | loss_cls=2.31420 | loss_iou=0.20426 | loss_dfl=1.07004 | loss_l1=0.52629 | det_total=3.35987 | finite=True
+[epoch 0 step 75/114] lr=0.000658 det:loss=3.82159 | loss_cls=2.35585 | loss_iou=0.34721 | loss_dfl=1.19540 | loss_l1=0.70197 | det_total=3.82159 | finite=True
+[epoch 0 step 76/114] lr=0.000667 det:loss=4.71893 | loss_cls=2.86538 | loss_iou=0.38285 | loss_dfl=1.79285 | loss_l1=1.22496 | det_total=4.71893 | finite=True
+[epoch 0 step 77/114] lr=0.000675 det:loss=3.59529 | loss_cls=1.92116 | loss_iou=0.35660 | loss_dfl=1.56528 | loss_l1=1.17401 | det_total=3.59529 | finite=True
+[epoch 0 step 78/114] lr=0.000684 det:loss=3.95222 | loss_cls=2.34460 | loss_iou=0.33394 | loss_dfl=1.54552 | loss_l1=1.02786 | det_total=3.95222 | finite=True
+[epoch 0 step 79/114] lr=0.000693 det:loss=4.12259 | loss_cls=2.15327 | loss_iou=0.41324 | loss_dfl=1.87243 | loss_l1=1.28865 | det_total=4.12259 | finite=True
+[epoch 0 step 80/114] lr=0.000702 det:loss=3.61351 | loss_cls=1.81242 | loss_iou=0.41203 | loss_dfl=1.54204 | loss_l1=1.00432 | det_total=3.61351 | finite=True
+[epoch 0 step 81/114] lr=0.000711 det:loss=4.09535 | loss_cls=2.14559 | loss_iou=0.43577 | loss_dfl=1.72068 | loss_l1=1.17366 | det_total=4.09535 | finite=True
+[epoch 0 step 82/114] lr=0.000719 det:loss=4.20448 | loss_cls=2.71765 | loss_iou=0.29156 | loss_dfl=1.51589 | loss_l1=1.63622 | det_total=4.20448 | finite=True
+[epoch 0 step 83/114] lr=0.000728 det:loss=3.74740 | loss_cls=2.39832 | loss_iou=0.27729 | loss_dfl=1.31170 | loss_l1=0.78956 | det_total=3.74740 | finite=True
+[epoch 0 step 84/114] lr=0.000737 det:loss=3.99643 | loss_cls=2.32424 | loss_iou=0.34362 | loss_dfl=1.62628 | loss_l1=1.02414 | det_total=3.99643 | finite=True
+[epoch 0 step 85/114] lr=0.000746 det:loss=4.28604 | loss_cls=2.65087 | loss_iou=0.36332 | loss_dfl=1.45377 | loss_l1=1.13903 | det_total=4.28604 | finite=True
+[epoch 0 step 86/114] lr=0.000754 det:loss=3.84588 | loss_cls=2.29654 | loss_iou=0.28098 | loss_dfl=1.69382 | loss_l1=1.13324 | det_total=3.84588 | finite=True
+[epoch 0 step 87/114] lr=0.000763 det:loss=3.42433 | loss_cls=2.00415 | loss_iou=0.31416 | loss_dfl=1.26956 | loss_l1=0.90691 | det_total=3.42433 | finite=True
+[epoch 0 step 88/114] lr=0.000772 det:loss=3.83951 | loss_cls=2.42821 | loss_iou=0.29437 | loss_dfl=1.35076 | loss_l1=0.94769 | det_total=3.83951 | finite=True
+[epoch 0 step 89/114] lr=0.000781 det:loss=4.33070 | loss_cls=2.59074 | loss_iou=0.36867 | loss_dfl=1.63656 | loss_l1=1.04724 | det_total=4.33070 | finite=True
+[epoch 0 step 90/114] lr=0.000789 det:loss=3.90512 | loss_cls=2.49516 | loss_iou=0.32460 | loss_dfl=1.19690 | loss_l1=0.82072 | det_total=3.90512 | finite=True
+[epoch 0 step 91/114] lr=0.000798 det:loss=3.55373 | loss_cls=2.04208 | loss_iou=0.35353 | loss_dfl=1.25566 | loss_l1=0.95674 | det_total=3.55373 | finite=True
+[epoch 0 step 92/114] lr=0.000807 det:loss=3.66683 | loss_cls=2.13654 | loss_iou=0.31672 | loss_dfl=1.47698 | loss_l1=1.24681 | det_total=3.66683 | finite=True
+[epoch 0 step 93/114] lr=0.000816 det:loss=3.81722 | loss_cls=2.30556 | loss_iou=0.30204 | loss_dfl=1.51315 | loss_l1=0.87300 | det_total=3.81722 | finite=True
+[epoch 0 step 94/114] lr=0.000825 det:loss=3.77158 | loss_cls=1.98352 | loss_iou=0.33065 | loss_dfl=1.92289 | loss_l1=1.45152 | det_total=3.77158 | finite=True
+[epoch 0 step 95/114] lr=0.000833 det:loss=4.08060 | loss_cls=2.55757 | loss_iou=0.29801 | loss_dfl=1.55603 | loss_l1=1.32342 | det_total=4.08060 | finite=True
+[epoch 0 step 96/114] lr=0.000842 det:loss=3.29508 | loss_cls=2.19403 | loss_iou=0.18504 | loss_dfl=1.27691 | loss_l1=0.72070 | det_total=3.29508 | finite=True
+[epoch 0 step 97/114] lr=0.000851 det:loss=3.90347 | loss_cls=2.23515 | loss_iou=0.37465 | loss_dfl=1.46338 | loss_l1=0.99834 | det_total=3.90347 | finite=True
+[epoch 0 step 98/114] lr=0.000860 det:loss=3.81006 | loss_cls=2.41803 | loss_iou=0.29868 | loss_dfl=1.29064 | loss_l1=0.70971 | det_total=3.81006 | finite=True
+[epoch 0 step 99/114] lr=0.000868 det:loss=3.60404 | loss_cls=2.05723 | loss_iou=0.32904 | loss_dfl=1.44840 | loss_l1=1.10151 | det_total=3.60404 | finite=True
+[epoch 0 step 100/114] lr=0.000877 det:loss=3.85985 | loss_cls=2.41731 | loss_iou=0.32683 | loss_dfl=1.25092 | loss_l1=0.62192 | det_total=3.85985 | finite=True
+[epoch 0 step 101/114] lr=0.000886 det:loss=4.53100 | loss_cls=2.71188 | loss_iou=0.36574 | loss_dfl=1.80953 | loss_l1=1.32252 | det_total=4.53100 | finite=True
+[epoch 0 step 102/114] lr=0.000895 det:loss=4.25818 | loss_cls=2.48472 | loss_iou=0.36476 | loss_dfl=1.72311 | loss_l1=1.27406 | det_total=4.25818 | finite=True
+[epoch 0 step 103/114] lr=0.000904 det:loss=3.75770 | loss_cls=2.43959 | loss_iou=0.27043 | loss_dfl=1.28406 | loss_l1=0.77804 | det_total=3.75770 | finite=True
+[epoch 0 step 104/114] lr=0.000912 det:loss=3.84706 | loss_cls=2.50892 | loss_iou=0.25728 | loss_dfl=1.38987 | loss_l1=0.78795 | det_total=3.84706 | finite=True
+[epoch 0 step 105/114] lr=0.000921 det:loss=3.84911 | loss_cls=1.91824 | loss_iou=0.42226 | loss_dfl=1.75044 | loss_l1=1.08109 | det_total=3.84911 | finite=True
+[epoch 0 step 106/114] lr=0.000930 det:loss=3.79677 | loss_cls=2.07217 | loss_iou=0.36938 | loss_dfl=1.60229 | loss_l1=1.29466 | det_total=3.79677 | finite=True
+[epoch 0 step 107/114] lr=0.000939 det:loss=3.72305 | loss_cls=2.14546 | loss_iou=0.32859 | loss_dfl=1.51225 | loss_l1=1.18198 | det_total=3.72305 | finite=True
+[epoch 0 step 108/114] lr=0.000947 det:loss=4.63946 | loss_cls=2.32815 | loss_iou=0.44838 | loss_dfl=2.38072 | loss_l1=2.11156 | det_total=4.63946 | finite=True
+[epoch 0 step 109/114] lr=0.000956 det:loss=4.68286 | loss_cls=2.42550 | loss_iou=0.41776 | loss_dfl=2.42590 | loss_l1=2.88913 | det_total=4.68286 | finite=True
+[epoch 0 step 110/114] lr=0.000965 det:loss=3.92181 | loss_cls=2.16651 | loss_iou=0.36948 | loss_dfl=1.66319 | loss_l1=1.14774 | det_total=3.92181 | finite=True
+[epoch 0 step 111/114] lr=0.000974 det:loss=4.29778 | loss_cls=2.45321 | loss_iou=0.42477 | loss_dfl=1.56530 | loss_l1=1.13741 | det_total=4.29778 | finite=True
+[epoch 0 step 112/114] lr=0.000982 det:loss=3.78768 | loss_cls=2.05447 | loss_iou=0.37829 | loss_dfl=1.57498 | loss_l1=1.08989 | det_total=3.78768 | finite=True
+[epoch 0 step 113/114] lr=0.000991 det:loss=3.89493 | loss_cls=1.94773 | loss_iou=0.43002 | loss_dfl=1.74427 | loss_l1=1.62495 | det_total=3.89493 | finite=True
+--- epoch 1 start (steps/epoch=114) ---
+[epoch 1 step 0/114] lr=0.001000 det:loss=4.36582 | loss_cls=2.32490 | loss_iou=0.42371 | loss_dfl=1.96330 | loss_l1=2.70073 | det_total=4.36582 | finite=True
+[epoch 1 step 1/114] lr=0.001000 det:loss=4.06586 | loss_cls=2.71970 | loss_iou=0.28488 | loss_dfl=1.26791 | loss_l1=0.75055 | det_total=4.06586 | finite=True
+[epoch 1 step 2/114] lr=0.000999 det:loss=3.97717 | loss_cls=2.38501 | loss_iou=0.30997 | loss_dfl=1.63447 | loss_l1=1.34124 | det_total=3.97717 | finite=True
+[epoch 1 step 3/114] lr=0.000998 det:loss=3.98065 | loss_cls=2.13284 | loss_iou=0.40713 | loss_dfl=1.65996 | loss_l1=1.45894 | det_total=3.98065 | finite=True
+[epoch 1 step 4/114] lr=0.000997 det:loss=4.24953 | loss_cls=2.44872 | loss_iou=0.37678 | loss_dfl=1.71774 | loss_l1=1.33898 | det_total=4.24953 | finite=True
+[epoch 1 step 5/114] lr=0.000995 det:loss=3.57504 | loss_cls=1.98987 | loss_iou=0.30913 | loss_dfl=1.62471 | loss_l1=1.16939 | det_total=3.57504 | finite=True
+[epoch 1 step 6/114] lr=0.000993 det:loss=3.57028 | loss_cls=2.15165 | loss_iou=0.31361 | loss_dfl=1.26922 | loss_l1=0.79804 | det_total=3.57028 | finite=True
+[epoch 1 step 7/114] lr=0.000991 det:loss=3.69563 | loss_cls=2.07846 | loss_iou=0.35356 | loss_dfl=1.46657 | loss_l1=0.98529 | det_total=3.69563 | finite=True
+[epoch 1 step 8/114] lr=0.000988 det:loss=4.10160 | loss_cls=2.43531 | loss_iou=0.36943 | loss_dfl=1.48543 | loss_l1=0.96314 | det_total=4.10160 | finite=True
+[epoch 1 step 9/114] lr=0.000985 det:loss=3.32754 | loss_cls=1.89276 | loss_iou=0.30223 | loss_dfl=1.35843 | loss_l1=1.55424 | det_total=3.32754 | finite=True
+[epoch 1 step 10/114] lr=0.000981 det:loss=3.58569 | loss_cls=2.03250 | loss_iou=0.33028 | loss_dfl=1.45499 | loss_l1=1.19651 | det_total=3.58569 | finite=True
+[epoch 1 step 11/114] lr=0.000977 det:loss=3.42809 | loss_cls=1.86778 | loss_iou=0.35256 | loss_dfl=1.35781 | loss_l1=0.82429 | det_total=3.42809 | finite=True
+[epoch 1 step 12/114] lr=0.000973 det:loss=3.75743 | loss_cls=2.35796 | loss_iou=0.28555 | loss_dfl=1.37120 | loss_l1=0.76293 | det_total=3.75743 | finite=True
+[epoch 1 step 13/114] lr=0.000968 det:loss=3.47812 | loss_cls=2.04740 | loss_iou=0.31710 | loss_dfl=1.27595 | loss_l1=0.75167 | det_total=3.47812 | finite=True
+[epoch 1 step 14/114] lr=0.000963 det:loss=3.58070 | loss_cls=1.81096 | loss_iou=0.37907 | loss_dfl=1.64414 | loss_l1=1.29239 | det_total=3.58070 | finite=True
+[epoch 1 step 15/114] lr=0.000958 det:loss=3.94322 | loss_cls=2.16147 | loss_iou=0.35084 | loss_dfl=1.80929 | loss_l1=1.25363 | det_total=3.94322 | finite=True
+[epoch 1 step 16/114] lr=0.000952 det:loss=3.83839 | loss_cls=2.05343 | loss_iou=0.34775 | loss_dfl=1.83116 | loss_l1=1.30329 | det_total=3.83839 | finite=True
+[epoch 1 step 17/114] lr=0.000946 det:loss=3.83616 | loss_cls=2.17090 | loss_iou=0.37479 | loss_dfl=1.45657 | loss_l1=0.81561 | det_total=3.83616 | finite=True
+[epoch 1 step 18/114] lr=0.000940 det:loss=3.66341 | loss_cls=1.85247 | loss_iou=0.36286 | loss_dfl=1.80757 | loss_l1=1.65610 | det_total=3.66341 | finite=True
+[epoch 1 step 19/114] lr=0.000933 det:loss=3.63635 | loss_cls=1.83861 | loss_iou=0.41047 | loss_dfl=1.54312 | loss_l1=0.94977 | det_total=3.63635 | finite=True
+[epoch 1 step 20/114] lr=0.000926 det:loss=3.48991 | loss_cls=2.29890 | loss_iou=0.25268 | loss_dfl=1.11862 | loss_l1=0.55259 | det_total=3.48991 | finite=True
+[epoch 1 step 21/114] lr=0.000919 det:loss=4.13952 | loss_cls=2.64280 | loss_iou=0.34194 | loss_dfl=1.28371 | loss_l1=0.81652 | det_total=4.13952 | finite=True
+[epoch 1 step 22/114] lr=0.000911 det:loss=3.89877 | loss_cls=2.44468 | loss_iou=0.26303 | loss_dfl=1.59304 | loss_l1=1.16112 | det_total=3.89877 | finite=True
+[epoch 1 step 23/114] lr=0.000903 det:loss=3.62628 | loss_cls=2.11516 | loss_iou=0.34050 | loss_dfl=1.31975 | loss_l1=0.79380 | det_total=3.62628 | finite=True
+[epoch 1 step 24/114] lr=0.000895 det:loss=3.76870 | loss_cls=2.04042 | loss_iou=0.32579 | loss_dfl=1.82762 | loss_l1=1.46959 | det_total=3.76870 | finite=True
+[epoch 1 step 25/114] lr=0.000886 det:loss=3.77291 | loss_cls=2.05143 | loss_iou=0.37721 | loss_dfl=1.55692 | loss_l1=1.19126 | det_total=3.77291 | finite=True
+[epoch 1 step 26/114] lr=0.000877 det:loss=3.68000 | loss_cls=1.98023 | loss_iou=0.32729 | loss_dfl=1.76308 | loss_l1=1.08750 | det_total=3.68000 | finite=True
+[epoch 1 step 27/114] lr=0.000868 det:loss=3.45594 | loss_cls=2.05839 | loss_iou=0.30495 | loss_dfl=1.27035 | loss_l1=0.66863 | det_total=3.45594 | finite=True
+[epoch 1 step 28/114] lr=0.000858 det:loss=3.79689 | loss_cls=2.51151 | loss_iou=0.26141 | loss_dfl=1.26374 | loss_l1=0.62015 | det_total=3.79689 | finite=True
+[epoch 1 step 29/114] lr=0.000849 det:loss=3.79873 | loss_cls=2.06223 | loss_iou=0.30952 | loss_dfl=1.92539 | loss_l1=1.39806 | det_total=3.79873 | finite=True
+[epoch 1 step 30/114] lr=0.000839 det:loss=4.20143 | loss_cls=2.30388 | loss_iou=0.41939 | loss_dfl=1.69817 | loss_l1=2.52799 | det_total=4.20143 | finite=True
+[epoch 1 step 31/114] lr=0.000828 det:loss=3.46763 | loss_cls=1.95241 | loss_iou=0.28038 | loss_dfl=1.62857 | loss_l1=1.09669 | det_total=3.46763 | finite=True
+[epoch 1 step 32/114] lr=0.000818 det:loss=4.08385 | loss_cls=2.38895 | loss_iou=0.36056 | loss_dfl=1.58701 | loss_l1=1.38898 | det_total=4.08385 | finite=True
+[epoch 1 step 33/114] lr=0.000807 det:loss=4.03801 | loss_cls=2.27758 | loss_iou=0.36061 | loss_dfl=1.71784 | loss_l1=1.38277 | det_total=4.03801 | finite=True
+[epoch 1 step 34/114] lr=0.000796 det:loss=4.09942 | loss_cls=2.18189 | loss_iou=0.33425 | loss_dfl=2.16383 | loss_l1=2.09800 | det_total=4.09942 | finite=True
+[epoch 1 step 35/114] lr=0.000785 det:loss=3.68660 | loss_cls=1.98356 | loss_iou=0.38622 | loss_dfl=1.47496 | loss_l1=1.30773 | det_total=3.68660 | finite=True
+[epoch 1 step 36/114] lr=0.000773 det:loss=3.65773 | loss_cls=2.15236 | loss_iou=0.24442 | loss_dfl=1.78862 | loss_l1=1.89055 | det_total=3.65773 | finite=True
+[epoch 1 step 37/114] lr=0.000762 det:loss=3.79509 | loss_cls=1.98462 | loss_iou=0.36730 | loss_dfl=1.78446 | loss_l1=1.18722 | det_total=3.79509 | finite=True
+[epoch 1 step 38/114] lr=0.000750 det:loss=3.51389 | loss_cls=2.13268 | loss_iou=0.29569 | loss_dfl=1.28396 | loss_l1=1.29437 | det_total=3.51389 | finite=True
+[epoch 1 step 39/114] lr=0.000738 det:loss=3.34234 | loss_cls=2.18706 | loss_iou=0.21537 | loss_dfl=1.23370 | loss_l1=0.65916 | det_total=3.34234 | finite=True
+[epoch 1 step 40/114] lr=0.000726 det:loss=3.56591 | loss_cls=1.91860 | loss_iou=0.36622 | loss_dfl=1.46350 | loss_l1=1.20122 | det_total=3.56591 | finite=True
+[epoch 1 step 41/114] lr=0.000713 det:loss=3.79645 | loss_cls=2.16990 | loss_iou=0.37164 | loss_dfl=1.39491 | loss_l1=0.89687 | det_total=3.79645 | finite=True
+[epoch 1 step 42/114] lr=0.000701 det:loss=3.87317 | loss_cls=2.05522 | loss_iou=0.37694 | loss_dfl=1.75119 | loss_l1=1.51474 | det_total=3.87317 | finite=True
+[epoch 1 step 43/114] lr=0.000688 det:loss=3.20732 | loss_cls=2.08975 | loss_iou=0.22288 | loss_dfl=1.12074 | loss_l1=0.71509 | det_total=3.20732 | finite=True
+[epoch 1 step 44/114] lr=0.000675 det:loss=3.46154 | loss_cls=1.94220 | loss_iou=0.30914 | loss_dfl=1.49299 | loss_l1=0.86232 | det_total=3.46154 | finite=True
+[epoch 1 step 45/114] lr=0.000662 det:loss=3.87162 | loss_cls=2.53393 | loss_iou=0.26573 | loss_dfl=1.34674 | loss_l1=0.66898 | det_total=3.87162 | finite=True
+[epoch 1 step 46/114] lr=0.000649 det:loss=3.44584 | loss_cls=1.81152 | loss_iou=0.33524 | loss_dfl=1.59245 | loss_l1=1.12868 | det_total=3.44584 | finite=True
+[epoch 1 step 47/114] lr=0.000636 det:loss=3.32430 | loss_cls=1.87959 | loss_iou=0.32845 | loss_dfl=1.24718 | loss_l1=0.74389 | det_total=3.32430 | finite=True
+[epoch 1 step 48/114] lr=0.000623 det:loss=3.27957 | loss_cls=1.75019 | loss_iou=0.34759 | loss_dfl=1.32078 | loss_l1=0.87110 | det_total=3.27957 | finite=True
+[epoch 1 step 49/114] lr=0.000609 det:loss=3.57383 | loss_cls=1.88388 | loss_iou=0.36053 | loss_dfl=1.57725 | loss_l1=0.94050 | det_total=3.57383 | finite=True
+[epoch 1 step 50/114] lr=0.000596 det:loss=3.64905 | loss_cls=1.82485 | loss_iou=0.41242 | loss_dfl=1.58628 | loss_l1=1.07066 | det_total=3.64905 | finite=True
+[epoch 1 step 51/114] lr=0.000582 det:loss=3.16498 | loss_cls=1.73733 | loss_iou=0.31499 | loss_dfl=1.28037 | loss_l1=0.81675 | det_total=3.16498 | finite=True
+[epoch 1 step 52/114] lr=0.000569 det:loss=3.75804 | loss_cls=2.10407 | loss_iou=0.34647 | loss_dfl=1.57561 | loss_l1=1.27829 | det_total=3.75804 | finite=True
+[epoch 1 step 53/114] lr=0.000555 det:loss=3.02675 | loss_cls=1.91952 | loss_iou=0.23148 | loss_dfl=1.05705 | loss_l1=0.65509 | det_total=3.02675 | finite=True
+[epoch 1 step 54/114] lr=0.000541 det:loss=3.04896 | loss_cls=1.79615 | loss_iou=0.25609 | loss_dfl=1.22516 | loss_l1=0.63614 | det_total=3.04896 | finite=True
+[epoch 1 step 55/114] lr=0.000528 det:loss=3.08008 | loss_cls=1.77462 | loss_iou=0.25723 | loss_dfl=1.32476 | loss_l1=0.87006 | det_total=3.08008 | finite=True
+[epoch 1 step 56/114] lr=0.000514 det:loss=3.54053 | loss_cls=2.02931 | loss_iou=0.34743 | loss_dfl=1.28528 | loss_l1=0.71590 | det_total=3.54053 | finite=True
+[epoch 1 step 57/114] lr=0.000500 det:loss=3.98797 | loss_cls=2.45138 | loss_iou=0.31577 | loss_dfl=1.49433 | loss_l1=0.98949 | det_total=3.98797 | finite=True
+[epoch 1 step 58/114] lr=0.000486 det:loss=3.63151 | loss_cls=2.26621 | loss_iou=0.27622 | loss_dfl=1.34948 | loss_l1=0.84381 | det_total=3.63151 | finite=True
+[epoch 1 step 59/114] lr=0.000472 det:loss=2.92306 | loss_cls=1.73648 | loss_iou=0.23113 | loss_dfl=1.21750 | loss_l1=0.59308 | det_total=2.92306 | finite=True
+[epoch 1 step 60/114] lr=0.000459 det:loss=3.69768 | loss_cls=2.02693 | loss_iou=0.39526 | loss_dfl=1.36519 | loss_l1=0.80131 | det_total=3.69768 | finite=True
+[epoch 1 step 61/114] lr=0.000445 det:loss=3.24396 | loss_cls=1.92868 | loss_iou=0.26911 | loss_dfl=1.28502 | loss_l1=0.79479 | det_total=3.24396 | finite=True
+[epoch 1 step 62/114] lr=0.000431 det:loss=3.50376 | loss_cls=2.16258 | loss_iou=0.26930 | loss_dfl=1.33586 | loss_l1=0.91192 | det_total=3.50376 | finite=True
+[epoch 1 step 63/114] lr=0.000418 det:loss=3.17882 | loss_cls=1.73303 | loss_iou=0.27087 | loss_dfl=1.53721 | loss_l1=0.78081 | det_total=3.17882 | finite=True
+[epoch 1 step 64/114] lr=0.000404 det:loss=3.61488 | loss_cls=2.00434 | loss_iou=0.35650 | loss_dfl=1.43856 | loss_l1=0.91758 | det_total=3.61488 | finite=True
+[epoch 1 step 65/114] lr=0.000391 det:loss=3.28692 | loss_cls=1.77706 | loss_iou=0.30815 | loss_dfl=1.47899 | loss_l1=1.43518 | det_total=3.28692 | finite=True
+[epoch 1 step 66/114] lr=0.000377 det:loss=3.55647 | loss_cls=2.15798 | loss_iou=0.27866 | loss_dfl=1.40369 | loss_l1=0.79237 | det_total=3.55647 | finite=True
+[epoch 1 step 67/114] lr=0.000364 det:loss=3.32328 | loss_cls=1.91929 | loss_iou=0.25253 | loss_dfl=1.54532 | loss_l1=0.81836 | det_total=3.32328 | finite=True
+[epoch 1 step 68/114] lr=0.000351 det:loss=3.74672 | loss_cls=2.20545 | loss_iou=0.34583 | loss_dfl=1.35337 | loss_l1=0.83202 | det_total=3.74672 | finite=True
+[epoch 1 step 69/114] lr=0.000338 det:loss=3.82131 | loss_cls=2.20202 | loss_iou=0.32819 | loss_dfl=1.59760 | loss_l1=1.31350 | det_total=3.82131 | finite=True
+[epoch 1 step 70/114] lr=0.000325 det:loss=2.72469 | loss_cls=1.59577 | loss_iou=0.20806 | loss_dfl=1.21758 | loss_l1=0.61628 | det_total=2.72469 | finite=True
+[epoch 1 step 71/114] lr=0.000312 det:loss=3.77699 | loss_cls=2.23526 | loss_iou=0.31488 | loss_dfl=1.50905 | loss_l1=0.96601 | det_total=3.77699 | finite=True
+[epoch 1 step 72/114] lr=0.000299 det:loss=3.08271 | loss_cls=2.19857 | loss_iou=0.16207 | loss_dfl=0.95790 | loss_l1=0.38842 | det_total=3.08271 | finite=True
+[epoch 1 step 73/114] lr=0.000287 det:loss=2.61552 | loss_cls=1.73894 | loss_iou=0.16035 | loss_dfl=0.95143 | loss_l1=0.32930 | det_total=2.61552 | finite=True
+[epoch 1 step 74/114] lr=0.000274 det:loss=3.37257 | loss_cls=2.02414 | loss_iou=0.25701 | loss_dfl=1.41182 | loss_l1=0.85222 | det_total=3.37257 | finite=True
+[epoch 1 step 75/114] lr=0.000262 det:loss=2.92877 | loss_cls=1.75109 | loss_iou=0.21241 | loss_dfl=1.29332 | loss_l1=0.71367 | det_total=2.92877 | finite=True
+[epoch 1 step 76/114] lr=0.000250 det:loss=3.02911 | loss_cls=1.65559 | loss_iou=0.28879 | loss_dfl=1.30309 | loss_l1=0.99417 | det_total=3.02911 | finite=True
+[epoch 1 step 77/114] lr=0.000238 det:loss=2.79467 | loss_cls=1.67125 | loss_iou=0.20555 | loss_dfl=1.21908 | loss_l1=0.61591 | det_total=2.79467 | finite=True
+[epoch 1 step 78/114] lr=0.000227 det:loss=2.89051 | loss_cls=1.89628 | loss_iou=0.18024 | loss_dfl=1.08727 | loss_l1=0.49951 | det_total=2.89051 | finite=True
+[epoch 1 step 79/114] lr=0.000215 det:loss=3.83828 | loss_cls=2.13337 | loss_iou=0.37149 | loss_dfl=1.55239 | loss_l1=0.91970 | det_total=3.83828 | finite=True
+[epoch 1 step 80/114] lr=0.000204 det:loss=2.89894 | loss_cls=1.65079 | loss_iou=0.24727 | loss_dfl=1.25992 | loss_l1=0.59161 | det_total=2.89894 | finite=True
+[epoch 1 step 81/114] lr=0.000193 det:loss=3.70787 | loss_cls=2.30918 | loss_iou=0.31634 | loss_dfl=1.21568 | loss_l1=0.63633 | det_total=3.70787 | finite=True
+[epoch 1 step 82/114] lr=0.000182 det:loss=3.49829 | loss_cls=2.06523 | loss_iou=0.31460 | loss_dfl=1.29314 | loss_l1=1.02548 | det_total=3.49829 | finite=True
+[epoch 1 step 83/114] lr=0.000172 det:loss=3.76231 | loss_cls=2.22577 | loss_iou=0.35257 | loss_dfl=1.31024 | loss_l1=0.97065 | det_total=3.76231 | finite=True
+[epoch 1 step 84/114] lr=0.000161 det:loss=2.69547 | loss_cls=1.60334 | loss_iou=0.21461 | loss_dfl=1.11120 | loss_l1=0.55503 | det_total=2.69547 | finite=True
+[epoch 1 step 85/114] lr=0.000151 det:loss=2.72786 | loss_cls=1.66864 | loss_iou=0.21125 | loss_dfl=1.06221 | loss_l1=0.56022 | det_total=2.72786 | finite=True
+[epoch 1 step 86/114] lr=0.000142 det:loss=2.85739 | loss_cls=1.95269 | loss_iou=0.16833 | loss_dfl=0.96777 | loss_l1=0.54652 | det_total=2.85739 | finite=True
+[epoch 1 step 87/114] lr=0.000132 det:loss=2.91752 | loss_cls=1.66017 | loss_iou=0.24900 | loss_dfl=1.26970 | loss_l1=0.70902 | det_total=2.91752 | finite=True
+[epoch 1 step 88/114] lr=0.000123 det:loss=3.37226 | loss_cls=2.01358 | loss_iou=0.28464 | loss_dfl=1.29414 | loss_l1=0.65049 | det_total=3.37226 | finite=True
+[epoch 1 step 89/114] lr=0.000114 det:loss=2.95660 | loss_cls=1.85872 | loss_iou=0.20303 | loss_dfl=1.18064 | loss_l1=0.57027 | det_total=2.95660 | finite=True
+[epoch 1 step 90/114] lr=0.000105 det:loss=3.23482 | loss_cls=1.68213 | loss_iou=0.35908 | loss_dfl=1.30998 | loss_l1=0.85593 | det_total=3.23482 | finite=True
+[epoch 1 step 91/114] lr=0.000097 det:loss=3.54983 | loss_cls=2.27818 | loss_iou=0.28270 | loss_dfl=1.12976 | loss_l1=0.61538 | det_total=3.54983 | finite=True
+[epoch 1 step 92/114] lr=0.000089 det:loss=3.44612 | loss_cls=2.07054 | loss_iou=0.29018 | loss_dfl=1.30026 | loss_l1=0.76956 | det_total=3.44612 | finite=True
+[epoch 1 step 93/114] lr=0.000081 det:loss=3.40303 | loss_cls=1.95284 | loss_iou=0.32949 | loss_dfl=1.25291 | loss_l1=0.99733 | det_total=3.40303 | finite=True
+[epoch 1 step 94/114] lr=0.000074 det:loss=3.13032 | loss_cls=1.79490 | loss_iou=0.26520 | loss_dfl=1.34485 | loss_l1=0.72585 | det_total=3.13032 | finite=True
+[epoch 1 step 95/114] lr=0.000067 det:loss=3.41770 | loss_cls=2.15268 | loss_iou=0.25418 | loss_dfl=1.25913 | loss_l1=0.66162 | det_total=3.41770 | finite=True
+[epoch 1 step 96/114] lr=0.000060 det:loss=3.51923 | loss_cls=1.94234 | loss_iou=0.29837 | loss_dfl=1.66193 | loss_l1=1.01183 | det_total=3.51923 | finite=True
+[epoch 1 step 97/114] lr=0.000054 det:loss=3.31954 | loss_cls=1.86906 | loss_iou=0.29887 | loss_dfl=1.40657 | loss_l1=0.93823 | det_total=3.31954 | finite=True
+[epoch 1 step 98/114] lr=0.000048 det:loss=3.02170 | loss_cls=1.72801 | loss_iou=0.29158 | loss_dfl=1.12946 | loss_l1=0.64343 | det_total=3.02170 | finite=True
+[epoch 1 step 99/114] lr=0.000042 det:loss=3.22866 | loss_cls=1.96281 | loss_iou=0.27230 | loss_dfl=1.17022 | loss_l1=0.61492 | det_total=3.22866 | finite=True
+[epoch 1 step 100/114] lr=0.000037 det:loss=3.10303 | loss_cls=1.95572 | loss_iou=0.22583 | loss_dfl=1.16549 | loss_l1=0.85435 | det_total=3.10303 | finite=True
+[epoch 1 step 101/114] lr=0.000032 det:loss=3.17166 | loss_cls=1.88133 | loss_iou=0.23069 | loss_dfl=1.42718 | loss_l1=0.80040 | det_total=3.17166 | finite=True
+[epoch 1 step 102/114] lr=0.000027 det:loss=3.20342 | loss_cls=1.78391 | loss_iou=0.28718 | loss_dfl=1.40310 | loss_l1=0.97928 | det_total=3.20342 | finite=True
+[epoch 1 step 103/114] lr=0.000023 det:loss=3.32919 | loss_cls=1.96322 | loss_iou=0.25376 | loss_dfl=1.46316 | loss_l1=0.92477 | det_total=3.32919 | finite=True
+[epoch 1 step 104/114] lr=0.000019 det:loss=3.09645 | loss_cls=1.88427 | loss_iou=0.23531 | loss_dfl=1.24782 | loss_l1=0.61935 | det_total=3.09645 | finite=True
+[epoch 1 step 105/114] lr=0.000015 det:loss=3.24024 | loss_cls=1.78746 | loss_iou=0.29488 | loss_dfl=1.43114 | loss_l1=0.95822 | det_total=3.24024 | finite=True
+[epoch 1 step 106/114] lr=0.000012 det:loss=3.39416 | loss_cls=1.97043 | loss_iou=0.29107 | loss_dfl=1.39213 | loss_l1=0.82082 | det_total=3.39416 | finite=True
+[epoch 1 step 107/114] lr=0.000009 det:loss=3.36242 | loss_cls=1.98509 | loss_iou=0.30090 | loss_dfl=1.25015 | loss_l1=0.64117 | det_total=3.36242 | finite=True
+[epoch 1 step 108/114] lr=0.000007 det:loss=3.10743 | loss_cls=1.85571 | loss_iou=0.26947 | loss_dfl=1.15611 | loss_l1=0.54586 | det_total=3.10743 | finite=True
+[epoch 1 step 109/114] lr=0.000005 det:loss=2.83049 | loss_cls=1.66614 | loss_iou=0.24897 | loss_dfl=1.08384 | loss_l1=0.68313 | det_total=2.83049 | finite=True
+[epoch 1 step 110/114] lr=0.000003 det:loss=3.36252 | loss_cls=2.10748 | loss_iou=0.27228 | loss_dfl=1.14870 | loss_l1=0.57467 | det_total=3.36252 | finite=True
+[epoch 1 step 111/114] lr=0.000002 det:loss=3.02196 | loss_cls=1.68972 | loss_iou=0.30400 | loss_dfl=1.14449 | loss_l1=0.67041 | det_total=3.02196 | finite=True
+[epoch 1 step 112/114] lr=0.000001 det:loss=3.02550 | loss_cls=1.75495 | loss_iou=0.26126 | loss_dfl=1.23480 | loss_l1=0.82424 | det_total=3.02550 | finite=True
+[epoch 1 step 113/114] lr=0.000000 det:loss=2.90004 | loss_cls=1.71900 | loss_iou=0.21483 | loss_dfl=1.28793 | loss_l1=0.68437 | det_total=2.90004 | finite=True
+[save] model -> /root/autodl-tmp/AIC2026_AgriVision/experiments/direction5/checkpoints/s1_off/cgacs_epoch1_model.pdparams
+Traceback (most recent call last):
+  File "/root/autodl-tmp/AIC2026_AgriVision/scripts/train_cgacs.py", line 347, in <module>
+    main()
+  File "/root/autodl-tmp/AIC2026_AgriVision/scripts/train_cgacs.py", line 326, in main
+    paddle.save(ema.state_dict(), ema_path)
+                ^^^^^^^^^^^^^^^^
+TypeError: 'dict' object is not callable

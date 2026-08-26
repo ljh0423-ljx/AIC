@@ -1,0 +1,2 @@
+image_name,class_id,class_name,confidence,x,y,width,height
+TRAIN_000004_apple_scab.jpg,9,Apple Scab Leaf,0.569851,166.68,105.84,104.96,87.61

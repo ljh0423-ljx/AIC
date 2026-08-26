@@ -1,0 +1,13 @@
+0	Tomato Early blight leaf	Tomato	89	213
+1	Tomato Septoria leaf spot	Tomato	149	430
+2	Tomato leaf	Tomato	72	396
+3	Tomato leaf bacterial spot	Tomato	113	278
+4	Tomato leaf late blight	Tomato	110	219
+5	Tomato leaf mosaic virus	Tomato	55	261
+6	Tomato leaf yellow virus	Tomato	75	824
+7	Tomato mold leaf	Tomato	90	291
+8	Apple Scab Leaf	Apple	93	171
+9	Apple leaf	Apple	91	247
+10	Apple rust leaf	Apple	88	178
+11	grape leaf	Grape	69	220
+12	grape leaf black rot	Grape	64	133

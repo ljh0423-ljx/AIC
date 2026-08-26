@@ -1,0 +1,180 @@
+{
+  "n_images": 113,
+  "gt_boxes_total": 350,
+  "pred_boxes_total": 318,
+  "tp": 134,
+  "fp": 184,
+  "fn": 216,
+  "precision": 0.42138364779874216,
+  "recall": 0.38285714285714284,
+  "f1": 0.4011976047904191,
+  "per_class": {
+    "0": {
+      "gt": 21,
+      "pred": 29,
+      "tp": 9,
+      "recall": 0.42857142857142855,
+      "precision": 0.3103448275862069,
+      "missed": 12,
+      "fp": 20
+    },
+    "1": {
+      "gt": 37,
+      "pred": 32,
+      "tp": 18,
+      "recall": 0.4864864864864865,
+      "precision": 0.5625,
+      "missed": 19,
+      "fp": 14
+    },
+    "2": {
+      "gt": 36,
+      "pred": 67,
+      "tp": 12,
+      "recall": 0.3333333333333333,
+      "precision": 0.1791044776119403,
+      "missed": 24,
+      "fp": 55
+    },
+    "3": {
+      "gt": 16,
+      "pred": 11,
+      "tp": 2,
+      "recall": 0.125,
+      "precision": 0.18181818181818182,
+      "missed": 14,
+      "fp": 9
+    },
+    "4": {
+      "gt": 26,
+      "pred": 19,
+      "tp": 12,
+      "recall": 0.46153846153846156,
+      "precision": 0.631578947368421,
+      "missed": 14,
+      "fp": 7
+    },
+    "5": {
+      "gt": 33,
+      "pred": 9,
+      "tp": 5,
+      "recall": 0.15151515151515152,
+      "precision": 0.5555555555555556,
+      "missed": 28,
+      "fp": 4
+    },
+    "6": {
+      "gt": 57,
+      "pred": 27,
+      "tp": 13,
+      "recall": 0.22807017543859648,
+      "precision": 0.48148148148148145,
+      "missed": 44,
+      "fp": 14
+    },
+    "7": {
+      "gt": 32,
+      "pred": 11,
+      "tp": 5,
+      "recall": 0.15625,
+      "precision": 0.45454545454545453,
+      "missed": 27,
+      "fp": 6
+    },
+    "8": {
+      "gt": 30,
+      "pred": 15,
+      "tp": 8,
+      "recall": 0.26666666666666666,
+      "precision": 0.5333333333333333,
+      "missed": 22,
+      "fp": 7
+    },
+    "9": {
+      "gt": 14,
+      "pred": 18,
+      "tp": 13,
+      "recall": 0.9285714285714286,
+      "precision": 0.7222222222222222,
+      "missed": 1,
+      "fp": 5
+    },
+    "10": {
+      "gt": 12,
+      "pred": 35,
+      "tp": 10,
+      "recall": 0.8333333333333334,
+      "precision": 0.2857142857142857,
+      "missed": 2,
+      "fp": 25
+    },
+    "11": {
+      "gt": 14,
+      "pred": 13,
+      "tp": 10,
+      "recall": 0.7142857142857143,
+      "precision": 0.7692307692307693,
+      "missed": 4,
+      "fp": 3
+    },
+    "12": {
+      "gt": 22,
+      "pred": 32,
+      "tp": 17,
+      "recall": 0.7727272727272727,
+      "precision": 0.53125,
+      "missed": 5,
+      "fp": 15
+    }
+  },
+  "top_confusion_pairs": [
+    [
+      "Apple Scab Leaf",
+      "Apple rust leaf",
+      13
+    ],
+    [
+      "Tomato leaf bacterial spot",
+      "Tomato Septoria leaf spot",
+      6
+    ],
+    [
+      "Tomato leaf late blight",
+      "Tomato Early blight leaf",
+      5
+    ],
+    [
+      "Tomato mold leaf",
+      "Tomato Early blight leaf",
+      5
+    ],
+    [
+      "Tomato leaf",
+      "Tomato leaf late blight",
+      4
+    ],
+    [
+      "Tomato leaf mosaic virus",
+      "Tomato leaf",
+      4
+    ],
+    [
+      "Tomato leaf mosaic virus",
+      "Tomato leaf yellow virus",
+      4
+    ],
+    [
+      "Tomato leaf mosaic virus",
+      "Apple rust leaf",
+      4
+    ]
+  ],
+  "dense_scene": {
+    "min_gt": 10,
+    "n_images": 5,
+    "gt_total": 62,
+    "matched": 16,
+    "recall": 0.25806451612903225
+  },
+  "per_image_recall_mean": 0.7481780342516253
+}

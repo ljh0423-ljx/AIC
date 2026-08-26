@@ -1,0 +1,967 @@
+WARNING: OMP_NUM_THREADS set to 12, not 1. The computation speed will not be optimized if you use data parallel. It will fail if this PaddlePaddle binary is compiled with OpenBlas since OpenBlas does not support multi-threads.
+PLEASE USE OMP_NUM_THREADS WISELY.
+Warning: Unable to use numba in PP-Tracking, please install numba, for example(python3.7): `pip install numba==0.56.4`
+Warning: Unable to use numba in PP-Tracking, please install numba, for example(python3.7): `pip install numba==0.56.4`
+[08/17 02:34:34] ppdet.utils.checkpoint INFO: Skipping import of the encryption module.
+loading annotations into memory...
+Done (t=0.01s)
+creating index...
+index created!
+[08/17 02:34:34] ppdet.data.source.coco INFO: Load [915 samples valid, 0 samples invalid] in file dataset/processed_detection/annotations/train.json.
+W0817 02:34:34.672006 143056 gpu_resources.cc:119] Please NOTE: device: 0, GPU Compute Capability: 8.9, Driver API Version: 13.0, Runtime API Version: 11.8
+W0817 02:34:34.672796 143056 gpu_resources.cc:164] device: 0, cuDNN Version: 9.1.
+[08/17 02:34:35] ppdet.utils.checkpoint INFO: The shape [365] in pretrained weight yolo_head.pred_cls.0.bias is unmatched with the shape [13] in model yolo_head.pred_cls.0.bias. And the weight yolo_head.pred_cls.0.bias will not be loaded
+[08/17 02:34:35] ppdet.utils.checkpoint INFO: The shape [365, 384, 3, 3] in pretrained weight yolo_head.pred_cls.0.weight is unmatched with the shape [13, 384, 3, 3] in model yolo_head.pred_cls.0.weight. And the weight yolo_head.pred_cls.0.weight will not be loaded
+[08/17 02:34:35] ppdet.utils.checkpoint INFO: The shape [365] in pretrained weight yolo_head.pred_cls.1.bias is unmatched with the shape [13] in model yolo_head.pred_cls.1.bias. And the weight yolo_head.pred_cls.1.bias will not be loaded
+[08/17 02:34:35] ppdet.utils.checkpoint INFO: The shape [365, 192, 3, 3] in pretrained weight yolo_head.pred_cls.1.weight is unmatched with the shape [13, 192, 3, 3] in model yolo_head.pred_cls.1.weight. And the weight yolo_head.pred_cls.1.weight will not be loaded
+[08/17 02:34:35] ppdet.utils.checkpoint INFO: The shape [365] in pretrained weight yolo_head.pred_cls.2.bias is unmatched with the shape [13] in model yolo_head.pred_cls.2.bias. And the weight yolo_head.pred_cls.2.bias will not be loaded
+[08/17 02:34:35] ppdet.utils.checkpoint INFO: The shape [365, 96, 3, 3] in pretrained weight yolo_head.pred_cls.2.weight is unmatched with the shape [13, 96, 3, 3] in model yolo_head.pred_cls.2.weight. And the weight yolo_head.pred_cls.2.weight will not be loaded
+[08/17 02:34:35] ppdet.utils.checkpoint INFO: Finish loading model weights: /root/autodl-tmp/AIC2026_AgriVision/experiments/direction5/B1_PVPRETRAIN_100e/merge/B1_pretrain_combined.pdparams
+[08/17 02:34:44] ppdet.engine.callbacks INFO: Epoch: [0] [ 0/57] learning_rate: 0.000000 loss: 4.981404 loss_cls: 2.241888 loss_iou: 0.542656 loss_dfl: 2.765754 loss_l1: 2.606875 eta: 14:07:55 batch_cost: 8.9255 data_cost: 7.8061 ips: 1.7926 images/s, max_mem_reserved: 3822 MB, max_mem_allocated: 3215 MB
+[08/17 02:35:10] ppdet.engine.callbacks INFO: Epoch: [0] [20/57] learning_rate: 0.000140 loss: 4.718917 loss_cls: 2.211254 loss_iou: 0.535740 loss_dfl: 2.369752 loss_l1: 1.918301 eta: 2:34:44 batch_cost: 1.2700 data_cost: 1.1420 ips: 12.5981 images/s, max_mem_reserved: 9099 MB, max_mem_allocated: 6888 MB
+[08/17 02:35:36] ppdet.engine.callbacks INFO: Epoch: [0] [40/57] learning_rate: 0.000281 loss: 4.147294 loss_cls: 2.027666 loss_iou: 0.438546 loss_dfl: 2.016517 loss_l1: 1.618978 eta: 2:17:50 batch_cost: 1.2791 data_cost: 1.1639 ips: 12.5085 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8036 MB
+[08/17 02:35:58] ppdet.engine.callbacks INFO: Epoch: [1] [ 0/57] learning_rate: 0.000400 loss: 3.871070 loss_cls: 1.978538 loss_iou: 0.405631 loss_dfl: 1.874370 loss_l1: 1.483047 eta: 2:12:05 batch_cost: 1.3013 data_cost: 1.2059 ips: 12.2954 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8073 MB
+[08/17 02:36:34] ppdet.engine.callbacks INFO: Epoch: [1] [20/57] learning_rate: 0.000540 loss: 3.746362 loss_cls: 1.881058 loss_iou: 0.384793 loss_dfl: 1.628827 loss_l1: 1.190034 eta: 2:20:49 batch_cost: 1.7874 data_cost: 1.6850 ips: 8.9516 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:37:02] ppdet.engine.callbacks INFO: Epoch: [1] [40/57] learning_rate: 0.000681 loss: 3.621581 loss_cls: 1.978086 loss_iou: 0.361053 loss_dfl: 1.528582 loss_l1: 1.033580 eta: 2:17:16 batch_cost: 1.3424 data_cost: 1.2454 ips: 11.9188 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:37:38] ppdet.engine.callbacks INFO: Epoch: [2] [ 0/57] learning_rate: 0.000800 loss: 3.556657 loss_cls: 1.961708 loss_iou: 0.334248 loss_dfl: 1.540930 loss_l1: 1.000324 eta: 2:25:49 batch_cost: 1.8178 data_cost: 1.7237 ips: 8.8017 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:38:19] ppdet.engine.callbacks INFO: Epoch: [2] [20/57] learning_rate: 0.000940 loss: 3.535884 loss_cls: 1.931573 loss_iou: 0.328155 loss_dfl: 1.499392 loss_l1: 0.962528 eta: 2:31:09 batch_cost: 1.9921 data_cost: 1.8940 ips: 8.0319 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:38:45] ppdet.engine.callbacks INFO: Epoch: [2] [40/57] learning_rate: 0.001081 loss: 3.561874 loss_cls: 1.993941 loss_iou: 0.328785 loss_dfl: 1.433883 loss_l1: 0.930766 eta: 2:26:41 batch_cost: 1.3005 data_cost: 1.1997 ips: 12.3029 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:39:13] ppdet.engine.callbacks INFO: Epoch: [3] [ 0/57] learning_rate: 0.001200 loss: 3.561795 loss_cls: 1.976090 loss_iou: 0.337752 loss_dfl: 1.549759 loss_l1: 1.022351 eta: 2:26:34 batch_cost: 1.5271 data_cost: 1.4262 ips: 10.4774 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:39:38] ppdet.engine.callbacks INFO: Epoch: [3] [20/57] learning_rate: 0.001340 loss: 3.566385 loss_cls: 1.949103 loss_iou: 0.329526 loss_dfl: 1.471974 loss_l1: 1.080719 eta: 2:22:27 batch_cost: 1.2167 data_cost: 1.1139 ips: 13.1505 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:40:06] ppdet.engine.callbacks INFO: Epoch: [3] [40/57] learning_rate: 0.001481 loss: 3.503118 loss_cls: 2.046036 loss_iou: 0.313519 loss_dfl: 1.456258 loss_l1: 0.917810 eta: 2:20:05 batch_cost: 1.3375 data_cost: 1.2373 ips: 11.9626 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:40:36] ppdet.engine.callbacks INFO: Epoch: [4] [ 0/57] learning_rate: 0.001600 loss: 3.515322 loss_cls: 1.961940 loss_iou: 0.323123 loss_dfl: 1.432638 loss_l1: 0.883174 eta: 2:21:20 batch_cost: 1.5263 data_cost: 1.4324 ips: 10.4832 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:41:10] ppdet.engine.callbacks INFO: Epoch: [4] [20/57] learning_rate: 0.001740 loss: 3.425888 loss_cls: 1.938015 loss_iou: 0.307141 loss_dfl: 1.498921 loss_l1: 0.878460 eta: 2:21:39 batch_cost: 1.6649 data_cost: 1.5659 ips: 9.6100 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:41:44] ppdet.engine.callbacks INFO: Epoch: [4] [40/57] learning_rate: 0.001881 loss: 3.453104 loss_cls: 1.905383 loss_iou: 0.331375 loss_dfl: 1.452385 loss_l1: 0.932884 eta: 2:21:46 batch_cost: 1.6534 data_cost: 1.5531 ips: 9.6772 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:42:07] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/17 02:42:07] ppdet.data.source.coco INFO: Load [113 samples valid, 0 samples invalid] in file dataset/processed_detection/annotations/val.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/17 02:42:08] ppdet.engine.callbacks INFO: Eval iter: 0
+[08/17 02:42:11] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/17 02:42:11] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.52s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=0.86s).
+Accumulating evaluation results...
+DONE (t=0.37s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.048
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.096
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.051
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.026
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.027
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.053
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.122
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.275
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.341
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.200
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.139
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.382
+[08/17 02:42:13] ppdet.engine.callbacks INFO: Total sample number: 113, average FPS: 33.65858177938631
+[08/17 02:42:13] ppdet.engine INFO: Best test bbox ap is 0.048.
+[08/17 02:42:14] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints
+[08/17 02:42:16] ppdet.engine.callbacks INFO: Epoch: [5] [ 0/57] learning_rate: 0.002000 loss: 3.474116 loss_cls: 1.872002 loss_iou: 0.325537 loss_dfl: 1.461964 loss_l1: 0.956954 eta: 2:20:56 batch_cost: 1.2858 data_cost: 1.1829 ips: 12.4438 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:42:54] ppdet.engine.callbacks INFO: Epoch: [5] [20/57] learning_rate: 0.002000 loss: 3.437239 loss_cls: 1.916161 loss_iou: 0.307782 loss_dfl: 1.372580 loss_l1: 0.882874 eta: 2:22:13 batch_cost: 1.8705 data_cost: 1.7754 ips: 8.5537 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:43:22] ppdet.engine.callbacks INFO: Epoch: [5] [40/57] learning_rate: 0.002000 loss: 3.333460 loss_cls: 1.868285 loss_iou: 0.312418 loss_dfl: 1.350868 loss_l1: 0.801607 eta: 2:20:28 batch_cost: 1.3586 data_cost: 1.2696 ips: 11.7771 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:44:01] ppdet.engine.callbacks INFO: Epoch: [6] [ 0/57] learning_rate: 0.001999 loss: 3.262609 loss_cls: 1.824028 loss_iou: 0.317527 loss_dfl: 1.370024 loss_l1: 0.844534 eta: 2:22:59 batch_cost: 2.0267 data_cost: 1.9340 ips: 7.8948 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:44:38] ppdet.engine.callbacks INFO: Epoch: [6] [20/57] learning_rate: 0.001999 loss: 3.317773 loss_cls: 1.908740 loss_iou: 0.309667 loss_dfl: 1.310618 loss_l1: 0.850750 eta: 2:23:37 batch_cost: 1.8400 data_cost: 1.7382 ips: 8.6956 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:45:00] ppdet.engine.callbacks INFO: Epoch: [6] [40/57] learning_rate: 0.001998 loss: 3.232638 loss_cls: 1.837586 loss_iou: 0.301199 loss_dfl: 1.289560 loss_l1: 0.718304 eta: 2:20:38 batch_cost: 1.0880 data_cost: 0.9945 ips: 14.7064 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:45:22] ppdet.engine.callbacks INFO: Epoch: [7] [ 0/57] learning_rate: 0.001998 loss: 3.228983 loss_cls: 1.788276 loss_iou: 0.291328 loss_dfl: 1.378698 loss_l1: 0.803870 eta: 2:18:57 batch_cost: 1.1466 data_cost: 1.0500 ips: 13.9537 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:45:54] ppdet.engine.callbacks INFO: Epoch: [7] [20/57] learning_rate: 0.001997 loss: 3.191641 loss_cls: 1.821164 loss_iou: 0.281790 loss_dfl: 1.351706 loss_l1: 0.853568 eta: 2:18:27 batch_cost: 1.5779 data_cost: 1.4757 ips: 10.1401 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:46:22] ppdet.engine.callbacks INFO: Epoch: [7] [40/57] learning_rate: 0.001996 loss: 3.180396 loss_cls: 1.861890 loss_iou: 0.276473 loss_dfl: 1.316251 loss_l1: 0.756391 eta: 2:16:57 batch_cost: 1.3278 data_cost: 1.2274 ips: 12.0498 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:46:47] ppdet.engine.callbacks INFO: Epoch: [8] [ 0/57] learning_rate: 0.001995 loss: 3.280913 loss_cls: 1.801271 loss_iou: 0.307870 loss_dfl: 1.414912 loss_l1: 0.885815 eta: 2:16:09 batch_cost: 1.5212 data_cost: 1.4212 ips: 10.5179 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:47:16] ppdet.engine.callbacks INFO: Epoch: [8] [20/57] learning_rate: 0.001994 loss: 3.193668 loss_cls: 1.763958 loss_iou: 0.291653 loss_dfl: 1.308181 loss_l1: 0.789584 eta: 2:15:05 batch_cost: 1.4042 data_cost: 1.3037 ips: 11.3948 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:47:56] ppdet.engine.callbacks INFO: Epoch: [8] [40/57] learning_rate: 0.001993 loss: 3.088159 loss_cls: 1.785267 loss_iou: 0.279168 loss_dfl: 1.277005 loss_l1: 0.744048 eta: 2:16:02 batch_cost: 1.9747 data_cost: 1.8730 ips: 8.1027 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:48:25] ppdet.engine.callbacks INFO: Epoch: [9] [ 0/57] learning_rate: 0.001991 loss: 3.185540 loss_cls: 1.760769 loss_iou: 0.292349 loss_dfl: 1.377244 loss_l1: 0.807532 eta: 2:15:56 batch_cost: 1.8711 data_cost: 1.7691 ips: 8.5509 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:48:48] ppdet.engine.callbacks INFO: Epoch: [9] [20/57] learning_rate: 0.001990 loss: 3.096658 loss_cls: 1.735687 loss_iou: 0.283018 loss_dfl: 1.263391 loss_l1: 0.721197 eta: 2:13:56 batch_cost: 1.1151 data_cost: 1.0190 ips: 14.3479 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:49:18] ppdet.engine.callbacks INFO: Epoch: [9] [40/57] learning_rate: 0.001988 loss: 3.117277 loss_cls: 1.720840 loss_iou: 0.284824 loss_dfl: 1.295203 loss_l1: 0.742862 eta: 2:13:12 batch_cost: 1.4847 data_cost: 1.3876 ips: 10.7769 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:49:37] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints
+[08/17 02:49:38] ppdet.engine.callbacks INFO: Eval iter: 0
+[08/17 02:49:41] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/17 02:49:41] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.52s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=0.98s).
+Accumulating evaluation results...
+DONE (t=0.29s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.068
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.132
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.056
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.075
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.061
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.070
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.140
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.327
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.428
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.500
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.296
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.458
+[08/17 02:49:43] ppdet.engine.callbacks INFO: Total sample number: 113, average FPS: 31.746329628918883
+[08/17 02:49:43] ppdet.engine INFO: Best test bbox ap is 0.068.
+[08/17 02:49:44] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints
+[08/17 02:49:48] ppdet.engine.callbacks INFO: Epoch: [10] [ 0/57] learning_rate: 0.001986 loss: 3.092000 loss_cls: 1.716436 loss_iou: 0.287159 loss_dfl: 1.314241 loss_l1: 0.762627 eta: 2:12:09 batch_cost: 1.3068 data_cost: 1.2054 ips: 12.2439 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:50:17] ppdet.engine.callbacks INFO: Epoch: [10] [20/57] learning_rate: 0.001984 loss: 3.109433 loss_cls: 1.703824 loss_iou: 0.291571 loss_dfl: 1.242227 loss_l1: 0.753632 eta: 2:11:14 batch_cost: 1.4085 data_cost: 1.3100 ips: 11.3600 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:50:47] ppdet.engine.callbacks INFO: Epoch: [10] [40/57] learning_rate: 0.001982 loss: 3.095682 loss_cls: 1.759314 loss_iou: 0.276869 loss_dfl: 1.306130 loss_l1: 0.758808 eta: 2:10:38 batch_cost: 1.5098 data_cost: 1.4080 ips: 10.5976 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:51:12] ppdet.engine.callbacks INFO: Epoch: [11] [ 0/57] learning_rate: 0.001980 loss: 3.118173 loss_cls: 1.779585 loss_iou: 0.291836 loss_dfl: 1.286529 loss_l1: 0.726433 eta: 2:09:56 batch_cost: 1.4463 data_cost: 1.3460 ips: 11.0629 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:51:38] ppdet.engine.callbacks INFO: Epoch: [11] [20/57] learning_rate: 0.001978 loss: 3.012965 loss_cls: 1.707664 loss_iou: 0.273524 loss_dfl: 1.216122 loss_l1: 0.696727 eta: 2:08:39 batch_cost: 1.2398 data_cost: 1.1438 ips: 12.9051 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:52:01] ppdet.engine.callbacks INFO: Epoch: [11] [40/57] learning_rate: 0.001976 loss: 3.066494 loss_cls: 1.709340 loss_iou: 0.271021 loss_dfl: 1.247538 loss_l1: 0.734549 eta: 2:07:10 batch_cost: 1.1440 data_cost: 1.0409 ips: 13.9860 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:52:33] ppdet.engine.callbacks INFO: Epoch: [12] [ 0/57] learning_rate: 0.001973 loss: 3.006177 loss_cls: 1.690633 loss_iou: 0.285957 loss_dfl: 1.224252 loss_l1: 0.656598 eta: 2:07:26 batch_cost: 1.6791 data_cost: 1.5803 ips: 9.5287 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:53:07] ppdet.engine.callbacks INFO: Epoch: [12] [20/57] learning_rate: 0.001971 loss: 2.992817 loss_cls: 1.730718 loss_iou: 0.269798 loss_dfl: 1.303938 loss_l1: 0.738648 eta: 2:07:14 batch_cost: 1.6558 data_cost: 1.5547 ips: 9.6632 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:53:39] ppdet.engine.callbacks INFO: Epoch: [12] [40/57] learning_rate: 0.001968 loss: 3.093547 loss_cls: 1.764670 loss_iou: 0.273914 loss_dfl: 1.267431 loss_l1: 0.735869 eta: 2:06:50 batch_cost: 1.5756 data_cost: 1.4813 ips: 10.1550 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:54:05] ppdet.engine.callbacks INFO: Epoch: [13] [ 0/57] learning_rate: 0.001965 loss: 3.142419 loss_cls: 1.777847 loss_iou: 0.271648 loss_dfl: 1.322050 loss_l1: 0.788343 eta: 2:06:22 batch_cost: 1.4380 data_cost: 1.3467 ips: 11.1268 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:54:27] ppdet.engine.callbacks INFO: Epoch: [13] [20/57] learning_rate: 0.001962 loss: 2.977734 loss_cls: 1.761855 loss_iou: 0.262587 loss_dfl: 1.253634 loss_l1: 0.688320 eta: 2:04:52 batch_cost: 1.0715 data_cost: 0.9840 ips: 14.9319 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:54:58] ppdet.engine.callbacks INFO: Epoch: [13] [40/57] learning_rate: 0.001959 loss: 3.087811 loss_cls: 1.758671 loss_iou: 0.284834 loss_dfl: 1.242844 loss_l1: 0.691032 eta: 2:04:24 batch_cost: 1.5349 data_cost: 1.4401 ips: 10.4238 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:55:32] ppdet.engine.callbacks INFO: Epoch: [14] [ 0/57] learning_rate: 0.001956 loss: 3.078163 loss_cls: 1.719640 loss_iou: 0.263847 loss_dfl: 1.324422 loss_l1: 0.777296 eta: 2:04:44 batch_cost: 1.6802 data_cost: 1.5764 ips: 9.5224 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:56:02] ppdet.engine.callbacks INFO: Epoch: [14] [20/57] learning_rate: 0.001953 loss: 3.005717 loss_cls: 1.701865 loss_iou: 0.260178 loss_dfl: 1.238666 loss_l1: 0.726430 eta: 2:04:04 batch_cost: 1.4429 data_cost: 1.3417 ips: 11.0890 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:56:28] ppdet.engine.callbacks INFO: Epoch: [14] [40/57] learning_rate: 0.001949 loss: 3.076577 loss_cls: 1.761186 loss_iou: 0.258227 loss_dfl: 1.253820 loss_l1: 0.703567 eta: 2:03:07 batch_cost: 1.2951 data_cost: 1.2006 ips: 12.3547 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:57:07] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints
+[08/17 02:57:08] ppdet.engine.callbacks INFO: Eval iter: 0
+[08/17 02:57:11] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/17 02:57:11] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.47s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=0.90s).
+Accumulating evaluation results...
+DONE (t=0.42s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.079
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.154
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.067
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.073
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.071
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.083
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.144
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.384
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.472
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.417
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.338
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.499
+[08/17 02:57:13] ppdet.engine.callbacks INFO: Total sample number: 113, average FPS: 36.50985078729112
+[08/17 02:57:13] ppdet.engine INFO: Best test bbox ap is 0.079.
+[08/17 02:57:13] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints
+[08/17 02:57:20] ppdet.engine.callbacks INFO: Epoch: [15] [ 0/57] learning_rate: 0.001946 loss: 3.076228 loss_cls: 1.733969 loss_iou: 0.263737 loss_dfl: 1.253139 loss_l1: 0.736812 eta: 2:04:31 batch_cost: 2.5981 data_cost: 2.4985 ips: 6.1584 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:57:50] ppdet.engine.callbacks INFO: Epoch: [15] [20/57] learning_rate: 0.001942 loss: 3.046725 loss_cls: 1.712728 loss_iou: 0.270755 loss_dfl: 1.230878 loss_l1: 0.670111 eta: 2:03:54 batch_cost: 1.4867 data_cost: 1.3923 ips: 10.7623 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:58:26] ppdet.engine.callbacks INFO: Epoch: [15] [40/57] learning_rate: 0.001938 loss: 3.065710 loss_cls: 1.659559 loss_iou: 0.277771 loss_dfl: 1.235176 loss_l1: 0.707094 eta: 2:03:43 batch_cost: 1.7276 data_cost: 1.6269 ips: 9.2612 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:58:43] ppdet.engine.callbacks INFO: Epoch: [16] [ 0/57] learning_rate: 0.001935 loss: 2.941958 loss_cls: 1.674213 loss_iou: 0.250240 loss_dfl: 1.160452 loss_l1: 0.630398 eta: 2:02:25 batch_cost: 0.9600 data_cost: 0.8590 ips: 16.6673 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:59:17] ppdet.engine.callbacks INFO: Epoch: [16] [20/57] learning_rate: 0.001930 loss: 2.988750 loss_cls: 1.651769 loss_iou: 0.283296 loss_dfl: 1.235835 loss_l1: 0.709243 eta: 2:02:11 batch_cost: 1.6933 data_cost: 1.5986 ips: 9.4491 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 02:59:55] ppdet.engine.callbacks INFO: Epoch: [16] [40/57] learning_rate: 0.001926 loss: 2.978075 loss_cls: 1.728014 loss_iou: 0.247965 loss_dfl: 1.266143 loss_l1: 0.742671 eta: 2:02:13 batch_cost: 1.8689 data_cost: 1.7743 ips: 8.5610 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:00:15] ppdet.engine.callbacks INFO: Epoch: [17] [ 0/57] learning_rate: 0.001922 loss: 2.998734 loss_cls: 1.720649 loss_iou: 0.260293 loss_dfl: 1.272241 loss_l1: 0.693996 eta: 2:01:14 batch_cost: 1.3267 data_cost: 1.2330 ips: 12.0604 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:00:33] ppdet.engine.callbacks INFO: Epoch: [17] [20/57] learning_rate: 0.001918 loss: 2.940201 loss_cls: 1.749909 loss_iou: 0.273987 loss_dfl: 1.166039 loss_l1: 0.641898 eta: 1:59:42 batch_cost: 0.8974 data_cost: 0.7976 ips: 17.8297 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:01:10] ppdet.engine.callbacks INFO: Epoch: [17] [40/57] learning_rate: 0.001913 loss: 2.999477 loss_cls: 1.742671 loss_iou: 0.273684 loss_dfl: 1.248228 loss_l1: 0.647587 eta: 1:59:38 batch_cost: 1.8133 data_cost: 1.7077 ips: 8.8238 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:01:36] ppdet.engine.callbacks INFO: Epoch: [18] [ 0/57] learning_rate: 0.001909 loss: 2.925196 loss_cls: 1.651669 loss_iou: 0.257619 loss_dfl: 1.270470 loss_l1: 0.694611 eta: 1:59:08 batch_cost: 1.4894 data_cost: 1.3953 ips: 10.7424 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:02:02] ppdet.engine.callbacks INFO: Epoch: [18] [20/57] learning_rate: 0.001904 loss: 2.869430 loss_cls: 1.650687 loss_iou: 0.254302 loss_dfl: 1.218242 loss_l1: 0.651441 eta: 1:58:14 batch_cost: 1.2590 data_cost: 1.1633 ips: 12.7089 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:02:33] ppdet.engine.callbacks INFO: Epoch: [18] [40/57] learning_rate: 0.001899 loss: 2.982418 loss_cls: 1.665080 loss_iou: 0.258245 loss_dfl: 1.196505 loss_l1: 0.650330 eta: 1:57:42 batch_cost: 1.5090 data_cost: 1.4113 ips: 10.6030 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:02:55] ppdet.engine.callbacks INFO: Epoch: [19] [ 0/57] learning_rate: 0.001895 loss: 2.919182 loss_cls: 1.688783 loss_iou: 0.236359 loss_dfl: 1.192528 loss_l1: 0.613697 eta: 1:56:56 batch_cost: 1.2753 data_cost: 1.1768 ips: 12.5460 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:03:21] ppdet.engine.callbacks INFO: Epoch: [19] [20/57] learning_rate: 0.001889 loss: 2.895256 loss_cls: 1.675238 loss_iou: 0.244674 loss_dfl: 1.169445 loss_l1: 0.630575 eta: 1:56:07 batch_cost: 1.2904 data_cost: 1.1918 ips: 12.3989 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:04:02] ppdet.engine.callbacks INFO: Epoch: [19] [40/57] learning_rate: 0.001884 loss: 2.902331 loss_cls: 1.650598 loss_iou: 0.271515 loss_dfl: 1.193411 loss_l1: 0.661838 eta: 1:56:20 batch_cost: 2.0448 data_cost: 1.9494 ips: 7.8247 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:04:25] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints
+[08/17 03:04:25] ppdet.engine.callbacks INFO: Eval iter: 0
+[08/17 03:04:29] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/17 03:04:29] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.35s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=0.55s).
+Accumulating evaluation results...
+DONE (t=0.26s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.118
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.197
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.126
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.034
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.077
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.124
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.173
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.415
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.502
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.383
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.397
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.525
+[08/17 03:04:30] ppdet.engine.callbacks INFO: Total sample number: 113, average FPS: 33.52031840162666
+[08/17 03:04:30] ppdet.engine INFO: Best test bbox ap is 0.118.
+[08/17 03:04:30] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints
+[08/17 03:04:56] ppdet.engine.callbacks INFO: Epoch: [20] [ 0/57] learning_rate: 0.001879 loss: 2.905487 loss_cls: 1.657325 loss_iou: 0.281251 loss_dfl: 1.204200 loss_l1: 0.641775 eta: 1:57:18 batch_cost: 2.5169 data_cost: 2.4207 ips: 6.3571 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:05:32] ppdet.engine.callbacks INFO: Epoch: [20] [20/57] learning_rate: 0.001874 loss: 2.877692 loss_cls: 1.637576 loss_iou: 0.259493 loss_dfl: 1.159772 loss_l1: 0.586770 eta: 1:57:05 batch_cost: 1.7671 data_cost: 1.6761 ips: 9.0546 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:05:50] ppdet.engine.callbacks INFO: Epoch: [20] [40/57] learning_rate: 0.001868 loss: 2.897780 loss_cls: 1.629323 loss_iou: 0.259395 loss_dfl: 1.177474 loss_l1: 0.660374 eta: 1:55:44 batch_cost: 0.9003 data_cost: 0.8107 ips: 17.7717 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:06:13] ppdet.engine.callbacks INFO: Epoch: [21] [ 0/57] learning_rate: 0.001863 loss: 2.915723 loss_cls: 1.663875 loss_iou: 0.264244 loss_dfl: 1.208168 loss_l1: 0.665235 eta: 1:55:02 batch_cost: 1.2560 data_cost: 1.1560 ips: 12.7384 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:06:54] ppdet.engine.callbacks INFO: Epoch: [21] [20/57] learning_rate: 0.001857 loss: 2.846308 loss_cls: 1.640876 loss_iou: 0.240138 loss_dfl: 1.186232 loss_l1: 0.612142 eta: 1:55:09 batch_cost: 2.0464 data_cost: 1.9525 ips: 7.8188 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:07:17] ppdet.engine.callbacks INFO: Epoch: [21] [40/57] learning_rate: 0.001851 loss: 2.892395 loss_cls: 1.660943 loss_iou: 0.241849 loss_dfl: 1.210994 loss_l1: 0.671507 eta: 1:54:06 batch_cost: 1.0965 data_cost: 0.9973 ips: 14.5920 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:07:38] ppdet.engine.callbacks INFO: Epoch: [22] [ 0/57] learning_rate: 0.001846 loss: 2.877586 loss_cls: 1.653404 loss_iou: 0.235899 loss_dfl: 1.175512 loss_l1: 0.631317 eta: 1:53:22 batch_cost: 1.2569 data_cost: 1.1600 ips: 12.7300 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:08:09] ppdet.engine.callbacks INFO: Epoch: [22] [20/57] learning_rate: 0.001840 loss: 2.905960 loss_cls: 1.634827 loss_iou: 0.258472 loss_dfl: 1.177965 loss_l1: 0.635073 eta: 1:52:49 batch_cost: 1.4911 data_cost: 1.4004 ips: 10.7305 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:08:42] ppdet.engine.callbacks INFO: Epoch: [22] [40/57] learning_rate: 0.001833 loss: 2.921097 loss_cls: 1.604655 loss_iou: 0.257186 loss_dfl: 1.224906 loss_l1: 0.661333 eta: 1:52:27 batch_cost: 1.6566 data_cost: 1.5578 ips: 9.6583 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:09:23] ppdet.engine.callbacks INFO: Epoch: [23] [ 0/57] learning_rate: 0.001828 loss: 2.816040 loss_cls: 1.641692 loss_iou: 0.239221 loss_dfl: 1.151272 loss_l1: 0.620426 eta: 1:52:46 batch_cost: 1.9891 data_cost: 1.8882 ips: 8.0438 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:09:47] ppdet.engine.callbacks INFO: Epoch: [23] [20/57] learning_rate: 0.001821 loss: 2.856901 loss_cls: 1.656979 loss_iou: 0.233827 loss_dfl: 1.120320 loss_l1: 0.564629 eta: 1:51:51 batch_cost: 1.1689 data_cost: 1.0682 ips: 13.6883 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:10:06] ppdet.engine.callbacks INFO: Epoch: [23] [40/57] learning_rate: 0.001815 loss: 2.892835 loss_cls: 1.656589 loss_iou: 0.245820 loss_dfl: 1.167185 loss_l1: 0.631416 eta: 1:50:41 batch_cost: 0.9273 data_cost: 0.8341 ips: 17.2539 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:10:47] ppdet.engine.callbacks INFO: Epoch: [24] [ 0/57] learning_rate: 0.001809 loss: 2.773098 loss_cls: 1.628718 loss_iou: 0.232039 loss_dfl: 1.163804 loss_l1: 0.595619 eta: 1:51:00 batch_cost: 2.0322 data_cost: 1.9350 ips: 7.8732 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:11:13] ppdet.engine.callbacks INFO: Epoch: [24] [20/57] learning_rate: 0.001802 loss: 2.816623 loss_cls: 1.621633 loss_iou: 0.238508 loss_dfl: 1.173670 loss_l1: 0.614926 eta: 1:50:15 batch_cost: 1.3106 data_cost: 1.2185 ips: 12.2085 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:11:43] ppdet.engine.callbacks INFO: Epoch: [24] [40/57] learning_rate: 0.001795 loss: 2.863359 loss_cls: 1.659081 loss_iou: 0.255965 loss_dfl: 1.178242 loss_l1: 0.664612 eta: 1:49:41 batch_cost: 1.4644 data_cost: 1.3629 ips: 10.9261 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:12:07] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints
+[08/17 03:12:07] ppdet.engine.callbacks INFO: Eval iter: 0
+[08/17 03:12:10] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/17 03:12:10] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.52s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=0.88s).
+Accumulating evaluation results...
+DONE (t=0.42s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.136
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.224
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.150
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.035
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.103
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.144
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.186
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.437
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.532
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.400
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.431
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.553
+[08/17 03:12:12] ppdet.engine.callbacks INFO: Total sample number: 113, average FPS: 34.212199995798876
+[08/17 03:12:12] ppdet.engine INFO: Best test bbox ap is 0.136.
+[08/17 03:12:13] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints
+[08/17 03:12:17] ppdet.engine.callbacks INFO: Epoch: [25] [ 0/57] learning_rate: 0.001789 loss: 2.820397 loss_cls: 1.654377 loss_iou: 0.257116 loss_dfl: 1.146186 loss_l1: 0.569719 eta: 1:49:14 batch_cost: 1.5707 data_cost: 1.4734 ips: 10.1863 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:13:00] ppdet.engine.callbacks INFO: Epoch: [25] [20/57] learning_rate: 0.001782 loss: 2.860057 loss_cls: 1.655366 loss_iou: 0.231840 loss_dfl: 1.251652 loss_l1: 0.696087 eta: 1:49:20 batch_cost: 2.1648 data_cost: 2.0613 ips: 7.3911 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:13:31] ppdet.engine.callbacks INFO: Epoch: [25] [40/57] learning_rate: 0.001775 loss: 2.931623 loss_cls: 1.630940 loss_iou: 0.254550 loss_dfl: 1.144134 loss_l1: 0.613526 eta: 1:48:48 batch_cost: 1.5217 data_cost: 1.4218 ips: 10.5148 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:14:00] ppdet.engine.callbacks INFO: Epoch: [26] [ 0/57] learning_rate: 0.001768 loss: 2.897956 loss_cls: 1.660176 loss_iou: 0.252106 loss_dfl: 1.144205 loss_l1: 0.613382 eta: 1:48:27 batch_cost: 1.4661 data_cost: 1.3687 ips: 10.9131 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:14:34] ppdet.engine.callbacks INFO: Epoch: [26] [20/57] learning_rate: 0.001761 loss: 2.855061 loss_cls: 1.624339 loss_iou: 0.256534 loss_dfl: 1.188851 loss_l1: 0.648245 eta: 1:48:02 batch_cost: 1.6599 data_cost: 1.5613 ips: 9.6394 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:15:04] ppdet.engine.callbacks INFO: Epoch: [26] [40/57] learning_rate: 0.001753 loss: 2.833955 loss_cls: 1.618492 loss_iou: 0.239225 loss_dfl: 1.197323 loss_l1: 0.613425 eta: 1:47:30 batch_cost: 1.5103 data_cost: 1.4120 ips: 10.5938 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:15:32] ppdet.engine.callbacks INFO: Epoch: [27] [ 0/57] learning_rate: 0.001747 loss: 2.824641 loss_cls: 1.598761 loss_iou: 0.243755 loss_dfl: 1.163281 loss_l1: 0.588806 eta: 1:47:05 batch_cost: 1.5763 data_cost: 1.4749 ips: 10.1504 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:16:01] ppdet.engine.callbacks INFO: Epoch: [27] [20/57] learning_rate: 0.001739 loss: 2.889567 loss_cls: 1.649903 loss_iou: 0.239685 loss_dfl: 1.235316 loss_l1: 0.685432 eta: 1:46:27 batch_cost: 1.4243 data_cost: 1.3223 ips: 11.2334 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:16:37] ppdet.engine.callbacks INFO: Epoch: [27] [40/57] learning_rate: 0.001731 loss: 2.820906 loss_cls: 1.551389 loss_iou: 0.256578 loss_dfl: 1.113247 loss_l1: 0.577828 eta: 1:46:10 batch_cost: 1.8019 data_cost: 1.7123 ips: 8.8796 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:17:09] ppdet.engine.callbacks INFO: Epoch: [28] [ 0/57] learning_rate: 0.001724 loss: 2.819823 loss_cls: 1.627342 loss_iou: 0.237623 loss_dfl: 1.223441 loss_l1: 0.650266 eta: 1:45:56 batch_cost: 1.6445 data_cost: 1.5437 ips: 9.7292 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:18:01] ppdet.engine.callbacks INFO: Epoch: [28] [20/57] learning_rate: 0.001716 loss: 2.793977 loss_cls: 1.572829 loss_iou: 0.245357 loss_dfl: 1.170334 loss_l1: 0.624149 eta: 1:46:17 batch_cost: 2.5749 data_cost: 2.4766 ips: 6.2138 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:18:27] ppdet.engine.callbacks INFO: Epoch: [28] [40/57] learning_rate: 0.001708 loss: 2.786708 loss_cls: 1.605059 loss_iou: 0.238379 loss_dfl: 1.184195 loss_l1: 0.622180 eta: 1:45:31 batch_cost: 1.2764 data_cost: 1.1783 ips: 12.5350 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:18:51] ppdet.engine.callbacks INFO: Epoch: [29] [ 0/57] learning_rate: 0.001701 loss: 2.813836 loss_cls: 1.632565 loss_iou: 0.240647 loss_dfl: 1.110099 loss_l1: 0.600385 eta: 1:44:58 batch_cost: 1.4923 data_cost: 1.3931 ips: 10.7215 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:19:12] ppdet.engine.callbacks INFO: Epoch: [29] [20/57] learning_rate: 0.001693 loss: 2.865140 loss_cls: 1.654078 loss_iou: 0.245125 loss_dfl: 1.149945 loss_l1: 0.604909 eta: 1:44:01 batch_cost: 1.0164 data_cost: 0.9219 ips: 15.7416 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:19:41] ppdet.engine.callbacks INFO: Epoch: [29] [40/57] learning_rate: 0.001685 loss: 2.716858 loss_cls: 1.564979 loss_iou: 0.236185 loss_dfl: 1.094379 loss_l1: 0.542255 eta: 1:43:24 batch_cost: 1.4303 data_cost: 1.3337 ips: 11.1868 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:20:07] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints
+[08/17 03:20:08] ppdet.engine.callbacks INFO: Eval iter: 0
+[08/17 03:20:12] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/17 03:20:12] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.46s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=0.93s).
+Accumulating evaluation results...
+DONE (t=0.46s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.143
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.240
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.161
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.033
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.103
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.158
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.191
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.438
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.538
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.417
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.462
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.552
+[08/17 03:20:14] ppdet.engine.callbacks INFO: Total sample number: 113, average FPS: 31.029390878208048
+[08/17 03:20:14] ppdet.engine INFO: Best test bbox ap is 0.143.
+[08/17 03:20:14] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints
+[08/17 03:20:23] ppdet.engine.callbacks INFO: Epoch: [30] [ 0/57] learning_rate: 0.001677 loss: 2.750940 loss_cls: 1.562079 loss_iou: 0.240662 loss_dfl: 1.191485 loss_l1: 0.635819 eta: 1:43:15 batch_cost: 1.8505 data_cost: 1.7479 ips: 8.6461 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:20:49] ppdet.engine.callbacks INFO: Epoch: [30] [20/57] learning_rate: 0.001669 loss: 2.320434 loss_cls: 1.215607 loss_iou: 0.236288 loss_dfl: 1.146831 loss_l1: 0.647757 eta: 1:42:31 batch_cost: 1.2847 data_cost: 1.1866 ips: 12.4546 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:21:30] ppdet.engine.callbacks INFO: Epoch: [30] [40/57] learning_rate: 0.001660 loss: 2.397438 loss_cls: 1.281671 loss_iou: 0.221718 loss_dfl: 1.157091 loss_l1: 0.607855 eta: 1:42:21 batch_cost: 1.9999 data_cost: 1.8966 ips: 8.0005 images/s, max_mem_reserved: 10693 MB, max_mem_allocated: 8412 MB
+[08/17 03:21:57] ppdet.engine.callbacks INFO: Epoch: [31] [ 0/57] learning_rate: 0.001653 loss: 2.397616 loss_cls: 1.289287 loss_iou: 0.225056 loss_dfl: 1.179508 loss_l1: 0.655637 eta: 1:41:54 batch_cost: 2.0385 data_cost: 1.9351 ips: 7.8488 images/s, max_mem_reserved: 11010 MB, max_mem_allocated: 8415 MB
+[08/17 03:22:34] ppdet.engine.callbacks INFO: Epoch: [31] [20/57] learning_rate: 0.001644 loss: 2.365514 loss_cls: 1.243691 loss_iou: 0.222137 loss_dfl: 1.142817 loss_l1: 0.648390 eta: 1:41:36 batch_cost: 1.8452 data_cost: 1.7503 ips: 8.6712 images/s, max_mem_reserved: 11010 MB, max_mem_allocated: 8415 MB
+[08/17 03:23:01] ppdet.engine.callbacks INFO: Epoch: [31] [40/57] learning_rate: 0.001635 loss: 2.318371 loss_cls: 1.223992 loss_iou: 0.202881 loss_dfl: 1.119541 loss_l1: 0.591638 eta: 1:40:54 batch_cost: 1.3160 data_cost: 1.2152 ips: 12.1579 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:23:24] ppdet.engine.callbacks INFO: Epoch: [32] [ 0/57] learning_rate: 0.001627 loss: 2.335318 loss_cls: 1.242247 loss_iou: 0.213290 loss_dfl: 1.091459 loss_l1: 0.568951 eta: 1:40:19 batch_cost: 1.4759 data_cost: 1.3797 ips: 10.8410 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:23:45] ppdet.engine.callbacks INFO: Epoch: [32] [20/57] learning_rate: 0.001618 loss: 2.321367 loss_cls: 1.224592 loss_iou: 0.205939 loss_dfl: 1.099839 loss_l1: 0.595569 eta: 1:39:24 batch_cost: 0.9881 data_cost: 0.8929 ips: 16.1921 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:24:07] ppdet.engine.callbacks INFO: Epoch: [32] [40/57] learning_rate: 0.001609 loss: 2.352010 loss_cls: 1.241499 loss_iou: 0.222047 loss_dfl: 1.131793 loss_l1: 0.590688 eta: 1:38:34 batch_cost: 1.0805 data_cost: 0.9851 ips: 14.8075 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:24:43] ppdet.engine.callbacks INFO: Epoch: [33] [ 0/57] learning_rate: 0.001601 loss: 2.287015 loss_cls: 1.215803 loss_iou: 0.218134 loss_dfl: 1.098930 loss_l1: 0.560799 eta: 1:38:26 batch_cost: 2.0978 data_cost: 2.0003 ips: 7.6269 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:25:14] ppdet.engine.callbacks INFO: Epoch: [33] [20/57] learning_rate: 0.001592 loss: 2.312203 loss_cls: 1.243726 loss_iou: 0.196744 loss_dfl: 1.087579 loss_l1: 0.564908 eta: 1:37:56 batch_cost: 1.5572 data_cost: 1.4631 ips: 10.2748 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:25:42] ppdet.engine.callbacks INFO: Epoch: [33] [40/57] learning_rate: 0.001582 loss: 2.378811 loss_cls: 1.270456 loss_iou: 0.222314 loss_dfl: 1.090678 loss_l1: 0.575488 eta: 1:37:18 batch_cost: 1.3755 data_cost: 1.2792 ips: 11.6325 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:26:14] ppdet.engine.callbacks INFO: Epoch: [34] [ 0/57] learning_rate: 0.001574 loss: 2.345323 loss_cls: 1.244767 loss_iou: 0.216223 loss_dfl: 1.145626 loss_l1: 0.610848 eta: 1:37:02 batch_cost: 1.8686 data_cost: 1.7711 ips: 8.5626 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:26:45] ppdet.engine.callbacks INFO: Epoch: [34] [20/57] learning_rate: 0.001565 loss: 2.354254 loss_cls: 1.264513 loss_iou: 0.225855 loss_dfl: 1.132012 loss_l1: 0.605115 eta: 1:36:30 batch_cost: 1.5152 data_cost: 1.4184 ips: 10.5599 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:27:06] ppdet.engine.callbacks INFO: Epoch: [34] [40/57] learning_rate: 0.001555 loss: 2.331566 loss_cls: 1.252014 loss_iou: 0.216088 loss_dfl: 1.085333 loss_l1: 0.582775 eta: 1:35:38 batch_cost: 1.0090 data_cost: 0.9130 ips: 15.8580 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:27:25] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints
+[08/17 03:27:26] ppdet.engine.callbacks INFO: Eval iter: 0
+[08/17 03:27:29] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/17 03:27:29] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.45s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=0.74s).
+Accumulating evaluation results...
+DONE (t=0.28s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.153
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.252
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.167
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.010
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.122
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.164
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.196
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.452
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.559
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.417
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.519
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.567
+[08/17 03:27:30] ppdet.engine.callbacks INFO: Total sample number: 113, average FPS: 39.147457687736576
+[08/17 03:27:30] ppdet.engine INFO: Best test bbox ap is 0.153.
+[08/17 03:27:31] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints
+[08/17 03:27:35] ppdet.engine.callbacks INFO: Epoch: [35] [ 0/57] learning_rate: 0.001547 loss: 2.233540 loss_cls: 1.202771 loss_iou: 0.201571 loss_dfl: 1.055172 loss_l1: 0.579535 eta: 1:35:05 batch_cost: 1.3197 data_cost: 1.2276 ips: 12.1238 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:28:02] ppdet.engine.callbacks INFO: Epoch: [35] [20/57] learning_rate: 0.001537 loss: 2.368601 loss_cls: 1.273978 loss_iou: 0.212299 loss_dfl: 1.071675 loss_l1: 0.597837 eta: 1:34:26 batch_cost: 1.3099 data_cost: 1.2165 ips: 12.2144 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:28:32] ppdet.engine.callbacks INFO: Epoch: [35] [40/57] learning_rate: 0.001527 loss: 2.231484 loss_cls: 1.228883 loss_iou: 0.198561 loss_dfl: 1.023669 loss_l1: 0.532162 eta: 1:33:54 batch_cost: 1.5089 data_cost: 1.4144 ips: 10.6036 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:29:18] ppdet.engine.callbacks INFO: Epoch: [36] [ 0/57] learning_rate: 0.001519 loss: 2.363495 loss_cls: 1.228969 loss_iou: 0.208370 loss_dfl: 1.093833 loss_l1: 0.585746 eta: 1:34:00 batch_cost: 2.3155 data_cost: 2.2155 ips: 6.9100 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:29:41] ppdet.engine.callbacks INFO: Epoch: [36] [20/57] learning_rate: 0.001509 loss: 2.363558 loss_cls: 1.249687 loss_iou: 0.214790 loss_dfl: 1.117868 loss_l1: 0.615832 eta: 1:33:14 batch_cost: 1.1182 data_cost: 1.0232 ips: 14.3087 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:30:09] ppdet.engine.callbacks INFO: Epoch: [36] [40/57] learning_rate: 0.001499 loss: 2.287918 loss_cls: 1.192817 loss_iou: 0.217942 loss_dfl: 1.070867 loss_l1: 0.562806 eta: 1:32:39 batch_cost: 1.4130 data_cost: 1.3185 ips: 11.3237 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:30:33] ppdet.engine.callbacks INFO: Epoch: [37] [ 0/57] learning_rate: 0.001490 loss: 2.342388 loss_cls: 1.255270 loss_iou: 0.208268 loss_dfl: 1.073382 loss_l1: 0.566771 eta: 1:32:08 batch_cost: 1.2584 data_cost: 1.1605 ips: 12.7150 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:31:03] ppdet.engine.callbacks INFO: Epoch: [37] [20/57] learning_rate: 0.001480 loss: 2.253471 loss_cls: 1.250408 loss_iou: 0.194563 loss_dfl: 1.061143 loss_l1: 0.541001 eta: 1:31:35 batch_cost: 1.4617 data_cost: 1.3636 ips: 10.9460 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:31:30] ppdet.engine.callbacks INFO: Epoch: [37] [40/57] learning_rate: 0.001470 loss: 2.339633 loss_cls: 1.236054 loss_iou: 0.217731 loss_dfl: 1.113026 loss_l1: 0.593843 eta: 1:30:56 batch_cost: 1.2909 data_cost: 1.1908 ips: 12.3947 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:31:57] ppdet.engine.callbacks INFO: Epoch: [38] [ 0/57] learning_rate: 0.001461 loss: 2.238399 loss_cls: 1.178917 loss_iou: 0.210173 loss_dfl: 1.042860 loss_l1: 0.503005 eta: 1:30:31 batch_cost: 1.5983 data_cost: 1.5036 ips: 10.0109 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:32:27] ppdet.engine.callbacks INFO: Epoch: [38] [20/57] learning_rate: 0.001451 loss: 2.264678 loss_cls: 1.244425 loss_iou: 0.184899 loss_dfl: 1.087659 loss_l1: 0.579026 eta: 1:29:57 batch_cost: 1.4314 data_cost: 1.3334 ips: 11.1779 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:32:51] ppdet.engine.callbacks INFO: Epoch: [38] [40/57] learning_rate: 0.001441 loss: 2.293563 loss_cls: 1.256396 loss_iou: 0.207809 loss_dfl: 1.068620 loss_l1: 0.536519 eta: 1:29:16 batch_cost: 1.1994 data_cost: 1.1042 ips: 13.3395 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:33:15] ppdet.engine.callbacks INFO: Epoch: [39] [ 0/57] learning_rate: 0.001432 loss: 2.304951 loss_cls: 1.236030 loss_iou: 0.201501 loss_dfl: 1.102491 loss_l1: 0.538448 eta: 1:28:45 batch_cost: 1.2542 data_cost: 1.1491 ips: 12.7568 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:33:43] ppdet.engine.callbacks INFO: Epoch: [39] [20/57] learning_rate: 0.001421 loss: 2.260712 loss_cls: 1.197112 loss_iou: 0.202951 loss_dfl: 1.067685 loss_l1: 0.534173 eta: 1:28:09 batch_cost: 1.3432 data_cost: 1.2440 ips: 11.9114 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:34:12] ppdet.engine.callbacks INFO: Epoch: [39] [40/57] learning_rate: 0.001411 loss: 2.319403 loss_cls: 1.241073 loss_iou: 0.213975 loss_dfl: 1.128930 loss_l1: 0.611226 eta: 1:27:35 batch_cost: 1.4266 data_cost: 1.3249 ips: 11.2153 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:34:40] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints
+[08/17 03:34:40] ppdet.engine.callbacks INFO: Eval iter: 0
+[08/17 03:34:44] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/17 03:34:44] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.47s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=0.91s).
+Accumulating evaluation results...
+DONE (t=0.26s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.162
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.265
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.175
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.020
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.118
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.171
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.202
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.461
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.557
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.400
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.501
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.567
+[08/17 03:34:45] ppdet.engine.callbacks INFO: Total sample number: 113, average FPS: 35.68884473305373
+[08/17 03:34:45] ppdet.engine INFO: Best test bbox ap is 0.162.
+[08/17 03:34:46] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints
+[08/17 03:34:57] ppdet.engine.callbacks INFO: Epoch: [40] [ 0/57] learning_rate: 0.001402 loss: 2.269727 loss_cls: 1.215380 loss_iou: 0.204233 loss_dfl: 1.087350 loss_l1: 0.563678 eta: 1:27:28 batch_cost: 2.1252 data_cost: 2.0282 ips: 7.5286 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:35:30] ppdet.engine.callbacks INFO: Epoch: [40] [20/57] learning_rate: 0.001391 loss: 2.290550 loss_cls: 1.246815 loss_iou: 0.208072 loss_dfl: 1.099743 loss_l1: 0.565327 eta: 1:26:59 batch_cost: 1.5985 data_cost: 1.4974 ips: 10.0096 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:35:51] ppdet.engine.callbacks INFO: Epoch: [40] [40/57] learning_rate: 0.001380 loss: 2.279839 loss_cls: 1.230582 loss_iou: 0.199216 loss_dfl: 1.099074 loss_l1: 0.530335 eta: 1:26:14 batch_cost: 1.0340 data_cost: 0.9449 ips: 15.4733 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:36:15] ppdet.engine.callbacks INFO: Epoch: [41] [ 0/57] learning_rate: 0.001371 loss: 2.371404 loss_cls: 1.265658 loss_iou: 0.208408 loss_dfl: 1.151961 loss_l1: 0.596555 eta: 1:25:44 batch_cost: 1.4192 data_cost: 1.3200 ips: 11.2741 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:36:45] ppdet.engine.callbacks INFO: Epoch: [41] [20/57] learning_rate: 0.001360 loss: 2.329976 loss_cls: 1.228171 loss_iou: 0.200674 loss_dfl: 1.155026 loss_l1: 0.554863 eta: 1:25:12 batch_cost: 1.4584 data_cost: 1.3569 ips: 10.9707 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:37:18] ppdet.engine.callbacks INFO: Epoch: [41] [40/57] learning_rate: 0.001350 loss: 2.276856 loss_cls: 1.197671 loss_iou: 0.206809 loss_dfl: 1.075814 loss_l1: 0.552502 eta: 1:24:44 batch_cost: 1.6286 data_cost: 1.5318 ips: 9.8246 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:37:40] ppdet.engine.callbacks INFO: Epoch: [42] [ 0/57] learning_rate: 0.001340 loss: 2.310509 loss_cls: 1.239564 loss_iou: 0.210865 loss_dfl: 1.132596 loss_l1: 0.604416 eta: 1:24:11 batch_cost: 1.4894 data_cost: 1.3846 ips: 10.7429 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:38:11] ppdet.engine.callbacks INFO: Epoch: [42] [20/57] learning_rate: 0.001329 loss: 2.291872 loss_cls: 1.215272 loss_iou: 0.202730 loss_dfl: 1.092638 loss_l1: 0.584087 eta: 1:23:40 batch_cost: 1.5158 data_cost: 1.4233 ips: 10.5554 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:38:34] ppdet.engine.callbacks INFO: Epoch: [42] [40/57] learning_rate: 0.001318 loss: 2.218119 loss_cls: 1.222606 loss_iou: 0.200166 loss_dfl: 1.065294 loss_l1: 0.523877 eta: 1:22:59 batch_cost: 1.1149 data_cost: 1.0253 ips: 14.3507 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:39:10] ppdet.engine.callbacks INFO: Epoch: [43] [ 0/57] learning_rate: 0.001309 loss: 2.353544 loss_cls: 1.225579 loss_iou: 0.216405 loss_dfl: 1.107557 loss_l1: 0.584675 eta: 1:22:45 batch_cost: 1.9965 data_cost: 1.9002 ips: 8.0141 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:39:40] ppdet.engine.callbacks INFO: Epoch: [43] [20/57] learning_rate: 0.001298 loss: 2.304363 loss_cls: 1.229833 loss_iou: 0.200284 loss_dfl: 1.124311 loss_l1: 0.579180 eta: 1:22:13 batch_cost: 1.4672 data_cost: 1.3654 ips: 10.9048 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:40:17] ppdet.engine.callbacks INFO: Epoch: [43] [40/57] learning_rate: 0.001287 loss: 2.364204 loss_cls: 1.220191 loss_iou: 0.217419 loss_dfl: 1.079341 loss_l1: 0.543626 eta: 1:21:50 batch_cost: 1.8208 data_cost: 1.7311 ips: 8.7876 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:40:36] ppdet.engine.callbacks INFO: Epoch: [44] [ 0/57] learning_rate: 0.001277 loss: 2.242572 loss_cls: 1.205036 loss_iou: 0.192536 loss_dfl: 1.038552 loss_l1: 0.528424 eta: 1:21:15 batch_cost: 1.4103 data_cost: 1.3114 ips: 11.3450 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:41:00] ppdet.engine.callbacks INFO: Epoch: [44] [20/57] learning_rate: 0.001266 loss: 2.292997 loss_cls: 1.220333 loss_iou: 0.216957 loss_dfl: 1.105335 loss_l1: 0.580174 eta: 1:20:35 batch_cost: 1.1597 data_cost: 1.0611 ips: 13.7968 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:41:22] ppdet.engine.callbacks INFO: Epoch: [44] [40/57] learning_rate: 0.001255 loss: 2.272138 loss_cls: 1.206817 loss_iou: 0.206984 loss_dfl: 1.058260 loss_l1: 0.568028 eta: 1:19:54 batch_cost: 1.0702 data_cost: 0.9696 ips: 14.9508 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:41:53] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints
+[08/17 03:41:53] ppdet.engine.callbacks INFO: Eval iter: 0
+[08/17 03:41:57] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/17 03:41:57] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.56s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=0.71s).
+Accumulating evaluation results...
+DONE (t=0.29s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.177
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.277
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.185
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.030
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.120
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.188
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.224
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.474
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.571
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.400
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.504
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.582
+[08/17 03:41:58] ppdet.engine.callbacks INFO: Total sample number: 113, average FPS: 32.62504662748134
+[08/17 03:41:58] ppdet.engine INFO: Best test bbox ap is 0.177.
+[08/17 03:41:59] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints
+[08/17 03:42:06] ppdet.engine.callbacks INFO: Epoch: [45] [ 0/57] learning_rate: 0.001245 loss: 2.263292 loss_cls: 1.236737 loss_iou: 0.199681 loss_dfl: 1.042105 loss_l1: 0.587798 eta: 1:19:41 batch_cost: 1.8280 data_cost: 1.7266 ips: 8.7528 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:42:25] ppdet.engine.callbacks INFO: Epoch: [45] [20/57] learning_rate: 0.001234 loss: 2.328000 loss_cls: 1.225821 loss_iou: 0.211814 loss_dfl: 1.119601 loss_l1: 0.576783 eta: 1:18:56 batch_cost: 0.9410 data_cost: 0.8397 ips: 17.0030 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:43:01] ppdet.engine.callbacks INFO: Epoch: [45] [40/57] learning_rate: 0.001223 loss: 2.207338 loss_cls: 1.209491 loss_iou: 0.198843 loss_dfl: 1.017082 loss_l1: 0.489079 eta: 1:18:32 batch_cost: 1.7914 data_cost: 1.6949 ips: 8.9318 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:43:21] ppdet.engine.callbacks INFO: Epoch: [46] [ 0/57] learning_rate: 0.001213 loss: 2.260940 loss_cls: 1.200063 loss_iou: 0.206622 loss_dfl: 1.075790 loss_l1: 0.556793 eta: 1:17:58 batch_cost: 1.3230 data_cost: 1.2281 ips: 12.0936 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:43:43] ppdet.engine.callbacks INFO: Epoch: [46] [20/57] learning_rate: 0.001202 loss: 2.239219 loss_cls: 1.187749 loss_iou: 0.199982 loss_dfl: 1.030349 loss_l1: 0.527462 eta: 1:17:17 batch_cost: 1.0511 data_cost: 0.9546 ips: 15.2222 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:44:17] ppdet.engine.callbacks INFO: Epoch: [46] [40/57] learning_rate: 0.001191 loss: 2.157860 loss_cls: 1.213815 loss_iou: 0.185097 loss_dfl: 0.964397 loss_l1: 0.452746 eta: 1:16:50 batch_cost: 1.6940 data_cost: 1.6025 ips: 9.4451 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:44:59] ppdet.engine.callbacks INFO: Epoch: [47] [ 0/57] learning_rate: 0.001181 loss: 2.308508 loss_cls: 1.220598 loss_iou: 0.210140 loss_dfl: 1.086077 loss_l1: 0.538317 eta: 1:16:43 batch_cost: 2.4958 data_cost: 2.3971 ips: 6.4109 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:45:29] ppdet.engine.callbacks INFO: Epoch: [47] [20/57] learning_rate: 0.001169 loss: 2.350820 loss_cls: 1.259632 loss_iou: 0.202795 loss_dfl: 1.132757 loss_l1: 0.580674 eta: 1:16:11 batch_cost: 1.4709 data_cost: 1.3689 ips: 10.8777 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:45:52] ppdet.engine.callbacks INFO: Epoch: [47] [40/57] learning_rate: 0.001158 loss: 2.289079 loss_cls: 1.208660 loss_iou: 0.191258 loss_dfl: 1.101156 loss_l1: 0.548559 eta: 1:15:31 batch_cost: 1.0857 data_cost: 0.9923 ips: 14.7364 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:46:20] ppdet.engine.callbacks INFO: Epoch: [48] [ 0/57] learning_rate: 0.001148 loss: 2.181115 loss_cls: 1.178983 loss_iou: 0.193154 loss_dfl: 1.034894 loss_l1: 0.535862 eta: 1:15:07 batch_cost: 1.3980 data_cost: 1.3096 ips: 11.4450 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:46:44] ppdet.engine.callbacks INFO: Epoch: [48] [20/57] learning_rate: 0.001137 loss: 2.257595 loss_cls: 1.191376 loss_iou: 0.208076 loss_dfl: 1.046000 loss_l1: 0.530396 eta: 1:14:30 batch_cost: 1.1951 data_cost: 1.0994 ips: 13.3883 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:47:16] ppdet.engine.callbacks INFO: Epoch: [48] [40/57] learning_rate: 0.001125 loss: 2.276699 loss_cls: 1.202952 loss_iou: 0.200032 loss_dfl: 1.021628 loss_l1: 0.579421 eta: 1:14:00 batch_cost: 1.5554 data_cost: 1.4576 ips: 10.2865 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:47:40] ppdet.engine.callbacks INFO: Epoch: [49] [ 0/57] learning_rate: 0.001115 loss: 2.227106 loss_cls: 1.224581 loss_iou: 0.194344 loss_dfl: 1.053266 loss_l1: 0.537289 eta: 1:13:32 batch_cost: 1.3206 data_cost: 1.2170 ips: 12.1158 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:48:09] ppdet.engine.callbacks INFO: Epoch: [49] [20/57] learning_rate: 0.001104 loss: 2.247186 loss_cls: 1.219946 loss_iou: 0.213782 loss_dfl: 1.062322 loss_l1: 0.538154 eta: 1:12:59 batch_cost: 1.3905 data_cost: 1.2941 ips: 11.5066 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:48:37] ppdet.engine.callbacks INFO: Epoch: [49] [40/57] learning_rate: 0.001092 loss: 2.246527 loss_cls: 1.226441 loss_iou: 0.197331 loss_dfl: 1.036370 loss_l1: 0.517083 eta: 1:12:26 batch_cost: 1.4038 data_cost: 1.3124 ips: 11.3978 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:49:00] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints
+[08/17 03:49:00] ppdet.engine.callbacks INFO: Eval iter: 0
+[08/17 03:49:04] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/17 03:49:04] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.41s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=0.66s).
+Accumulating evaluation results...
+DONE (t=0.25s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.180
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.285
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.186
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.023
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.123
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.190
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.217
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.484
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.587
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.400
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.522
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.598
+[08/17 03:49:05] ppdet.engine.callbacks INFO: Total sample number: 113, average FPS: 33.77088604582462
+[08/17 03:49:05] ppdet.engine INFO: Best test bbox ap is 0.180.
+[08/17 03:49:06] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints
+[08/17 03:49:09] ppdet.engine.callbacks INFO: Epoch: [50] [ 0/57] learning_rate: 0.001083 loss: 2.197884 loss_cls: 1.204554 loss_iou: 0.191967 loss_dfl: 1.047807 loss_l1: 0.506058 eta: 1:11:59 batch_cost: 1.4313 data_cost: 1.3360 ips: 11.1787 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:49:48] ppdet.engine.callbacks INFO: Epoch: [50] [20/57] learning_rate: 0.001071 loss: 2.299868 loss_cls: 1.237346 loss_iou: 0.212944 loss_dfl: 1.042098 loss_l1: 0.581104 eta: 1:11:38 batch_cost: 1.9454 data_cost: 1.8420 ips: 8.2244 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:50:05] ppdet.engine.callbacks INFO: Epoch: [50] [40/57] learning_rate: 0.001059 loss: 2.277319 loss_cls: 1.219452 loss_iou: 0.206876 loss_dfl: 1.054159 loss_l1: 0.609469 eta: 1:10:54 batch_cost: 0.8238 data_cost: 0.7225 ips: 19.4228 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:50:31] ppdet.engine.callbacks INFO: Epoch: [51] [ 0/57] learning_rate: 0.001050 loss: 2.234495 loss_cls: 1.199081 loss_iou: 0.182639 loss_dfl: 1.034089 loss_l1: 0.505004 eta: 1:10:28 batch_cost: 1.2895 data_cost: 1.1888 ips: 12.4078 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:51:03] ppdet.engine.callbacks INFO: Epoch: [51] [20/57] learning_rate: 0.001038 loss: 2.209108 loss_cls: 1.202334 loss_iou: 0.199046 loss_dfl: 1.042783 loss_l1: 0.511135 eta: 1:09:58 batch_cost: 1.5447 data_cost: 1.4460 ips: 10.3579 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:51:42] ppdet.engine.callbacks INFO: Epoch: [51] [40/57] learning_rate: 0.001026 loss: 2.214904 loss_cls: 1.199167 loss_iou: 0.204940 loss_dfl: 1.038966 loss_l1: 0.500537 eta: 1:09:36 batch_cost: 1.9450 data_cost: 1.8500 ips: 8.2264 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:52:08] ppdet.engine.callbacks INFO: Epoch: [52] [ 0/57] learning_rate: 0.001017 loss: 2.201275 loss_cls: 1.180716 loss_iou: 0.191796 loss_dfl: 1.037083 loss_l1: 0.490261 eta: 1:09:09 batch_cost: 1.8705 data_cost: 1.7744 ips: 8.5537 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:52:31] ppdet.engine.callbacks INFO: Epoch: [52] [20/57] learning_rate: 0.001005 loss: 2.182488 loss_cls: 1.197370 loss_iou: 0.192560 loss_dfl: 1.001177 loss_l1: 0.531062 eta: 1:08:32 batch_cost: 1.1442 data_cost: 1.0482 ips: 13.9832 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:53:08] ppdet.engine.callbacks INFO: Epoch: [52] [40/57] learning_rate: 0.000993 loss: 2.257728 loss_cls: 1.199678 loss_iou: 0.204556 loss_dfl: 1.063101 loss_l1: 0.573580 eta: 1:08:07 batch_cost: 1.8255 data_cost: 1.7261 ips: 8.7648 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:53:47] ppdet.engine.callbacks INFO: Epoch: [53] [ 0/57] learning_rate: 0.000983 loss: 2.168325 loss_cls: 1.186721 loss_iou: 0.192774 loss_dfl: 1.029059 loss_l1: 0.515987 eta: 1:07:52 batch_cost: 2.1448 data_cost: 2.0469 ips: 7.4600 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:54:22] ppdet.engine.callbacks INFO: Epoch: [53] [20/57] learning_rate: 0.000972 loss: 2.234678 loss_cls: 1.197487 loss_iou: 0.193429 loss_dfl: 1.026198 loss_l1: 0.527491 eta: 1:07:25 batch_cost: 1.7310 data_cost: 1.6343 ips: 9.2433 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:54:50] ppdet.engine.callbacks INFO: Epoch: [53] [40/57] learning_rate: 0.000960 loss: 2.252573 loss_cls: 1.213213 loss_iou: 0.189348 loss_dfl: 1.040450 loss_l1: 0.509276 eta: 1:06:53 batch_cost: 1.4000 data_cost: 1.3007 ips: 11.4283 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:55:24] ppdet.engine.callbacks INFO: Epoch: [54] [ 0/57] learning_rate: 0.000950 loss: 2.167491 loss_cls: 1.187755 loss_iou: 0.187420 loss_dfl: 1.024375 loss_l1: 0.517469 eta: 1:06:33 batch_cost: 1.9899 data_cost: 1.8943 ips: 8.0407 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:55:56] ppdet.engine.callbacks INFO: Epoch: [54] [20/57] learning_rate: 0.000939 loss: 2.222420 loss_cls: 1.200763 loss_iou: 0.196005 loss_dfl: 1.052250 loss_l1: 0.533932 eta: 1:06:03 batch_cost: 1.5662 data_cost: 1.4652 ips: 10.2155 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:56:23] ppdet.engine.callbacks INFO: Epoch: [54] [40/57] learning_rate: 0.000927 loss: 2.173546 loss_cls: 1.177795 loss_iou: 0.204729 loss_dfl: 1.031182 loss_l1: 0.539620 eta: 1:05:29 batch_cost: 1.3233 data_cost: 1.2263 ips: 12.0910 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:56:56] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints
+[08/17 03:56:57] ppdet.engine.callbacks INFO: Eval iter: 0
+[08/17 03:57:00] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/17 03:57:00] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.36s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=0.67s).
+Accumulating evaluation results...
+DONE (t=0.26s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.182
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.285
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.191
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.021
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.131
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.190
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.221
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.496
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.586
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.383
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.513
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.598
+[08/17 03:57:01] ppdet.engine.callbacks INFO: Total sample number: 113, average FPS: 34.56780841135571
+[08/17 03:57:01] ppdet.engine INFO: Best test bbox ap is 0.182.
+[08/17 03:57:02] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints
+[08/17 03:57:08] ppdet.engine.callbacks INFO: Epoch: [55] [ 0/57] learning_rate: 0.000917 loss: 2.203806 loss_cls: 1.176852 loss_iou: 0.210465 loss_dfl: 1.048794 loss_l1: 0.541225 eta: 1:05:14 batch_cost: 1.9522 data_cost: 1.8586 ips: 8.1960 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:57:40] ppdet.engine.callbacks INFO: Epoch: [55] [20/57] learning_rate: 0.000906 loss: 2.234221 loss_cls: 1.186002 loss_iou: 0.198001 loss_dfl: 1.053669 loss_l1: 0.520859 eta: 1:04:44 batch_cost: 1.5616 data_cost: 1.4705 ips: 10.2458 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:58:10] ppdet.engine.callbacks INFO: Epoch: [55] [40/57] learning_rate: 0.000894 loss: 2.205740 loss_cls: 1.168124 loss_iou: 0.198091 loss_dfl: 1.062193 loss_l1: 0.554529 eta: 1:04:12 batch_cost: 1.4515 data_cost: 1.3523 ips: 11.0228 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:58:41] ppdet.engine.callbacks INFO: Epoch: [56] [ 0/57] learning_rate: 0.000885 loss: 2.223202 loss_cls: 1.183954 loss_iou: 0.201965 loss_dfl: 1.073524 loss_l1: 0.569399 eta: 1:03:50 batch_cost: 1.6463 data_cost: 1.5473 ips: 9.7185 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:59:14] ppdet.engine.callbacks INFO: Epoch: [56] [20/57] learning_rate: 0.000873 loss: 2.178231 loss_cls: 1.153703 loss_iou: 0.196304 loss_dfl: 1.032674 loss_l1: 0.532131 eta: 1:03:21 batch_cost: 1.6494 data_cost: 1.5520 ips: 9.7008 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 03:59:43] ppdet.engine.callbacks INFO: Epoch: [56] [40/57] learning_rate: 0.000861 loss: 2.218911 loss_cls: 1.168891 loss_iou: 0.202273 loss_dfl: 1.042016 loss_l1: 0.526839 eta: 1:02:48 batch_cost: 1.3903 data_cost: 1.2918 ips: 11.5080 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:00:10] ppdet.engine.callbacks INFO: Epoch: [57] [ 0/57] learning_rate: 0.000852 loss: 2.179298 loss_cls: 1.150929 loss_iou: 0.201896 loss_dfl: 1.050149 loss_l1: 0.547652 eta: 1:02:23 batch_cost: 1.4401 data_cost: 1.3441 ips: 11.1100 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:00:38] ppdet.engine.callbacks INFO: Epoch: [57] [20/57] learning_rate: 0.000840 loss: 2.132957 loss_cls: 1.124311 loss_iou: 0.187379 loss_dfl: 1.055863 loss_l1: 0.495844 eta: 1:01:50 batch_cost: 1.3845 data_cost: 1.2817 ips: 11.5566 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:01:10] ppdet.engine.callbacks INFO: Epoch: [57] [40/57] learning_rate: 0.000829 loss: 2.161488 loss_cls: 1.171076 loss_iou: 0.190900 loss_dfl: 1.051466 loss_l1: 0.522712 eta: 1:01:20 batch_cost: 1.5616 data_cost: 1.4649 ips: 10.2462 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:01:36] ppdet.engine.callbacks INFO: Epoch: [58] [ 0/57] learning_rate: 0.000819 loss: 2.221364 loss_cls: 1.197924 loss_iou: 0.200134 loss_dfl: 1.042158 loss_l1: 0.551965 eta: 1:00:54 batch_cost: 1.3974 data_cost: 1.2959 ips: 11.4496 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:02:01] ppdet.engine.callbacks INFO: Epoch: [58] [20/57] learning_rate: 0.000808 loss: 2.215078 loss_cls: 1.157382 loss_iou: 0.202333 loss_dfl: 1.023030 loss_l1: 0.513136 eta: 1:00:19 batch_cost: 1.1926 data_cost: 1.0919 ips: 13.4159 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:02:29] ppdet.engine.callbacks INFO: Epoch: [58] [40/57] learning_rate: 0.000796 loss: 2.277698 loss_cls: 1.238759 loss_iou: 0.193502 loss_dfl: 1.042695 loss_l1: 0.522400 eta: 0:59:47 batch_cost: 1.3963 data_cost: 1.3055 ips: 11.4589 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:03:04] ppdet.engine.callbacks INFO: Epoch: [59] [ 0/57] learning_rate: 0.000787 loss: 2.147771 loss_cls: 1.165401 loss_iou: 0.183013 loss_dfl: 1.021470 loss_l1: 0.520778 eta: 0:59:26 batch_cost: 1.7062 data_cost: 1.6091 ips: 9.3774 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:03:32] ppdet.engine.callbacks INFO: Epoch: [59] [20/57] learning_rate: 0.000775 loss: 2.174295 loss_cls: 1.169544 loss_iou: 0.190455 loss_dfl: 0.989016 loss_l1: 0.457668 eta: 0:58:54 batch_cost: 1.3919 data_cost: 1.2949 ips: 11.4950 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:03:56] ppdet.engine.callbacks INFO: Epoch: [59] [40/57] learning_rate: 0.000764 loss: 2.225201 loss_cls: 1.180638 loss_iou: 0.207553 loss_dfl: 1.011094 loss_l1: 0.541951 eta: 0:58:18 batch_cost: 1.1397 data_cost: 1.0407 ips: 14.0391 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:04:21] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints
+[08/17 04:04:21] ppdet.engine.callbacks INFO: Eval iter: 0
+[08/17 04:04:25] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/17 04:04:25] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.57s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=0.99s).
+Accumulating evaluation results...
+DONE (t=0.34s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.185
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.289
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.192
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.018
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.122
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.193
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.221
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.495
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.592
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.383
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.525
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.600
+[08/17 04:04:26] ppdet.engine.callbacks INFO: Total sample number: 113, average FPS: 35.63153211880767
+[08/17 04:04:27] ppdet.engine INFO: Best test bbox ap is 0.185.
+[08/17 04:04:27] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints
+[08/17 04:04:29] ppdet.engine.callbacks INFO: Epoch: [60] [ 0/57] learning_rate: 0.000755 loss: 2.211189 loss_cls: 1.159364 loss_iou: 0.209802 loss_dfl: 1.058276 loss_l1: 0.545969 eta: 0:57:52 batch_cost: 1.3637 data_cost: 1.2591 ips: 11.7326 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:05:01] ppdet.engine.callbacks INFO: Epoch: [60] [20/57] learning_rate: 0.000743 loss: 2.160584 loss_cls: 1.174433 loss_iou: 0.194118 loss_dfl: 1.026979 loss_l1: 0.493073 eta: 0:57:23 batch_cost: 1.5761 data_cost: 1.4727 ips: 10.1518 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:05:25] ppdet.engine.callbacks INFO: Epoch: [60] [40/57] learning_rate: 0.000732 loss: 2.192416 loss_cls: 1.159375 loss_iou: 0.203545 loss_dfl: 1.049664 loss_l1: 0.511953 eta: 0:56:48 batch_cost: 1.1599 data_cost: 1.0644 ips: 13.7947 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:05:51] ppdet.engine.callbacks INFO: Epoch: [61] [ 0/57] learning_rate: 0.000723 loss: 2.153145 loss_cls: 1.168688 loss_iou: 0.191009 loss_dfl: 1.012658 loss_l1: 0.538553 eta: 0:56:21 batch_cost: 1.4265 data_cost: 1.3239 ips: 11.2167 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:06:18] ppdet.engine.callbacks INFO: Epoch: [61] [20/57] learning_rate: 0.000711 loss: 2.193828 loss_cls: 1.150683 loss_iou: 0.206163 loss_dfl: 0.992686 loss_l1: 0.510208 eta: 0:55:49 batch_cost: 1.3290 data_cost: 1.2303 ips: 12.0390 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:06:43] ppdet.engine.callbacks INFO: Epoch: [61] [40/57] learning_rate: 0.000700 loss: 2.215689 loss_cls: 1.197550 loss_iou: 0.194796 loss_dfl: 1.026614 loss_l1: 0.538162 eta: 0:55:14 batch_cost: 1.2144 data_cost: 1.1140 ips: 13.1752 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:07:12] ppdet.engine.callbacks INFO: Epoch: [62] [ 0/57] learning_rate: 0.000691 loss: 2.185282 loss_cls: 1.166698 loss_iou: 0.186417 loss_dfl: 1.033894 loss_l1: 0.493505 eta: 0:54:50 batch_cost: 1.6448 data_cost: 1.5458 ips: 9.7276 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:07:54] ppdet.engine.callbacks INFO: Epoch: [62] [20/57] learning_rate: 0.000680 loss: 2.140589 loss_cls: 1.176698 loss_iou: 0.187213 loss_dfl: 1.031859 loss_l1: 0.506421 eta: 0:54:26 batch_cost: 2.0323 data_cost: 1.9374 ips: 7.8730 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:08:26] ppdet.engine.callbacks INFO: Epoch: [62] [40/57] learning_rate: 0.000669 loss: 2.170892 loss_cls: 1.135317 loss_iou: 0.204304 loss_dfl: 0.994396 loss_l1: 0.523562 eta: 0:53:56 batch_cost: 1.5694 data_cost: 1.4720 ips: 10.1951 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:09:01] ppdet.engine.callbacks INFO: Epoch: [63] [ 0/57] learning_rate: 0.000660 loss: 2.151376 loss_cls: 1.175413 loss_iou: 0.187831 loss_dfl: 1.026533 loss_l1: 0.503286 eta: 0:53:35 batch_cost: 2.3354 data_cost: 2.2337 ips: 6.8511 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:09:30] ppdet.engine.callbacks INFO: Epoch: [63] [20/57] learning_rate: 0.000649 loss: 2.183538 loss_cls: 1.136963 loss_iou: 0.194903 loss_dfl: 1.055573 loss_l1: 0.516001 eta: 0:53:04 batch_cost: 1.4436 data_cost: 1.3523 ips: 11.0837 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:10:01] ppdet.engine.callbacks INFO: Epoch: [63] [40/57] learning_rate: 0.000638 loss: 2.089030 loss_cls: 1.146772 loss_iou: 0.198129 loss_dfl: 0.973089 loss_l1: 0.508235 eta: 0:52:33 batch_cost: 1.5005 data_cost: 1.4021 ips: 10.6631 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:10:20] ppdet.engine.callbacks INFO: Epoch: [64] [ 0/57] learning_rate: 0.000629 loss: 2.140109 loss_cls: 1.146904 loss_iou: 0.201769 loss_dfl: 0.989505 loss_l1: 0.483906 eta: 0:52:03 batch_cost: 1.3810 data_cost: 1.2824 ips: 11.5856 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:11:03] ppdet.engine.callbacks INFO: Epoch: [64] [20/57] learning_rate: 0.000618 loss: 2.139882 loss_cls: 1.180277 loss_iou: 0.188002 loss_dfl: 1.028595 loss_l1: 0.522905 eta: 0:51:39 batch_cost: 2.1438 data_cost: 2.0458 ips: 7.4632 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:11:29] ppdet.engine.callbacks INFO: Epoch: [64] [40/57] learning_rate: 0.000607 loss: 2.174296 loss_cls: 1.149270 loss_iou: 0.186810 loss_dfl: 1.013255 loss_l1: 0.495633 eta: 0:51:06 batch_cost: 1.2961 data_cost: 1.2096 ips: 12.3450 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:11:56] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints
+[08/17 04:11:57] ppdet.engine.callbacks INFO: Eval iter: 0
+[08/17 04:12:00] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.25s)
+creating index...
+index created!
+[08/17 04:12:00] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.26s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=1.25s).
+Accumulating evaluation results...
+DONE (t=0.41s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.194
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.304
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.208
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.017
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.131
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.202
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.231
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.496
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.594
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.450
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.534
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.601
+[08/17 04:12:02] ppdet.engine.callbacks INFO: Total sample number: 113, average FPS: 32.99926865772235
+[08/17 04:12:02] ppdet.engine INFO: Best test bbox ap is 0.194.
+[08/17 04:12:03] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints
+[08/17 04:12:07] ppdet.engine.callbacks INFO: Epoch: [65] [ 0/57] learning_rate: 0.000598 loss: 2.212398 loss_cls: 1.165685 loss_iou: 0.199204 loss_dfl: 1.083983 loss_l1: 0.532605 eta: 0:50:42 batch_cost: 1.7734 data_cost: 1.6707 ips: 9.0225 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:12:43] ppdet.engine.callbacks INFO: Epoch: [65] [20/57] learning_rate: 0.000588 loss: 2.133272 loss_cls: 1.133954 loss_iou: 0.187098 loss_dfl: 1.017451 loss_l1: 0.499897 eta: 0:50:15 batch_cost: 1.7917 data_cost: 1.6923 ips: 8.9299 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:13:13] ppdet.engine.callbacks INFO: Epoch: [65] [40/57] learning_rate: 0.000577 loss: 2.165146 loss_cls: 1.157000 loss_iou: 0.203219 loss_dfl: 1.026043 loss_l1: 0.532058 eta: 0:49:44 batch_cost: 1.4761 data_cost: 1.3840 ips: 10.8394 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:14:02] ppdet.engine.callbacks INFO: Epoch: [66] [ 0/57] learning_rate: 0.000568 loss: 2.179878 loss_cls: 1.182082 loss_iou: 0.194330 loss_dfl: 0.988299 loss_l1: 0.501240 eta: 0:49:29 batch_cost: 2.6891 data_cost: 2.5989 ips: 5.9500 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:14:36] ppdet.engine.callbacks INFO: Epoch: [66] [20/57] learning_rate: 0.000558 loss: 2.127572 loss_cls: 1.145909 loss_iou: 0.188914 loss_dfl: 1.051630 loss_l1: 0.491441 eta: 0:49:00 batch_cost: 1.6651 data_cost: 1.5662 ips: 9.6093 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:15:04] ppdet.engine.callbacks INFO: Epoch: [66] [40/57] learning_rate: 0.000547 loss: 2.181944 loss_cls: 1.157143 loss_iou: 0.200097 loss_dfl: 1.075864 loss_l1: 0.538002 eta: 0:48:27 batch_cost: 1.3688 data_cost: 1.2663 ips: 11.6887 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:15:24] ppdet.engine.callbacks INFO: Epoch: [67] [ 0/57] learning_rate: 0.000539 loss: 2.174559 loss_cls: 1.187183 loss_iou: 0.185432 loss_dfl: 0.991128 loss_l1: 0.503731 eta: 0:47:58 batch_cost: 1.4524 data_cost: 1.3487 ips: 11.0161 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:16:09] ppdet.engine.callbacks INFO: Epoch: [67] [20/57] learning_rate: 0.000528 loss: 2.147537 loss_cls: 1.152324 loss_iou: 0.193915 loss_dfl: 1.003304 loss_l1: 0.511203 eta: 0:47:34 batch_cost: 2.1999 data_cost: 2.0985 ips: 7.2731 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:16:31] ppdet.engine.callbacks INFO: Epoch: [67] [40/57] learning_rate: 0.000518 loss: 2.134831 loss_cls: 1.117830 loss_iou: 0.186356 loss_dfl: 0.992054 loss_l1: 0.494776 eta: 0:46:59 batch_cost: 1.0642 data_cost: 0.9685 ips: 15.0346 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:16:57] ppdet.engine.callbacks INFO: Epoch: [68] [ 0/57] learning_rate: 0.000510 loss: 2.118055 loss_cls: 1.129997 loss_iou: 0.190353 loss_dfl: 1.001859 loss_l1: 0.480443 eta: 0:46:33 batch_cost: 1.2792 data_cost: 1.1882 ips: 12.5081 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:17:22] ppdet.engine.callbacks INFO: Epoch: [68] [20/57] learning_rate: 0.000499 loss: 2.160725 loss_cls: 1.159659 loss_iou: 0.196151 loss_dfl: 1.026306 loss_l1: 0.519775 eta: 0:45:59 batch_cost: 1.2225 data_cost: 1.1209 ips: 13.0879 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:17:53] ppdet.engine.callbacks INFO: Epoch: [68] [40/57] learning_rate: 0.000489 loss: 2.172146 loss_cls: 1.118679 loss_iou: 0.194383 loss_dfl: 1.040541 loss_l1: 0.522911 eta: 0:45:29 batch_cost: 1.5496 data_cost: 1.4488 ips: 10.3251 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:18:25] ppdet.engine.callbacks INFO: Epoch: [69] [ 0/57] learning_rate: 0.000481 loss: 2.104146 loss_cls: 1.159209 loss_iou: 0.179420 loss_dfl: 1.012950 loss_l1: 0.494375 eta: 0:45:05 batch_cost: 2.0984 data_cost: 2.0073 ips: 7.6249 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:18:52] ppdet.engine.callbacks INFO: Epoch: [69] [20/57] learning_rate: 0.000471 loss: 2.211953 loss_cls: 1.180385 loss_iou: 0.196084 loss_dfl: 1.041567 loss_l1: 0.538651 eta: 0:44:32 batch_cost: 1.2812 data_cost: 1.1843 ips: 12.4884 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:19:22] ppdet.engine.callbacks INFO: Epoch: [69] [40/57] learning_rate: 0.000461 loss: 2.088015 loss_cls: 1.135824 loss_iou: 0.185290 loss_dfl: 1.028133 loss_l1: 0.480778 eta: 0:44:01 batch_cost: 1.5068 data_cost: 1.4058 ips: 10.6184 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:19:47] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints
+[08/17 04:19:48] ppdet.engine.callbacks INFO: Eval iter: 0
+[08/17 04:19:51] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/17 04:19:51] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.41s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=0.66s).
+Accumulating evaluation results...
+DONE (t=0.26s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.198
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.308
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.214
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.023
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.135
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.206
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.231
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.500
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.601
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.483
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.548
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.609
+[08/17 04:19:52] ppdet.engine.callbacks INFO: Total sample number: 113, average FPS: 34.128159584721416
+[08/17 04:19:52] ppdet.engine INFO: Best test bbox ap is 0.198.
+[08/17 04:19:53] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints
+[08/17 04:19:59] ppdet.engine.callbacks INFO: Epoch: [70] [ 0/57] learning_rate: 0.000453 loss: 2.072008 loss_cls: 1.118446 loss_iou: 0.175680 loss_dfl: 1.041947 loss_l1: 0.512418 eta: 0:43:37 batch_cost: 1.8779 data_cost: 1.7836 ips: 8.5201 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:20:37] ppdet.engine.callbacks INFO: Epoch: [70] [20/57] learning_rate: 0.000443 loss: 2.171052 loss_cls: 1.136358 loss_iou: 0.182513 loss_dfl: 1.034904 loss_l1: 0.495946 eta: 0:43:09 batch_cost: 1.8478 data_cost: 1.7436 ips: 8.6588 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:20:55] ppdet.engine.callbacks INFO: Epoch: [70] [40/57] learning_rate: 0.000434 loss: 2.155622 loss_cls: 1.144736 loss_iou: 0.206428 loss_dfl: 1.010183 loss_l1: 0.513811 eta: 0:42:33 batch_cost: 0.9105 data_cost: 0.8109 ips: 17.5722 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:21:30] ppdet.engine.callbacks INFO: Epoch: [71] [ 0/57] learning_rate: 0.000426 loss: 2.070951 loss_cls: 1.134550 loss_iou: 0.184008 loss_dfl: 0.996186 loss_l1: 0.458483 eta: 0:42:11 batch_cost: 1.6887 data_cost: 1.5951 ips: 9.4745 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:21:58] ppdet.engine.callbacks INFO: Epoch: [71] [20/57] learning_rate: 0.000416 loss: 2.143561 loss_cls: 1.150260 loss_iou: 0.200594 loss_dfl: 1.036316 loss_l1: 0.529031 eta: 0:41:39 batch_cost: 1.3814 data_cost: 1.2785 ips: 11.5823 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:22:45] ppdet.engine.callbacks INFO: Epoch: [71] [40/57] learning_rate: 0.000407 loss: 2.081189 loss_cls: 1.135546 loss_iou: 0.197583 loss_dfl: 0.973444 loss_l1: 0.441945 eta: 0:41:14 batch_cost: 2.3253 data_cost: 2.2299 ips: 6.8808 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:23:09] ppdet.engine.callbacks INFO: Epoch: [72] [ 0/57] learning_rate: 0.000399 loss: 2.006563 loss_cls: 1.091314 loss_iou: 0.176936 loss_dfl: 0.954603 loss_l1: 0.438410 eta: 0:40:47 batch_cost: 1.2792 data_cost: 1.1825 ips: 12.5078 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:23:38] ppdet.engine.callbacks INFO: Epoch: [72] [20/57] learning_rate: 0.000390 loss: 2.113107 loss_cls: 1.118372 loss_iou: 0.196034 loss_dfl: 1.014669 loss_l1: 0.507770 eta: 0:40:16 batch_cost: 1.3961 data_cost: 1.2931 ips: 11.4604 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:24:13] ppdet.engine.callbacks INFO: Epoch: [72] [40/57] learning_rate: 0.000381 loss: 2.122092 loss_cls: 1.147914 loss_iou: 0.179604 loss_dfl: 0.994673 loss_l1: 0.517509 eta: 0:39:46 batch_cost: 1.7200 data_cost: 1.6209 ips: 9.3023 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:24:35] ppdet.engine.callbacks INFO: Epoch: [73] [ 0/57] learning_rate: 0.000373 loss: 2.105879 loss_cls: 1.152461 loss_iou: 0.180499 loss_dfl: 1.001950 loss_l1: 0.464134 eta: 0:39:18 batch_cost: 1.3642 data_cost: 1.2619 ips: 11.7288 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:25:05] ppdet.engine.callbacks INFO: Epoch: [73] [20/57] learning_rate: 0.000364 loss: 2.101839 loss_cls: 1.137500 loss_iou: 0.204182 loss_dfl: 0.996178 loss_l1: 0.488267 eta: 0:38:47 batch_cost: 1.4940 data_cost: 1.3943 ips: 10.7093 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:25:49] ppdet.engine.callbacks INFO: Epoch: [73] [40/57] learning_rate: 0.000355 loss: 2.117963 loss_cls: 1.150257 loss_iou: 0.183871 loss_dfl: 1.023657 loss_l1: 0.452959 eta: 0:38:21 batch_cost: 2.1662 data_cost: 2.0661 ips: 7.3863 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:26:21] ppdet.engine.callbacks INFO: Epoch: [74] [ 0/57] learning_rate: 0.000347 loss: 2.027223 loss_cls: 1.097471 loss_iou: 0.178324 loss_dfl: 0.996196 loss_l1: 0.456623 eta: 0:37:57 batch_cost: 2.1001 data_cost: 1.9997 ips: 7.6189 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:26:55] ppdet.engine.callbacks INFO: Epoch: [74] [20/57] learning_rate: 0.000339 loss: 2.106209 loss_cls: 1.136737 loss_iou: 0.197013 loss_dfl: 0.980729 loss_l1: 0.477902 eta: 0:37:27 batch_cost: 1.6592 data_cost: 1.5628 ips: 9.6433 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:27:25] ppdet.engine.callbacks INFO: Epoch: [74] [40/57] learning_rate: 0.000330 loss: 2.039693 loss_cls: 1.091842 loss_iou: 0.179091 loss_dfl: 0.954285 loss_l1: 0.451348 eta: 0:36:56 batch_cost: 1.4832 data_cost: 1.3900 ips: 10.7876 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:27:40] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints
+[08/17 04:27:41] ppdet.engine.callbacks INFO: Eval iter: 0
+[08/17 04:27:44] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/17 04:27:45] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.55s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=0.89s).
+Accumulating evaluation results...
+DONE (t=0.24s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.197
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.304
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.216
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.025
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.141
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.205
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.234
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.506
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.610
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.483
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.552
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.619
+[08/17 04:27:46] ppdet.engine.callbacks INFO: Total sample number: 113, average FPS: 31.862532644456614
+[08/17 04:27:46] ppdet.engine INFO: Best test bbox ap is 0.198.
+[08/17 04:27:59] ppdet.engine.callbacks INFO: Epoch: [75] [ 0/57] learning_rate: 0.000323 loss: 2.082668 loss_cls: 1.135774 loss_iou: 0.176127 loss_dfl: 1.027931 loss_l1: 0.495816 eta: 0:36:30 batch_cost: 2.0163 data_cost: 1.9149 ips: 7.9355 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:28:27] ppdet.engine.callbacks INFO: Epoch: [75] [20/57] learning_rate: 0.000314 loss: 2.007819 loss_cls: 1.095882 loss_iou: 0.176657 loss_dfl: 0.999136 loss_l1: 0.449544 eta: 0:35:58 batch_cost: 1.3495 data_cost: 1.2534 ips: 11.8563 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:28:51] ppdet.engine.callbacks INFO: Epoch: [75] [40/57] learning_rate: 0.000306 loss: 2.095593 loss_cls: 1.134903 loss_iou: 0.178997 loss_dfl: 0.988325 loss_l1: 0.476971 eta: 0:35:25 batch_cost: 1.1854 data_cost: 1.0874 ips: 13.4970 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:29:30] ppdet.engine.callbacks INFO: Epoch: [76] [ 0/57] learning_rate: 0.000299 loss: 2.153817 loss_cls: 1.127701 loss_iou: 0.201887 loss_dfl: 1.027853 loss_l1: 0.515825 eta: 0:35:03 batch_cost: 1.9478 data_cost: 1.8459 ips: 8.2145 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:29:57] ppdet.engine.callbacks INFO: Epoch: [76] [20/57] learning_rate: 0.000291 loss: 2.070145 loss_cls: 1.085609 loss_iou: 0.184379 loss_dfl: 0.952812 loss_l1: 0.481890 eta: 0:34:31 batch_cost: 1.3200 data_cost: 1.2210 ips: 12.1215 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:30:37] ppdet.engine.callbacks INFO: Epoch: [76] [40/57] learning_rate: 0.000282 loss: 2.191216 loss_cls: 1.143090 loss_iou: 0.202303 loss_dfl: 1.058496 loss_l1: 0.558370 eta: 0:34:03 batch_cost: 1.9304 data_cost: 1.8334 ips: 8.2885 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:31:14] ppdet.engine.callbacks INFO: Epoch: [77] [ 0/57] learning_rate: 0.000276 loss: 2.061054 loss_cls: 1.107848 loss_iou: 0.193483 loss_dfl: 0.961471 loss_l1: 0.435485 eta: 0:33:40 batch_cost: 2.5840 data_cost: 2.4876 ips: 6.1920 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:31:38] ppdet.engine.callbacks INFO: Epoch: [77] [20/57] learning_rate: 0.000268 loss: 2.048211 loss_cls: 1.118843 loss_iou: 0.180886 loss_dfl: 0.976107 loss_l1: 0.450597 eta: 0:33:07 batch_cost: 1.1820 data_cost: 1.0808 ips: 13.5362 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:32:08] ppdet.engine.callbacks INFO: Epoch: [77] [40/57] learning_rate: 0.000260 loss: 2.039402 loss_cls: 1.116394 loss_iou: 0.177339 loss_dfl: 0.978267 loss_l1: 0.466227 eta: 0:32:36 batch_cost: 1.4805 data_cost: 1.3811 ips: 10.8069 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:32:39] ppdet.engine.callbacks INFO: Epoch: [78] [ 0/57] learning_rate: 0.000253 loss: 2.067617 loss_cls: 1.108975 loss_iou: 0.184477 loss_dfl: 1.008024 loss_l1: 0.449694 eta: 0:32:11 batch_cost: 1.5192 data_cost: 1.4227 ips: 10.5316 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:33:14] ppdet.engine.callbacks INFO: Epoch: [78] [20/57] learning_rate: 0.000246 loss: 2.057700 loss_cls: 1.103217 loss_iou: 0.188935 loss_dfl: 0.977084 loss_l1: 0.485805 eta: 0:31:41 batch_cost: 1.6881 data_cost: 1.5935 ips: 9.4780 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:33:44] ppdet.engine.callbacks INFO: Epoch: [78] [40/57] learning_rate: 0.000238 loss: 2.062782 loss_cls: 1.143371 loss_iou: 0.173773 loss_dfl: 0.962427 loss_l1: 0.439724 eta: 0:31:10 batch_cost: 1.5057 data_cost: 1.4068 ips: 10.6264 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:34:12] ppdet.engine.callbacks INFO: Epoch: [79] [ 0/57] learning_rate: 0.000232 loss: 2.096827 loss_cls: 1.110608 loss_iou: 0.187619 loss_dfl: 1.042022 loss_l1: 0.498278 eta: 0:30:44 batch_cost: 1.7675 data_cost: 1.6620 ips: 9.0521 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:34:40] ppdet.engine.callbacks INFO: Epoch: [79] [20/57] learning_rate: 0.000224 loss: 2.034479 loss_cls: 1.106807 loss_iou: 0.182053 loss_dfl: 0.972454 loss_l1: 0.496664 eta: 0:30:12 batch_cost: 1.4003 data_cost: 1.2983 ips: 11.4261 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:35:04] ppdet.engine.callbacks INFO: Epoch: [79] [40/57] learning_rate: 0.000217 loss: 2.039311 loss_cls: 1.079721 loss_iou: 0.182321 loss_dfl: 0.975598 loss_l1: 0.470032 eta: 0:29:39 batch_cost: 1.1254 data_cost: 1.0342 ips: 14.2171 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:35:30] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints
+[08/17 04:35:30] ppdet.engine.callbacks INFO: Eval iter: 0
+[08/17 04:35:34] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/17 04:35:34] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.45s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=0.96s).
+Accumulating evaluation results...
+DONE (t=0.33s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.202
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.322
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.223
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.018
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.148
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.208
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.235
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.498
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.610
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.383
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.563
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.619
+[08/17 04:35:35] ppdet.engine.callbacks INFO: Total sample number: 113, average FPS: 35.044406016924455
+[08/17 04:35:35] ppdet.engine INFO: Best test bbox ap is 0.202.
+[08/17 04:35:36] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints
+[08/17 04:35:38] ppdet.engine.callbacks INFO: Epoch: [80] [ 0/57] learning_rate: 0.000211 loss: 2.124481 loss_cls: 1.149205 loss_iou: 0.192877 loss_dfl: 0.994658 loss_l1: 0.483468 eta: 0:29:13 batch_cost: 1.4735 data_cost: 1.3722 ips: 10.8585 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:36:05] ppdet.engine.callbacks INFO: Epoch: [80] [20/57] learning_rate: 0.000204 loss: 2.064237 loss_cls: 1.101625 loss_iou: 0.183932 loss_dfl: 1.001253 loss_l1: 0.465172 eta: 0:28:42 batch_cost: 1.3346 data_cost: 1.2419 ips: 11.9886 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:36:36] ppdet.engine.callbacks INFO: Epoch: [80] [40/57] learning_rate: 0.000197 loss: 2.094497 loss_cls: 1.115263 loss_iou: 0.189562 loss_dfl: 1.036340 loss_l1: 0.504839 eta: 0:28:11 batch_cost: 1.4998 data_cost: 1.4074 ips: 10.6679 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:37:04] ppdet.engine.callbacks INFO: Epoch: [81] [ 0/57] learning_rate: 0.000191 loss: 2.078247 loss_cls: 1.106883 loss_iou: 0.184942 loss_dfl: 0.989196 loss_l1: 0.469634 eta: 0:27:45 batch_cost: 1.5294 data_cost: 1.4305 ips: 10.4616 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:37:43] ppdet.engine.callbacks INFO: Epoch: [81] [20/57] learning_rate: 0.000184 loss: 2.064596 loss_cls: 1.098666 loss_iou: 0.191136 loss_dfl: 0.988057 loss_l1: 0.485019 eta: 0:27:16 batch_cost: 1.8866 data_cost: 1.7946 ips: 8.4811 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:38:10] ppdet.engine.callbacks INFO: Epoch: [81] [40/57] learning_rate: 0.000178 loss: 2.087316 loss_cls: 1.121722 loss_iou: 0.180570 loss_dfl: 1.034493 loss_l1: 0.481763 eta: 0:26:44 batch_cost: 1.3552 data_cost: 1.2565 ips: 11.8065 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:38:45] ppdet.engine.callbacks INFO: Epoch: [82] [ 0/57] learning_rate: 0.000172 loss: 2.057600 loss_cls: 1.089159 loss_iou: 0.175865 loss_dfl: 1.007941 loss_l1: 0.487325 eta: 0:26:20 batch_cost: 2.1763 data_cost: 2.0791 ips: 7.3518 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:39:01] ppdet.engine.callbacks INFO: Epoch: [82] [20/57] learning_rate: 0.000166 loss: 2.103498 loss_cls: 1.126944 loss_iou: 0.189485 loss_dfl: 0.997723 loss_l1: 0.480835 eta: 0:25:46 batch_cost: 0.7565 data_cost: 0.6657 ips: 21.1508 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:39:48] ppdet.engine.callbacks INFO: Epoch: [82] [40/57] learning_rate: 0.000159 loss: 2.080791 loss_cls: 1.101672 loss_iou: 0.176501 loss_dfl: 1.021267 loss_l1: 0.458135 eta: 0:25:18 batch_cost: 2.3191 data_cost: 2.2161 ips: 6.8992 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:40:15] ppdet.engine.callbacks INFO: Epoch: [83] [ 0/57] learning_rate: 0.000154 loss: 2.119537 loss_cls: 1.109723 loss_iou: 0.184743 loss_dfl: 1.016137 loss_l1: 0.501993 eta: 0:24:52 batch_cost: 1.9019 data_cost: 1.8010 ips: 8.4124 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:40:41] ppdet.engine.callbacks INFO: Epoch: [83] [20/57] learning_rate: 0.000148 loss: 2.143754 loss_cls: 1.157278 loss_iou: 0.188078 loss_dfl: 0.982341 loss_l1: 0.477518 eta: 0:24:20 batch_cost: 1.2532 data_cost: 1.1587 ips: 12.7669 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:41:06] ppdet.engine.callbacks INFO: Epoch: [83] [40/57] learning_rate: 0.000142 loss: 2.038321 loss_cls: 1.107468 loss_iou: 0.178910 loss_dfl: 0.986002 loss_l1: 0.465314 eta: 0:23:48 batch_cost: 1.2627 data_cost: 1.1714 ips: 12.6713 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:41:34] ppdet.engine.callbacks INFO: Epoch: [84] [ 0/57] learning_rate: 0.000137 loss: 2.024106 loss_cls: 1.094696 loss_iou: 0.186977 loss_dfl: 0.934675 loss_l1: 0.433222 eta: 0:23:22 batch_cost: 1.5811 data_cost: 1.4875 ips: 10.1195 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:42:14] ppdet.engine.callbacks INFO: Epoch: [84] [20/57] learning_rate: 0.000131 loss: 2.085950 loss_cls: 1.100880 loss_iou: 0.188435 loss_dfl: 1.009278 loss_l1: 0.486046 eta: 0:22:53 batch_cost: 1.9704 data_cost: 1.8701 ips: 8.1201 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:42:48] ppdet.engine.callbacks INFO: Epoch: [84] [40/57] learning_rate: 0.000125 loss: 2.082214 loss_cls: 1.084043 loss_iou: 0.186320 loss_dfl: 1.028923 loss_l1: 0.483092 eta: 0:22:23 batch_cost: 1.6645 data_cost: 1.5656 ips: 9.6124 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:43:09] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints
+[08/17 04:43:09] ppdet.engine.callbacks INFO: Eval iter: 0
+[08/17 04:43:13] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/17 04:43:13] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.46s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=0.75s).
+Accumulating evaluation results...
+DONE (t=0.27s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.209
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.323
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.222
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.018
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.143
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.215
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.242
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.498
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.610
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.433
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.557
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.621
+[08/17 04:43:14] ppdet.engine.callbacks INFO: Total sample number: 113, average FPS: 31.874763952025003
+[08/17 04:43:15] ppdet.engine INFO: Best test bbox ap is 0.209.
+[08/17 04:43:15] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints
+[08/17 04:43:20] ppdet.engine.callbacks INFO: Epoch: [85] [ 0/57] learning_rate: 0.000121 loss: 2.109753 loss_cls: 1.136108 loss_iou: 0.185913 loss_dfl: 0.990788 loss_l1: 0.463157 eta: 0:21:56 batch_cost: 1.7014 data_cost: 1.6030 ips: 9.4039 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:43:48] ppdet.engine.callbacks INFO: Epoch: [85] [20/57] learning_rate: 0.000115 loss: 2.022584 loss_cls: 1.100694 loss_iou: 0.183113 loss_dfl: 0.943800 loss_l1: 0.426944 eta: 0:21:25 batch_cost: 1.3555 data_cost: 1.2590 ips: 11.8036 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:44:17] ppdet.engine.callbacks INFO: Epoch: [85] [40/57] learning_rate: 0.000110 loss: 2.103860 loss_cls: 1.101989 loss_iou: 0.207685 loss_dfl: 0.998018 loss_l1: 0.511929 eta: 0:20:54 batch_cost: 1.4320 data_cost: 1.3345 ips: 11.1734 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:44:49] ppdet.engine.callbacks INFO: Epoch: [86] [ 0/57] learning_rate: 0.000105 loss: 2.059611 loss_cls: 1.108316 loss_iou: 0.175165 loss_dfl: 0.954020 loss_l1: 0.465080 eta: 0:20:28 batch_cost: 1.7697 data_cost: 1.6750 ips: 9.0412 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:45:25] ppdet.engine.callbacks INFO: Epoch: [86] [20/57] learning_rate: 0.000100 loss: 2.079509 loss_cls: 1.098312 loss_iou: 0.170438 loss_dfl: 1.000936 loss_l1: 0.487515 eta: 0:19:58 batch_cost: 1.7598 data_cost: 1.6574 ips: 9.0921 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:45:59] ppdet.engine.callbacks INFO: Epoch: [86] [40/57] learning_rate: 0.000095 loss: 2.084763 loss_cls: 1.084013 loss_iou: 0.197906 loss_dfl: 0.953737 loss_l1: 0.484862 eta: 0:19:28 batch_cost: 1.6999 data_cost: 1.6074 ips: 9.4122 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:46:33] ppdet.engine.callbacks INFO: Epoch: [87] [ 0/57] learning_rate: 0.000091 loss: 2.084763 loss_cls: 1.127836 loss_iou: 0.188997 loss_dfl: 0.980164 loss_l1: 0.466242 eta: 0:19:03 batch_cost: 1.7758 data_cost: 1.6864 ips: 9.0098 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:47:01] ppdet.engine.callbacks INFO: Epoch: [87] [20/57] learning_rate: 0.000086 loss: 2.073660 loss_cls: 1.102547 loss_iou: 0.191509 loss_dfl: 0.966972 loss_l1: 0.475608 eta: 0:18:31 batch_cost: 1.3718 data_cost: 1.2733 ips: 11.6637 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:47:26] ppdet.engine.callbacks INFO: Epoch: [87] [40/57] learning_rate: 0.000082 loss: 2.031061 loss_cls: 1.098261 loss_iou: 0.179533 loss_dfl: 0.951846 loss_l1: 0.431492 eta: 0:17:59 batch_cost: 1.1937 data_cost: 1.1014 ips: 13.4039 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:48:01] ppdet.engine.callbacks INFO: Epoch: [88] [ 0/57] learning_rate: 0.000078 loss: 2.091923 loss_cls: 1.139302 loss_iou: 0.180626 loss_dfl: 0.978283 loss_l1: 0.490228 eta: 0:17:34 batch_cost: 1.7534 data_cost: 1.6551 ips: 9.1253 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:48:31] ppdet.engine.callbacks INFO: Epoch: [88] [20/57] learning_rate: 0.000073 loss: 2.050343 loss_cls: 1.074221 loss_iou: 0.175285 loss_dfl: 1.024819 loss_l1: 0.465397 eta: 0:17:03 batch_cost: 1.4733 data_cost: 1.3851 ips: 10.8603 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:48:59] ppdet.engine.callbacks INFO: Epoch: [88] [40/57] learning_rate: 0.000069 loss: 2.060422 loss_cls: 1.111011 loss_iou: 0.182985 loss_dfl: 1.001332 loss_l1: 0.452652 eta: 0:16:32 batch_cost: 1.3639 data_cost: 1.2657 ips: 11.7314 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:49:26] ppdet.engine.callbacks INFO: Epoch: [89] [ 0/57] learning_rate: 0.000065 loss: 2.100004 loss_cls: 1.082610 loss_iou: 0.188256 loss_dfl: 0.996511 loss_l1: 0.465041 eta: 0:16:06 batch_cost: 1.5248 data_cost: 1.4324 ips: 10.4931 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:49:56] ppdet.engine.callbacks INFO: Epoch: [89] [20/57] learning_rate: 0.000061 loss: 2.004157 loss_cls: 1.084146 loss_iou: 0.180379 loss_dfl: 0.956898 loss_l1: 0.448879 eta: 0:15:35 batch_cost: 1.4686 data_cost: 1.3818 ips: 10.8948 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:50:16] ppdet.engine.callbacks INFO: Epoch: [89] [40/57] learning_rate: 0.000057 loss: 2.074701 loss_cls: 1.103192 loss_iou: 0.183385 loss_dfl: 1.055799 loss_l1: 0.507691 eta: 0:15:03 batch_cost: 0.9856 data_cost: 0.8988 ips: 16.2339 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:50:41] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints
+[08/17 04:50:41] ppdet.engine.callbacks INFO: Eval iter: 0
+[08/17 04:50:45] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.16s)
+creating index...
+index created!
+[08/17 04:50:45] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.28s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=0.79s).
+Accumulating evaluation results...
+DONE (t=0.24s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.210
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.325
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.224
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.014
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.133
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.218
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.241
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.493
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.613
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.433
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.560
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.621
+[08/17 04:50:46] ppdet.engine.callbacks INFO: Total sample number: 113, average FPS: 36.06492619363642
+[08/17 04:50:46] ppdet.engine INFO: Best test bbox ap is 0.210.
+[08/17 04:50:47] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints
+[08/17 04:50:50] ppdet.engine.callbacks INFO: Epoch: [90] [ 0/57] learning_rate: 0.000054 loss: 2.088431 loss_cls: 1.100116 loss_iou: 0.181273 loss_dfl: 1.035802 loss_l1: 0.480873 eta: 0:14:37 batch_cost: 1.6131 data_cost: 1.5162 ips: 9.9185 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:51:24] ppdet.engine.callbacks INFO: Epoch: [90] [20/57] learning_rate: 0.000050 loss: 2.068778 loss_cls: 1.087898 loss_iou: 0.183395 loss_dfl: 0.988001 loss_l1: 0.461247 eta: 0:14:06 batch_cost: 1.6299 data_cost: 1.5337 ips: 9.8164 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:51:52] ppdet.engine.callbacks INFO: Epoch: [90] [40/57] learning_rate: 0.000047 loss: 2.061590 loss_cls: 1.101589 loss_iou: 0.183330 loss_dfl: 1.008010 loss_l1: 0.474104 eta: 0:13:35 batch_cost: 1.3874 data_cost: 1.2876 ips: 11.5325 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:52:08] ppdet.engine.callbacks INFO: Epoch: [91] [ 0/57] learning_rate: 0.000044 loss: 2.084280 loss_cls: 1.125418 loss_iou: 0.185794 loss_dfl: 1.025348 loss_l1: 0.486970 eta: 0:13:08 batch_cost: 0.7941 data_cost: 0.6955 ips: 20.1485 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:52:41] ppdet.engine.callbacks INFO: Epoch: [91] [20/57] learning_rate: 0.000041 loss: 2.079982 loss_cls: 1.078152 loss_iou: 0.184339 loss_dfl: 0.987798 loss_l1: 0.501436 eta: 0:12:37 batch_cost: 1.6277 data_cost: 1.5293 ips: 9.8301 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:53:10] ppdet.engine.callbacks INFO: Epoch: [91] [40/57] learning_rate: 0.000037 loss: 2.127732 loss_cls: 1.135178 loss_iou: 0.200914 loss_dfl: 1.037329 loss_l1: 0.503420 eta: 0:12:06 batch_cost: 1.4023 data_cost: 1.3021 ips: 11.4099 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:53:29] ppdet.engine.callbacks INFO: Epoch: [92] [ 0/57] learning_rate: 0.000035 loss: 2.021583 loss_cls: 1.112405 loss_iou: 0.178836 loss_dfl: 0.975512 loss_l1: 0.452429 eta: 0:11:40 batch_cost: 1.0837 data_cost: 0.9861 ips: 14.7638 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:54:02] ppdet.engine.callbacks INFO: Epoch: [92] [20/57] learning_rate: 0.000032 loss: 2.066659 loss_cls: 1.083659 loss_iou: 0.187938 loss_dfl: 0.998052 loss_l1: 0.467752 eta: 0:11:09 batch_cost: 1.6281 data_cost: 1.5239 ips: 9.8275 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:54:25] ppdet.engine.callbacks INFO: Epoch: [92] [40/57] learning_rate: 0.000029 loss: 2.101526 loss_cls: 1.134854 loss_iou: 0.186313 loss_dfl: 1.045817 loss_l1: 0.508348 eta: 0:10:38 batch_cost: 1.1374 data_cost: 1.0500 ips: 14.0666 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:54:49] ppdet.engine.callbacks INFO: Epoch: [93] [ 0/57] learning_rate: 0.000027 loss: 2.044263 loss_cls: 1.074199 loss_iou: 0.178221 loss_dfl: 0.962449 loss_l1: 0.449867 eta: 0:10:11 batch_cost: 1.4151 data_cost: 1.3377 ips: 11.3070 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:55:10] ppdet.engine.callbacks INFO: Epoch: [93] [20/57] learning_rate: 0.000024 loss: 2.021596 loss_cls: 1.100657 loss_iou: 0.178060 loss_dfl: 0.980772 loss_l1: 0.453044 eta: 0:09:40 batch_cost: 1.0037 data_cost: 0.9061 ips: 15.9417 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:55:43] ppdet.engine.callbacks INFO: Epoch: [93] [40/57] learning_rate: 0.000022 loss: 2.077409 loss_cls: 1.102492 loss_iou: 0.187220 loss_dfl: 0.982660 loss_l1: 0.478282 eta: 0:09:09 batch_cost: 1.6103 data_cost: 1.5132 ips: 9.9362 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:56:05] ppdet.engine.callbacks INFO: Epoch: [94] [ 0/57] learning_rate: 0.000020 loss: 2.021274 loss_cls: 1.077228 loss_iou: 0.180948 loss_dfl: 0.957253 loss_l1: 0.428456 eta: 0:08:43 batch_cost: 1.4381 data_cost: 1.3475 ips: 11.1259 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:56:37] ppdet.engine.callbacks INFO: Epoch: [94] [20/57] learning_rate: 0.000017 loss: 2.049054 loss_cls: 1.089859 loss_iou: 0.179689 loss_dfl: 0.991187 loss_l1: 0.483306 eta: 0:08:13 batch_cost: 1.5910 data_cost: 1.4931 ips: 10.0565 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:57:11] ppdet.engine.callbacks INFO: Epoch: [94] [40/57] learning_rate: 0.000015 loss: 2.064420 loss_cls: 1.096062 loss_iou: 0.187443 loss_dfl: 1.000974 loss_l1: 0.496735 eta: 0:07:42 batch_cost: 1.6501 data_cost: 1.5513 ips: 9.6962 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:57:35] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints
+[08/17 04:57:36] ppdet.engine.callbacks INFO: Eval iter: 0
+[08/17 04:57:39] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/17 04:57:39] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.54s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=1.02s).
+Accumulating evaluation results...
+DONE (t=0.41s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.211
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.325
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.227
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.016
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.128
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.218
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.238
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.491
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.607
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.483
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.556
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.614
+[08/17 04:57:42] ppdet.engine.callbacks INFO: Total sample number: 113, average FPS: 32.94299371099258
+[08/17 04:57:42] ppdet.engine INFO: Best test bbox ap is 0.211.
+[08/17 04:57:42] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints
+[08/17 04:57:47] ppdet.engine.callbacks INFO: Epoch: [95] [ 0/57] learning_rate: 0.000014 loss: 2.013489 loss_cls: 1.062819 loss_iou: 0.180365 loss_dfl: 1.009361 loss_l1: 0.484112 eta: 0:07:16 batch_cost: 1.8985 data_cost: 1.7999 ips: 8.4277 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:58:20] ppdet.engine.callbacks INFO: Epoch: [95] [20/57] learning_rate: 0.000012 loss: 2.125379 loss_cls: 1.125898 loss_iou: 0.198312 loss_dfl: 1.028316 loss_l1: 0.527605 eta: 0:06:46 batch_cost: 1.6392 data_cost: 1.5321 ips: 9.7608 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:58:52] ppdet.engine.callbacks INFO: Epoch: [95] [40/57] learning_rate: 0.000010 loss: 2.054585 loss_cls: 1.125013 loss_iou: 0.179956 loss_dfl: 0.985826 loss_l1: 0.448124 eta: 0:06:15 batch_cost: 1.5807 data_cost: 1.4784 ips: 10.1221 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:59:28] ppdet.engine.callbacks INFO: Epoch: [96] [ 0/57] learning_rate: 0.000009 loss: 2.078392 loss_cls: 1.101241 loss_iou: 0.179158 loss_dfl: 0.978590 loss_l1: 0.451870 eta: 0:05:49 batch_cost: 2.1919 data_cost: 2.0908 ips: 7.2996 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 04:59:57] ppdet.engine.callbacks INFO: Epoch: [96] [20/57] learning_rate: 0.000007 loss: 2.029531 loss_cls: 1.073406 loss_iou: 0.181489 loss_dfl: 0.992256 loss_l1: 0.492254 eta: 0:05:19 batch_cost: 1.4309 data_cost: 1.3345 ips: 11.1820 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 05:00:17] ppdet.engine.callbacks INFO: Epoch: [96] [40/57] learning_rate: 0.000006 loss: 2.035591 loss_cls: 1.083717 loss_iou: 0.192639 loss_dfl: 0.963676 loss_l1: 0.492301 eta: 0:04:47 batch_cost: 0.9837 data_cost: 0.8866 ips: 16.2657 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 05:00:55] ppdet.engine.callbacks INFO: Epoch: [97] [ 0/57] learning_rate: 0.000005 loss: 2.002152 loss_cls: 1.066733 loss_iou: 0.186380 loss_dfl: 0.952160 loss_l1: 0.435042 eta: 0:04:22 batch_cost: 1.8896 data_cost: 1.7995 ips: 8.4675 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 05:01:18] ppdet.engine.callbacks INFO: Epoch: [97] [20/57] learning_rate: 0.000004 loss: 2.060014 loss_cls: 1.088639 loss_iou: 0.193233 loss_dfl: 0.961670 loss_l1: 0.471224 eta: 0:03:51 batch_cost: 1.1115 data_cost: 1.0143 ips: 14.3950 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 05:01:47] ppdet.engine.callbacks INFO: Epoch: [97] [40/57] learning_rate: 0.000003 loss: 2.109571 loss_cls: 1.105342 loss_iou: 0.197827 loss_dfl: 1.006510 loss_l1: 0.507488 eta: 0:03:20 batch_cost: 1.4591 data_cost: 1.3595 ips: 10.9655 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 05:02:20] ppdet.engine.callbacks INFO: Epoch: [98] [ 0/57] learning_rate: 0.000002 loss: 2.042568 loss_cls: 1.083026 loss_iou: 0.182792 loss_dfl: 0.991543 loss_l1: 0.487221 eta: 0:02:54 batch_cost: 2.0184 data_cost: 1.9187 ips: 7.9269 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 05:02:47] ppdet.engine.callbacks INFO: Epoch: [98] [20/57] learning_rate: 0.000001 loss: 1.997023 loss_cls: 1.067576 loss_iou: 0.188005 loss_dfl: 0.995212 loss_l1: 0.478042 eta: 0:02:24 batch_cost: 1.2966 data_cost: 1.1969 ips: 12.3400 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 05:03:11] ppdet.engine.callbacks INFO: Epoch: [98] [40/57] learning_rate: 0.000001 loss: 2.051212 loss_cls: 1.097564 loss_iou: 0.194260 loss_dfl: 0.946552 loss_l1: 0.452338 eta: 0:01:53 batch_cost: 1.1695 data_cost: 1.0666 ips: 13.6815 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 05:03:58] ppdet.engine.callbacks INFO: Epoch: [99] [ 0/57] learning_rate: 0.000001 loss: 2.044754 loss_cls: 1.093849 loss_iou: 0.180811 loss_dfl: 0.948418 loss_l1: 0.456134 eta: 0:01:27 batch_cost: 2.3142 data_cost: 2.2122 ips: 6.9138 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 05:04:23] ppdet.engine.callbacks INFO: Epoch: [99] [20/57] learning_rate: 0.000000 loss: 2.018300 loss_cls: 1.107670 loss_iou: 0.186735 loss_dfl: 0.971276 loss_l1: 0.422535 eta: 0:00:56 batch_cost: 1.2348 data_cost: 1.1305 ips: 12.9581 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 05:05:11] ppdet.engine.callbacks INFO: Epoch: [99] [40/57] learning_rate: 0.000000 loss: 2.114483 loss_cls: 1.108754 loss_iou: 0.193557 loss_dfl: 0.976148 loss_l1: 0.439252 eta: 0:00:26 batch_cost: 2.3817 data_cost: 2.2777 ips: 6.7180 images/s, max_mem_reserved: 11413 MB, max_mem_allocated: 8542 MB
+[08/17 05:05:33] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints
+[08/17 05:05:34] ppdet.engine.callbacks INFO: Eval iter: 0
+[08/17 05:05:37] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/17 05:05:37] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.67s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=1.05s).
+Accumulating evaluation results...
+DONE (t=0.33s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.211
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.326
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.227
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.015
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.127
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.218
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.240
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.493
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.612
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.467
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.562
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.618
+[08/17 05:05:40] ppdet.engine.callbacks INFO: Total sample number: 113, average FPS: 33.252709275448645
+[08/17 05:05:40] ppdet.engine INFO: Best test bbox ap is 0.211.
+[08/17 05:05:40] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints

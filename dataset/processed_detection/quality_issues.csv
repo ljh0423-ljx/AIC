@@ -1,0 +1,44 @@
+﻿split,xml,img,issue,detail
+TRAIN,270412tglr-wild-strawberry-flowers-and-leaf-patch.xml,270412tglr-wild-strawberry-flowers-and-leaf-patch.jpg,empty_xml,无 object
+TRAIN,aquilegia-powdery-mildew-erysiphe-aquilegiae-on-columbine-leaves-bga5xr.xml,aquilegia-powdery-mildew-erysiphe-aquilegiae-on-columbine-leaves-bga5xr.jpg,empty_xml,无 object
+TRAIN,Black+Raspberry+Leaves+3.xml,Black+Raspberry+Leaves+3.jpg,empty_xml,无 object
+TRAIN,Downy%20mildew.JPG.xml,Downy%20mildew.JPG.jpg,empty_xml,无 object
+TRAIN,Hydrangea+%2527Claudie%2527%252C+Powdery+Mildew.JPG.xml,Hydrangea+%2527Claudie%2527%252C+Powdery+Mildew.JPG.jpg,empty_xml,无 object
+TRAIN,pm1_600px.xml,pm1_600px.jpg,empty_xml,无 object
+TRAIN,powdery-mildew-erysiphe-plantani-on-young-sycamore-leaf-b372wn.xml,powdery-mildew-erysiphe-plantani-on-young-sycamore-leaf-b372wn.jpg,empty_xml,无 object
+TRAIN,raspberries.xml,raspberries.jpg,empty_xml,无 object
+TRAIN,raspberry-db.xml,raspberry-db.jpg,empty_xml,无 object
+TRAIN,tomato_D4a-TobRingspotVirus-1000077_zoom.xml,tomato_D4a-TobRingspotVirus-1000077_zoom.jpg,empty_xml,无 object
+TEST,squashsilver2.JPG.xml,squashsilver2.JPG.jpg,empty_xml,无 object
+TRAIN,NCLB.xml,NCLB.jpg,missing_image,XML 无对应图片
+TRAIN,powdery-mildew-on-squash-leaves.xml,powdery-mildew-on-squash-leaves.jpg,missing_image,XML 无对应图片
+TRAIN,2f73110f80014a25a53f9551c94bf164.png.xml,2f73110f80014a25a53f9551c94bf164.png.jpg,xml_size_zero,xml size=0x0
+TRAIN,ppth-friskop-1-corn-rust.png.xml,ppth-friskop-1-corn-rust.png.jpg,xml_size_zero,xml size=0x0
+TRAIN,southernrust1.png.xml,southernrust1.png.jpg,xml_size_zero,xml size=0x0
+TRAIN,SouthernRustLeaf.png.xml,SouthernRustLeaf.png.jpg,xml_size_zero,xml size=0x0
+TRAIN,early-blight-1-la_potatoleaf.xml,early-blight-1-la_potatoleaf.jpg,size_mismatch,xml=590x443 actual=600x894 (将以实际尺寸归一化)
+TRAIN,Early-blight-example.ashx_mw=250.xml,Early-blight.jpg,size_mismatch,xml=640x480 actual=598x332 (将以实际尺寸归一化)
+TRAIN,Fig%202b.%20GLS%20backlit%20copy.xml,Fig%202b.%20GLS%20backlit%20copy.jpg,size_mismatch,xml=3264x2448 actual=852x639 (将以实际尺寸归一化)
+TRAIN,Figure%201.xml,Figure%201.jpg,size_mismatch,xml=400x227 actual=1080x614 (将以实际尺寸归一化)
+TRAIN,IMG_1526.xml,IMG_1526.jpg,size_mismatch,xml=2448x3264 actual=3264x2448 (将以实际尺寸归一化)
+TRAIN,IMG_2348.xml,IMG_2348.jpg,size_mismatch,xml=2448x3264 actual=3264x2448 (将以实际尺寸归一化)
+TRAIN,markjones-corn-001.xml,markjones-corn-001.jpg,size_mismatch,xml=3264x2448 actual=500x375 (将以实际尺寸归一化)
+TRAIN,tomato-septoria-3.xml,tomato-septoria-3.jpg,size_mismatch,xml=1152x1497 actual=1497x1152 (将以实际尺寸归一化)
+TRAIN,tomato-septoria-5.xml,tomato-septoria-5.jpg,size_mismatch,xml=1154x1500 actual=1500x1154 (将以实际尺寸归一化)
+TRAIN,tomato_plants_1_original.JPG_1407178095.xml,tomato_plants_1_original.JPG_1407178095.jpg,size_mismatch,xml=1224x1632 actual=1632x1224 (将以实际尺寸归一化)
+TRAIN,Early-blight-example.ashx_mw=250.xml,Early-blight.jpg,bad_bbox,"cls=Potato leaf early blight (3.0,1.0,472.0,479.0) img=598x332 reason=y>332"
+TRAIN,Early-blight-example.ashx_mw=250.xml,Early-blight.jpg,bad_bbox,"cls=Potato leaf early blight (411.0,1.0,640.0,238.0) img=598x332 reason=x>598"
+TRAIN,Early-blight-example.ashx_mw=250.xml,Early-blight.jpg,all_bbox_invalid,"全部 bbox 非法, 无可用目标"
+TRAIN,Fig%202b.%20GLS%20backlit%20copy.xml,Fig%202b.%20GLS%20backlit%20copy.jpg,bad_bbox,"cls=Corn Gray leaf spot (1.0,1.0,3264.0,2443.0) img=852x639 reason=x>852;y>639"
+TRAIN,Fig%202b.%20GLS%20backlit%20copy.xml,Fig%202b.%20GLS%20backlit%20copy.jpg,all_bbox_invalid,"全部 bbox 非法, 无可用目标"
+TRAIN,IMG_1526.xml,IMG_1526.jpg,bad_bbox,"cls=Tomato leaf late blight (547.0,280.0,2088.0,3022.0) img=3264x2448 reason=y>2448"
+TRAIN,IMG_1526.xml,IMG_1526.jpg,all_bbox_invalid,"全部 bbox 非法, 无可用目标"
+TRAIN,IMG_2348.xml,IMG_2348.jpg,bad_bbox,"cls=Tomato leaf bacterial spot (1555.0,1259.0,2448.0,2755.0) img=3264x2448 reason=y>2448"
+TRAIN,IMG_2348.xml,IMG_2348.jpg,bad_bbox,"cls=Tomato leaf bacterial spot (145.0,257.0,1765.0,3081.0) img=3264x2448 reason=y>2448"
+TRAIN,markjones-corn-001.xml,markjones-corn-001.jpg,bad_bbox,"cls=Corn rust leaf (6.0,26.0,3264.0,2274.0) img=500x375 reason=x>500;y>375"
+TRAIN,markjones-corn-001.xml,markjones-corn-001.jpg,all_bbox_invalid,"全部 bbox 非法, 无可用目标"
+TRAIN,tomato-septoria-3.xml,tomato-septoria-3.jpg,bad_bbox,"cls=Tomato Septoria leaf spot (103.0,1222.0,653.0,1479.0) img=1497x1152 reason=y>1152"
+TRAIN,tomato-septoria-3.xml,tomato-septoria-3.jpg,bad_bbox,"cls=Tomato Septoria leaf spot (520.0,951.0,913.0,1284.0) img=1497x1152 reason=y>1152"
+TRAIN,tomato_plants_1_original.JPG_1407178095.xml,tomato_plants_1_original.JPG_1407178095.jpg,bad_bbox,"cls=Tomato mold leaf (190.0,1273.0,453.0,1466.0) img=1632x1224 reason=y>1224"
+TRAIN,tomato_plants_1_original.JPG_1407178095.xml,tomato_plants_1_original.JPG_1407178095.jpg,bad_bbox,"cls=Tomato mold leaf (936.0,999.0,1129.0,1388.0) img=1632x1224 reason=y>1224"
+TRAIN,tomato_plants_1_original.JPG_1407178095.xml,tomato_plants_1_original.JPG_1407178095.jpg,all_bbox_invalid,"全部 bbox 非法, 无可用目标"

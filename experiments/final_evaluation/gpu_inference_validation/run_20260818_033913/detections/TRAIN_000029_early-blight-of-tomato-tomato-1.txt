@@ -1,0 +1,4 @@
+image: TRAIN_000029_early-blight-of-tomato-tomato-1.jpg
+total_targets: 2
+  class_id=2 name=Tomato Septoria leaf spot count=1 avg_conf=0.6098
+  class_id=4 name=Tomato leaf bacterial spot count=1 avg_conf=0.5237

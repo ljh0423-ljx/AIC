@@ -1,0 +1,4 @@
+方向3 B1 (smoke) — 训练命令 (seed=0 via --enable_ce True, 数据=exiffix)
+======================================================
+MODE=smoke bash scripts/train_dir3_b1.sh
+配置: /root/autodl-tmp/AIC2026_AgriVision/configs/ablation_dir3_B1_smoke.yml   数据: /root/autodl-tmp/AIC2026_AgriVision/dataset/processed_detection_exiffix   权重: /root/autodl-tmp/AIC2026_AgriVision/experiments/direction3/class_weight_train.json

@@ -1,0 +1,9 @@
+category,A0_AP,B1_AP,dAP,risk,ALERT
+Apple leaf,0.811,0.78,-0.031,"w≈1.0, 低风险",YES
+grape leaf,0.738,0.713,-0.025,"w=1.09, 低",YES
+Apple rust leaf,0.65,0.601,-0.049,"w=1.27, 低",YES
+Apple Scab Leaf,0.484,0.5,0.016,"w=1.51, 中(上调少样本过拟合)",
+Tomato Septoria leaf spot,0.461,0.44,-0.021,"w=0.56, 高风险(被下调的强类)",YES
+grape leaf black rot,0.403,0.47,0.067,"w=1.87, 中(大幅上调 N=101)",
+Tomato leaf late blight,0.379,0.49,0.111,"w=1.19, 低",
+Tomato leaf bacterial spot,0.284,0.159,-0.125,"w=0.83, 低",YES

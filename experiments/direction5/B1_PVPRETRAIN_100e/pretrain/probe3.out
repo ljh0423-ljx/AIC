@@ -1,0 +1,30 @@
+WARNING: OMP_NUM_THREADS set to 12, not 1. The computation speed will not be optimized if you use data parallel. It will fail if this PaddlePaddle binary is compiled with OpenBlas since OpenBlas does not support multi-threads.
+PLEASE USE OMP_NUM_THREADS WISELY.
+Warning: Unable to use numba in PP-Tracking, please install numba, for example(python3.7): `pip install numba==0.56.4`
+Warning: Unable to use numba in PP-Tracking, please install numba, for example(python3.7): `pip install numba==0.56.4`
+[08/17 00:52:43] ppdet.utils.checkpoint INFO: Skipping import of the encryption module.
+[data] train=17310 val=1923 -> /root/autodl-tmp/AIC2026_AgriVision/scripts/b1/../../experiments/direction5/B1_PVPRETRAIN_100e/pretrain/train.csv / /root/autodl-tmp/AIC2026_AgriVision/scripts/b1/../../experiments/direction5/B1_PVPRETRAIN_100e/pretrain/val.csv
+[train] decode cache: 17310 imgs @maxdim=384 (11s)
+
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+No stack trace in paddle, may be caused by external reasons.
+
+----------------------
+Error Message Summary:
+----------------------
+FatalError: `Termination signal` is detected by the operating system.
+  [TimeInfo: *** Aborted at 1786899176 (unix time) try "date -d @1786899176" if you are using GNU date ***]
+  [SignalInfo: *** SIGTERM (@0x1ebe5) received by PID 126030 (TID 0x7f6b2ce38740) from PID 125925 ***]
+
+[val] decode cache: 1923 imgs @maxdim=384 (3s)
+W0817 00:52:57.020823 125925 gpu_resources.cc:119] Please NOTE: device: 0, GPU Compute Capability: 8.9, Driver API Version: 13.0, Runtime API Version: 11.8
+W0817 00:52:57.021776 125925 gpu_resources.cc:164] device: 0, cuDNN Version: 9.1.
+[model] params=3007603 (backbone 同 PP-YOLOE+-s)
+=== PV_CORE 分类预训练开始 ===
+[  1/3] train_loss=1.8026 | val_loss=4.6065 val_acc=0.1586 | best=0.1586@1 * | 95.0s | lr=0.10000
+[  2/3] train_loss=0.9670 | val_loss=1.0971 val_acc=0.7681 | best=0.7681@2 * | 201.2s | lr=0.05000
+[  3/3] train_loss=0.7561 | val_loss=0.7422 val_acc=0.9314 | best=0.9314@3 * | 305.4s | lr=0.00000
+=== done: epochs=3 best_val_acc=0.9314@epoch3 total_time=306s steps=201 ===

@@ -1,0 +1,15 @@
+class,objects,small,medium,large,small_ratio
+Tomato Early blight leaf,21,0,8,13,0.0
+Tomato Septoria leaf spot,37,0,8,29,0.0
+Tomato leaf,36,0,6,30,0.0
+Tomato leaf bacterial spot,16,0,0,16,0.0
+Tomato leaf late blight,26,0,0,26,0.0
+Tomato leaf mosaic virus,33,1,23,9,0.03
+Tomato leaf yellow virus,57,3,28,26,0.053
+Tomato mold leaf,32,0,7,25,0.0
+Apple Scab Leaf,30,0,12,18,0.0
+Apple leaf,14,0,0,14,0.0
+Apple rust leaf,12,0,0,12,0.0
+grape leaf,14,0,0,14,0.0
+grape leaf black rot,22,0,0,22,0.0
+ALL,350,4,92,254,

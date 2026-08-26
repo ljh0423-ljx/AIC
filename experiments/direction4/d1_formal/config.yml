@@ -1,0 +1,30 @@
+# ============================================================
+# D1 — A0(exiffix) + 密集感知 VFL 目标校准 (方向4, 正式 100 epoch)
+# 唯一变量: PPYOLOEHead.use_density_calibration=True
+#   密集图 (该图 GT 目标数 >= density_thr=5) 的正锚 VFL 目标分 gt_score' = max(gt_score, 0.65)
+#   稀疏图 (<5 targets) 的 gt_score 与 A0 逐元素完全一致
+# 其余与 A0 (ppyoloe_plus_crn_s_100e_agrivision.yml) 逐字段一致:
+#   epoch=100 | bs=16 | lr=0.002 | seed=0(--enable_ce True) | exiffix 数据 | 官方增强/预训练
+# 约束: 不改网络/检测头结构/回归损失/增强/采样/NMS/推理阈值/optimizer/其他策略
+# 说明: 当前阶段仅执行 2-epoch Smoke Test; 本文件为待批准后的正式训练配置。
+# ============================================================
+_BASE_: [
+  './ppyoloe_plus_crn_s_100e_agrivision.yml',
+]
+
+epoch: 100
+
+LearningRate:
+  base_lr: 0.002   # bs=16 线性缩放 (0.001 * 16/8)
+
+TrainReader:
+  batch_size: 16
+
+EvalReader:
+  batch_size: 2
+
+# D1: 密集感知 VFL 目标校准 (仅训练期分类目标; 推理路径与 A0 完全一致)
+PPYOLOEHead:
+  use_density_calibration: True
+  density_thr: 5
+  calib_floor: 0.65

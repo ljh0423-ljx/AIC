@@ -1,0 +1,325 @@
+{
+ "per_class": {
+  "1": {
+   "name": "Tomato Early blight leaf",
+   "gt_total": 21,
+   "train_count": 171,
+   "train_img": 73,
+   "fn_conf05": 9,
+   "miss_rate_conf05": 0.429,
+   "fn_no_det": 0,
+   "no_det_rate": 0.0,
+   "miss_mean_img_density": 9.11,
+   "miss_area": {
+    "l": 5,
+    "m": 4
+   },
+   "miss_min_iou_mean": 0.806,
+   "miss_cover_score_bucket": {
+    "0.01-0.1": 0,
+    "0.1-0.3": 3,
+    "0.3-0.5": 6
+   }
+  },
+  "2": {
+   "name": "Tomato Septoria leaf spot",
+   "gt_total": 37,
+   "train_count": 338,
+   "train_img": 119,
+   "fn_conf05": 16,
+   "miss_rate_conf05": 0.432,
+   "fn_no_det": 0,
+   "no_det_rate": 0.0,
+   "miss_mean_img_density": 5.31,
+   "miss_area": {
+    "l": 14,
+    "m": 2
+   },
+   "miss_min_iou_mean": 0.846,
+   "miss_cover_score_bucket": {
+    "0.01-0.1": 0,
+    "0.1-0.3": 2,
+    "0.3-0.5": 14
+   }
+  },
+  "3": {
+   "name": "Tomato leaf",
+   "gt_total": 36,
+   "train_count": 294,
+   "train_img": 56,
+   "fn_conf05": 21,
+   "miss_rate_conf05": 0.583,
+   "fn_no_det": 0,
+   "no_det_rate": 0.0,
+   "miss_mean_img_density": 7.86,
+   "miss_area": {
+    "l": 13,
+    "m": 4,
+    "s": 4
+   },
+   "miss_min_iou_mean": 0.715,
+   "miss_cover_score_bucket": {
+    "0.01-0.1": 4,
+    "0.1-0.3": 4,
+    "0.3-0.5": 13
+   }
+  },
+  "4": {
+   "name": "Tomato leaf bacterial spot",
+   "gt_total": 16,
+   "train_count": 227,
+   "train_img": 91,
+   "fn_conf05": 6,
+   "miss_rate_conf05": 0.375,
+   "fn_no_det": 0,
+   "no_det_rate": 0.0,
+   "miss_mean_img_density": 2.33,
+   "miss_area": {
+    "l": 6
+   },
+   "miss_min_iou_mean": 0.858,
+   "miss_cover_score_bucket": {
+    "0.01-0.1": 0,
+    "0.1-0.3": 1,
+    "0.3-0.5": 5
+   }
+  },
+  "5": {
+   "name": "Tomato leaf late blight",
+   "gt_total": 26,
+   "train_count": 159,
+   "train_img": 87,
+   "fn_conf05": 7,
+   "miss_rate_conf05": 0.269,
+   "fn_no_det": 0,
+   "no_det_rate": 0.0,
+   "miss_mean_img_density": 6.14,
+   "miss_area": {
+    "l": 7
+   },
+   "miss_min_iou_mean": 0.861,
+   "miss_cover_score_bucket": {
+    "0.01-0.1": 0,
+    "0.1-0.3": 4,
+    "0.3-0.5": 3
+   }
+  },
+  "6": {
+   "name": "Tomato leaf mosaic virus",
+   "gt_total": 33,
+   "train_count": 208,
+   "train_img": 43,
+   "fn_conf05": 24,
+   "miss_rate_conf05": 0.727,
+   "fn_no_det": 0,
+   "no_det_rate": 0.0,
+   "miss_mean_img_density": 8.42,
+   "miss_area": {
+    "l": 18,
+    "m": 6
+   },
+   "miss_min_iou_mean": 0.854,
+   "miss_cover_score_bucket": {
+    "0.01-0.1": 0,
+    "0.1-0.3": 9,
+    "0.3-0.5": 15
+   }
+  },
+  "7": {
+   "name": "Tomato leaf yellow virus",
+   "gt_total": 57,
+   "train_count": 700,
+   "train_img": 59,
+   "fn_conf05": 50,
+   "miss_rate_conf05": 0.877,
+   "fn_no_det": 1,
+   "no_det_rate": 0.018,
+   "miss_mean_img_density": 11.2,
+   "miss_area": {
+    "m": 25,
+    "l": 22,
+    "s": 3
+   },
+   "miss_min_iou_mean": 0.762,
+   "miss_cover_score_bucket": {
+    "0.01-0.1": 1,
+    "0.1-0.3": 17,
+    "0.3-0.5": 32
+   }
+  },
+  "8": {
+   "name": "Tomato mold leaf",
+   "gt_total": 32,
+   "train_count": 239,
+   "train_img": 72,
+   "fn_conf05": 24,
+   "miss_rate_conf05": 0.75,
+   "fn_no_det": 0,
+   "no_det_rate": 0.0,
+   "miss_mean_img_density": 6.71,
+   "miss_area": {
+    "l": 21,
+    "m": 3
+   },
+   "miss_min_iou_mean": 0.784,
+   "miss_cover_score_bucket": {
+    "0.01-0.1": 4,
+    "0.1-0.3": 4,
+    "0.3-0.5": 16
+   }
+  },
+  "9": {
+   "name": "Apple Scab Leaf",
+   "gt_total": 30,
+   "train_count": 125,
+   "train_img": 75,
+   "fn_conf05": 12,
+   "miss_rate_conf05": 0.4,
+   "fn_no_det": 0,
+   "no_det_rate": 0.0,
+   "miss_mean_img_density": 5.92,
+   "miss_area": {
+    "l": 12
+   },
+   "miss_min_iou_mean": 0.876,
+   "miss_cover_score_bucket": {
+    "0.01-0.1": 0,
+    "0.1-0.3": 1,
+    "0.3-0.5": 11
+   }
+  },
+  "10": {
+   "name": "Apple leaf",
+   "gt_total": 14,
+   "train_count": 195,
+   "train_img": 72,
+   "fn_conf05": 0,
+   "miss_rate_conf05": 0.0,
+   "fn_no_det": 0,
+   "no_det_rate": 0.0,
+   "miss_mean_img_density": null,
+   "miss_area": {},
+   "miss_min_iou_mean": null,
+   "miss_cover_score_bucket": {}
+  },
+  "11": {
+   "name": "Apple rust leaf",
+   "gt_total": 12,
+   "train_count": 149,
+   "train_img": 70,
+   "fn_conf05": 2,
+   "miss_rate_conf05": 0.167,
+   "fn_no_det": 0,
+   "no_det_rate": 0.0,
+   "miss_mean_img_density": 4.0,
+   "miss_area": {
+    "l": 2
+   },
+   "miss_min_iou_mean": 0.812,
+   "miss_cover_score_bucket": {
+    "0.01-0.1": 0,
+    "0.1-0.3": 0,
+    "0.3-0.5": 2
+   }
+  },
+  "12": {
+   "name": "grape leaf",
+   "gt_total": 14,
+   "train_count": 173,
+   "train_img": 55,
+   "fn_conf05": 3,
+   "miss_rate_conf05": 0.214,
+   "fn_no_det": 0,
+   "no_det_rate": 0.0,
+   "miss_mean_img_density": 4.33,
+   "miss_area": {
+    "l": 3
+   },
+   "miss_min_iou_mean": 0.913,
+   "miss_cover_score_bucket": {
+    "0.01-0.1": 0,
+    "0.1-0.3": 1,
+    "0.3-0.5": 2
+   }
+  },
+  "13": {
+   "name": "grape leaf black rot",
+   "gt_total": 22,
+   "train_count": 101,
+   "train_img": 52,
+   "fn_conf05": 10,
+   "miss_rate_conf05": 0.455,
+   "fn_no_det": 0,
+   "no_det_rate": 0.0,
+   "miss_mean_img_density": 8.3,
+   "miss_area": {
+    "l": 9,
+    "m": 1
+   },
+   "miss_min_iou_mean": 0.814,
+   "miss_cover_score_bucket": {
+    "0.01-0.1": 1,
+    "0.1-0.3": 3,
+    "0.3-0.5": 6
+   }
+  }
+ },
+ "total": {
+  "gt": 350,
+  "fn_conf05": 184,
+  "fn_no_det": 1
+ },
+ "dense_vs_sparse": {
+  "dense_gt": 214,
+  "dense_miss": 143,
+  "dense_miss_rate": 0.668,
+  "sparse_gt": 136,
+  "sparse_miss": 41,
+  "sparse_miss_rate": 0.301
+ },
+ "area_gt": {
+  "s": 7,
+  "m": 49,
+  "l": 294
+ },
+ "train_count": {
+  "9": 125,
+  "10": 195,
+  "11": 149,
+  "1": 171,
+  "2": 338,
+  "3": 294,
+  "4": 227,
+  "5": 159,
+  "6": 208,
+  "7": 700,
+  "8": 239,
+  "12": 173,
+  "13": 101
+ },
+ "train_img": {
+  "9": 75,
+  "10": 72,
+  "11": 70,
+  "1": 73,
+  "2": 119,
+  "3": 56,
+  "4": 91,
+  "5": 87,
+  "6": 43,
+  "7": 59,
+  "8": 72,
+  "12": 55,
+  "13": 52
+ },
+ "recall_at_conf": {
+  "0.1": 0.971,
+  "0.3": 0.831,
+  "0.5": 0.474
+ },
+ "miss_score_all": {
+  "0.01-0.1": 10,
+  "0.1-0.3": 49,
+  "0.3-0.5": 125
+ }
+}

@@ -1,0 +1,27 @@
+# ============================================================
+# B1 — A0(exiffix) + class-weighted VFL (方向3)
+# 唯一变量: PPYOLOEHead.use_cls_weight=True → VFL 分类损失乘类权重
+# 其余与 A0 (ppyoloe_plus_crn_s_100e_agrivision.yml) 逐字段一致:
+#   epoch=100 | bs=16 | lr=0.002 | seed=0(--enable_ce True) | exiffix 数据 | 官方增强/预训练
+# 权重: experiments/direction3/class_weight_train.json (仅 TRAIN 统计, 冻结)
+# 约束: 不改网络/检测头/回归损失/增强/采样/NMS/推理阈值/optimizer/其他策略
+# ============================================================
+_BASE_: [
+  './ppyoloe_plus_crn_s_100e_agrivision.yml',
+]
+
+epoch: 100
+
+LearningRate:
+  base_lr: 0.002   # bs=16 线性缩放 (0.001 * 16/8)
+
+TrainReader:
+  batch_size: 16
+
+EvalReader:
+  batch_size: 2
+
+# B1: class-weighted VFL (仅训练期; 推理路径与 A0 完全一致)
+PPYOLOEHead:
+  use_cls_weight: True
+  cls_weight_path: /root/autodl-tmp/AIC2026_AgriVision/experiments/direction3/class_weight_train.json

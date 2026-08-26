@@ -1,0 +1,14 @@
+category,A0_AP,A1_AP,A2_AP,A1-A0,A2-A0
+Tomato Early blight leaf,0.21,0.194,0.236,-0.016,0.026
+Tomato Septoria leaf spot,0.461,0.442,0.362,-0.019,-0.099
+Tomato leaf,0.215,0.236,0.211,0.021,-0.004
+Tomato leaf bacterial spot,0.284,0.175,0.2,-0.109,-0.084
+Tomato leaf late blight,0.379,0.399,0.523,0.02,0.144
+Tomato leaf mosaic virus,0.236,0.225,0.232,-0.011,-0.004
+Tomato leaf yellow virus,0.185,0.21,0.206,0.025,0.021
+Tomato mold leaf,0.16,0.157,0.152,-0.003,-0.008
+Apple Scab Leaf,0.484,0.568,0.534,0.084,0.05
+Apple leaf,0.811,0.726,0.729,-0.085,-0.082
+Apple rust leaf,0.65,0.714,0.772,0.064,0.122
+grape leaf,0.738,0.72,0.678,-0.018,-0.06
+grape leaf black rot,0.403,0.397,0.425,-0.006,0.022

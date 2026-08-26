@@ -1,0 +1,4 @@
+Ablation-Data exiffix — 训练命令 (seed=0 via --enable_ce True)
+======================================================
+bash scripts/train_ablation.sh  (DATA_ARM=exiffix)
+配置: /root/autodl-tmp/AIC2026_AgriVision/configs/ppyoloe_plus_crn_s_100e_agrivision.yml   数据: /root/autodl-tmp/AIC2026_AgriVision/dataset/processed_detection_exiffix

@@ -1,0 +1,37 @@
+{
+  "image_name": "TEST_000079_9511.img.jpg",
+  "total_targets": 3,
+  "inference_ms": 153.58,
+  "detections": [
+    {
+      "image_name": "TEST_000079_9511.img.jpg",
+      "class_id": 3,
+      "class_name": "Tomato leaf",
+      "confidence": 0.57168,
+      "x": 276.97,
+      "y": 176.73,
+      "width": 136.67,
+      "height": 130.35
+    },
+    {
+      "image_name": "TEST_000079_9511.img.jpg",
+      "class_id": 3,
+      "class_name": "Tomato leaf",
+      "confidence": 0.542335,
+      "x": 276.0,
+      "y": 175.86,
+      "width": 93.33,
+      "height": 131.56
+    },
+    {
+      "image_name": "TEST_000079_9511.img.jpg",
+      "class_id": 3,
+      "class_name": "Tomato leaf",
+      "confidence": 0.508498,
+      "x": 46.24,
+      "y": 266.97,
+      "width": 72.76,
+      "height": 125.47
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+方向4 D1 (smoke) — 训练命令 (seed=0 via --enable_ce True, 数据=exiffix)
+======================================================
+MODE=smoke bash scripts/train_dir4_d1.sh
+配置: /root/autodl-tmp/AIC2026_AgriVision/configs/ablation_dir4_D1_smoke.yml   数据: /root/autodl-tmp/AIC2026_AgriVision/dataset/processed_detection_exiffix

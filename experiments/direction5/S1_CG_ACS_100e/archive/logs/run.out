@@ -1,0 +1,1125 @@
+WARNING: OMP_NUM_THREADS set to 12, not 1. The computation speed will not be optimized if you use data parallel. It will fail if this PaddlePaddle binary is compiled with OpenBlas since OpenBlas does not support multi-threads.
+PLEASE USE OMP_NUM_THREADS WISELY.
+Warning: Unable to use numba in PP-Tracking, please install numba, for example(python3.7): `pip install numba==0.56.4`
+Warning: Unable to use numba in PP-Tracking, please install numba, for example(python3.7): `pip install numba==0.56.4`
+[08/16 20:03:35] ppdet.utils.checkpoint INFO: Skipping import of the encryption module.
+=== S1 CG-ACS dual-stream train (formal 100e) ===
+config: /root/autodl-tmp/AIC2026_AgriVision/configs/ppyoloe_plus_crn_s_100e_cgacs.yml | aux_cls_head: True | cls_stream: True | seed: 0
+det_batch: 16 | cls_batch: 16 | epoch: 100 | snapshot_epoch: 5
+base_lr: 0.002 (A0-parity: config file default scaled per user decision bs16 -> 0.002)
+lambda_cls: 0.1 | feat_idx: 2 | aux_resize: 320
+[vdl] logging to /root/autodl-tmp/AIC2026_AgriVision/experiments/direction5/S1_CG_ACS_100e/logs
+W0816 20:03:35.147015 32726 gpu_resources.cc:119] Please NOTE: device: 0, GPU Compute Capability: 8.9, Driver API Version: 13.0, Runtime API Version: 11.8
+W0816 20:03:35.147665 32726 gpu_resources.cc:164] device: 0, cuDNN Version: 9.1.
+[08/16 20:03:35] ppdet.utils.checkpoint INFO: The shape [365] in pretrained weight yolo_head.pred_cls.0.bias is unmatched with the shape [13] in model yolo_head.pred_cls.0.bias. And the weight yolo_head.pred_cls.0.bias will not be loaded
+[08/16 20:03:35] ppdet.utils.checkpoint INFO: The shape [365, 384, 3, 3] in pretrained weight yolo_head.pred_cls.0.weight is unmatched with the shape [13, 384, 3, 3] in model yolo_head.pred_cls.0.weight. And the weight yolo_head.pred_cls.0.weight will not be loaded
+[08/16 20:03:35] ppdet.utils.checkpoint INFO: The shape [365] in pretrained weight yolo_head.pred_cls.1.bias is unmatched with the shape [13] in model yolo_head.pred_cls.1.bias. And the weight yolo_head.pred_cls.1.bias will not be loaded
+[08/16 20:03:35] ppdet.utils.checkpoint INFO: The shape [365, 192, 3, 3] in pretrained weight yolo_head.pred_cls.1.weight is unmatched with the shape [13, 192, 3, 3] in model yolo_head.pred_cls.1.weight. And the weight yolo_head.pred_cls.1.weight will not be loaded
+[08/16 20:03:35] ppdet.utils.checkpoint INFO: The shape [365] in pretrained weight yolo_head.pred_cls.2.bias is unmatched with the shape [13] in model yolo_head.pred_cls.2.bias. And the weight yolo_head.pred_cls.2.bias will not be loaded
+[08/16 20:03:35] ppdet.utils.checkpoint INFO: The shape [365, 96, 3, 3] in pretrained weight yolo_head.pred_cls.2.weight is unmatched with the shape [13, 96, 3, 3] in model yolo_head.pred_cls.2.weight. And the weight yolo_head.pred_cls.2.weight will not be loaded
+[08/16 20:03:35] ppdet.utils.checkpoint INFO: Finish loading model weights: /root/.cache/paddle/weights/ppyoloe_crn_s_obj365_pretrained.pdparams
+[model] loaded pretrain: https://bj.bcebos.com/v1/paddledet/models/pretrained/ppyoloe_crn_s_obj365_pretrained.pdparams
+[model] total trainable params: Tensor(shape=[], dtype=int64, place=Place(gpu:0), stop_gradient=True,
+       7701367)
+[model] CGACSAuxClsHead params: Tensor(shape=[], dtype=int64, place=Place(gpu:0), stop_gradient=True,
+       1261) (feat_idx=2, in_ch=96)
+loading annotations into memory...
+Done (t=0.01s)
+creating index...
+index created!
+[08/16 20:03:35] ppdet.data.source.coco INFO: Load [915 samples valid, 0 samples invalid] in file dataset/processed_detection/annotations/train.json.
+[det-loader] samples: 915 | steps/epoch: 57 | batch_size: 16
+[cls-loader] PV_CORE samples: 19233 | cls batch: 16
+[ema] enabled decay=0.9998
+--- epoch 0 start (steps/epoch=57) ---
+[epoch 0 step 0/57] lr=0.000000 det:loss=4.78262 | loss_cls=3.17131 | loss_iou=0.32011 | loss_dfl=1.48929 | loss_l1=1.06055 | loss_aux_cls=0.06638 | det_total=4.78262 | cls:loss=0.07607 | loss_aux_cls=0.07607 | finite=True
+[epoch 0 step 20/57] lr=0.000140 det:loss=4.40589 | loss_cls=3.08704 | loss_iou=0.23881 | loss_dfl=1.30114 | loss_l1=0.69024 | loss_aux_cls=0.07126 | det_total=4.40589 | cls:loss=0.07784 | loss_aux_cls=0.07784 | finite=True
+[epoch 0 step 40/57] lr=0.000281 det:loss=3.45431 | loss_cls=2.27757 | loss_iou=0.21725 | loss_dfl=1.13231 | loss_l1=0.67352 | loss_aux_cls=0.06746 | det_total=3.45431 | cls:loss=0.07908 | loss_aux_cls=0.07908 | finite=True
+[epoch 0 step 56/57] lr=0.000393 det:loss=3.42617 | loss_cls=1.91076 | loss_iou=0.30638 | loss_dfl=1.35943 | loss_l1=0.84534 | loss_aux_cls=0.06975 | det_total=3.42617 | cls:loss=0.07293 | loss_aux_cls=0.07293 | finite=True
+--- epoch 1 start (steps/epoch=57) ---
+[epoch 1 step 0/57] lr=0.000400 det:loss=3.10727 | loss_cls=2.04317 | loss_iou=0.19101 | loss_dfl=1.04295 | loss_l1=0.52122 | loss_aux_cls=0.06510 | det_total=3.10727 | cls:loss=0.07202 | loss_aux_cls=0.07202 | finite=True
+[epoch 1 step 20/57] lr=0.000540 det:loss=3.66056 | loss_cls=2.49961 | loss_iou=0.20847 | loss_dfl=1.14997 | loss_l1=0.58641 | loss_aux_cls=0.06478 | det_total=3.66056 | cls:loss=0.07058 | loss_aux_cls=0.07058 | finite=True
+[epoch 1 step 40/57] lr=0.000681 det:loss=3.22389 | loss_cls=2.03943 | loss_iou=0.23664 | loss_dfl=1.06359 | loss_l1=0.49912 | loss_aux_cls=0.06107 | det_total=3.22389 | cls:loss=0.06933 | loss_aux_cls=0.06933 | finite=True
+[epoch 1 step 56/57] lr=0.000793 det:loss=2.98530 | loss_cls=2.06582 | loss_iou=0.15354 | loss_dfl=0.94777 | loss_l1=0.36215 | loss_aux_cls=0.06175 | det_total=2.98530 | cls:loss=0.06913 | loss_aux_cls=0.06913 | finite=True
+--- epoch 2 start (steps/epoch=57) ---
+[epoch 2 step 0/57] lr=0.000800 det:loss=2.62894 | loss_cls=1.62335 | loss_iou=0.17688 | loss_dfl=1.00541 | loss_l1=0.48572 | loss_aux_cls=0.06068 | det_total=2.62894 | cls:loss=0.06828 | loss_aux_cls=0.06828 | finite=True
+[epoch 2 step 20/57] lr=0.000940 det:loss=3.01107 | loss_cls=1.99278 | loss_iou=0.18475 | loss_dfl=0.99114 | loss_l1=0.36146 | loss_aux_cls=0.06085 | det_total=3.01107 | cls:loss=0.06440 | loss_aux_cls=0.06440 | finite=True
+[epoch 2 step 40/57] lr=0.001081 det:loss=3.26961 | loss_cls=2.06914 | loss_iou=0.22906 | loss_dfl=1.14209 | loss_l1=0.60163 | loss_aux_cls=0.05678 | det_total=3.26961 | cls:loss=0.06308 | loss_aux_cls=0.06308 | finite=True
+[epoch 2 step 56/57] lr=0.001193 det:loss=3.07741 | loss_cls=1.77969 | loss_iou=0.26745 | loss_dfl=1.14092 | loss_l1=0.57381 | loss_aux_cls=0.05863 | det_total=3.07741 | cls:loss=0.06225 | loss_aux_cls=0.06225 | finite=True
+--- epoch 3 start (steps/epoch=57) ---
+[epoch 3 step 0/57] lr=0.001200 det:loss=3.21741 | loss_cls=1.94940 | loss_iou=0.22574 | loss_dfl=1.29301 | loss_l1=0.73512 | loss_aux_cls=0.05716 | det_total=3.21741 | cls:loss=0.06233 | loss_aux_cls=0.06233 | finite=True
+[epoch 3 step 20/57] lr=0.001340 det:loss=3.34561 | loss_cls=1.99739 | loss_iou=0.25190 | loss_dfl=1.32768 | loss_l1=0.76731 | loss_aux_cls=0.05464 | det_total=3.34561 | cls:loss=0.05518 | loss_aux_cls=0.05518 | finite=True
+[epoch 3 step 40/57] lr=0.001481 det:loss=3.39282 | loss_cls=1.96425 | loss_iou=0.28410 | loss_dfl=1.33694 | loss_l1=0.86173 | loss_aux_cls=0.04987 | det_total=3.39282 | cls:loss=0.05299 | loss_aux_cls=0.05299 | finite=True
+[epoch 3 step 56/57] lr=0.001593 det:loss=3.38073 | loss_cls=2.04611 | loss_iou=0.24431 | loss_dfl=1.34463 | loss_l1=0.86212 | loss_aux_cls=0.05154 | det_total=3.38073 | cls:loss=0.05319 | loss_aux_cls=0.05319 | finite=True
+--- epoch 4 start (steps/epoch=57) ---
+[epoch 4 step 0/57] lr=0.001600 det:loss=2.78339 | loss_cls=1.62115 | loss_iou=0.23758 | loss_dfl=1.03455 | loss_l1=0.54445 | loss_aux_cls=0.05101 | det_total=2.78339 | cls:loss=0.05195 | loss_aux_cls=0.05195 | finite=True
+[epoch 4 step 20/57] lr=0.001740 det:loss=2.90437 | loss_cls=1.73507 | loss_iou=0.21658 | loss_dfl=1.16589 | loss_l1=0.62419 | loss_aux_cls=0.04490 | det_total=2.90437 | cls:loss=0.04919 | loss_aux_cls=0.04919 | finite=True
+[epoch 4 step 40/57] lr=0.001881 det:loss=2.84005 | loss_cls=1.64690 | loss_iou=0.24817 | loss_dfl=1.05697 | loss_l1=0.48867 | loss_aux_cls=0.04424 | det_total=2.84005 | cls:loss=0.04684 | loss_aux_cls=0.04684 | finite=True
+[epoch 4 step 56/57] lr=0.001993 det:loss=3.37241 | loss_cls=1.89559 | loss_iou=0.30041 | loss_dfl=1.36177 | loss_l1=0.71410 | loss_aux_cls=0.04491 | det_total=3.37241 | cls:loss=0.04701 | loss_aux_cls=0.04701 | finite=True
+[save] 4 -> /root/autodl-tmp/AIC2026_AgriVision/experiments/direction5/S1_CG_ACS_100e/checkpoints/4.pdparams/.pdema/.pdopt
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/16 20:13:14] ppdet.data.source.coco INFO: Load [113 samples valid, 0 samples invalid] in file dataset/processed_detection/annotations/val.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[eval] EvalDataset samples: 113 | EvalReader bs: 2 | anno: dataset/processed_detection/annotations/val.json
+[08/16 20:13:20] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/16 20:13:20] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.47s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=0.89s).
+Accumulating evaluation results...
+DONE (t=0.41s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.143
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.218
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.154
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.072
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.162
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.146
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.224
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.503
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.581
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.750
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.525
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.595
+[best] VAL mAP@0.5:0.95 = 0.1428 @ epoch 5 -> best_model
+--- epoch 5 start (steps/epoch=57) ---
+[epoch 5 step 0/57] lr=0.002000 det:loss=2.98943 | loss_cls=1.92427 | loss_iou=0.21000 | loss_dfl=0.99130 | loss_l1=0.47110 | loss_aux_cls=0.04453 | det_total=2.98943 | cls:loss=0.04766 | loss_aux_cls=0.04766 | finite=True
+[epoch 5 step 20/57] lr=0.002000 det:loss=3.07731 | loss_cls=1.94527 | loss_iou=0.19899 | loss_dfl=1.18811 | loss_l1=0.57864 | loss_aux_cls=0.04051 | det_total=3.07731 | cls:loss=0.04364 | loss_aux_cls=0.04364 | finite=True
+[epoch 5 step 40/57] lr=0.002000 det:loss=2.79536 | loss_cls=1.75092 | loss_iou=0.17985 | loss_dfl=1.11034 | loss_l1=0.59285 | loss_aux_cls=0.03965 | det_total=2.79536 | cls:loss=0.04309 | loss_aux_cls=0.04309 | finite=True
+[epoch 5 step 56/57] lr=0.001999 det:loss=2.95749 | loss_cls=1.68654 | loss_iou=0.27863 | loss_dfl=1.07212 | loss_l1=0.54239 | loss_aux_cls=0.03833 | det_total=2.95749 | cls:loss=0.04051 | loss_aux_cls=0.04051 | finite=True
+--- epoch 6 start (steps/epoch=57) ---
+[epoch 6 step 0/57] lr=0.001999 det:loss=2.85927 | loss_cls=1.72686 | loss_iou=0.24179 | loss_dfl=0.97489 | loss_l1=0.42115 | loss_aux_cls=0.04047 | det_total=2.85927 | cls:loss=0.04060 | loss_aux_cls=0.04060 | finite=True
+[epoch 6 step 20/57] lr=0.001999 det:loss=2.86696 | loss_cls=1.53609 | loss_iou=0.28498 | loss_dfl=1.15757 | loss_l1=0.62286 | loss_aux_cls=0.03964 | det_total=2.86696 | cls:loss=0.03933 | loss_aux_cls=0.03933 | finite=True
+[epoch 6 step 40/57] lr=0.001998 det:loss=2.92525 | loss_cls=1.76625 | loss_iou=0.19661 | loss_dfl=1.25934 | loss_l1=0.61197 | loss_aux_cls=0.03780 | det_total=2.92525 | cls:loss=0.03891 | loss_aux_cls=0.03891 | finite=True
+[epoch 6 step 56/57] lr=0.001998 det:loss=2.64828 | loss_cls=1.73774 | loss_iou=0.16743 | loss_dfl=0.91114 | loss_l1=0.34980 | loss_aux_cls=0.03640 | det_total=2.64828 | cls:loss=0.03705 | loss_aux_cls=0.03705 | finite=True
+--- epoch 7 start (steps/epoch=57) ---
+[epoch 7 step 0/57] lr=0.001998 det:loss=2.77251 | loss_cls=1.66643 | loss_iou=0.21369 | loss_dfl=1.06670 | loss_l1=0.55317 | loss_aux_cls=0.03850 | det_total=2.77251 | cls:loss=0.03743 | loss_aux_cls=0.03743 | finite=True
+[epoch 7 step 20/57] lr=0.001997 det:loss=3.01291 | loss_cls=1.77737 | loss_iou=0.26579 | loss_dfl=1.06888 | loss_l1=0.58414 | loss_aux_cls=0.03663 | det_total=3.01291 | cls:loss=0.03813 | loss_aux_cls=0.03813 | finite=True
+[epoch 7 step 40/57] lr=0.001996 det:loss=3.08231 | loss_cls=1.93310 | loss_iou=0.22580 | loss_dfl=1.09536 | loss_l1=0.51468 | loss_aux_cls=0.03705 | det_total=3.08231 | cls:loss=0.03655 | loss_aux_cls=0.03655 | finite=True
+[epoch 7 step 56/57] lr=0.001995 det:loss=2.70299 | loss_cls=1.67071 | loss_iou=0.19889 | loss_dfl=1.00045 | loss_l1=0.43173 | loss_aux_cls=0.03483 | det_total=2.70299 | cls:loss=0.03462 | loss_aux_cls=0.03462 | finite=True
+--- epoch 8 start (steps/epoch=57) ---
+[epoch 8 step 0/57] lr=0.001995 det:loss=2.84276 | loss_cls=1.66366 | loss_iou=0.21465 | loss_dfl=1.21345 | loss_l1=0.56875 | loss_aux_cls=0.03576 | det_total=2.84276 | cls:loss=0.03723 | loss_aux_cls=0.03723 | finite=True
+[epoch 8 step 20/57] lr=0.001994 det:loss=2.63107 | loss_cls=1.50332 | loss_iou=0.19458 | loss_dfl=1.21579 | loss_l1=0.60631 | loss_aux_cls=0.03340 | det_total=2.63107 | cls:loss=0.03596 | loss_aux_cls=0.03596 | finite=True
+[epoch 8 step 40/57] lr=0.001993 det:loss=2.62863 | loss_cls=1.60152 | loss_iou=0.18848 | loss_dfl=1.04467 | loss_l1=0.53975 | loss_aux_cls=0.03358 | det_total=2.62863 | cls:loss=0.03431 | loss_aux_cls=0.03431 | finite=True
+[epoch 8 step 56/57] lr=0.001991 det:loss=2.66603 | loss_cls=1.56240 | loss_iou=0.21974 | loss_dfl=1.03999 | loss_l1=0.49894 | loss_aux_cls=0.03430 | det_total=2.66603 | cls:loss=0.03303 | loss_aux_cls=0.03303 | finite=True
+--- epoch 9 start (steps/epoch=57) ---
+[epoch 9 step 0/57] lr=0.001991 det:loss=2.80342 | loss_cls=1.72339 | loss_iou=0.19505 | loss_dfl=1.11917 | loss_l1=0.50450 | loss_aux_cls=0.03282 | det_total=2.80342 | cls:loss=0.03278 | loss_aux_cls=0.03278 | finite=True
+[epoch 9 step 20/57] lr=0.001990 det:loss=3.07293 | loss_cls=1.89247 | loss_iou=0.24153 | loss_dfl=1.08534 | loss_l1=0.50036 | loss_aux_cls=0.03398 | det_total=3.07293 | cls:loss=0.03257 | loss_aux_cls=0.03257 | finite=True
+[epoch 9 step 40/57] lr=0.001988 det:loss=2.87839 | loss_cls=1.52752 | loss_iou=0.28498 | loss_dfl=1.21082 | loss_l1=0.71029 | loss_aux_cls=0.03300 | det_total=2.87839 | cls:loss=0.03333 | loss_aux_cls=0.03333 | finite=True
+[epoch 9 step 56/57] lr=0.001986 det:loss=2.72647 | loss_cls=1.66982 | loss_iou=0.20900 | loss_dfl=1.00166 | loss_l1=0.43269 | loss_aux_cls=0.03333 | det_total=2.72647 | cls:loss=0.03402 | loss_aux_cls=0.03402 | finite=True
+[save] 9 -> /root/autodl-tmp/AIC2026_AgriVision/experiments/direction5/S1_CG_ACS_100e/checkpoints/9.pdparams/.pdema/.pdopt
+[08/16 20:23:01] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/16 20:23:01] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.71s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=1.04s).
+Accumulating evaluation results...
+DONE (t=0.43s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.205
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.312
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.231
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.073
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.204
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.211
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.245
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.530
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.617
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.750
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.564
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.628
+[best] VAL mAP@0.5:0.95 = 0.2052 @ epoch 10 -> best_model
+--- epoch 10 start (steps/epoch=57) ---
+[epoch 10 step 0/57] lr=0.001986 det:loss=2.52048 | loss_cls=1.42748 | loss_iou=0.23102 | loss_dfl=0.96591 | loss_l1=0.50667 | loss_aux_cls=0.03250 | det_total=2.52048 | cls:loss=0.03286 | loss_aux_cls=0.03286 | finite=True
+[epoch 10 step 20/57] lr=0.001984 det:loss=2.89413 | loss_cls=1.66127 | loss_iou=0.25199 | loss_dfl=1.13888 | loss_l1=0.56780 | loss_aux_cls=0.03346 | det_total=2.89413 | cls:loss=0.03149 | loss_aux_cls=0.03149 | finite=True
+[epoch 10 step 40/57] lr=0.001982 det:loss=2.75881 | loss_cls=1.46135 | loss_iou=0.27235 | loss_dfl=1.17151 | loss_l1=0.60512 | loss_aux_cls=0.03083 | det_total=2.75881 | cls:loss=0.03200 | loss_aux_cls=0.03200 | finite=True
+[epoch 10 step 56/57] lr=0.001980 det:loss=2.98536 | loss_cls=1.60202 | loss_iou=0.31704 | loss_dfl=1.11878 | loss_l1=0.65290 | loss_aux_cls=0.03135 | det_total=2.98536 | cls:loss=0.03088 | loss_aux_cls=0.03088 | finite=True
+--- epoch 11 start (steps/epoch=57) ---
+[epoch 11 step 0/57] lr=0.001980 det:loss=2.58035 | loss_cls=1.51718 | loss_iou=0.21282 | loss_dfl=0.99658 | loss_l1=0.40933 | loss_aux_cls=0.03283 | det_total=2.58035 | cls:loss=0.03107 | loss_aux_cls=0.03107 | finite=True
+[epoch 11 step 20/57] lr=0.001978 det:loss=2.51511 | loss_cls=1.42485 | loss_iou=0.23549 | loss_dfl=0.93869 | loss_l1=0.42666 | loss_aux_cls=0.03220 | det_total=2.51511 | cls:loss=0.03201 | loss_aux_cls=0.03201 | finite=True
+[epoch 11 step 40/57] lr=0.001976 det:loss=2.74386 | loss_cls=1.41858 | loss_iou=0.29499 | loss_dfl=1.11033 | loss_l1=0.60753 | loss_aux_cls=0.03262 | det_total=2.74386 | cls:loss=0.03140 | loss_aux_cls=0.03140 | finite=True
+[epoch 11 step 56/57] lr=0.001973 det:loss=3.06715 | loss_cls=1.73145 | loss_iou=0.24618 | loss_dfl=1.37474 | loss_l1=0.99517 | loss_aux_cls=0.03287 | det_total=3.06715 | cls:loss=0.03021 | loss_aux_cls=0.03021 | finite=True
+--- epoch 12 start (steps/epoch=57) ---
+[epoch 12 step 0/57] lr=0.001973 det:loss=2.42692 | loss_cls=1.61506 | loss_iou=0.13643 | loss_dfl=0.87864 | loss_l1=0.28682 | loss_aux_cls=0.03145 | det_total=2.42692 | cls:loss=0.03037 | loss_aux_cls=0.03037 | finite=True
+[epoch 12 step 20/57] lr=0.001971 det:loss=2.65631 | loss_cls=1.50881 | loss_iou=0.22436 | loss_dfl=1.10699 | loss_l1=0.55474 | loss_aux_cls=0.03311 | det_total=2.65631 | cls:loss=0.03112 | loss_aux_cls=0.03112 | finite=True
+[epoch 12 step 40/57] lr=0.001968 det:loss=2.80022 | loss_cls=1.65982 | loss_iou=0.21552 | loss_dfl=1.14372 | loss_l1=0.51185 | loss_aux_cls=0.02975 | det_total=2.80022 | cls:loss=0.03078 | loss_aux_cls=0.03078 | finite=True
+[epoch 12 step 56/57] lr=0.001965 det:loss=2.46701 | loss_cls=1.48808 | loss_iou=0.18458 | loss_dfl=0.96743 | loss_l1=0.36207 | loss_aux_cls=0.03376 | det_total=2.46701 | cls:loss=0.02835 | loss_aux_cls=0.02835 | finite=True
+--- epoch 13 start (steps/epoch=57) ---
+[epoch 13 step 0/57] lr=0.001965 det:loss=2.40413 | loss_cls=1.51532 | loss_iou=0.16560 | loss_dfl=0.88797 | loss_l1=0.31652 | loss_aux_cls=0.03082 | det_total=2.40413 | cls:loss=0.02975 | loss_aux_cls=0.02975 | finite=True
+[epoch 13 step 20/57] lr=0.001962 det:loss=2.45843 | loss_cls=1.49734 | loss_iou=0.19679 | loss_dfl=0.87385 | loss_l1=0.49957 | loss_aux_cls=0.03218 | det_total=2.45843 | cls:loss=0.02833 | loss_aux_cls=0.02833 | finite=True
+[epoch 13 step 40/57] lr=0.001959 det:loss=3.04829 | loss_cls=1.82952 | loss_iou=0.26029 | loss_dfl=1.07319 | loss_l1=0.54686 | loss_aux_cls=0.03144 | det_total=3.04829 | cls:loss=0.02953 | loss_aux_cls=0.02953 | finite=True
+[epoch 13 step 56/57] lr=0.001956 det:loss=2.49483 | loss_cls=1.60781 | loss_iou=0.16545 | loss_dfl=0.88152 | loss_l1=0.33278 | loss_aux_cls=0.03262 | det_total=2.49483 | cls:loss=0.02973 | loss_aux_cls=0.02973 | finite=True
+--- epoch 14 start (steps/epoch=57) ---
+[epoch 14 step 0/57] lr=0.001956 det:loss=2.53500 | loss_cls=1.56281 | loss_iou=0.17473 | loss_dfl=1.00658 | loss_l1=0.43487 | loss_aux_cls=0.03208 | det_total=2.53500 | cls:loss=0.03062 | loss_aux_cls=0.03062 | finite=True
+[epoch 14 step 20/57] lr=0.001953 det:loss=2.70980 | loss_cls=1.68123 | loss_iou=0.19393 | loss_dfl=1.02768 | loss_l1=0.39079 | loss_aux_cls=0.02990 | det_total=2.70980 | cls:loss=0.02926 | loss_aux_cls=0.02926 | finite=True
+[epoch 14 step 40/57] lr=0.001949 det:loss=2.80857 | loss_cls=1.59320 | loss_iou=0.23677 | loss_dfl=1.18340 | loss_l1=0.65517 | loss_aux_cls=0.03175 | det_total=2.80857 | cls:loss=0.02941 | loss_aux_cls=0.02941 | finite=True
+[epoch 14 step 56/57] lr=0.001946 det:loss=2.58954 | loss_cls=1.52032 | loss_iou=0.21999 | loss_dfl=0.97837 | loss_l1=0.42462 | loss_aux_cls=0.03006 | det_total=2.58954 | cls:loss=0.02885 | loss_aux_cls=0.02885 | finite=True
+[save] 14 -> /root/autodl-tmp/AIC2026_AgriVision/experiments/direction5/S1_CG_ACS_100e/checkpoints/14.pdparams/.pdema/.pdopt
+[08/16 20:32:45] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/16 20:32:45] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.68s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=1.04s).
+Accumulating evaluation results...
+DONE (t=0.44s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.268
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.396
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.307
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.065
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.197
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.273
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.265
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.562
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.647
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.667
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.601
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.656
+[best] VAL mAP@0.5:0.95 = 0.2685 @ epoch 15 -> best_model
+--- epoch 15 start (steps/epoch=57) ---
+[epoch 15 step 0/57] lr=0.001946 det:loss=2.42604 | loss_cls=1.43124 | loss_iou=0.18050 | loss_dfl=1.02826 | loss_l1=0.44862 | loss_aux_cls=0.02943 | det_total=2.42604 | cls:loss=0.02820 | loss_aux_cls=0.02820 | finite=True
+[epoch 15 step 20/57] lr=0.001942 det:loss=2.53459 | loss_cls=1.43864 | loss_iou=0.19408 | loss_dfl=1.16091 | loss_l1=0.53064 | loss_aux_cls=0.03030 | det_total=2.53459 | cls:loss=0.02876 | loss_aux_cls=0.02876 | finite=True
+[epoch 15 step 40/57] lr=0.001938 det:loss=2.86312 | loss_cls=1.70298 | loss_iou=0.19760 | loss_dfl=1.26691 | loss_l1=0.68023 | loss_aux_cls=0.03267 | det_total=2.86312 | cls:loss=0.02762 | loss_aux_cls=0.02762 | finite=True
+[epoch 15 step 56/57] lr=0.001935 det:loss=2.76577 | loss_cls=1.50620 | loss_iou=0.21359 | loss_dfl=1.39126 | loss_l1=0.80000 | loss_aux_cls=0.02996 | det_total=2.76577 | cls:loss=0.03072 | loss_aux_cls=0.03072 | finite=True
+--- epoch 16 start (steps/epoch=57) ---
+[epoch 16 step 0/57] lr=0.001935 det:loss=2.91377 | loss_cls=1.70529 | loss_iou=0.24722 | loss_dfl=1.12166 | loss_l1=0.56946 | loss_aux_cls=0.02960 | det_total=2.91377 | cls:loss=0.02858 | loss_aux_cls=0.02858 | finite=True
+[epoch 16 step 20/57] lr=0.001930 det:loss=2.89412 | loss_cls=1.76308 | loss_iou=0.21336 | loss_dfl=1.13442 | loss_l1=0.55086 | loss_aux_cls=0.03043 | det_total=2.89412 | cls:loss=0.02881 | loss_aux_cls=0.02881 | finite=True
+[epoch 16 step 40/57] lr=0.001926 det:loss=2.67074 | loss_cls=1.63763 | loss_iou=0.22349 | loss_dfl=0.88858 | loss_l1=0.38701 | loss_aux_cls=0.03009 | det_total=2.67074 | cls:loss=0.02820 | loss_aux_cls=0.02820 | finite=True
+[epoch 16 step 56/57] lr=0.001923 det:loss=2.68954 | loss_cls=1.47491 | loss_iou=0.27836 | loss_dfl=0.97914 | loss_l1=0.49665 | loss_aux_cls=0.02915 | det_total=2.68954 | cls:loss=0.02667 | loss_aux_cls=0.02667 | finite=True
+--- epoch 17 start (steps/epoch=57) ---
+[epoch 17 step 0/57] lr=0.001922 det:loss=2.64694 | loss_cls=1.53052 | loss_iou=0.21351 | loss_dfl=1.10072 | loss_l1=0.66392 | loss_aux_cls=0.03229 | det_total=2.64694 | cls:loss=0.02847 | loss_aux_cls=0.02847 | finite=True
+[epoch 17 step 20/57] lr=0.001918 det:loss=2.72658 | loss_cls=1.61431 | loss_iou=0.19146 | loss_dfl=1.20567 | loss_l1=0.55856 | loss_aux_cls=0.03077 | det_total=2.72658 | cls:loss=0.02685 | loss_aux_cls=0.02685 | finite=True
+[epoch 17 step 40/57] lr=0.001913 det:loss=2.61382 | loss_cls=1.47298 | loss_iou=0.23191 | loss_dfl=1.06535 | loss_l1=0.49429 | loss_aux_cls=0.02839 | det_total=2.61382 | cls:loss=0.02563 | loss_aux_cls=0.02563 | finite=True
+[epoch 17 step 56/57] lr=0.001909 det:loss=2.73861 | loss_cls=1.67307 | loss_iou=0.19272 | loss_dfl=1.11056 | loss_l1=0.71425 | loss_aux_cls=0.02845 | det_total=2.73861 | cls:loss=0.02633 | loss_aux_cls=0.02633 | finite=True
+--- epoch 18 start (steps/epoch=57) ---
+[epoch 18 step 0/57] lr=0.001909 det:loss=2.35233 | loss_cls=1.42344 | loss_iou=0.18158 | loss_dfl=0.88818 | loss_l1=0.35558 | loss_aux_cls=0.03087 | det_total=2.35233 | cls:loss=0.02667 | loss_aux_cls=0.02667 | finite=True
+[epoch 18 step 20/57] lr=0.001904 det:loss=2.46175 | loss_cls=1.51867 | loss_iou=0.18481 | loss_dfl=0.90420 | loss_l1=0.34779 | loss_aux_cls=0.02897 | det_total=2.46175 | cls:loss=0.02726 | loss_aux_cls=0.02726 | finite=True
+[epoch 18 step 40/57] lr=0.001899 det:loss=2.52050 | loss_cls=1.49705 | loss_iou=0.22323 | loss_dfl=0.87111 | loss_l1=0.33938 | loss_aux_cls=0.02980 | det_total=2.52050 | cls:loss=0.02655 | loss_aux_cls=0.02655 | finite=True
+[epoch 18 step 56/57] lr=0.001895 det:loss=2.65970 | loss_cls=1.60363 | loss_iou=0.20324 | loss_dfl=1.03306 | loss_l1=0.44936 | loss_aux_cls=0.03145 | det_total=2.65970 | cls:loss=0.02705 | loss_aux_cls=0.02705 | finite=True
+--- epoch 19 start (steps/epoch=57) ---
+[epoch 19 step 0/57] lr=0.001895 det:loss=2.23380 | loss_cls=1.22948 | loss_iou=0.20425 | loss_dfl=0.92725 | loss_l1=0.37729 | loss_aux_cls=0.03007 | det_total=2.23380 | cls:loss=0.02946 | loss_aux_cls=0.02946 | finite=True
+[epoch 19 step 20/57] lr=0.001889 det:loss=2.44144 | loss_cls=1.47996 | loss_iou=0.17748 | loss_dfl=0.97674 | loss_l1=0.39170 | loss_aux_cls=0.02942 | det_total=2.44144 | cls:loss=0.02784 | loss_aux_cls=0.02784 | finite=True
+[epoch 19 step 40/57] lr=0.001884 det:loss=2.66768 | loss_cls=1.48447 | loss_iou=0.26336 | loss_dfl=0.98596 | loss_l1=0.52130 | loss_aux_cls=0.03183 | det_total=2.66768 | cls:loss=0.02525 | loss_aux_cls=0.02525 | finite=True
+[epoch 19 step 56/57] lr=0.001880 det:loss=2.51436 | loss_cls=1.48463 | loss_iou=0.15983 | loss_dfl=1.20714 | loss_l1=0.53273 | loss_aux_cls=0.02659 | det_total=2.51436 | cls:loss=0.02787 | loss_aux_cls=0.02787 | finite=True
+[save] 19 -> /root/autodl-tmp/AIC2026_AgriVision/experiments/direction5/S1_CG_ACS_100e/checkpoints/19.pdparams/.pdema/.pdopt
+[08/16 20:42:16] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/16 20:42:16] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.58s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=1.05s).
+Accumulating evaluation results...
+DONE (t=0.41s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.302
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.430
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.340
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.044
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.205
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.318
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.271
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.584
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.670
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.633
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.589
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.687
+[best] VAL mAP@0.5:0.95 = 0.3023 @ epoch 20 -> best_model
+--- epoch 20 start (steps/epoch=57) ---
+[epoch 20 step 0/57] lr=0.001879 det:loss=2.67478 | loss_cls=1.47225 | loss_iou=0.26958 | loss_dfl=1.00120 | loss_l1=0.47934 | loss_aux_cls=0.02799 | det_total=2.67478 | cls:loss=0.02762 | loss_aux_cls=0.02762 | finite=True
+[epoch 20 step 20/57] lr=0.001874 det:loss=2.23900 | loss_cls=1.44088 | loss_iou=0.13763 | loss_dfl=0.85421 | loss_l1=0.26821 | loss_aux_cls=0.02694 | det_total=2.23900 | cls:loss=0.02891 | loss_aux_cls=0.02891 | finite=True
+[epoch 20 step 40/57] lr=0.001868 det:loss=2.55680 | loss_cls=1.43206 | loss_iou=0.20115 | loss_dfl=1.18278 | loss_l1=0.53900 | loss_aux_cls=0.03048 | det_total=2.55680 | cls:loss=0.02664 | loss_aux_cls=0.02664 | finite=True
+[epoch 20 step 56/57] lr=0.001864 det:loss=2.19199 | loss_cls=1.31403 | loss_iou=0.15442 | loss_dfl=0.92099 | loss_l1=0.33895 | loss_aux_cls=0.03142 | det_total=2.19199 | cls:loss=0.02466 | loss_aux_cls=0.02466 | finite=True
+--- epoch 21 start (steps/epoch=57) ---
+[epoch 21 step 0/57] lr=0.001863 det:loss=2.43816 | loss_cls=1.37439 | loss_iou=0.21057 | loss_dfl=1.01048 | loss_l1=0.53563 | loss_aux_cls=0.03210 | det_total=2.43816 | cls:loss=0.02933 | loss_aux_cls=0.02933 | finite=True
+[epoch 21 step 20/57] lr=0.001857 det:loss=2.37449 | loss_cls=1.29197 | loss_iou=0.22474 | loss_dfl=0.98118 | loss_l1=0.48529 | loss_aux_cls=0.03010 | det_total=2.37449 | cls:loss=0.02535 | loss_aux_cls=0.02535 | finite=True
+[epoch 21 step 40/57] lr=0.001851 det:loss=2.37589 | loss_cls=1.36847 | loss_iou=0.20864 | loss_dfl=0.91299 | loss_l1=0.37155 | loss_aux_cls=0.02932 | det_total=2.37589 | cls:loss=0.02601 | loss_aux_cls=0.02601 | finite=True
+[epoch 21 step 56/57] lr=0.001846 det:loss=2.48022 | loss_cls=1.31524 | loss_iou=0.23158 | loss_dfl=1.11508 | loss_l1=0.54131 | loss_aux_cls=0.02850 | det_total=2.48022 | cls:loss=0.02681 | loss_aux_cls=0.02681 | finite=True
+--- epoch 22 start (steps/epoch=57) ---
+[epoch 22 step 0/57] lr=0.001846 det:loss=2.21500 | loss_cls=1.27976 | loss_iou=0.16402 | loss_dfl=0.99206 | loss_l1=0.40777 | loss_aux_cls=0.02916 | det_total=2.21500 | cls:loss=0.02679 | loss_aux_cls=0.02679 | finite=True
+[epoch 22 step 20/57] lr=0.001840 det:loss=2.36260 | loss_cls=1.41850 | loss_iou=0.19210 | loss_dfl=0.87091 | loss_l1=0.35384 | loss_aux_cls=0.02840 | det_total=2.36260 | cls:loss=0.02634 | loss_aux_cls=0.02634 | finite=True
+[epoch 22 step 40/57] lr=0.001833 det:loss=2.63986 | loss_cls=1.58752 | loss_iou=0.19149 | loss_dfl=1.08986 | loss_l1=0.49600 | loss_aux_cls=0.02868 | det_total=2.63986 | cls:loss=0.02549 | loss_aux_cls=0.02549 | finite=True
+[epoch 22 step 56/57] lr=0.001828 det:loss=2.43393 | loss_cls=1.47390 | loss_iou=0.18973 | loss_dfl=0.91269 | loss_l1=0.34942 | loss_aux_cls=0.02935 | det_total=2.43393 | cls:loss=0.02585 | loss_aux_cls=0.02585 | finite=True
+--- epoch 23 start (steps/epoch=57) ---
+[epoch 23 step 0/57] lr=0.001828 det:loss=2.57641 | loss_cls=1.44186 | loss_iou=0.24182 | loss_dfl=0.99941 | loss_l1=0.45415 | loss_aux_cls=0.03029 | det_total=2.57641 | cls:loss=0.02513 | loss_aux_cls=0.02513 | finite=True
+[epoch 23 step 20/57] lr=0.001821 det:loss=2.60920 | loss_cls=1.60132 | loss_iou=0.19622 | loss_dfl=0.97526 | loss_l1=0.43246 | loss_aux_cls=0.02971 | det_total=2.60920 | cls:loss=0.02643 | loss_aux_cls=0.02643 | finite=True
+[epoch 23 step 40/57] lr=0.001815 det:loss=2.37110 | loss_cls=1.31691 | loss_iou=0.20585 | loss_dfl=1.01845 | loss_l1=0.46183 | loss_aux_cls=0.03034 | det_total=2.37110 | cls:loss=0.02700 | loss_aux_cls=0.02700 | finite=True
+[epoch 23 step 56/57] lr=0.001809 det:loss=2.46436 | loss_cls=1.47591 | loss_iou=0.19925 | loss_dfl=0.91825 | loss_l1=0.35899 | loss_aux_cls=0.03119 | det_total=2.46436 | cls:loss=0.02603 | loss_aux_cls=0.02603 | finite=True
+--- epoch 24 start (steps/epoch=57) ---
+[epoch 24 step 0/57] lr=0.001809 det:loss=2.44267 | loss_cls=1.53321 | loss_iou=0.14903 | loss_dfl=1.01544 | loss_l1=0.40181 | loss_aux_cls=0.02917 | det_total=2.44267 | cls:loss=0.02402 | loss_aux_cls=0.02402 | finite=True
+[epoch 24 step 20/57] lr=0.001802 det:loss=2.26711 | loss_cls=1.39665 | loss_iou=0.15929 | loss_dfl=0.88145 | loss_l1=0.32558 | loss_aux_cls=0.03150 | det_total=2.26711 | cls:loss=0.02650 | loss_aux_cls=0.02650 | finite=True
+[epoch 24 step 40/57] lr=0.001795 det:loss=2.14698 | loss_cls=1.29008 | loss_iou=0.15843 | loss_dfl=0.86008 | loss_l1=0.34443 | loss_aux_cls=0.03078 | det_total=2.14698 | cls:loss=0.02581 | loss_aux_cls=0.02581 | finite=True
+[epoch 24 step 56/57] lr=0.001789 det:loss=2.27106 | loss_cls=1.37982 | loss_iou=0.17219 | loss_dfl=0.86409 | loss_l1=0.33289 | loss_aux_cls=0.02873 | det_total=2.27106 | cls:loss=0.02430 | loss_aux_cls=0.02430 | finite=True
+[save] 24 -> /root/autodl-tmp/AIC2026_AgriVision/experiments/direction5/S1_CG_ACS_100e/checkpoints/24.pdparams/.pdema/.pdopt
+[08/16 20:51:51] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/16 20:51:51] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.69s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=1.09s).
+Accumulating evaluation results...
+DONE (t=0.44s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.322
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.454
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.361
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.033
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.245
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.327
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.283
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.592
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.673
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.567
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.607
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.690
+[best] VAL mAP@0.5:0.95 = 0.3222 @ epoch 25 -> best_model
+--- epoch 25 start (steps/epoch=57) ---
+[epoch 25 step 0/57] lr=0.001789 det:loss=2.48916 | loss_cls=1.57262 | loss_iou=0.17975 | loss_dfl=0.87592 | loss_l1=0.33430 | loss_aux_cls=0.02922 | det_total=2.48916 | cls:loss=0.02627 | loss_aux_cls=0.02627 | finite=True
+[epoch 25 step 20/57] lr=0.001782 det:loss=2.33768 | loss_cls=1.38979 | loss_iou=0.17079 | loss_dfl=0.98681 | loss_l1=0.41252 | loss_aux_cls=0.02752 | det_total=2.33768 | cls:loss=0.02404 | loss_aux_cls=0.02404 | finite=True
+[epoch 25 step 40/57] lr=0.001775 det:loss=2.74428 | loss_cls=1.59542 | loss_iou=0.25330 | loss_dfl=0.97635 | loss_l1=0.45347 | loss_aux_cls=0.02744 | det_total=2.74428 | cls:loss=0.02523 | loss_aux_cls=0.02523 | finite=True
+[epoch 25 step 56/57] lr=0.001769 det:loss=2.39123 | loss_cls=1.38765 | loss_iou=0.16982 | loss_dfl=1.09834 | loss_l1=0.47180 | loss_aux_cls=0.02986 | det_total=2.39123 | cls:loss=0.02644 | loss_aux_cls=0.02644 | finite=True
+--- epoch 26 start (steps/epoch=57) ---
+[epoch 26 step 0/57] lr=0.001768 det:loss=2.17243 | loss_cls=1.31124 | loss_iou=0.15816 | loss_dfl=0.87722 | loss_l1=0.29975 | loss_aux_cls=0.02719 | det_total=2.17243 | cls:loss=0.02282 | loss_aux_cls=0.02282 | finite=True
+[epoch 26 step 20/57] lr=0.001761 det:loss=2.33446 | loss_cls=1.42357 | loss_iou=0.16572 | loss_dfl=0.93733 | loss_l1=0.36213 | loss_aux_cls=0.02793 | det_total=2.33446 | cls:loss=0.02308 | loss_aux_cls=0.02308 | finite=True
+[epoch 26 step 40/57] lr=0.001753 det:loss=2.35361 | loss_cls=1.26788 | loss_iou=0.22953 | loss_dfl=0.96701 | loss_l1=0.47964 | loss_aux_cls=0.02840 | det_total=2.35361 | cls:loss=0.02120 | loss_aux_cls=0.02120 | finite=True
+[epoch 26 step 56/57] lr=0.001747 det:loss=2.28571 | loss_cls=1.37158 | loss_iou=0.15575 | loss_dfl=0.99516 | loss_l1=0.51718 | loss_aux_cls=0.02717 | det_total=2.28571 | cls:loss=0.02643 | loss_aux_cls=0.02643 | finite=True
+--- epoch 27 start (steps/epoch=57) ---
+[epoch 27 step 0/57] lr=0.001747 det:loss=2.54796 | loss_cls=1.50242 | loss_iou=0.21039 | loss_dfl=0.98376 | loss_l1=0.42656 | loss_aux_cls=0.02768 | det_total=2.54796 | cls:loss=0.02531 | loss_aux_cls=0.02531 | finite=True
+[epoch 27 step 20/57] lr=0.001739 det:loss=2.65664 | loss_cls=1.63235 | loss_iou=0.18729 | loss_dfl=1.05473 | loss_l1=0.46271 | loss_aux_cls=0.02870 | det_total=2.65664 | cls:loss=0.02465 | loss_aux_cls=0.02465 | finite=True
+[epoch 27 step 40/57] lr=0.001731 det:loss=2.44231 | loss_cls=1.44653 | loss_iou=0.20256 | loss_dfl=0.91878 | loss_l1=0.39002 | loss_aux_cls=0.02999 | det_total=2.44231 | cls:loss=0.02553 | loss_aux_cls=0.02553 | finite=True
+[epoch 27 step 56/57] lr=0.001725 det:loss=2.58914 | loss_cls=1.52911 | loss_iou=0.19497 | loss_dfl=1.08848 | loss_l1=0.58422 | loss_aux_cls=0.02835 | det_total=2.58914 | cls:loss=0.02601 | loss_aux_cls=0.02601 | finite=True
+--- epoch 28 start (steps/epoch=57) ---
+[epoch 28 step 0/57] lr=0.001724 det:loss=2.64187 | loss_cls=1.49449 | loss_iou=0.24084 | loss_dfl=1.03214 | loss_l1=0.47591 | loss_aux_cls=0.02921 | det_total=2.64187 | cls:loss=0.02207 | loss_aux_cls=0.02207 | finite=True
+[epoch 28 step 20/57] lr=0.001716 det:loss=2.46431 | loss_cls=1.43943 | loss_iou=0.17491 | loss_dfl=1.12090 | loss_l1=0.60120 | loss_aux_cls=0.02717 | det_total=2.46431 | cls:loss=0.02466 | loss_aux_cls=0.02466 | finite=True
+[epoch 28 step 40/57] lr=0.001708 det:loss=2.24839 | loss_cls=1.23710 | loss_iou=0.20792 | loss_dfl=0.92582 | loss_l1=0.41870 | loss_aux_cls=0.02859 | det_total=2.24839 | cls:loss=0.02395 | loss_aux_cls=0.02395 | finite=True
+[epoch 28 step 56/57] lr=0.001702 det:loss=2.58007 | loss_cls=1.49999 | loss_iou=0.23580 | loss_dfl=0.92278 | loss_l1=0.38525 | loss_aux_cls=0.02918 | det_total=2.58007 | cls:loss=0.02637 | loss_aux_cls=0.02637 | finite=True
+--- epoch 29 start (steps/epoch=57) ---
+[epoch 29 step 0/57] lr=0.001701 det:loss=2.51727 | loss_cls=1.43140 | loss_iou=0.20512 | loss_dfl=1.08871 | loss_l1=0.51290 | loss_aux_cls=0.02872 | det_total=2.51727 | cls:loss=0.02827 | loss_aux_cls=0.02827 | finite=True
+[epoch 29 step 20/57] lr=0.001693 det:loss=2.52044 | loss_cls=1.50955 | loss_iou=0.21035 | loss_dfl=0.90931 | loss_l1=0.39425 | loss_aux_cls=0.03037 | det_total=2.52044 | cls:loss=0.02568 | loss_aux_cls=0.02568 | finite=True
+[epoch 29 step 40/57] lr=0.001685 det:loss=2.42599 | loss_cls=1.50594 | loss_iou=0.15856 | loss_dfl=0.98955 | loss_l1=0.44577 | loss_aux_cls=0.02888 | det_total=2.42599 | cls:loss=0.02458 | loss_aux_cls=0.02458 | finite=True
+[epoch 29 step 56/57] lr=0.001678 det:loss=2.40644 | loss_cls=1.32771 | loss_iou=0.23925 | loss_dfl=0.90669 | loss_l1=0.38538 | loss_aux_cls=0.02726 | det_total=2.40644 | cls:loss=0.02220 | loss_aux_cls=0.02220 | finite=True
+[save] 29 -> /root/autodl-tmp/AIC2026_AgriVision/experiments/direction5/S1_CG_ACS_100e/checkpoints/29.pdparams/.pdema/.pdopt
+[08/16 21:01:40] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/16 21:01:40] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.56s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=1.03s).
+Accumulating evaluation results...
+DONE (t=0.41s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.338
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.478
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.392
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.054
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.241
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.352
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.284
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.593
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.681
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.617
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.611
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.697
+[best] VAL mAP@0.5:0.95 = 0.3379 @ epoch 30 -> best_model
+--- epoch 30 start (steps/epoch=57) ---
+[epoch 30 step 0/57] lr=0.001677 det:loss=2.05686 | loss_cls=1.16073 | loss_iou=0.15865 | loss_dfl=0.94112 | loss_l1=0.35992 | loss_aux_cls=0.02895 | det_total=2.05686 | cls:loss=0.02461 | loss_aux_cls=0.02461 | finite=True
+[epoch 30 step 20/57] lr=0.001669 det:loss=2.03863 | loss_cls=0.99737 | loss_iou=0.19549 | loss_dfl=1.05208 | loss_l1=0.46772 | loss_aux_cls=0.02649 | det_total=2.03863 | cls:loss=0.02243 | loss_aux_cls=0.02243 | finite=True
+[epoch 30 step 40/57] lr=0.001660 det:loss=2.01903 | loss_cls=1.06828 | loss_iou=0.17594 | loss_dfl=0.96518 | loss_l1=0.42377 | loss_aux_cls=0.02832 | det_total=2.01903 | cls:loss=0.02451 | loss_aux_cls=0.02451 | finite=True
+[epoch 30 step 56/57] lr=0.001653 det:loss=1.96416 | loss_cls=1.05060 | loss_iou=0.15345 | loss_dfl=1.00108 | loss_l1=0.41374 | loss_aux_cls=0.02939 | det_total=1.96416 | cls:loss=0.02555 | loss_aux_cls=0.02555 | finite=True
+--- epoch 31 start (steps/epoch=57) ---
+[epoch 31 step 0/57] lr=0.001653 det:loss=2.13240 | loss_cls=1.14953 | loss_iou=0.19297 | loss_dfl=0.94431 | loss_l1=0.43728 | loss_aux_cls=0.02830 | det_total=2.13240 | cls:loss=0.02630 | loss_aux_cls=0.02630 | finite=True
+[epoch 31 step 20/57] lr=0.001644 det:loss=2.12260 | loss_cls=1.13438 | loss_iou=0.18591 | loss_dfl=0.98896 | loss_l1=0.44455 | loss_aux_cls=0.02898 | det_total=2.12260 | cls:loss=0.02291 | loss_aux_cls=0.02291 | finite=True
+[epoch 31 step 40/57] lr=0.001635 det:loss=2.11035 | loss_cls=1.10550 | loss_iou=0.19604 | loss_dfl=0.97359 | loss_l1=0.45525 | loss_aux_cls=0.02795 | det_total=2.11035 | cls:loss=0.02308 | loss_aux_cls=0.02308 | finite=True
+[epoch 31 step 56/57] lr=0.001628 det:loss=2.03157 | loss_cls=0.99897 | loss_iou=0.19734 | loss_dfl=1.02419 | loss_l1=0.59257 | loss_aux_cls=0.02717 | det_total=2.03157 | cls:loss=0.02446 | loss_aux_cls=0.02446 | finite=True
+--- epoch 32 start (steps/epoch=57) ---
+[epoch 32 step 0/57] lr=0.001627 det:loss=2.08816 | loss_cls=1.08084 | loss_iou=0.20148 | loss_dfl=0.95127 | loss_l1=0.40039 | loss_aux_cls=0.02799 | det_total=2.08816 | cls:loss=0.02556 | loss_aux_cls=0.02556 | finite=True
+[epoch 32 step 20/57] lr=0.001618 det:loss=1.67868 | loss_cls=0.87001 | loss_iou=0.13719 | loss_dfl=0.87415 | loss_l1=0.28402 | loss_aux_cls=0.02862 | det_total=1.67868 | cls:loss=0.02209 | loss_aux_cls=0.02209 | finite=True
+[epoch 32 step 40/57] lr=0.001609 det:loss=1.88301 | loss_cls=0.98760 | loss_iou=0.16701 | loss_dfl=0.90229 | loss_l1=0.37259 | loss_aux_cls=0.02674 | det_total=1.88301 | cls:loss=0.02424 | loss_aux_cls=0.02424 | finite=True
+[epoch 32 step 56/57] lr=0.001602 det:loss=1.94354 | loss_cls=1.00982 | loss_iou=0.15403 | loss_dfl=1.04103 | loss_l1=0.46037 | loss_aux_cls=0.02813 | det_total=1.94354 | cls:loss=0.02175 | loss_aux_cls=0.02175 | finite=True
+--- epoch 33 start (steps/epoch=57) ---
+[epoch 33 step 0/57] lr=0.001601 det:loss=1.82609 | loss_cls=1.00839 | loss_iou=0.15874 | loss_dfl=0.79006 | loss_l1=0.38555 | loss_aux_cls=0.02582 | det_total=1.82609 | cls:loss=0.02268 | loss_aux_cls=0.02268 | finite=True
+[epoch 33 step 20/57] lr=0.001592 det:loss=1.91956 | loss_cls=1.02131 | loss_iou=0.16712 | loss_dfl=0.90487 | loss_l1=0.42625 | loss_aux_cls=0.02800 | det_total=1.91956 | cls:loss=0.02142 | loss_aux_cls=0.02142 | finite=True
+[epoch 33 step 40/57] lr=0.001582 det:loss=2.20001 | loss_cls=1.10870 | loss_iou=0.19948 | loss_dfl=1.13012 | loss_l1=0.49820 | loss_aux_cls=0.02754 | det_total=2.20001 | cls:loss=0.02294 | loss_aux_cls=0.02294 | finite=True
+[epoch 33 step 56/57] lr=0.001575 det:loss=2.10706 | loss_cls=1.14301 | loss_iou=0.16559 | loss_dfl=1.04467 | loss_l1=0.44777 | loss_aux_cls=0.02775 | det_total=2.10706 | cls:loss=0.02247 | loss_aux_cls=0.02247 | finite=True
+--- epoch 34 start (steps/epoch=57) ---
+[epoch 34 step 0/57] lr=0.001574 det:loss=1.99552 | loss_cls=1.03294 | loss_iou=0.16776 | loss_dfl=1.03128 | loss_l1=0.41931 | loss_aux_cls=0.02754 | det_total=1.99552 | cls:loss=0.02224 | loss_aux_cls=0.02224 | finite=True
+[epoch 34 step 20/57] lr=0.001565 det:loss=1.98848 | loss_cls=1.05225 | loss_iou=0.14646 | loss_dfl=1.08811 | loss_l1=0.47014 | loss_aux_cls=0.02602 | det_total=1.98848 | cls:loss=0.02489 | loss_aux_cls=0.02489 | finite=True
+[epoch 34 step 40/57] lr=0.001555 det:loss=1.83895 | loss_cls=1.00128 | loss_iou=0.13360 | loss_dfl=0.94925 | loss_l1=0.38786 | loss_aux_cls=0.02905 | det_total=1.83895 | cls:loss=0.01898 | loss_aux_cls=0.01898 | finite=True
+[epoch 34 step 56/57] lr=0.001547 det:loss=2.08424 | loss_cls=1.16573 | loss_iou=0.16285 | loss_dfl=0.96756 | loss_l1=0.40835 | loss_aux_cls=0.02760 | det_total=2.08424 | cls:loss=0.02413 | loss_aux_cls=0.02413 | finite=True
+[save] 34 -> /root/autodl-tmp/AIC2026_AgriVision/experiments/direction5/S1_CG_ACS_100e/checkpoints/34.pdparams/.pdema/.pdopt
+[08/16 21:11:20] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/16 21:11:20] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.48s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=0.87s).
+Accumulating evaluation results...
+DONE (t=0.29s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.337
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.470
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.382
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.053
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.238
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.349
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.289
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.605
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.692
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.583
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.608
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.709
+[val] epoch 35 mAP@0.5:0.95=0.3370 | mAP50=0.4696 | mAP75=0.3818 | best=0.3379@epoch30
+--- epoch 35 start (steps/epoch=57) ---
+[epoch 35 step 0/57] lr=0.001547 det:loss=1.83096 | loss_cls=0.94335 | loss_iou=0.16852 | loss_dfl=0.88087 | loss_l1=0.41420 | loss_aux_cls=0.02588 | det_total=1.83096 | cls:loss=0.02271 | loss_aux_cls=0.02271 | finite=True
+[epoch 35 step 20/57] lr=0.001537 det:loss=2.09057 | loss_cls=1.04538 | loss_iou=0.20935 | loss_dfl=0.99194 | loss_l1=0.43539 | loss_aux_cls=0.02585 | det_total=2.09057 | cls:loss=0.02376 | loss_aux_cls=0.02376 | finite=True
+[epoch 35 step 40/57] lr=0.001527 det:loss=1.78984 | loss_cls=0.97314 | loss_iou=0.13782 | loss_dfl=0.88917 | loss_l1=0.33073 | loss_aux_cls=0.02758 | det_total=1.78984 | cls:loss=0.02341 | loss_aux_cls=0.02341 | finite=True
+[epoch 35 step 56/57] lr=0.001519 det:loss=2.30453 | loss_cls=1.09416 | loss_iou=0.20457 | loss_dfl=1.34380 | loss_l1=0.59548 | loss_aux_cls=0.02705 | det_total=2.30453 | cls:loss=0.02092 | loss_aux_cls=0.02092 | finite=True
+--- epoch 36 start (steps/epoch=57) ---
+[epoch 36 step 0/57] lr=0.001519 det:loss=2.05778 | loss_cls=0.98402 | loss_iou=0.20009 | loss_dfl=1.09345 | loss_l1=0.50143 | loss_aux_cls=0.02681 | det_total=2.05778 | cls:loss=0.02143 | loss_aux_cls=0.02143 | finite=True
+[epoch 36 step 20/57] lr=0.001509 det:loss=1.93572 | loss_cls=1.02509 | loss_iou=0.17199 | loss_dfl=0.90784 | loss_l1=0.32579 | loss_aux_cls=0.02674 | det_total=1.93572 | cls:loss=0.02214 | loss_aux_cls=0.02214 | finite=True
+[epoch 36 step 40/57] lr=0.001499 det:loss=2.12752 | loss_cls=1.16237 | loss_iou=0.17805 | loss_dfl=0.98670 | loss_l1=0.37181 | loss_aux_cls=0.02666 | det_total=2.12752 | cls:loss=0.02185 | loss_aux_cls=0.02185 | finite=True
+[epoch 36 step 56/57] lr=0.001491 det:loss=1.90997 | loss_cls=1.02621 | loss_iou=0.15372 | loss_dfl=0.94817 | loss_l1=0.39302 | loss_aux_cls=0.02538 | det_total=1.90997 | cls:loss=0.02334 | loss_aux_cls=0.02334 | finite=True
+--- epoch 37 start (steps/epoch=57) ---
+[epoch 37 step 0/57] lr=0.001490 det:loss=1.75373 | loss_cls=1.00380 | loss_iou=0.11679 | loss_dfl=0.86085 | loss_l1=0.31714 | loss_aux_cls=0.02753 | det_total=1.75373 | cls:loss=0.02147 | loss_aux_cls=0.02147 | finite=True
+[epoch 37 step 20/57] lr=0.001480 det:loss=1.73213 | loss_cls=0.99919 | loss_iou=0.11551 | loss_dfl=0.83514 | loss_l1=0.26038 | loss_aux_cls=0.02660 | det_total=1.73213 | cls:loss=0.02241 | loss_aux_cls=0.02241 | finite=True
+[epoch 37 step 40/57] lr=0.001470 det:loss=1.92813 | loss_cls=0.99185 | loss_iou=0.18086 | loss_dfl=0.91699 | loss_l1=0.33221 | loss_aux_cls=0.02564 | det_total=1.92813 | cls:loss=0.01870 | loss_aux_cls=0.01870 | finite=True
+[epoch 37 step 56/57] lr=0.001462 det:loss=2.27881 | loss_cls=1.34208 | loss_iou=0.18405 | loss_dfl=0.89929 | loss_l1=0.37527 | loss_aux_cls=0.02697 | det_total=2.27881 | cls:loss=0.02126 | loss_aux_cls=0.02126 | finite=True
+--- epoch 38 start (steps/epoch=57) ---
+[epoch 38 step 0/57] lr=0.001461 det:loss=1.99768 | loss_cls=1.08451 | loss_iou=0.15823 | loss_dfl=0.98055 | loss_l1=0.42435 | loss_aux_cls=0.02731 | det_total=1.99768 | cls:loss=0.02026 | loss_aux_cls=0.02026 | finite=True
+[epoch 38 step 20/57] lr=0.001451 det:loss=1.91266 | loss_cls=0.96728 | loss_iou=0.17796 | loss_dfl=0.95179 | loss_l1=0.45029 | loss_aux_cls=0.02458 | det_total=1.91266 | cls:loss=0.02255 | loss_aux_cls=0.02255 | finite=True
+[epoch 38 step 40/57] lr=0.001441 det:loss=1.92959 | loss_cls=0.95866 | loss_iou=0.18131 | loss_dfl=0.98674 | loss_l1=0.40271 | loss_aux_cls=0.02430 | det_total=1.92959 | cls:loss=0.01970 | loss_aux_cls=0.01970 | finite=True
+[epoch 38 step 56/57] lr=0.001432 det:loss=1.93762 | loss_cls=1.06154 | loss_iou=0.15850 | loss_dfl=0.91152 | loss_l1=0.38020 | loss_aux_cls=0.02405 | det_total=1.93762 | cls:loss=0.01977 | loss_aux_cls=0.01977 | finite=True
+--- epoch 39 start (steps/epoch=57) ---
+[epoch 39 step 0/57] lr=0.001432 det:loss=2.09510 | loss_cls=1.15835 | loss_iou=0.17606 | loss_dfl=0.94275 | loss_l1=0.35466 | loss_aux_cls=0.02523 | det_total=2.09510 | cls:loss=0.02055 | loss_aux_cls=0.02055 | finite=True
+[epoch 39 step 20/57] lr=0.001421 det:loss=2.18438 | loss_cls=1.21195 | loss_iou=0.17778 | loss_dfl=1.00105 | loss_l1=0.48635 | loss_aux_cls=0.02745 | det_total=2.18438 | cls:loss=0.02076 | loss_aux_cls=0.02076 | finite=True
+[epoch 39 step 40/57] lr=0.001411 det:loss=1.81447 | loss_cls=0.96621 | loss_iou=0.14140 | loss_dfl=0.94037 | loss_l1=0.33823 | loss_aux_cls=0.02459 | det_total=1.81447 | cls:loss=0.02194 | loss_aux_cls=0.02194 | finite=True
+[epoch 39 step 56/57] lr=0.001402 det:loss=2.05651 | loss_cls=1.09126 | loss_iou=0.18083 | loss_dfl=0.96998 | loss_l1=0.37856 | loss_aux_cls=0.02819 | det_total=2.05651 | cls:loss=0.01903 | loss_aux_cls=0.01903 | finite=True
+[save] 39 -> /root/autodl-tmp/AIC2026_AgriVision/experiments/direction5/S1_CG_ACS_100e/checkpoints/39.pdparams/.pdema/.pdopt
+[08/16 21:21:16] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/16 21:21:16] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.62s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=1.13s).
+Accumulating evaluation results...
+DONE (t=0.41s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.341
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.476
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.389
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.048
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.248
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.352
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.284
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.601
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.693
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.600
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.607
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.709
+[best] VAL mAP@0.5:0.95 = 0.3412 @ epoch 40 -> best_model
+--- epoch 40 start (steps/epoch=57) ---
+[epoch 40 step 0/57] lr=0.001402 det:loss=1.82122 | loss_cls=1.02523 | loss_iou=0.13376 | loss_dfl=0.87469 | loss_l1=0.32684 | loss_aux_cls=0.02425 | det_total=1.82122 | cls:loss=0.01961 | loss_aux_cls=0.01961 | finite=True
+[epoch 40 step 20/57] lr=0.001391 det:loss=1.67541 | loss_cls=0.95706 | loss_iou=0.11014 | loss_dfl=0.83793 | loss_l1=0.25834 | loss_aux_cls=0.02403 | det_total=1.67541 | cls:loss=0.02525 | loss_aux_cls=0.02525 | finite=True
+[epoch 40 step 40/57] lr=0.001380 det:loss=1.93510 | loss_cls=1.01530 | loss_iou=0.16415 | loss_dfl=0.96732 | loss_l1=0.40501 | loss_aux_cls=0.02576 | det_total=1.93510 | cls:loss=0.02122 | loss_aux_cls=0.02122 | finite=True
+[epoch 40 step 56/57] lr=0.001372 det:loss=2.02709 | loss_cls=1.02043 | loss_iou=0.19621 | loss_dfl=0.98044 | loss_l1=0.42410 | loss_aux_cls=0.02591 | det_total=2.02709 | cls:loss=0.02348 | loss_aux_cls=0.02348 | finite=True
+--- epoch 41 start (steps/epoch=57) ---
+[epoch 41 step 0/57] lr=0.001371 det:loss=1.75044 | loss_cls=0.91090 | loss_iou=0.14412 | loss_dfl=0.90428 | loss_l1=0.34457 | loss_aux_cls=0.02711 | det_total=1.75044 | cls:loss=0.02160 | loss_aux_cls=0.02160 | finite=True
+[epoch 41 step 20/57] lr=0.001360 det:loss=2.00363 | loss_cls=1.10681 | loss_iou=0.16781 | loss_dfl=0.89852 | loss_l1=0.37282 | loss_aux_cls=0.02803 | det_total=2.00363 | cls:loss=0.02142 | loss_aux_cls=0.02142 | finite=True
+[epoch 41 step 40/57] lr=0.001350 det:loss=2.06824 | loss_cls=1.14101 | loss_iou=0.16956 | loss_dfl=0.95016 | loss_l1=0.36918 | loss_aux_cls=0.02824 | det_total=2.06824 | cls:loss=0.02110 | loss_aux_cls=0.02110 | finite=True
+[epoch 41 step 56/57] lr=0.001341 det:loss=1.74220 | loss_cls=0.96446 | loss_iou=0.13600 | loss_dfl=0.82155 | loss_l1=0.26641 | loss_aux_cls=0.02696 | det_total=1.74220 | cls:loss=0.01999 | loss_aux_cls=0.01999 | finite=True
+--- epoch 42 start (steps/epoch=57) ---
+[epoch 42 step 0/57] lr=0.001340 det:loss=1.94430 | loss_cls=1.06194 | loss_iou=0.16704 | loss_dfl=0.87666 | loss_l1=0.35619 | loss_aux_cls=0.02642 | det_total=1.94430 | cls:loss=0.02105 | loss_aux_cls=0.02105 | finite=True
+[epoch 42 step 20/57] lr=0.001329 det:loss=2.01283 | loss_cls=0.98937 | loss_iou=0.21049 | loss_dfl=0.94879 | loss_l1=0.44714 | loss_aux_cls=0.02284 | det_total=2.01283 | cls:loss=0.02083 | loss_aux_cls=0.02083 | finite=True
+[epoch 42 step 40/57] lr=0.001318 det:loss=2.10027 | loss_cls=1.05014 | loss_iou=0.21040 | loss_dfl=0.99349 | loss_l1=0.45216 | loss_aux_cls=0.02738 | det_total=2.10027 | cls:loss=0.01915 | loss_aux_cls=0.01915 | finite=True
+[epoch 42 step 56/57] lr=0.001310 det:loss=1.99718 | loss_cls=1.04024 | loss_iou=0.16998 | loss_dfl=1.01436 | loss_l1=0.45171 | loss_aux_cls=0.02480 | det_total=1.99718 | cls:loss=0.02109 | loss_aux_cls=0.02109 | finite=True
+--- epoch 43 start (steps/epoch=57) ---
+[epoch 43 step 0/57] lr=0.001309 det:loss=1.92367 | loss_cls=0.98088 | loss_iou=0.17147 | loss_dfl=0.97702 | loss_l1=0.59185 | loss_aux_cls=0.02561 | det_total=1.92367 | cls:loss=0.01951 | loss_aux_cls=0.01951 | finite=True
+[epoch 43 step 20/57] lr=0.001298 det:loss=2.16270 | loss_cls=1.08110 | loss_iou=0.20760 | loss_dfl=1.07407 | loss_l1=0.52624 | loss_aux_cls=0.02558 | det_total=2.16270 | cls:loss=0.02402 | loss_aux_cls=0.02402 | finite=True
+[epoch 43 step 40/57] lr=0.001287 det:loss=2.13580 | loss_cls=1.03915 | loss_iou=0.20972 | loss_dfl=1.09196 | loss_l1=0.44955 | loss_aux_cls=0.02637 | det_total=2.13580 | cls:loss=0.02227 | loss_aux_cls=0.02227 | finite=True
+[epoch 43 step 56/57] lr=0.001278 det:loss=1.62054 | loss_cls=0.86411 | loss_iou=0.11853 | loss_dfl=0.86780 | loss_l1=0.28573 | loss_aux_cls=0.02619 | det_total=1.62054 | cls:loss=0.02524 | loss_aux_cls=0.02524 | finite=True
+--- epoch 44 start (steps/epoch=57) ---
+[epoch 44 step 0/57] lr=0.001277 det:loss=1.87774 | loss_cls=0.97456 | loss_iou=0.15688 | loss_dfl=0.97096 | loss_l1=0.38504 | loss_aux_cls=0.02550 | det_total=1.87774 | cls:loss=0.02390 | loss_aux_cls=0.02390 | finite=True
+[epoch 44 step 20/57] lr=0.001266 det:loss=2.13252 | loss_cls=1.16020 | loss_iou=0.16286 | loss_dfl=1.07159 | loss_l1=0.54207 | loss_aux_cls=0.02938 | det_total=2.13252 | cls:loss=0.02126 | loss_aux_cls=0.02126 | finite=True
+[epoch 44 step 40/57] lr=0.001255 det:loss=1.86350 | loss_cls=0.96630 | loss_iou=0.16368 | loss_dfl=0.92337 | loss_l1=0.40511 | loss_aux_cls=0.02631 | det_total=1.86350 | cls:loss=0.01799 | loss_aux_cls=0.01799 | finite=True
+[epoch 44 step 56/57] lr=0.001246 det:loss=2.04994 | loss_cls=1.13085 | loss_iou=0.16698 | loss_dfl=0.95253 | loss_l1=0.36670 | loss_aux_cls=0.02537 | det_total=2.04994 | cls:loss=0.01880 | loss_aux_cls=0.01880 | finite=True
+[save] 44 -> /root/autodl-tmp/AIC2026_AgriVision/experiments/direction5/S1_CG_ACS_100e/checkpoints/44.pdparams/.pdema/.pdopt
+[08/16 21:31:11] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.37s)
+creating index...
+index created!
+[08/16 21:31:11] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.27s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=1.40s).
+Accumulating evaluation results...
+DONE (t=0.38s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.346
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.481
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.393
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.066
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.229
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.366
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.281
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.601
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.688
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.650
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.603
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.703
+[best] VAL mAP@0.5:0.95 = 0.3457 @ epoch 45 -> best_model
+--- epoch 45 start (steps/epoch=57) ---
+[epoch 45 step 0/57] lr=0.001245 det:loss=2.16497 | loss_cls=1.12038 | loss_iou=0.22316 | loss_dfl=0.92670 | loss_l1=0.55196 | loss_aux_cls=0.02336 | det_total=2.16497 | cls:loss=0.02025 | loss_aux_cls=0.02025 | finite=True
+[epoch 45 step 20/57] lr=0.001234 det:loss=1.87757 | loss_cls=0.97223 | loss_iou=0.17244 | loss_dfl=0.90152 | loss_l1=0.40145 | loss_aux_cls=0.02350 | det_total=1.87757 | cls:loss=0.02103 | loss_aux_cls=0.02103 | finite=True
+[epoch 45 step 40/57] lr=0.001223 det:loss=1.93007 | loss_cls=1.05205 | loss_iou=0.16263 | loss_dfl=0.89288 | loss_l1=0.36272 | loss_aux_cls=0.02500 | det_total=1.93007 | cls:loss=0.01971 | loss_aux_cls=0.01971 | finite=True
+[epoch 45 step 56/57] lr=0.001214 det:loss=1.94008 | loss_cls=0.90311 | loss_iou=0.18437 | loss_dfl=1.10408 | loss_l1=0.52807 | loss_aux_cls=0.02400 | det_total=1.94008 | cls:loss=0.02140 | loss_aux_cls=0.02140 | finite=True
+--- epoch 46 start (steps/epoch=57) ---
+[epoch 46 step 0/57] lr=0.001213 det:loss=2.06696 | loss_cls=1.06198 | loss_iou=0.20780 | loss_dfl=0.92013 | loss_l1=0.42937 | loss_aux_cls=0.02541 | det_total=2.06696 | cls:loss=0.02147 | loss_aux_cls=0.02147 | finite=True
+[epoch 46 step 20/57] lr=0.001202 det:loss=1.92710 | loss_cls=1.01468 | loss_iou=0.15730 | loss_dfl=0.98876 | loss_l1=0.41340 | loss_aux_cls=0.02478 | det_total=1.92710 | cls:loss=0.02210 | loss_aux_cls=0.02210 | finite=True
+[epoch 46 step 40/57] lr=0.001191 det:loss=1.74729 | loss_cls=0.99581 | loss_iou=0.12398 | loss_dfl=0.83245 | loss_l1=0.24920 | loss_aux_cls=0.02531 | det_total=1.74729 | cls:loss=0.02048 | loss_aux_cls=0.02048 | finite=True
+[epoch 46 step 56/57] lr=0.001181 det:loss=2.00076 | loss_cls=1.03679 | loss_iou=0.19597 | loss_dfl=0.89789 | loss_l1=0.46788 | loss_aux_cls=0.02510 | det_total=2.00076 | cls:loss=0.02241 | loss_aux_cls=0.02241 | finite=True
+--- epoch 47 start (steps/epoch=57) ---
+[epoch 47 step 0/57] lr=0.001181 det:loss=1.98002 | loss_cls=1.10700 | loss_iou=0.16451 | loss_dfl=0.87358 | loss_l1=0.31411 | loss_aux_cls=0.02495 | det_total=1.98002 | cls:loss=0.02279 | loss_aux_cls=0.02279 | finite=True
+[epoch 47 step 20/57] lr=0.001169 det:loss=1.97595 | loss_cls=1.00511 | loss_iou=0.19052 | loss_dfl=0.93625 | loss_l1=0.44749 | loss_aux_cls=0.02644 | det_total=1.97595 | cls:loss=0.02048 | loss_aux_cls=0.02048 | finite=True
+[epoch 47 step 40/57] lr=0.001158 det:loss=1.84010 | loss_cls=0.95771 | loss_iou=0.15708 | loss_dfl=0.92313 | loss_l1=0.32587 | loss_aux_cls=0.02813 | det_total=1.84010 | cls:loss=0.01978 | loss_aux_cls=0.01978 | finite=True
+[epoch 47 step 56/57] lr=0.001149 det:loss=2.07173 | loss_cls=1.01566 | loss_iou=0.22263 | loss_dfl=0.94533 | loss_l1=0.54143 | loss_aux_cls=0.02685 | det_total=2.07173 | cls:loss=0.01914 | loss_aux_cls=0.01914 | finite=True
+--- epoch 48 start (steps/epoch=57) ---
+[epoch 48 step 0/57] lr=0.001148 det:loss=1.94798 | loss_cls=1.04154 | loss_iou=0.14559 | loss_dfl=1.03548 | loss_l1=0.39583 | loss_aux_cls=0.02473 | det_total=1.94798 | cls:loss=0.01844 | loss_aux_cls=0.01844 | finite=True
+[epoch 48 step 20/57] lr=0.001137 det:loss=1.97374 | loss_cls=0.97890 | loss_iou=0.20176 | loss_dfl=0.92825 | loss_l1=0.36949 | loss_aux_cls=0.02631 | det_total=1.97374 | cls:loss=0.02046 | loss_aux_cls=0.02046 | finite=True
+[epoch 48 step 40/57] lr=0.001125 det:loss=1.87816 | loss_cls=0.93260 | loss_iou=0.19574 | loss_dfl=0.86828 | loss_l1=0.36876 | loss_aux_cls=0.02207 | det_total=1.87816 | cls:loss=0.01926 | loss_aux_cls=0.01926 | finite=True
+[epoch 48 step 56/57] lr=0.001116 det:loss=1.85888 | loss_cls=0.91413 | loss_iou=0.16851 | loss_dfl=0.99613 | loss_l1=0.46321 | loss_aux_cls=0.02540 | det_total=1.85888 | cls:loss=0.02117 | loss_aux_cls=0.02117 | finite=True
+--- epoch 49 start (steps/epoch=57) ---
+[epoch 49 step 0/57] lr=0.001115 det:loss=1.70393 | loss_cls=0.83376 | loss_iou=0.14940 | loss_dfl=0.94436 | loss_l1=0.39363 | loss_aux_cls=0.02450 | det_total=1.70393 | cls:loss=0.01980 | loss_aux_cls=0.01980 | finite=True
+[epoch 49 step 20/57] lr=0.001104 det:loss=1.99978 | loss_cls=0.97648 | loss_iou=0.22845 | loss_dfl=0.86209 | loss_l1=0.46625 | loss_aux_cls=0.02113 | det_total=1.99978 | cls:loss=0.01880 | loss_aux_cls=0.01880 | finite=True
+[epoch 49 step 40/57] lr=0.001092 det:loss=1.65286 | loss_cls=0.88069 | loss_iou=0.11003 | loss_dfl=0.94461 | loss_l1=0.27892 | loss_aux_cls=0.02479 | det_total=1.65286 | cls:loss=0.02110 | loss_aux_cls=0.02110 | finite=True
+[epoch 49 step 56/57] lr=0.001083 det:loss=1.64156 | loss_cls=0.94028 | loss_iou=0.11550 | loss_dfl=0.77405 | loss_l1=0.23313 | loss_aux_cls=0.02551 | det_total=1.64156 | cls:loss=0.02197 | loss_aux_cls=0.02197 | finite=True
+[save] 49 -> /root/autodl-tmp/AIC2026_AgriVision/experiments/direction5/S1_CG_ACS_100e/checkpoints/49.pdparams/.pdema/.pdopt
+[08/16 21:41:05] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/16 21:41:05] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.55s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=1.12s).
+Accumulating evaluation results...
+DONE (t=0.38s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.352
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.490
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.397
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.039
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.223
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.377
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.274
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.602
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.685
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.617
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.599
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.704
+[best] VAL mAP@0.5:0.95 = 0.3518 @ epoch 50 -> best_model
+--- epoch 50 start (steps/epoch=57) ---
+[epoch 50 step 0/57] lr=0.001083 det:loss=1.84381 | loss_cls=0.97803 | loss_iou=0.14920 | loss_dfl=0.93333 | loss_l1=0.34983 | loss_aux_cls=0.02613 | det_total=1.84381 | cls:loss=0.01844 | loss_aux_cls=0.01844 | finite=True
+[epoch 50 step 20/57] lr=0.001071 det:loss=2.10934 | loss_cls=1.08774 | loss_iou=0.20004 | loss_dfl=0.99292 | loss_l1=0.47052 | loss_aux_cls=0.02505 | det_total=2.10934 | cls:loss=0.01925 | loss_aux_cls=0.01925 | finite=True
+[epoch 50 step 40/57] lr=0.001059 det:loss=1.81515 | loss_cls=0.96205 | loss_iou=0.16821 | loss_dfl=0.82004 | loss_l1=0.33738 | loss_aux_cls=0.02257 | det_total=1.81515 | cls:loss=0.02059 | loss_aux_cls=0.02059 | finite=True
+[epoch 50 step 56/57] lr=0.001050 det:loss=1.88794 | loss_cls=1.03960 | loss_iou=0.14719 | loss_dfl=0.90491 | loss_l1=0.32368 | loss_aux_cls=0.02791 | det_total=1.88794 | cls:loss=0.01752 | loss_aux_cls=0.01752 | finite=True
+--- epoch 51 start (steps/epoch=57) ---
+[epoch 51 step 0/57] lr=0.001050 det:loss=1.72172 | loss_cls=0.94676 | loss_iou=0.13279 | loss_dfl=0.83632 | loss_l1=0.33033 | loss_aux_cls=0.02481 | det_total=1.72172 | cls:loss=0.02221 | loss_aux_cls=0.02221 | finite=True
+[epoch 51 step 20/57] lr=0.001038 det:loss=1.74429 | loss_cls=0.89039 | loss_iou=0.15274 | loss_dfl=0.89812 | loss_l1=0.36941 | loss_aux_cls=0.02299 | det_total=1.74429 | cls:loss=0.02656 | loss_aux_cls=0.02656 | finite=True
+[epoch 51 step 40/57] lr=0.001026 det:loss=1.98956 | loss_cls=1.04314 | loss_iou=0.18530 | loss_dfl=0.92324 | loss_l1=0.36611 | loss_aux_cls=0.02157 | det_total=1.98956 | cls:loss=0.02111 | loss_aux_cls=0.02111 | finite=True
+[epoch 51 step 56/57] lr=0.001017 det:loss=1.87375 | loss_cls=0.97024 | loss_iou=0.17094 | loss_dfl=0.90155 | loss_l1=0.36649 | loss_aux_cls=0.02537 | det_total=1.87375 | cls:loss=0.02273 | loss_aux_cls=0.02273 | finite=True
+--- epoch 52 start (steps/epoch=57) ---
+[epoch 52 step 0/57] lr=0.001017 det:loss=1.80983 | loss_cls=0.93122 | loss_iou=0.17466 | loss_dfl=0.83678 | loss_l1=0.35323 | loss_aux_cls=0.02358 | det_total=1.80983 | cls:loss=0.02256 | loss_aux_cls=0.02256 | finite=True
+[epoch 52 step 20/57] lr=0.001005 det:loss=1.76041 | loss_cls=0.93550 | loss_iou=0.14723 | loss_dfl=0.86416 | loss_l1=0.31257 | loss_aux_cls=0.02475 | det_total=1.76041 | cls:loss=0.02011 | loss_aux_cls=0.02011 | finite=True
+[epoch 52 step 40/57] lr=0.000993 det:loss=1.83869 | loss_cls=1.00193 | loss_iou=0.14474 | loss_dfl=0.90090 | loss_l1=0.33829 | loss_aux_cls=0.02445 | det_total=1.83869 | cls:loss=0.01693 | loss_aux_cls=0.01693 | finite=True
+[epoch 52 step 56/57] lr=0.000984 det:loss=1.78416 | loss_cls=0.95222 | loss_iou=0.14972 | loss_dfl=0.85882 | loss_l1=0.33299 | loss_aux_cls=0.02822 | det_total=1.78416 | cls:loss=0.02321 | loss_aux_cls=0.02321 | finite=True
+--- epoch 53 start (steps/epoch=57) ---
+[epoch 53 step 0/57] lr=0.000983 det:loss=1.90679 | loss_cls=1.03624 | loss_iou=0.14836 | loss_dfl=0.94572 | loss_l1=0.38556 | loss_aux_cls=0.02679 | det_total=1.90679 | cls:loss=0.01884 | loss_aux_cls=0.01884 | finite=True
+[epoch 53 step 20/57] lr=0.000972 det:loss=1.93473 | loss_cls=0.92656 | loss_iou=0.18047 | loss_dfl=1.06311 | loss_l1=0.45949 | loss_aux_cls=0.02545 | det_total=1.93473 | cls:loss=0.02310 | loss_aux_cls=0.02310 | finite=True
+[epoch 53 step 40/57] lr=0.000960 det:loss=1.78656 | loss_cls=0.98967 | loss_iou=0.14276 | loss_dfl=0.83424 | loss_l1=0.30072 | loss_aux_cls=0.02286 | det_total=1.78656 | cls:loss=0.02203 | loss_aux_cls=0.02203 | finite=True
+[epoch 53 step 56/57] lr=0.000951 det:loss=1.71297 | loss_cls=0.92047 | loss_iou=0.12081 | loss_dfl=0.92861 | loss_l1=0.33818 | loss_aux_cls=0.02616 | det_total=1.71297 | cls:loss=0.02054 | loss_aux_cls=0.02054 | finite=True
+--- epoch 54 start (steps/epoch=57) ---
+[epoch 54 step 0/57] lr=0.000950 det:loss=2.16749 | loss_cls=1.13302 | loss_iou=0.20387 | loss_dfl=0.99758 | loss_l1=0.41452 | loss_aux_cls=0.02600 | det_total=2.16749 | cls:loss=0.02190 | loss_aux_cls=0.02190 | finite=True
+[epoch 54 step 20/57] lr=0.000939 det:loss=1.55044 | loss_cls=0.88151 | loss_iou=0.10048 | loss_dfl=0.78063 | loss_l1=0.24076 | loss_aux_cls=0.02742 | det_total=1.55044 | cls:loss=0.02176 | loss_aux_cls=0.02176 | finite=True
+[epoch 54 step 40/57] lr=0.000927 det:loss=1.92497 | loss_cls=0.97685 | loss_iou=0.18476 | loss_dfl=0.92481 | loss_l1=0.50088 | loss_aux_cls=0.02381 | det_total=1.92497 | cls:loss=0.02097 | loss_aux_cls=0.02097 | finite=True
+[epoch 54 step 56/57] lr=0.000918 det:loss=1.87121 | loss_cls=0.95554 | loss_iou=0.17507 | loss_dfl=0.91634 | loss_l1=0.41314 | loss_aux_cls=0.01982 | det_total=1.87121 | cls:loss=0.01959 | loss_aux_cls=0.01959 | finite=True
+[save] 54 -> /root/autodl-tmp/AIC2026_AgriVision/experiments/direction5/S1_CG_ACS_100e/checkpoints/54.pdparams/.pdema/.pdopt
+[08/16 21:51:34] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/16 21:51:34] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.35s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=1.56s).
+Accumulating evaluation results...
+DONE (t=0.40s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.354
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.487
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.402
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.034
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.217
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.380
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.284
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.601
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.688
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.600
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.608
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.698
+[best] VAL mAP@0.5:0.95 = 0.3538 @ epoch 55 -> best_model
+--- epoch 55 start (steps/epoch=57) ---
+[epoch 55 step 0/57] lr=0.000917 det:loss=1.70369 | loss_cls=0.88919 | loss_iou=0.15115 | loss_dfl=0.82523 | loss_l1=0.29934 | loss_aux_cls=0.02402 | det_total=1.70369 | cls:loss=0.01902 | loss_aux_cls=0.01902 | finite=True
+[epoch 55 step 20/57] lr=0.000906 det:loss=1.69064 | loss_cls=0.89005 | loss_iou=0.14141 | loss_dfl=0.84636 | loss_l1=0.34629 | loss_aux_cls=0.02389 | det_total=1.69064 | cls:loss=0.01738 | loss_aux_cls=0.01738 | finite=True
+[epoch 55 step 40/57] lr=0.000894 det:loss=1.82816 | loss_cls=1.07217 | loss_iou=0.11581 | loss_dfl=0.88247 | loss_l1=0.31086 | loss_aux_cls=0.02523 | det_total=1.82816 | cls:loss=0.02354 | loss_aux_cls=0.02354 | finite=True
+[epoch 55 step 56/57] lr=0.000885 det:loss=1.87916 | loss_cls=1.05926 | loss_iou=0.13874 | loss_dfl=0.89158 | loss_l1=0.32255 | loss_aux_cls=0.02726 | det_total=1.87916 | cls:loss=0.02179 | loss_aux_cls=0.02179 | finite=True
+--- epoch 56 start (steps/epoch=57) ---
+[epoch 56 step 0/57] lr=0.000885 det:loss=2.00227 | loss_cls=0.99063 | loss_iou=0.18086 | loss_dfl=1.06682 | loss_l1=0.47762 | loss_aux_cls=0.02609 | det_total=2.00227 | cls:loss=0.02115 | loss_aux_cls=0.02115 | finite=True
+[epoch 56 step 20/57] lr=0.000873 det:loss=1.90036 | loss_cls=0.90694 | loss_iou=0.18964 | loss_dfl=0.99670 | loss_l1=0.39258 | loss_aux_cls=0.02097 | det_total=1.90036 | cls:loss=0.02393 | loss_aux_cls=0.02393 | finite=True
+[epoch 56 step 40/57] lr=0.000861 det:loss=1.98919 | loss_cls=1.04240 | loss_iou=0.20288 | loss_dfl=0.83384 | loss_l1=0.40401 | loss_aux_cls=0.02266 | det_total=1.98919 | cls:loss=0.02033 | loss_aux_cls=0.02033 | finite=True
+[epoch 56 step 56/57] lr=0.000852 det:loss=1.98372 | loss_cls=1.05569 | loss_iou=0.15578 | loss_dfl=1.02961 | loss_l1=0.39982 | loss_aux_cls=0.02379 | det_total=1.98372 | cls:loss=0.01982 | loss_aux_cls=0.01982 | finite=True
+--- epoch 57 start (steps/epoch=57) ---
+[epoch 57 step 0/57] lr=0.000852 det:loss=1.85964 | loss_cls=1.03202 | loss_iou=0.14069 | loss_dfl=0.89618 | loss_l1=0.35862 | loss_aux_cls=0.02781 | det_total=1.85964 | cls:loss=0.01901 | loss_aux_cls=0.01901 | finite=True
+[epoch 57 step 20/57] lr=0.000840 det:loss=1.53292 | loss_cls=0.80050 | loss_iou=0.13160 | loss_dfl=0.75851 | loss_l1=0.28801 | loss_aux_cls=0.02416 | det_total=1.53292 | cls:loss=0.02287 | loss_aux_cls=0.02287 | finite=True
+[epoch 57 step 40/57] lr=0.000829 det:loss=1.54291 | loss_cls=0.90108 | loss_iou=0.09790 | loss_dfl=0.74610 | loss_l1=0.19706 | loss_aux_cls=0.02403 | det_total=1.54291 | cls:loss=0.01806 | loss_aux_cls=0.01806 | finite=True
+[epoch 57 step 56/57] lr=0.000820 det:loss=1.95799 | loss_cls=1.08166 | loss_iou=0.15797 | loss_dfl=0.91654 | loss_l1=0.39727 | loss_aux_cls=0.02312 | det_total=1.95799 | cls:loss=0.01902 | loss_aux_cls=0.01902 | finite=True
+--- epoch 58 start (steps/epoch=57) ---
+[epoch 58 step 0/57] lr=0.000819 det:loss=1.86284 | loss_cls=1.12646 | loss_iou=0.13233 | loss_dfl=0.76244 | loss_l1=0.25156 | loss_aux_cls=0.02433 | det_total=1.86284 | cls:loss=0.01717 | loss_aux_cls=0.01717 | finite=True
+[epoch 58 step 20/57] lr=0.000808 det:loss=1.50528 | loss_cls=0.77734 | loss_iou=0.11001 | loss_dfl=0.85833 | loss_l1=0.27371 | loss_aux_cls=0.02375 | det_total=1.50528 | cls:loss=0.02119 | loss_aux_cls=0.02119 | finite=True
+[epoch 58 step 40/57] lr=0.000796 det:loss=1.86371 | loss_cls=0.94087 | loss_iou=0.15129 | loss_dfl=1.03975 | loss_l1=0.43177 | loss_aux_cls=0.02473 | det_total=1.86371 | cls:loss=0.01685 | loss_aux_cls=0.01685 | finite=True
+[epoch 58 step 56/57] lr=0.000787 det:loss=1.60399 | loss_cls=0.93257 | loss_iou=0.10696 | loss_dfl=0.75833 | loss_l1=0.21080 | loss_aux_cls=0.02485 | det_total=1.60399 | cls:loss=0.01725 | loss_aux_cls=0.01725 | finite=True
+--- epoch 59 start (steps/epoch=57) ---
+[epoch 59 step 0/57] lr=0.000787 det:loss=1.82892 | loss_cls=0.95946 | loss_iou=0.15520 | loss_dfl=0.91224 | loss_l1=0.37215 | loss_aux_cls=0.02534 | det_total=1.82892 | cls:loss=0.01944 | loss_aux_cls=0.01944 | finite=True
+[epoch 59 step 20/57] lr=0.000775 det:loss=1.95227 | loss_cls=1.12396 | loss_iou=0.14196 | loss_dfl=0.89823 | loss_l1=0.34574 | loss_aux_cls=0.02430 | det_total=1.95227 | cls:loss=0.01965 | loss_aux_cls=0.01965 | finite=True
+[epoch 59 step 40/57] lr=0.000764 det:loss=2.08142 | loss_cls=1.09437 | loss_iou=0.18246 | loss_dfl=1.01180 | loss_l1=0.38949 | loss_aux_cls=0.02501 | det_total=2.08142 | cls:loss=0.01739 | loss_aux_cls=0.01739 | finite=True
+[epoch 59 step 56/57] lr=0.000755 det:loss=1.83964 | loss_cls=0.92288 | loss_iou=0.17371 | loss_dfl=0.91732 | loss_l1=0.39960 | loss_aux_cls=0.02382 | det_total=1.83964 | cls:loss=0.01932 | loss_aux_cls=0.01932 | finite=True
+[save] 59 -> /root/autodl-tmp/AIC2026_AgriVision/experiments/direction5/S1_CG_ACS_100e/checkpoints/59.pdparams/.pdema/.pdopt
+[08/16 22:00:59] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/16 22:00:59] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.65s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=1.08s).
+Accumulating evaluation results...
+DONE (t=0.37s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.367
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.502
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.416
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.031
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.239
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.392
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.285
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.606
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.687
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.600
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.609
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.688
+[best] VAL mAP@0.5:0.95 = 0.3668 @ epoch 60 -> best_model
+--- epoch 60 start (steps/epoch=57) ---
+[epoch 60 step 0/57] lr=0.000755 det:loss=1.89986 | loss_cls=1.09595 | loss_iou=0.13776 | loss_dfl=0.87385 | loss_l1=0.33355 | loss_aux_cls=0.02257 | det_total=1.89986 | cls:loss=0.01817 | loss_aux_cls=0.01817 | finite=True
+[epoch 60 step 20/57] lr=0.000743 det:loss=1.78237 | loss_cls=0.96576 | loss_iou=0.15536 | loss_dfl=0.80811 | loss_l1=0.31515 | loss_aux_cls=0.02415 | det_total=1.78237 | cls:loss=0.01781 | loss_aux_cls=0.01781 | finite=True
+[epoch 60 step 40/57] lr=0.000732 det:loss=1.91226 | loss_cls=1.03601 | loss_iou=0.14449 | loss_dfl=0.98199 | loss_l1=0.38301 | loss_aux_cls=0.02403 | det_total=1.91226 | cls:loss=0.02114 | loss_aux_cls=0.02114 | finite=True
+[epoch 60 step 56/57] lr=0.000723 det:loss=1.69152 | loss_cls=0.92147 | loss_iou=0.13140 | loss_dfl=0.83686 | loss_l1=0.27274 | loss_aux_cls=0.02311 | det_total=1.69152 | cls:loss=0.01736 | loss_aux_cls=0.01736 | finite=True
+--- epoch 61 start (steps/epoch=57) ---
+[epoch 61 step 0/57] lr=0.000723 det:loss=1.93525 | loss_cls=1.03091 | loss_iou=0.18786 | loss_dfl=0.81573 | loss_l1=0.37208 | loss_aux_cls=0.02681 | det_total=1.93525 | cls:loss=0.01523 | loss_aux_cls=0.01523 | finite=True
+[epoch 61 step 20/57] lr=0.000711 det:loss=1.73399 | loss_cls=0.83368 | loss_iou=0.15433 | loss_dfl=0.98440 | loss_l1=0.42147 | loss_aux_cls=0.02230 | det_total=1.73399 | cls:loss=0.01657 | loss_aux_cls=0.01657 | finite=True
+[epoch 61 step 40/57] lr=0.000700 det:loss=1.96095 | loss_cls=0.94068 | loss_iou=0.20598 | loss_dfl=0.96377 | loss_l1=0.40353 | loss_aux_cls=0.02343 | det_total=1.96095 | cls:loss=0.01748 | loss_aux_cls=0.01748 | finite=True
+[epoch 61 step 56/57] lr=0.000692 det:loss=1.73988 | loss_cls=0.90459 | loss_iou=0.14876 | loss_dfl=0.87797 | loss_l1=0.31930 | loss_aux_cls=0.02440 | det_total=1.73988 | cls:loss=0.01648 | loss_aux_cls=0.01648 | finite=True
+--- epoch 62 start (steps/epoch=57) ---
+[epoch 62 step 0/57] lr=0.000691 det:loss=1.86407 | loss_cls=1.03612 | loss_iou=0.16271 | loss_dfl=0.79458 | loss_l1=0.30094 | loss_aux_cls=0.02388 | det_total=1.86407 | cls:loss=0.02226 | loss_aux_cls=0.02226 | finite=True
+[epoch 62 step 20/57] lr=0.000680 det:loss=1.89647 | loss_cls=1.02749 | loss_iou=0.17235 | loss_dfl=0.83378 | loss_l1=0.34185 | loss_aux_cls=0.02122 | det_total=1.89647 | cls:loss=0.02055 | loss_aux_cls=0.02055 | finite=True
+[epoch 62 step 40/57] lr=0.000669 det:loss=1.54985 | loss_cls=0.83569 | loss_iou=0.12157 | loss_dfl=0.77535 | loss_l1=0.23659 | loss_aux_cls=0.02257 | det_total=1.54985 | cls:loss=0.01951 | loss_aux_cls=0.01951 | finite=True
+[epoch 62 step 56/57] lr=0.000660 det:loss=1.72880 | loss_cls=0.83302 | loss_iou=0.16977 | loss_dfl=0.89312 | loss_l1=0.39987 | loss_aux_cls=0.02479 | det_total=1.72880 | cls:loss=0.01840 | loss_aux_cls=0.01840 | finite=True
+--- epoch 63 start (steps/epoch=57) ---
+[epoch 63 step 0/57] lr=0.000660 det:loss=1.66259 | loss_cls=0.92269 | loss_iou=0.12359 | loss_dfl=0.81224 | loss_l1=0.25005 | loss_aux_cls=0.02481 | det_total=1.66259 | cls:loss=0.01680 | loss_aux_cls=0.01680 | finite=True
+[epoch 63 step 20/57] lr=0.000649 det:loss=2.05273 | loss_cls=1.07140 | loss_iou=0.18498 | loss_dfl=0.99052 | loss_l1=0.42186 | loss_aux_cls=0.02361 | det_total=2.05273 | cls:loss=0.01765 | loss_aux_cls=0.01765 | finite=True
+[epoch 63 step 40/57] lr=0.000638 det:loss=1.67004 | loss_cls=0.93007 | loss_iou=0.11692 | loss_dfl=0.84750 | loss_l1=0.28240 | loss_aux_cls=0.02393 | det_total=1.67004 | cls:loss=0.01969 | loss_aux_cls=0.01969 | finite=True
+[epoch 63 step 56/57] lr=0.000629 det:loss=1.68773 | loss_cls=0.88265 | loss_iou=0.14003 | loss_dfl=0.86601 | loss_l1=0.30747 | loss_aux_cls=0.02200 | det_total=1.68773 | cls:loss=0.02033 | loss_aux_cls=0.02033 | finite=True
+--- epoch 64 start (steps/epoch=57) ---
+[epoch 64 step 0/57] lr=0.000629 det:loss=1.63224 | loss_cls=0.92925 | loss_iou=0.11308 | loss_dfl=0.79042 | loss_l1=0.24299 | loss_aux_cls=0.02507 | det_total=1.63224 | cls:loss=0.01689 | loss_aux_cls=0.01689 | finite=True
+[epoch 64 step 20/57] lr=0.000618 det:loss=1.90775 | loss_cls=0.95286 | loss_iou=0.17879 | loss_dfl=0.96807 | loss_l1=0.37841 | loss_aux_cls=0.02388 | det_total=1.90775 | cls:loss=0.01881 | loss_aux_cls=0.01881 | finite=True
+[epoch 64 step 40/57] lr=0.000607 det:loss=1.81691 | loss_cls=0.97640 | loss_iou=0.15508 | loss_dfl=0.86151 | loss_l1=0.31168 | loss_aux_cls=0.02206 | det_total=1.81691 | cls:loss=0.02082 | loss_aux_cls=0.02082 | finite=True
+[epoch 64 step 56/57] lr=0.000599 det:loss=1.64130 | loss_cls=0.93982 | loss_iou=0.11152 | loss_dfl=0.79169 | loss_l1=0.26317 | loss_aux_cls=0.02684 | det_total=1.64130 | cls:loss=0.01993 | loss_aux_cls=0.01993 | finite=True
+[save] 64 -> /root/autodl-tmp/AIC2026_AgriVision/experiments/direction5/S1_CG_ACS_100e/checkpoints/64.pdparams/.pdema/.pdopt
+[08/16 22:11:05] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.01s)
+creating index...
+index created!
+[08/16 22:11:05] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.48s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=0.82s).
+Accumulating evaluation results...
+DONE (t=0.27s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.365
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.507
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.419
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.036
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.240
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.384
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.274
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.594
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.681
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.700
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.606
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.682
+[val] epoch 65 mAP@0.5:0.95=0.3648 | mAP50=0.5074 | mAP75=0.4192 | best=0.3668@epoch60
+--- epoch 65 start (steps/epoch=57) ---
+[epoch 65 step 0/57] lr=0.000598 det:loss=1.99920 | loss_cls=1.04564 | loss_iou=0.18728 | loss_dfl=0.92383 | loss_l1=0.37706 | loss_aux_cls=0.02346 | det_total=1.99920 | cls:loss=0.02046 | loss_aux_cls=0.02046 | finite=True
+[epoch 65 step 20/57] lr=0.000588 det:loss=1.72726 | loss_cls=0.92530 | loss_iou=0.13062 | loss_dfl=0.89754 | loss_l1=0.31530 | loss_aux_cls=0.02664 | det_total=1.72726 | cls:loss=0.01814 | loss_aux_cls=0.01814 | finite=True
+[epoch 65 step 40/57] lr=0.000577 det:loss=2.02035 | loss_cls=1.08999 | loss_iou=0.17850 | loss_dfl=0.91925 | loss_l1=0.36117 | loss_aux_cls=0.02448 | det_total=2.02035 | cls:loss=0.02160 | loss_aux_cls=0.02160 | finite=True
+[epoch 65 step 56/57] lr=0.000569 det:loss=1.45000 | loss_cls=0.80678 | loss_iou=0.09991 | loss_dfl=0.74176 | loss_l1=0.20340 | loss_aux_cls=0.02256 | det_total=1.45000 | cls:loss=0.01943 | loss_aux_cls=0.01943 | finite=True
+--- epoch 66 start (steps/epoch=57) ---
+[epoch 66 step 0/57] lr=0.000568 det:loss=1.81870 | loss_cls=0.92246 | loss_iou=0.17776 | loss_dfl=0.86116 | loss_l1=0.33073 | loss_aux_cls=0.02126 | det_total=1.81870 | cls:loss=0.01906 | loss_aux_cls=0.01906 | finite=True
+[epoch 66 step 20/57] lr=0.000558 det:loss=2.08091 | loss_cls=1.04059 | loss_iou=0.19861 | loss_dfl=1.03780 | loss_l1=0.43814 | loss_aux_cls=0.02490 | det_total=2.08091 | cls:loss=0.01716 | loss_aux_cls=0.01716 | finite=True
+[epoch 66 step 40/57] lr=0.000547 det:loss=1.91684 | loss_cls=1.09161 | loss_iou=0.15662 | loss_dfl=0.81661 | loss_l1=0.34386 | loss_aux_cls=0.02538 | det_total=1.91684 | cls:loss=0.01847 | loss_aux_cls=0.01847 | finite=True
+[epoch 66 step 56/57] lr=0.000539 det:loss=1.63705 | loss_cls=0.87234 | loss_iou=0.12768 | loss_dfl=0.84931 | loss_l1=0.28231 | loss_aux_cls=0.02087 | det_total=1.63705 | cls:loss=0.01706 | loss_aux_cls=0.01706 | finite=True
+--- epoch 67 start (steps/epoch=57) ---
+[epoch 67 step 0/57] lr=0.000539 det:loss=1.79320 | loss_cls=0.98587 | loss_iou=0.15296 | loss_dfl=0.80296 | loss_l1=0.30582 | loss_aux_cls=0.02346 | det_total=1.79320 | cls:loss=0.02034 | loss_aux_cls=0.02034 | finite=True
+[epoch 67 step 20/57] lr=0.000528 det:loss=1.82200 | loss_cls=0.92173 | loss_iou=0.18159 | loss_dfl=0.84076 | loss_l1=0.34327 | loss_aux_cls=0.02592 | det_total=1.82200 | cls:loss=0.01899 | loss_aux_cls=0.01899 | finite=True
+[epoch 67 step 40/57] lr=0.000518 det:loss=1.97942 | loss_cls=1.04533 | loss_iou=0.17332 | loss_dfl=0.95500 | loss_l1=0.39687 | loss_aux_cls=0.02329 | det_total=1.97942 | cls:loss=0.01427 | loss_aux_cls=0.01427 | finite=True
+[epoch 67 step 56/57] lr=0.000510 det:loss=1.59976 | loss_cls=0.88057 | loss_iou=0.10858 | loss_dfl=0.84946 | loss_l1=0.27675 | loss_aux_cls=0.02302 | det_total=1.59976 | cls:loss=0.01791 | loss_aux_cls=0.01791 | finite=True
+--- epoch 68 start (steps/epoch=57) ---
+[epoch 68 step 0/57] lr=0.000510 det:loss=1.67948 | loss_cls=0.89358 | loss_iou=0.13870 | loss_dfl=0.83219 | loss_l1=0.31141 | loss_aux_cls=0.02306 | det_total=1.67948 | cls:loss=0.02018 | loss_aux_cls=0.02018 | finite=True
+[epoch 68 step 20/57] lr=0.000499 det:loss=1.87696 | loss_cls=0.99208 | loss_iou=0.15274 | loss_dfl=0.95433 | loss_l1=0.43318 | loss_aux_cls=0.02587 | det_total=1.87696 | cls:loss=0.02036 | loss_aux_cls=0.02036 | finite=True
+[epoch 68 step 40/57] lr=0.000489 det:loss=1.59168 | loss_cls=0.77011 | loss_iou=0.09869 | loss_dfl=1.10473 | loss_l1=0.40580 | loss_aux_cls=0.02248 | det_total=1.59168 | cls:loss=0.01652 | loss_aux_cls=0.01652 | finite=True
+[epoch 68 step 56/57] lr=0.000482 det:loss=1.63366 | loss_cls=0.84702 | loss_iou=0.13665 | loss_dfl=0.84190 | loss_l1=0.28769 | loss_aux_cls=0.02406 | det_total=1.63366 | cls:loss=0.01656 | loss_aux_cls=0.01656 | finite=True
+--- epoch 69 start (steps/epoch=57) ---
+[epoch 69 step 0/57] lr=0.000481 det:loss=1.91755 | loss_cls=0.98767 | loss_iou=0.18968 | loss_dfl=0.85970 | loss_l1=0.33815 | loss_aux_cls=0.02583 | det_total=1.91755 | cls:loss=0.01890 | loss_aux_cls=0.01890 | finite=True
+[epoch 69 step 20/57] lr=0.000471 det:loss=1.76004 | loss_cls=0.89642 | loss_iou=0.15371 | loss_dfl=0.91027 | loss_l1=0.37808 | loss_aux_cls=0.02421 | det_total=1.76004 | cls:loss=0.01937 | loss_aux_cls=0.01937 | finite=True
+[epoch 69 step 40/57] lr=0.000461 det:loss=1.68140 | loss_cls=0.82140 | loss_iou=0.15828 | loss_dfl=0.88316 | loss_l1=0.35939 | loss_aux_cls=0.02273 | det_total=1.68140 | cls:loss=0.01646 | loss_aux_cls=0.01646 | finite=True
+[epoch 69 step 56/57] lr=0.000454 det:loss=1.43010 | loss_cls=0.78556 | loss_iou=0.10394 | loss_dfl=0.71988 | loss_l1=0.19016 | loss_aux_cls=0.02475 | det_total=1.43010 | cls:loss=0.01854 | loss_aux_cls=0.01854 | finite=True
+[save] 69 -> /root/autodl-tmp/AIC2026_AgriVision/experiments/direction5/S1_CG_ACS_100e/checkpoints/69.pdparams/.pdema/.pdopt
+[08/16 22:21:21] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/16 22:21:21] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.57s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=1.14s).
+Accumulating evaluation results...
+DONE (t=0.39s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.364
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.507
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.415
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.039
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.248
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.386
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.273
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.592
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.681
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.600
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.615
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.683
+[val] epoch 70 mAP@0.5:0.95=0.3645 | mAP50=0.5066 | mAP75=0.4155 | best=0.3668@epoch60
+--- epoch 70 start (steps/epoch=57) ---
+[epoch 70 step 0/57] lr=0.000453 det:loss=1.67461 | loss_cls=0.84196 | loss_iou=0.14019 | loss_dfl=0.91294 | loss_l1=0.33921 | loss_aux_cls=0.02570 | det_total=1.67461 | cls:loss=0.01896 | loss_aux_cls=0.01896 | finite=True
+[epoch 70 step 20/57] lr=0.000443 det:loss=1.70195 | loss_cls=0.91194 | loss_iou=0.13086 | loss_dfl=0.88246 | loss_l1=0.35432 | loss_aux_cls=0.02162 | det_total=1.70195 | cls:loss=0.01679 | loss_aux_cls=0.01679 | finite=True
+[epoch 70 step 40/57] lr=0.000434 det:loss=1.68587 | loss_cls=0.82449 | loss_iou=0.15624 | loss_dfl=0.89146 | loss_l1=0.36461 | loss_aux_cls=0.02504 | det_total=1.68587 | cls:loss=0.01855 | loss_aux_cls=0.01855 | finite=True
+[epoch 70 step 56/57] lr=0.000426 det:loss=1.88458 | loss_cls=0.98717 | loss_iou=0.17904 | loss_dfl=0.85946 | loss_l1=0.37985 | loss_aux_cls=0.02008 | det_total=1.88458 | cls:loss=0.01946 | loss_aux_cls=0.01946 | finite=True
+--- epoch 71 start (steps/epoch=57) ---
+[epoch 71 step 0/57] lr=0.000426 det:loss=1.60777 | loss_cls=0.82231 | loss_iou=0.12839 | loss_dfl=0.88247 | loss_l1=0.35958 | loss_aux_cls=0.02325 | det_total=1.60777 | cls:loss=0.01775 | loss_aux_cls=0.01775 | finite=True
+[epoch 71 step 20/57] lr=0.000416 det:loss=1.96413 | loss_cls=0.94248 | loss_iou=0.18395 | loss_dfl=1.07341 | loss_l1=0.42045 | loss_aux_cls=0.02507 | det_total=1.96413 | cls:loss=0.01671 | loss_aux_cls=0.01671 | finite=True
+[epoch 71 step 40/57] lr=0.000407 det:loss=1.85937 | loss_cls=0.96407 | loss_iou=0.16472 | loss_dfl=0.91723 | loss_l1=0.38080 | loss_aux_cls=0.02489 | det_total=1.85937 | cls:loss=0.01901 | loss_aux_cls=0.01901 | finite=True
+[epoch 71 step 56/57] lr=0.000399 det:loss=1.61721 | loss_cls=0.89467 | loss_iou=0.12830 | loss_dfl=0.75552 | loss_l1=0.23277 | loss_aux_cls=0.02405 | det_total=1.61721 | cls:loss=0.01963 | loss_aux_cls=0.01963 | finite=True
+--- epoch 72 start (steps/epoch=57) ---
+[epoch 72 step 0/57] lr=0.000399 det:loss=1.58629 | loss_cls=0.76549 | loss_iou=0.14454 | loss_dfl=0.87493 | loss_l1=0.35198 | loss_aux_cls=0.02197 | det_total=1.58629 | cls:loss=0.01568 | loss_aux_cls=0.01568 | finite=True
+[epoch 72 step 20/57] lr=0.000390 det:loss=1.40332 | loss_cls=0.70719 | loss_iou=0.11009 | loss_dfl=0.79496 | loss_l1=0.22186 | loss_aux_cls=0.02344 | det_total=1.40332 | cls:loss=0.02092 | loss_aux_cls=0.02092 | finite=True
+[epoch 72 step 40/57] lr=0.000381 det:loss=1.49634 | loss_cls=0.81817 | loss_iou=0.11098 | loss_dfl=0.75778 | loss_l1=0.20566 | loss_aux_cls=0.02184 | det_total=1.49634 | cls:loss=0.01728 | loss_aux_cls=0.01728 | finite=True
+[epoch 72 step 56/57] lr=0.000373 det:loss=1.82511 | loss_cls=0.85067 | loss_iou=0.18825 | loss_dfl=0.96233 | loss_l1=0.37989 | loss_aux_cls=0.02264 | det_total=1.82511 | cls:loss=0.01611 | loss_aux_cls=0.01611 | finite=True
+--- epoch 73 start (steps/epoch=57) ---
+[epoch 73 step 0/57] lr=0.000373 det:loss=1.71562 | loss_cls=0.86155 | loss_iou=0.15871 | loss_dfl=0.87070 | loss_l1=0.31163 | loss_aux_cls=0.02194 | det_total=1.71562 | cls:loss=0.01890 | loss_aux_cls=0.01890 | finite=True
+[epoch 73 step 20/57] lr=0.000364 det:loss=1.83179 | loss_cls=0.99590 | loss_iou=0.17194 | loss_dfl=0.75920 | loss_l1=0.36659 | loss_aux_cls=0.02644 | det_total=1.83179 | cls:loss=0.01897 | loss_aux_cls=0.01897 | finite=True
+[epoch 73 step 40/57] lr=0.000355 det:loss=1.47903 | loss_cls=0.76115 | loss_iou=0.10748 | loss_dfl=0.84764 | loss_l1=0.27535 | loss_aux_cls=0.02535 | det_total=1.47903 | cls:loss=0.02100 | loss_aux_cls=0.02100 | finite=True
+[epoch 73 step 56/57] lr=0.000348 det:loss=1.78726 | loss_cls=0.89497 | loss_iou=0.16903 | loss_dfl=0.89224 | loss_l1=0.36102 | loss_aux_cls=0.02360 | det_total=1.78726 | cls:loss=0.01988 | loss_aux_cls=0.01988 | finite=True
+--- epoch 74 start (steps/epoch=57) ---
+[epoch 74 step 0/57] lr=0.000347 det:loss=1.63008 | loss_cls=0.87611 | loss_iou=0.10751 | loss_dfl=0.91974 | loss_l1=0.36140 | loss_aux_cls=0.02533 | det_total=1.63008 | cls:loss=0.01749 | loss_aux_cls=0.01749 | finite=True
+[epoch 74 step 20/57] lr=0.000339 det:loss=1.97423 | loss_cls=1.08493 | loss_iou=0.16693 | loss_dfl=0.89792 | loss_l1=0.35571 | loss_aux_cls=0.02302 | det_total=1.97423 | cls:loss=0.01774 | loss_aux_cls=0.01774 | finite=True
+[epoch 74 step 40/57] lr=0.000330 det:loss=1.51382 | loss_cls=0.84103 | loss_iou=0.11295 | loss_dfl=0.72894 | loss_l1=0.20691 | loss_aux_cls=0.02594 | det_total=1.51382 | cls:loss=0.01789 | loss_aux_cls=0.01789 | finite=True
+[epoch 74 step 56/57] lr=0.000323 det:loss=1.60249 | loss_cls=0.83349 | loss_iou=0.13894 | loss_dfl=0.79689 | loss_l1=0.27135 | loss_aux_cls=0.02320 | det_total=1.60249 | cls:loss=0.01777 | loss_aux_cls=0.01777 | finite=True
+[save] 74 -> /root/autodl-tmp/AIC2026_AgriVision/experiments/direction5/S1_CG_ACS_100e/checkpoints/74.pdparams/.pdema/.pdopt
+[08/16 22:31:43] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/16 22:31:43] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.53s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=1.09s).
+Accumulating evaluation results...
+DONE (t=0.37s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.364
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.508
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.412
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.046
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.233
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.384
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.272
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.598
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.678
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.617
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.599
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.683
+[val] epoch 75 mAP@0.5:0.95=0.3635 | mAP50=0.5080 | mAP75=0.4115 | best=0.3668@epoch60
+--- epoch 75 start (steps/epoch=57) ---
+[epoch 75 step 0/57] lr=0.000323 det:loss=1.53745 | loss_cls=0.85363 | loss_iou=0.11137 | loss_dfl=0.76477 | loss_l1=0.21254 | loss_aux_cls=0.02301 | det_total=1.53745 | cls:loss=0.01744 | loss_aux_cls=0.01744 | finite=True
+[epoch 75 step 20/57] lr=0.000314 det:loss=1.64405 | loss_cls=0.80036 | loss_iou=0.15103 | loss_dfl=0.88408 | loss_l1=0.35522 | loss_aux_cls=0.02407 | det_total=1.64405 | cls:loss=0.01674 | loss_aux_cls=0.01674 | finite=True
+[epoch 75 step 40/57] lr=0.000306 det:loss=1.45228 | loss_cls=0.73336 | loss_iou=0.11318 | loss_dfl=0.82142 | loss_l1=0.24894 | loss_aux_cls=0.02524 | det_total=1.45228 | cls:loss=0.01615 | loss_aux_cls=0.01615 | finite=True
+[epoch 75 step 56/57] lr=0.000299 det:loss=1.63457 | loss_cls=0.86265 | loss_iou=0.13198 | loss_dfl=0.83230 | loss_l1=0.28143 | loss_aux_cls=0.02583 | det_total=1.63457 | cls:loss=0.02012 | loss_aux_cls=0.02012 | finite=True
+--- epoch 76 start (steps/epoch=57) ---
+[epoch 76 step 0/57] lr=0.000299 det:loss=1.77765 | loss_cls=0.87793 | loss_iou=0.17219 | loss_dfl=0.88923 | loss_l1=0.41367 | loss_aux_cls=0.02463 | det_total=1.77765 | cls:loss=0.01797 | loss_aux_cls=0.01797 | finite=True
+[epoch 76 step 20/57] lr=0.000291 det:loss=1.71905 | loss_cls=0.88195 | loss_iou=0.14844 | loss_dfl=0.88440 | loss_l1=0.33499 | loss_aux_cls=0.02381 | det_total=1.71905 | cls:loss=0.01641 | loss_aux_cls=0.01641 | finite=True
+[epoch 76 step 40/57] lr=0.000282 det:loss=1.73878 | loss_cls=0.89175 | loss_iou=0.17836 | loss_dfl=0.76093 | loss_l1=0.30007 | loss_aux_cls=0.02067 | det_total=1.73878 | cls:loss=0.01643 | loss_aux_cls=0.01643 | finite=True
+[epoch 76 step 56/57] lr=0.000276 det:loss=1.72709 | loss_cls=0.93522 | loss_iou=0.13945 | loss_dfl=0.84434 | loss_l1=0.31871 | loss_aux_cls=0.02109 | det_total=1.72709 | cls:loss=0.01892 | loss_aux_cls=0.01892 | finite=True
+--- epoch 77 start (steps/epoch=57) ---
+[epoch 77 step 0/57] lr=0.000276 det:loss=1.70118 | loss_cls=0.90307 | loss_iou=0.13381 | loss_dfl=0.87406 | loss_l1=0.31056 | loss_aux_cls=0.02656 | det_total=1.70118 | cls:loss=0.01775 | loss_aux_cls=0.01775 | finite=True
+[epoch 77 step 20/57] lr=0.000268 det:loss=1.75641 | loss_cls=0.91795 | loss_iou=0.15998 | loss_dfl=0.83061 | loss_l1=0.35983 | loss_aux_cls=0.02322 | det_total=1.75641 | cls:loss=0.01676 | loss_aux_cls=0.01676 | finite=True
+[epoch 77 step 40/57] lr=0.000260 det:loss=1.49374 | loss_cls=0.80350 | loss_iou=0.10189 | loss_dfl=0.82273 | loss_l1=0.24740 | loss_aux_cls=0.02414 | det_total=1.49374 | cls:loss=0.01768 | loss_aux_cls=0.01768 | finite=True
+[epoch 77 step 56/57] lr=0.000254 det:loss=1.84817 | loss_cls=0.92252 | loss_iou=0.18112 | loss_dfl=0.89726 | loss_l1=0.35565 | loss_aux_cls=0.02421 | det_total=1.84817 | cls:loss=0.01898 | loss_aux_cls=0.01898 | finite=True
+--- epoch 78 start (steps/epoch=57) ---
+[epoch 78 step 0/57] lr=0.000253 det:loss=2.05588 | loss_cls=1.03845 | loss_iou=0.17117 | loss_dfl=1.12887 | loss_l1=0.54176 | loss_aux_cls=0.02506 | det_total=2.05588 | cls:loss=0.01961 | loss_aux_cls=0.01961 | finite=True
+[epoch 78 step 20/57] lr=0.000246 det:loss=1.93142 | loss_cls=1.00161 | loss_iou=0.17788 | loss_dfl=0.91827 | loss_l1=0.35312 | loss_aux_cls=0.02596 | det_total=1.93142 | cls:loss=0.01719 | loss_aux_cls=0.01719 | finite=True
+[epoch 78 step 40/57] lr=0.000238 det:loss=1.85365 | loss_cls=0.90782 | loss_iou=0.15826 | loss_dfl=1.05538 | loss_l1=0.49517 | loss_aux_cls=0.02249 | det_total=1.85365 | cls:loss=0.01749 | loss_aux_cls=0.01749 | finite=True
+[epoch 78 step 56/57] lr=0.000232 det:loss=1.83850 | loss_cls=0.91927 | loss_iou=0.19292 | loss_dfl=0.82531 | loss_l1=0.36523 | loss_aux_cls=0.02428 | det_total=1.83850 | cls:loss=0.01552 | loss_aux_cls=0.01552 | finite=True
+--- epoch 79 start (steps/epoch=57) ---
+[epoch 79 step 0/57] lr=0.000232 det:loss=1.93785 | loss_cls=1.03876 | loss_iou=0.17714 | loss_dfl=0.86377 | loss_l1=0.34203 | loss_aux_cls=0.02436 | det_total=1.93785 | cls:loss=0.01861 | loss_aux_cls=0.01861 | finite=True
+[epoch 79 step 20/57] lr=0.000224 det:loss=1.52671 | loss_cls=0.81780 | loss_iou=0.12623 | loss_dfl=0.74076 | loss_l1=0.22405 | loss_aux_cls=0.02294 | det_total=1.52671 | cls:loss=0.01912 | loss_aux_cls=0.01912 | finite=True
+[epoch 79 step 40/57] lr=0.000217 det:loss=1.48017 | loss_cls=0.76813 | loss_iou=0.11632 | loss_dfl=0.80004 | loss_l1=0.25126 | loss_aux_cls=0.02121 | det_total=1.48017 | cls:loss=0.01856 | loss_aux_cls=0.01856 | finite=True
+[epoch 79 step 56/57] lr=0.000211 det:loss=1.71378 | loss_cls=0.78393 | loss_iou=0.17019 | loss_dfl=0.96420 | loss_l1=0.34501 | loss_aux_cls=0.02227 | det_total=1.71378 | cls:loss=0.01742 | loss_aux_cls=0.01742 | finite=True
+[save] 79 -> /root/autodl-tmp/AIC2026_AgriVision/experiments/direction5/S1_CG_ACS_100e/checkpoints/79.pdparams/.pdema/.pdopt
+[08/16 22:41:33] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/16 22:41:33] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.50s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=1.10s).
+Accumulating evaluation results...
+DONE (t=0.39s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.356
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.500
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.402
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.058
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.204
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.386
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.271
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.597
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.667
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.667
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.600
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.672
+[val] epoch 80 mAP@0.5:0.95=0.3565 | mAP50=0.4997 | mAP75=0.4020 | best=0.3668@epoch60
+--- epoch 80 start (steps/epoch=57) ---
+[epoch 80 step 0/57] lr=0.000211 det:loss=1.64558 | loss_cls=0.89245 | loss_iou=0.13535 | loss_dfl=0.78424 | loss_l1=0.27353 | loss_aux_cls=0.02264 | det_total=1.64558 | cls:loss=0.01668 | loss_aux_cls=0.01668 | finite=True
+[epoch 80 step 20/57] lr=0.000204 det:loss=1.76320 | loss_cls=0.79532 | loss_iou=0.17008 | loss_dfl=1.04095 | loss_l1=0.46220 | loss_aux_cls=0.02221 | det_total=1.76320 | cls:loss=0.02062 | loss_aux_cls=0.02062 | finite=True
+[epoch 80 step 40/57] lr=0.000197 det:loss=1.61817 | loss_cls=0.78427 | loss_iou=0.15788 | loss_dfl=0.83191 | loss_l1=0.28415 | loss_aux_cls=0.02324 | det_total=1.61817 | cls:loss=0.01960 | loss_aux_cls=0.01960 | finite=True
+[epoch 80 step 56/57] lr=0.000191 det:loss=1.70777 | loss_cls=0.81293 | loss_iou=0.15982 | loss_dfl=0.94117 | loss_l1=0.33718 | loss_aux_cls=0.02470 | det_total=1.70777 | cls:loss=0.01588 | loss_aux_cls=0.01588 | finite=True
+--- epoch 81 start (steps/epoch=57) ---
+[epoch 81 step 0/57] lr=0.000191 det:loss=1.61367 | loss_cls=0.83366 | loss_iou=0.15067 | loss_dfl=0.76235 | loss_l1=0.31547 | loss_aux_cls=0.02217 | det_total=1.61367 | cls:loss=0.02133 | loss_aux_cls=0.02133 | finite=True
+[epoch 81 step 20/57] lr=0.000184 det:loss=1.77916 | loss_cls=1.00875 | loss_iou=0.12736 | loss_dfl=0.85364 | loss_l1=0.26339 | loss_aux_cls=0.02518 | det_total=1.77916 | cls:loss=0.01983 | loss_aux_cls=0.01983 | finite=True
+[epoch 81 step 40/57] lr=0.000178 det:loss=1.66463 | loss_cls=0.94378 | loss_iou=0.12148 | loss_dfl=0.78909 | loss_l1=0.23307 | loss_aux_cls=0.02261 | det_total=1.66463 | cls:loss=0.01710 | loss_aux_cls=0.01710 | finite=True
+[epoch 81 step 56/57] lr=0.000172 det:loss=1.52825 | loss_cls=0.83920 | loss_iou=0.11789 | loss_dfl=0.73978 | loss_l1=0.22298 | loss_aux_cls=0.02443 | det_total=1.52825 | cls:loss=0.01610 | loss_aux_cls=0.01610 | finite=True
+--- epoch 82 start (steps/epoch=57) ---
+[epoch 82 step 0/57] lr=0.000172 det:loss=1.53008 | loss_cls=0.87257 | loss_iou=0.10252 | loss_dfl=0.75475 | loss_l1=0.22386 | loss_aux_cls=0.02383 | det_total=1.53008 | cls:loss=0.01853 | loss_aux_cls=0.01853 | finite=True
+[epoch 82 step 20/57] lr=0.000166 det:loss=1.68648 | loss_cls=0.92846 | loss_iou=0.13516 | loss_dfl=0.78954 | loss_l1=0.27972 | loss_aux_cls=0.02536 | det_total=1.68648 | cls:loss=0.01758 | loss_aux_cls=0.01758 | finite=True
+[epoch 82 step 40/57] lr=0.000159 det:loss=1.63596 | loss_cls=0.84790 | loss_iou=0.12068 | loss_dfl=0.93082 | loss_l1=0.34242 | loss_aux_cls=0.02096 | det_total=1.63596 | cls:loss=0.01608 | loss_aux_cls=0.01608 | finite=True
+[epoch 82 step 56/57] lr=0.000154 det:loss=1.43360 | loss_cls=0.81235 | loss_iou=0.08689 | loss_dfl=0.76101 | loss_l1=0.18358 | loss_aux_cls=0.02354 | det_total=1.43360 | cls:loss=0.01776 | loss_aux_cls=0.01776 | finite=True
+--- epoch 83 start (steps/epoch=57) ---
+[epoch 83 step 0/57] lr=0.000154 det:loss=1.68765 | loss_cls=0.86529 | loss_iou=0.13751 | loss_dfl=0.91165 | loss_l1=0.33562 | loss_aux_cls=0.02276 | det_total=1.68765 | cls:loss=0.01726 | loss_aux_cls=0.01726 | finite=True
+[epoch 83 step 20/57] lr=0.000148 det:loss=1.76735 | loss_cls=0.85290 | loss_iou=0.17250 | loss_dfl=0.92224 | loss_l1=0.36346 | loss_aux_cls=0.02210 | det_total=1.76735 | cls:loss=0.01830 | loss_aux_cls=0.01830 | finite=True
+[epoch 83 step 40/57] lr=0.000142 det:loss=1.56769 | loss_cls=0.84586 | loss_iou=0.12955 | loss_dfl=0.75354 | loss_l1=0.32542 | loss_aux_cls=0.02118 | det_total=1.56769 | cls:loss=0.01872 | loss_aux_cls=0.01872 | finite=True
+[epoch 83 step 56/57] lr=0.000137 det:loss=1.44002 | loss_cls=0.73594 | loss_iou=0.11768 | loss_dfl=0.76939 | loss_l1=0.25554 | loss_aux_cls=0.02520 | det_total=1.44002 | cls:loss=0.01974 | loss_aux_cls=0.01974 | finite=True
+--- epoch 84 start (steps/epoch=57) ---
+[epoch 84 step 0/57] lr=0.000137 det:loss=1.69755 | loss_cls=0.81396 | loss_iou=0.16834 | loss_dfl=0.87799 | loss_l1=0.30039 | loss_aux_cls=0.02374 | det_total=1.69755 | cls:loss=0.01835 | loss_aux_cls=0.01835 | finite=True
+[epoch 84 step 20/57] lr=0.000131 det:loss=1.66144 | loss_cls=0.80453 | loss_iou=0.16273 | loss_dfl=0.85651 | loss_l1=0.33372 | loss_aux_cls=0.02184 | det_total=1.66144 | cls:loss=0.01895 | loss_aux_cls=0.01895 | finite=True
+[epoch 84 step 40/57] lr=0.000125 det:loss=1.73125 | loss_cls=0.84511 | loss_iou=0.16948 | loss_dfl=0.88384 | loss_l1=0.34730 | loss_aux_cls=0.02053 | det_total=1.73125 | cls:loss=0.01714 | loss_aux_cls=0.01714 | finite=True
+[epoch 84 step 56/57] lr=0.000121 det:loss=1.79661 | loss_cls=0.89911 | loss_iou=0.17255 | loss_dfl=0.88661 | loss_l1=0.35409 | loss_aux_cls=0.02282 | det_total=1.79661 | cls:loss=0.01839 | loss_aux_cls=0.01839 | finite=True
+[save] 84 -> /root/autodl-tmp/AIC2026_AgriVision/experiments/direction5/S1_CG_ACS_100e/checkpoints/84.pdparams/.pdema/.pdopt
+[08/16 22:51:38] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/16 22:51:38] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.49s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=1.06s).
+Accumulating evaluation results...
+DONE (t=0.36s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.359
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.503
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.408
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.057
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.195
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.392
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.271
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.584
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.662
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.650
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.601
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.665
+[val] epoch 85 mAP@0.5:0.95=0.3594 | mAP50=0.5035 | mAP75=0.4083 | best=0.3668@epoch60
+--- epoch 85 start (steps/epoch=57) ---
+[epoch 85 step 0/57] lr=0.000121 det:loss=1.60581 | loss_cls=0.86009 | loss_iou=0.12638 | loss_dfl=0.81474 | loss_l1=0.25986 | loss_aux_cls=0.02240 | det_total=1.60581 | cls:loss=0.01784 | loss_aux_cls=0.01784 | finite=True
+[epoch 85 step 20/57] lr=0.000115 det:loss=1.63040 | loss_cls=0.83047 | loss_iou=0.13343 | loss_dfl=0.89065 | loss_l1=0.33258 | loss_aux_cls=0.02104 | det_total=1.63040 | cls:loss=0.01585 | loss_aux_cls=0.01585 | finite=True
+[epoch 85 step 40/57] lr=0.000110 det:loss=1.68147 | loss_cls=0.86212 | loss_iou=0.15012 | loss_dfl=0.84373 | loss_l1=0.30068 | loss_aux_cls=0.02218 | det_total=1.68147 | cls:loss=0.02043 | loss_aux_cls=0.02043 | finite=True
+[epoch 85 step 56/57] lr=0.000106 det:loss=1.64410 | loss_cls=0.92572 | loss_iou=0.13045 | loss_dfl=0.73662 | loss_l1=0.25302 | loss_aux_cls=0.02395 | det_total=1.64410 | cls:loss=0.01832 | loss_aux_cls=0.01832 | finite=True
+--- epoch 86 start (steps/epoch=57) ---
+[epoch 86 step 0/57] lr=0.000105 det:loss=1.62688 | loss_cls=0.77415 | loss_iou=0.16024 | loss_dfl=0.85838 | loss_l1=0.29514 | loss_aux_cls=0.02294 | det_total=1.62688 | cls:loss=0.02011 | loss_aux_cls=0.02011 | finite=True
+[epoch 86 step 20/57] lr=0.000100 det:loss=1.41617 | loss_cls=0.79193 | loss_iou=0.09703 | loss_dfl=0.72028 | loss_l1=0.19935 | loss_aux_cls=0.02154 | det_total=1.41617 | cls:loss=0.01808 | loss_aux_cls=0.01808 | finite=True
+[epoch 86 step 40/57] lr=0.000095 det:loss=1.63336 | loss_cls=0.87175 | loss_iou=0.13170 | loss_dfl=0.81804 | loss_l1=0.28216 | loss_aux_cls=0.02335 | det_total=1.63336 | cls:loss=0.01718 | loss_aux_cls=0.01718 | finite=True
+[epoch 86 step 56/57] lr=0.000091 det:loss=1.86649 | loss_cls=0.98735 | loss_iou=0.17375 | loss_dfl=0.84024 | loss_l1=0.35394 | loss_aux_cls=0.02463 | det_total=1.86649 | cls:loss=0.01683 | loss_aux_cls=0.01683 | finite=True
+--- epoch 87 start (steps/epoch=57) ---
+[epoch 87 step 0/57] lr=0.000091 det:loss=1.72077 | loss_cls=0.92650 | loss_iou=0.15005 | loss_dfl=0.79442 | loss_l1=0.28067 | loss_aux_cls=0.02194 | det_total=1.72077 | cls:loss=0.01755 | loss_aux_cls=0.01755 | finite=True
+[epoch 87 step 20/57] lr=0.000086 det:loss=1.73298 | loss_cls=0.88597 | loss_iou=0.16701 | loss_dfl=0.81068 | loss_l1=0.32692 | loss_aux_cls=0.02416 | det_total=1.73298 | cls:loss=0.01864 | loss_aux_cls=0.01864 | finite=True
+[epoch 87 step 40/57] lr=0.000082 det:loss=1.57796 | loss_cls=0.82312 | loss_iou=0.12564 | loss_dfl=0.83963 | loss_l1=0.28768 | loss_aux_cls=0.02092 | det_total=1.57796 | cls:loss=0.01672 | loss_aux_cls=0.01672 | finite=True
+[epoch 87 step 56/57] lr=0.000078 det:loss=1.63475 | loss_cls=0.81598 | loss_iou=0.13672 | loss_dfl=0.90216 | loss_l1=0.33300 | loss_aux_cls=0.02589 | det_total=1.63475 | cls:loss=0.02034 | loss_aux_cls=0.02034 | finite=True
+--- epoch 88 start (steps/epoch=57) ---
+[epoch 88 step 0/57] lr=0.000078 det:loss=1.75410 | loss_cls=0.90488 | loss_iou=0.14725 | loss_dfl=0.91456 | loss_l1=0.35975 | loss_aux_cls=0.02382 | det_total=1.75410 | cls:loss=0.01719 | loss_aux_cls=0.01719 | finite=True
+[epoch 88 step 20/57] lr=0.000073 det:loss=1.68659 | loss_cls=0.86332 | loss_iou=0.15431 | loss_dfl=0.83233 | loss_l1=0.32111 | loss_aux_cls=0.02133 | det_total=1.68659 | cls:loss=0.01956 | loss_aux_cls=0.01956 | finite=True
+[epoch 88 step 40/57] lr=0.000069 det:loss=1.39655 | loss_cls=0.71339 | loss_iou=0.07721 | loss_dfl=0.93532 | loss_l1=0.34931 | loss_aux_cls=0.02246 | det_total=1.39655 | cls:loss=0.01903 | loss_aux_cls=0.01903 | finite=True
+[epoch 88 step 56/57] lr=0.000066 det:loss=1.55776 | loss_cls=0.77385 | loss_iou=0.14546 | loss_dfl=0.79388 | loss_l1=0.26746 | loss_aux_cls=0.02330 | det_total=1.55776 | cls:loss=0.01864 | loss_aux_cls=0.01864 | finite=True
+--- epoch 89 start (steps/epoch=57) ---
+[epoch 89 step 0/57] lr=0.000065 det:loss=1.76571 | loss_cls=0.78495 | loss_iou=0.19000 | loss_dfl=0.96961 | loss_l1=0.41754 | loss_aux_cls=0.02097 | det_total=1.76571 | cls:loss=0.01760 | loss_aux_cls=0.01760 | finite=True
+[epoch 89 step 20/57] lr=0.000061 det:loss=1.53068 | loss_cls=0.77971 | loss_iou=0.14495 | loss_dfl=0.73420 | loss_l1=0.27132 | loss_aux_cls=0.02151 | det_total=1.53068 | cls:loss=0.01725 | loss_aux_cls=0.01725 | finite=True
+[epoch 89 step 40/57] lr=0.000057 det:loss=1.47819 | loss_cls=0.78983 | loss_iou=0.11350 | loss_dfl=0.75987 | loss_l1=0.22320 | loss_aux_cls=0.02468 | det_total=1.47819 | cls:loss=0.01795 | loss_aux_cls=0.01795 | finite=True
+[epoch 89 step 56/57] lr=0.000054 det:loss=1.45275 | loss_cls=0.75674 | loss_iou=0.10601 | loss_dfl=0.81616 | loss_l1=0.23169 | loss_aux_cls=0.02290 | det_total=1.45275 | cls:loss=0.01715 | loss_aux_cls=0.01715 | finite=True
+[save] 89 -> /root/autodl-tmp/AIC2026_AgriVision/experiments/direction5/S1_CG_ACS_100e/checkpoints/89.pdparams/.pdema/.pdopt
+[08/16 23:01:10] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/16 23:01:10] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.52s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=1.11s).
+Accumulating evaluation results...
+DONE (t=0.37s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.361
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.503
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.406
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.066
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.191
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.394
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.272
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.581
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.665
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.650
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.598
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.669
+[val] epoch 90 mAP@0.5:0.95=0.3605 | mAP50=0.5026 | mAP75=0.4060 | best=0.3668@epoch60
+--- epoch 90 start (steps/epoch=57) ---
+[epoch 90 step 0/57] lr=0.000054 det:loss=1.60976 | loss_cls=0.90455 | loss_iou=0.11007 | loss_dfl=0.81446 | loss_l1=0.26695 | loss_aux_cls=0.02281 | det_total=1.60976 | cls:loss=0.01750 | loss_aux_cls=0.01750 | finite=True
+[epoch 90 step 20/57] lr=0.000050 det:loss=1.44423 | loss_cls=0.72966 | loss_iou=0.11751 | loss_dfl=0.79468 | loss_l1=0.27156 | loss_aux_cls=0.02344 | det_total=1.44423 | cls:loss=0.01956 | loss_aux_cls=0.01956 | finite=True
+[epoch 90 step 40/57] lr=0.000047 det:loss=1.59376 | loss_cls=0.79338 | loss_iou=0.14147 | loss_dfl=0.84882 | loss_l1=0.33642 | loss_aux_cls=0.02231 | det_total=1.59376 | cls:loss=0.01561 | loss_aux_cls=0.01561 | finite=True
+[epoch 90 step 56/57] lr=0.000044 det:loss=1.94964 | loss_cls=0.96697 | loss_iou=0.20055 | loss_dfl=0.91568 | loss_l1=0.39284 | loss_aux_cls=0.02347 | det_total=1.94964 | cls:loss=0.01798 | loss_aux_cls=0.01798 | finite=True
+--- epoch 91 start (steps/epoch=57) ---
+[epoch 91 step 0/57] lr=0.000044 det:loss=1.84707 | loss_cls=0.88479 | loss_iou=0.20590 | loss_dfl=0.84695 | loss_l1=0.38750 | loss_aux_cls=0.02405 | det_total=1.84707 | cls:loss=0.01708 | loss_aux_cls=0.01708 | finite=True
+[epoch 91 step 20/57] lr=0.000041 det:loss=1.62007 | loss_cls=0.76168 | loss_iou=0.16076 | loss_dfl=0.86991 | loss_l1=0.31666 | loss_aux_cls=0.02152 | det_total=1.62007 | cls:loss=0.01882 | loss_aux_cls=0.01882 | finite=True
+[epoch 91 step 40/57] lr=0.000037 det:loss=1.86514 | loss_cls=0.92898 | loss_iou=0.18186 | loss_dfl=0.91911 | loss_l1=0.43291 | loss_aux_cls=0.02195 | det_total=1.86514 | cls:loss=0.01716 | loss_aux_cls=0.01716 | finite=True
+[epoch 91 step 56/57] lr=0.000035 det:loss=1.63864 | loss_cls=0.90920 | loss_iou=0.12340 | loss_dfl=0.79302 | loss_l1=0.24270 | loss_aux_cls=0.02442 | det_total=1.63864 | cls:loss=0.01934 | loss_aux_cls=0.01934 | finite=True
+--- epoch 92 start (steps/epoch=57) ---
+[epoch 92 step 0/57] lr=0.000035 det:loss=1.57842 | loss_cls=0.81258 | loss_iou=0.13267 | loss_dfl=0.82354 | loss_l1=0.27405 | loss_aux_cls=0.02239 | det_total=1.57842 | cls:loss=0.01602 | loss_aux_cls=0.01602 | finite=True
+[epoch 92 step 20/57] lr=0.000032 det:loss=1.72885 | loss_cls=0.94153 | loss_iou=0.12171 | loss_dfl=0.91435 | loss_l1=0.35575 | loss_aux_cls=0.02587 | det_total=1.72885 | cls:loss=0.01795 | loss_aux_cls=0.01795 | finite=True
+[epoch 92 step 40/57] lr=0.000029 det:loss=1.66367 | loss_cls=0.89679 | loss_iou=0.10784 | loss_dfl=0.94535 | loss_l1=0.36180 | loss_aux_cls=0.02460 | det_total=1.66367 | cls:loss=0.02294 | loss_aux_cls=0.02294 | finite=True
+[epoch 92 step 56/57] lr=0.000027 det:loss=1.56738 | loss_cls=0.79647 | loss_iou=0.14376 | loss_dfl=0.77995 | loss_l1=0.26198 | loss_aux_cls=0.02152 | det_total=1.56738 | cls:loss=0.01642 | loss_aux_cls=0.01642 | finite=True
+--- epoch 93 start (steps/epoch=57) ---
+[epoch 93 step 0/57] lr=0.000027 det:loss=1.69305 | loss_cls=0.81897 | loss_iou=0.16366 | loss_dfl=0.88635 | loss_l1=0.32138 | loss_aux_cls=0.02176 | det_total=1.69305 | cls:loss=0.01791 | loss_aux_cls=0.01791 | finite=True
+[epoch 93 step 20/57] lr=0.000024 det:loss=1.81490 | loss_cls=0.91295 | loss_iou=0.18467 | loss_dfl=0.83435 | loss_l1=0.31313 | loss_aux_cls=0.02309 | det_total=1.81490 | cls:loss=0.01908 | loss_aux_cls=0.01908 | finite=True
+[epoch 93 step 40/57] lr=0.000022 det:loss=1.56175 | loss_cls=0.71164 | loss_iou=0.16147 | loss_dfl=0.84979 | loss_l1=0.30337 | loss_aux_cls=0.02154 | det_total=1.56175 | cls:loss=0.01828 | loss_aux_cls=0.01828 | finite=True
+[epoch 93 step 56/57] lr=0.000020 det:loss=1.62218 | loss_cls=0.83629 | loss_iou=0.14251 | loss_dfl=0.81492 | loss_l1=0.30249 | loss_aux_cls=0.02216 | det_total=1.62218 | cls:loss=0.01752 | loss_aux_cls=0.01752 | finite=True
+--- epoch 94 start (steps/epoch=57) ---
+[epoch 94 step 0/57] lr=0.000020 det:loss=1.65554 | loss_cls=0.78144 | loss_iou=0.17038 | loss_dfl=0.85174 | loss_l1=0.34070 | loss_aux_cls=0.02229 | det_total=1.65554 | cls:loss=0.01746 | loss_aux_cls=0.01746 | finite=True
+[epoch 94 step 20/57] lr=0.000017 det:loss=1.60756 | loss_cls=0.80348 | loss_iou=0.15750 | loss_dfl=0.77372 | loss_l1=0.26965 | loss_aux_cls=0.02347 | det_total=1.60756 | cls:loss=0.01836 | loss_aux_cls=0.01836 | finite=True
+[epoch 94 step 40/57] lr=0.000015 det:loss=1.64950 | loss_cls=0.80590 | loss_iou=0.15267 | loss_dfl=0.87666 | loss_l1=0.33412 | loss_aux_cls=0.02361 | det_total=1.64950 | cls:loss=0.01667 | loss_aux_cls=0.01667 | finite=True
+[epoch 94 step 56/57] lr=0.000014 det:loss=1.68475 | loss_cls=0.84453 | loss_iou=0.16228 | loss_dfl=0.82457 | loss_l1=0.30941 | loss_aux_cls=0.02224 | det_total=1.68475 | cls:loss=0.01507 | loss_aux_cls=0.01507 | finite=True
+[save] 94 -> /root/autodl-tmp/AIC2026_AgriVision/experiments/direction5/S1_CG_ACS_100e/checkpoints/94.pdparams/.pdema/.pdopt
+[08/16 23:10:36] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/16 23:10:36] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.53s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=1.14s).
+Accumulating evaluation results...
+DONE (t=0.37s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.357
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.502
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.406
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.061
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.190
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.393
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.270
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.579
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.662
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.650
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.598
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.665
+[val] epoch 95 mAP@0.5:0.95=0.3570 | mAP50=0.5016 | mAP75=0.4063 | best=0.3668@epoch60
+--- epoch 95 start (steps/epoch=57) ---
+[epoch 95 step 0/57] lr=0.000014 det:loss=1.53568 | loss_cls=0.75710 | loss_iou=0.13241 | loss_dfl=0.84593 | loss_l1=0.28490 | loss_aux_cls=0.02460 | det_total=1.53568 | cls:loss=0.01838 | loss_aux_cls=0.01838 | finite=True
+[epoch 95 step 20/57] lr=0.000012 det:loss=1.76449 | loss_cls=0.87288 | loss_iou=0.17450 | loss_dfl=0.86403 | loss_l1=0.32047 | loss_aux_cls=0.02335 | det_total=1.76449 | cls:loss=0.01670 | loss_aux_cls=0.01670 | finite=True
+[epoch 95 step 40/57] lr=0.000010 det:loss=1.36740 | loss_cls=0.69749 | loss_iou=0.11092 | loss_dfl=0.74135 | loss_l1=0.22913 | loss_aux_cls=0.02194 | det_total=1.36740 | cls:loss=0.01897 | loss_aux_cls=0.01897 | finite=True
+[epoch 95 step 56/57] lr=0.000009 det:loss=1.41749 | loss_cls=0.69470 | loss_iou=0.11149 | loss_dfl=0.84462 | loss_l1=0.28632 | loss_aux_cls=0.02175 | det_total=1.41749 | cls:loss=0.01744 | loss_aux_cls=0.01744 | finite=True
+--- epoch 96 start (steps/epoch=57) ---
+[epoch 96 step 0/57] lr=0.000009 det:loss=1.62240 | loss_cls=0.91770 | loss_iou=0.11813 | loss_dfl=0.77270 | loss_l1=0.23829 | loss_aux_cls=0.02301 | det_total=1.62240 | cls:loss=0.02001 | loss_aux_cls=0.02001 | finite=True
+[epoch 96 step 20/57] lr=0.000007 det:loss=1.84505 | loss_cls=0.83639 | loss_iou=0.20436 | loss_dfl=0.94874 | loss_l1=0.42450 | loss_aux_cls=0.02338 | det_total=1.84505 | cls:loss=0.01851 | loss_aux_cls=0.01851 | finite=True
+[epoch 96 step 40/57] lr=0.000006 det:loss=1.67890 | loss_cls=0.79178 | loss_iou=0.16216 | loss_dfl=0.91788 | loss_l1=0.34390 | loss_aux_cls=0.02277 | det_total=1.67890 | cls:loss=0.01627 | loss_aux_cls=0.01627 | finite=True
+[epoch 96 step 56/57] lr=0.000005 det:loss=1.66982 | loss_cls=0.82541 | loss_iou=0.14955 | loss_dfl=0.89886 | loss_l1=0.34342 | loss_aux_cls=0.02109 | det_total=1.66982 | cls:loss=0.01842 | loss_aux_cls=0.01842 | finite=True
+--- epoch 97 start (steps/epoch=57) ---
+[epoch 97 step 0/57] lr=0.000005 det:loss=1.46009 | loss_cls=0.73883 | loss_iou=0.10753 | loss_dfl=0.85884 | loss_l1=0.26298 | loss_aux_cls=0.02302 | det_total=1.46009 | cls:loss=0.01876 | loss_aux_cls=0.01876 | finite=True
+[epoch 97 step 20/57] lr=0.000004 det:loss=1.55247 | loss_cls=0.75988 | loss_iou=0.13649 | loss_dfl=0.85532 | loss_l1=0.29747 | loss_aux_cls=0.02371 | det_total=1.55247 | cls:loss=0.01600 | loss_aux_cls=0.01600 | finite=True
+[epoch 97 step 40/57] lr=0.000003 det:loss=1.71985 | loss_cls=0.86423 | loss_iou=0.14955 | loss_dfl=0.91421 | loss_l1=0.33295 | loss_aux_cls=0.02466 | det_total=1.71985 | cls:loss=0.02227 | loss_aux_cls=0.02227 | finite=True
+[epoch 97 step 56/57] lr=0.000002 det:loss=1.62781 | loss_cls=0.83252 | loss_iou=0.13702 | loss_dfl=0.86126 | loss_l1=0.33324 | loss_aux_cls=0.02212 | det_total=1.62781 | cls:loss=0.02012 | loss_aux_cls=0.02012 | finite=True
+--- epoch 98 start (steps/epoch=57) ---
+[epoch 98 step 0/57] lr=0.000002 det:loss=1.51566 | loss_cls=0.77584 | loss_iou=0.12021 | loss_dfl=0.83091 | loss_l1=0.27113 | loss_aux_cls=0.02383 | det_total=1.51566 | cls:loss=0.01893 | loss_aux_cls=0.01893 | finite=True
+[epoch 98 step 20/57] lr=0.000001 det:loss=1.61826 | loss_cls=0.77872 | loss_iou=0.16607 | loss_dfl=0.80462 | loss_l1=0.29019 | loss_aux_cls=0.02206 | det_total=1.61826 | cls:loss=0.01674 | loss_aux_cls=0.01674 | finite=True
+[epoch 98 step 40/57] lr=0.000001 det:loss=1.40543 | loss_cls=0.76906 | loss_iou=0.09138 | loss_dfl=0.76971 | loss_l1=0.22144 | loss_aux_cls=0.02307 | det_total=1.40543 | cls:loss=0.02001 | loss_aux_cls=0.02001 | finite=True
+[epoch 98 step 56/57] lr=0.000001 det:loss=1.75482 | loss_cls=0.77010 | loss_iou=0.20835 | loss_dfl=0.88481 | loss_l1=0.39362 | loss_aux_cls=0.02145 | det_total=1.75482 | cls:loss=0.01814 | loss_aux_cls=0.01814 | finite=True
+--- epoch 99 start (steps/epoch=57) ---
+[epoch 99 step 0/57] lr=0.000001 det:loss=1.40366 | loss_cls=0.73501 | loss_iou=0.11103 | loss_dfl=0.74491 | loss_l1=0.19202 | loss_aux_cls=0.01862 | det_total=1.40366 | cls:loss=0.01870 | loss_aux_cls=0.01870 | finite=True
+[epoch 99 step 20/57] lr=0.000000 det:loss=1.78768 | loss_cls=0.88395 | loss_iou=0.15963 | loss_dfl=0.96086 | loss_l1=0.40047 | loss_aux_cls=0.02422 | det_total=1.78768 | cls:loss=0.01710 | loss_aux_cls=0.01710 | finite=True
+[epoch 99 step 40/57] lr=0.000000 det:loss=1.86385 | loss_cls=0.88511 | loss_iou=0.19334 | loss_dfl=0.95089 | loss_l1=0.40682 | loss_aux_cls=0.01996 | det_total=1.86385 | cls:loss=0.01867 | loss_aux_cls=0.01867 | finite=True
+[epoch 99 step 56/57] lr=0.000000 det:loss=1.77229 | loss_cls=0.87022 | loss_iou=0.18795 | loss_dfl=0.82097 | loss_l1=0.35327 | loss_aux_cls=0.02170 | det_total=1.77229 | cls:loss=0.01986 | loss_aux_cls=0.01986 | finite=True
+[save] model_final -> /root/autodl-tmp/AIC2026_AgriVision/experiments/direction5/S1_CG_ACS_100e/checkpoints/model_final.pdparams/.pdema/.pdopt
+[08/16 23:20:03] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/16 23:20:03] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.50s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=1.10s).
+Accumulating evaluation results...
+DONE (t=0.36s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.354
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.498
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.403
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.062
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.189
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.393
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.271
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.577
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.665
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.650
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.615
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.667
+[val] epoch 100 mAP@0.5:0.95=0.3538 | mAP50=0.4977 | mAP75=0.4032 | best=0.3668@epoch60
+=== done: total_steps=5700 | finite steps=5700 | nan_occurred=False ===
+=== best VAL mAP@0.5:0.95 = 0.3668 @ epoch 60 | model_final VAL = 0.3538 (mAP50=0.4977, mAP75=0.4032) ===

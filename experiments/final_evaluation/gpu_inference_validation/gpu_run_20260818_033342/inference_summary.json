@@ -1,0 +1,61 @@
+{
+  "run_id": "gpu_run_20260818_033342",
+  "created": "2026-08-18 03:33:42",
+  "gpu_validation": true,
+  "env": {
+    "gpu_model": "NVIDIA GeForce RTX 4090",
+    "nvidia_smi_before": "3, 24564, 0",
+    "nvidia_smi_after_load": "609, 24564, 16",
+    "nvidia_smi_after_infer": "741, 24564, 7",
+    "paddle_version": "2.6.2",
+    "is_compiled_with_cuda": true,
+    "cuda_runtime": "11.8",
+    "cudnn_compiled": "8.6.0",
+    "device_get_device": "gpu:0",
+    "model_param_place": "Place(gpu:0)"
+  },
+  "config": {
+    "model_path": "/root/autodl-tmp/AIC2026_AgriVision/experiments/direction_m/M_SCALEUP_100e/checkpoints/best_model.pdparams",
+    "config_path": "/root/autodl-tmp/AIC2026_AgriVision/configs/ppyoloe_plus_crn_m_100e_agrivision.yml",
+    "dataset_dir": "/root/autodl-tmp/AIC2026_AgriVision/dataset/processed_detection_exiffix",
+    "anno_path": "/root/autodl-tmp/AIC2026_AgriVision/dataset/processed_detection_exiffix/annotations/val.json",
+    "backend": "paddle_gpu",
+    "device": "gpu",
+    "paddle_version": "2.6.2",
+    "conf_threshold": 0.5,
+    "input_size": 640,
+    "num_classes": 13
+  },
+  "image": {
+    "rel": "images/val/TRAIN_000004_apple_scab.jpg",
+    "w": 300,
+    "h": 360
+  },
+  "timing": {
+    "model_load_sec": 2.191496,
+    "preprocess_sec": 0.004256,
+    "inference_sec": 0.504294,
+    "postprocess_sec": 0.001279,
+    "total_pipeline_sec": 0.509829,
+    "total_with_load_sec": 2.701324,
+    "fps_pipeline": 1.9614,
+    "fps_inference_only": 1.983
+  },
+  "detections": [
+    {
+      "image_name": "TRAIN_000004_apple_scab.jpg",
+      "class_id": 9,
+      "class_name": "Apple Scab Leaf",
+      "confidence": 0.569851,
+      "x": 166.68,
+      "y": 105.84,
+      "width": 104.96,
+      "height": 87.61
+    }
+  ],
+  "raw_candidates_before_threshold": 300,
+  "test_isolation": {
+    "violations": []
+  },
+  "output_dir": "/root/autodl-tmp/AIC2026_AgriVision/experiments/final_evaluation/gpu_inference_validation/gpu_run_20260818_033342"
+}

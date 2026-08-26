@@ -1,0 +1,27 @@
+{
+  "image_name": "TRAIN_000037_Tomato+Problems+Septoria+Leaf+Spot.jpg",
+  "total_targets": 2,
+  "inference_ms": 42.45,
+  "detections": [
+    {
+      "image_name": "TRAIN_000037_Tomato+Problems+Septoria+Leaf+Spot.jpg",
+      "class_id": 2,
+      "class_name": "Tomato Septoria leaf spot",
+      "confidence": 0.670609,
+      "x": 71.03,
+      "y": 184.91,
+      "width": 209.86,
+      "height": 188.58
+    },
+    {
+      "image_name": "TRAIN_000037_Tomato+Problems+Septoria+Leaf+Spot.jpg",
+      "class_id": 2,
+      "class_name": "Tomato Septoria leaf spot",
+      "confidence": 0.642136,
+      "x": 19.9,
+      "y": 429.08,
+      "width": 186.8,
+      "height": 185.91
+    }
+  ]
+}

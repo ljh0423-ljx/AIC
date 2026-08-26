@@ -1,0 +1,2 @@
+image: TEST_000028_early_blight1-150x150.jpg
+total_targets: 0

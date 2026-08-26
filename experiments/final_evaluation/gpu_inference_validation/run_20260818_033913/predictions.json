@@ -1,0 +1,112 @@
+[
+  {
+    "image_name": "TEST_000018_0605_Rust-induced_leafspot.jpg",
+    "class_id": 11,
+    "class_name": "Apple rust leaf",
+    "confidence": 0.83604,
+    "x": 0.4,
+    "y": 7.89,
+    "width": 304.56,
+    "height": 175.95
+  },
+  {
+    "image_name": "TEST_000079_9511.img.jpg",
+    "class_id": 3,
+    "class_name": "Tomato leaf",
+    "confidence": 0.57168,
+    "x": 276.97,
+    "y": 176.73,
+    "width": 136.67,
+    "height": 130.35
+  },
+  {
+    "image_name": "TEST_000079_9511.img.jpg",
+    "class_id": 3,
+    "class_name": "Tomato leaf",
+    "confidence": 0.542335,
+    "x": 276.0,
+    "y": 175.86,
+    "width": 93.33,
+    "height": 131.56
+  },
+  {
+    "image_name": "TEST_000079_9511.img.jpg",
+    "class_id": 3,
+    "class_name": "Tomato leaf",
+    "confidence": 0.508498,
+    "x": 46.24,
+    "y": 266.97,
+    "width": 72.76,
+    "height": 125.47
+  },
+  {
+    "image_name": "TEST_000106_depositphotos_3443387-stock-photo-the-green-grape-leaf-on.jpg",
+    "class_id": 12,
+    "class_name": "grape leaf",
+    "confidence": 0.926409,
+    "x": 186.02,
+    "y": 55.4,
+    "width": 574.21,
+    "height": 553.14
+  },
+  {
+    "image_name": "TRAIN_000004_apple_scab.jpg",
+    "class_id": 9,
+    "class_name": "Apple Scab Leaf",
+    "confidence": 0.569851,
+    "x": 166.68,
+    "y": 105.84,
+    "width": 104.96,
+    "height": 87.61
+  },
+  {
+    "image_name": "TRAIN_000029_early-blight-of-tomato-tomato-1.jpg",
+    "class_id": 2,
+    "class_name": "Tomato Septoria leaf spot",
+    "confidence": 0.609751,
+    "x": 50.33,
+    "y": 9.36,
+    "width": 248.51,
+    "height": 272.39
+  },
+  {
+    "image_name": "TRAIN_000029_early-blight-of-tomato-tomato-1.jpg",
+    "class_id": 4,
+    "class_name": "Tomato leaf bacterial spot",
+    "confidence": 0.523734,
+    "x": 50.33,
+    "y": 9.36,
+    "width": 248.51,
+    "height": 272.39
+  },
+  {
+    "image_name": "TRAIN_000037_Tomato+Problems+Septoria+Leaf+Spot.jpg",
+    "class_id": 2,
+    "class_name": "Tomato Septoria leaf spot",
+    "confidence": 0.670609,
+    "x": 71.03,
+    "y": 184.91,
+    "width": 209.86,
+    "height": 188.58
+  },
+  {
+    "image_name": "TRAIN_000037_Tomato+Problems+Septoria+Leaf+Spot.jpg",
+    "class_id": 2,
+    "class_name": "Tomato Septoria leaf spot",
+    "confidence": 0.642136,
+    "x": 19.9,
+    "y": 429.08,
+    "width": 186.8,
+    "height": 185.91
+  },
+  {
+    "image_name": "TRAIN_000040_Septoria_leaf_spot_tomato.jpg",
+    "class_id": 2,
+    "class_name": "Tomato Septoria leaf spot",
+    "confidence": 0.533621,
+    "x": 17.42,
+    "y": 16.94,
+    "width": 275.34,
+    "height": 284.41
+  }
+]

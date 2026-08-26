@@ -1,0 +1,202 @@
+{
+  "title": "农业病害智能检测系统 · 演示数据（VAL 子集）",
+  "note": "图片均来自 dataset/processed_detection_exiffix/images/val（仅 VAL，未使用 TEST）；仅复制、未修改原图。",
+  "count": 15,
+  "cases": [
+    {
+      "demo_id": "tomato_01_early_blight",
+      "crop": "tomato",
+      "crop_cn": "番茄",
+      "scene_label": "番茄病害检测",
+      "scenario": "single",
+      "file_name": "TRAIN_000029_early-blight-of-tomato-tomato-1.jpg",
+      "source_path": "D:\\Fruit\\AIC2026_AgriVision\\dataset\\processed_detection_exiffix\\images\\val\\TRAIN_000029_early-blight-of-tomato-tomato-1.jpg",
+      "gt_count": 1,
+      "gt_classes": [
+        "Tomato Early blight leaf"
+      ]
+    },
+    {
+      "demo_id": "tomato_02_septoria",
+      "crop": "tomato",
+      "crop_cn": "番茄",
+      "scene_label": "番茄病害检测",
+      "scenario": "multi",
+      "file_name": "TRAIN_000037_Tomato+Problems+Septoria+Leaf+Spot.jpg",
+      "source_path": "D:\\Fruit\\AIC2026_AgriVision\\dataset\\processed_detection_exiffix\\images\\val\\TRAIN_000037_Tomato+Problems+Septoria+Leaf+Spot.jpg",
+      "gt_count": 3,
+      "gt_classes": [
+        "Tomato Septoria leaf spot"
+      ]
+    },
+    {
+      "demo_id": "tomato_03_septoria",
+      "crop": "tomato",
+      "crop_cn": "番茄",
+      "scene_label": "番茄病害检测",
+      "scenario": "single",
+      "file_name": "TRAIN_000040_Septoria_leaf_spot_tomato.jpg",
+      "source_path": "D:\\Fruit\\AIC2026_AgriVision\\dataset\\processed_detection_exiffix\\images\\val\\TRAIN_000040_Septoria_leaf_spot_tomato.jpg",
+      "gt_count": 1,
+      "gt_classes": [
+        "Tomato Septoria leaf spot"
+      ]
+    },
+    {
+      "demo_id": "tomato_04_mosaic_dense",
+      "crop": "tomato",
+      "crop_cn": "番茄",
+      "scene_label": "番茄病害检测（密集）",
+      "scenario": "dense",
+      "file_name": "TEST_000079_9511.img.jpg",
+      "source_path": "D:\\Fruit\\AIC2026_AgriVision\\dataset\\processed_detection_exiffix\\images\\val\\TEST_000079_9511.img.jpg",
+      "gt_count": 12,
+      "gt_classes": [
+        "Tomato leaf mosaic virus"
+      ]
+    },
+    {
+      "demo_id": "tomato_05_yellow_virus",
+      "crop": "tomato",
+      "crop_cn": "番茄",
+      "scene_label": "番茄病害检测",
+      "scenario": "multi",
+      "file_name": "TEST_000088_tylcv-seminar-1-638.jpg",
+      "source_path": "D:\\Fruit\\AIC2026_AgriVision\\dataset\\processed_detection_exiffix\\images\\val\\TEST_000088_tylcv-seminar-1-638.jpg",
+      "gt_count": 5,
+      "gt_classes": [
+        "Tomato leaf yellow virus"
+      ]
+    },
+    {
+      "demo_id": "tomato_06_mold",
+      "crop": "tomato",
+      "crop_cn": "番茄",
+      "scene_label": "番茄病害检测",
+      "scenario": "multi",
+      "file_name": "TEST_000099_fungus-univ-of-minnesoeta.jpg",
+      "source_path": "D:\\Fruit\\AIC2026_AgriVision\\dataset\\processed_detection_exiffix\\images\\val\\TEST_000099_fungus-univ-of-minnesoeta.jpg",
+      "gt_count": 4,
+      "gt_classes": [
+        "Tomato mold leaf"
+      ]
+    },
+    {
+      "demo_id": "tomato_07_bacterial_spot",
+      "crop": "tomato",
+      "crop_cn": "番茄",
+      "scene_label": "番茄病害检测",
+      "scenario": "single",
+      "file_name": "TRAIN_000057_bacterial-spot-of-tomato-7-638.jpg",
+      "source_path": "D:\\Fruit\\AIC2026_AgriVision\\dataset\\processed_detection_exiffix\\images\\val\\TRAIN_000057_bacterial-spot-of-tomato-7-638.jpg",
+      "gt_count": 1,
+      "gt_classes": [
+        "Tomato leaf bacterial spot"
+      ]
+    },
+    {
+      "demo_id": "tomato_08_late_blight",
+      "crop": "tomato",
+      "crop_cn": "番茄",
+      "scene_label": "番茄病害检测",
+      "scenario": "multi",
+      "file_name": "TRAIN_000069_IMG_5360.jpg",
+      "source_path": "D:\\Fruit\\AIC2026_AgriVision\\dataset\\processed_detection_exiffix\\images\\val\\TRAIN_000069_IMG_5360.jpg",
+      "gt_count": 2,
+      "gt_classes": [
+        "Tomato leaf late blight"
+      ]
+    },
+    {
+      "demo_id": "apple_01_scab",
+      "crop": "apple",
+      "crop_cn": "苹果",
+      "scene_label": "苹果叶部病害检测",
+      "scenario": "multi",
+      "file_name": "TRAIN_000004_apple_scab.jpg",
+      "source_path": "D:\\Fruit\\AIC2026_AgriVision\\dataset\\processed_detection_exiffix\\images\\val\\TRAIN_000004_apple_scab.jpg",
+      "gt_count": 6,
+      "gt_classes": [
+        "Apple Scab Leaf"
+      ]
+    },
+    {
+      "demo_id": "apple_02_rust",
+      "crop": "apple",
+      "crop_cn": "苹果",
+      "scene_label": "苹果叶部病害检测",
+      "scenario": "single",
+      "file_name": "TEST_000018_0605_Rust-induced_leafspot.jpg",
+      "source_path": "D:\\Fruit\\AIC2026_AgriVision\\dataset\\processed_detection_exiffix\\images\\val\\TEST_000018_0605_Rust-induced_leafspot.jpg",
+      "gt_count": 1,
+      "gt_classes": [
+        "Apple rust leaf"
+      ]
+    },
+    {
+      "demo_id": "apple_03_rust",
+      "crop": "apple",
+      "crop_cn": "苹果",
+      "scene_label": "苹果叶部病害检测",
+      "scenario": "single",
+      "file_name": "TRAIN_000020_PLPATH-FRU-02-cedar-apple-rust-figure-1.jpg",
+      "source_path": "D:\\Fruit\\AIC2026_AgriVision\\dataset\\processed_detection_exiffix\\images\\val\\TRAIN_000020_PLPATH-FRU-02-cedar-apple-rust-figure-1.jpg",
+      "gt_count": 1,
+      "gt_classes": [
+        "Apple rust leaf"
+      ]
+    },
+    {
+      "demo_id": "apple_04_healthy_leaf",
+      "crop": "apple",
+      "crop_cn": "苹果",
+      "scene_label": "苹果叶部病害检测",
+      "scenario": "single",
+      "file_name": "TRAIN_000014_stock-photo-green-apple-leaf-clipping-path-258728936.jpg",
+      "source_path": "D:\\Fruit\\AIC2026_AgriVision\\dataset\\processed_detection_exiffix\\images\\val\\TRAIN_000014_stock-photo-green-apple-leaf-clipping-path-258728936.jpg",
+      "gt_count": 1,
+      "gt_classes": [
+        "Apple leaf"
+      ]
+    },
+    {
+      "demo_id": "grape_01_healthy_leaf",
+      "crop": "grape",
+      "crop_cn": "葡萄",
+      "scene_label": "葡萄叶部病害检测",
+      "scenario": "single",
+      "file_name": "TEST_000106_depositphotos_3443387-stock-photo-the-green-grape-leaf-on.jpg",
+      "source_path": "D:\\Fruit\\AIC2026_AgriVision\\dataset\\processed_detection_exiffix\\images\\val\\TEST_000106_depositphotos_3443387-stock-photo-the-green-grape-leaf-on.jpg",
+      "gt_count": 1,
+      "gt_classes": [
+        "grape leaf"
+      ]
+    },
+    {
+      "demo_id": "grape_02_black_rot",
+      "crop": "grape",
+      "crop_cn": "葡萄",
+      "scene_label": "葡萄叶部病害检测",
+      "scenario": "single",
+      "file_name": "TEST_000108_5-29black-rot-chardRR.jpg",
+      "source_path": "D:\\Fruit\\AIC2026_AgriVision\\dataset\\processed_detection_exiffix\\images\\val\\TEST_000108_5-29black-rot-chardRR.jpg",
+      "gt_count": 1,
+      "gt_classes": [
+        "grape leaf black rot"
+      ]
+    },
+    {
+      "demo_id": "grape_03_black_rot",
+      "crop": "grape",
+      "crop_cn": "葡萄",
+      "scene_label": "葡萄叶部病害检测",
+      "scenario": "single",
+      "file_name": "TEST_000112_Black%20rot%20on%20foliage.jpg",
+      "source_path": "D:\\Fruit\\AIC2026_AgriVision\\dataset\\processed_detection_exiffix\\images\\val\\TEST_000112_Black%20rot%20on%20foliage.jpg",
+      "gt_count": 1,
+      "gt_classes": [
+        "grape leaf black rot"
+      ]
+    }
+  ]
+}

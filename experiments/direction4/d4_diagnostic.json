@@ -1,0 +1,811 @@
+{
+ "totals": {
+  "gt": 350,
+  "miss@0.5": 185,
+  "miss_rate": 0.5286,
+  "pred_total": 32263,
+  "img_total": 113
+ },
+ "1_density_vs_miss": {
+  "1": {
+   "gt": 55,
+   "miss": 5,
+   "miss_rate": 0.0909
+  },
+  "10+": {
+   "gt": 62,
+   "miss": 49,
+   "miss_rate": 0.7903
+  },
+  "3-4": {
+   "gt": 49,
+   "miss": 22,
+   "miss_rate": 0.449
+  },
+  "5-9": {
+   "gt": 152,
+   "miss": 95,
+   "miss_rate": 0.625
+  },
+  "2": {
+   "gt": 32,
+   "miss": 14,
+   "miss_rate": 0.4375
+  }
+ },
+ "2_density_bucket_prf": {
+  "0.1": {
+   "overall": {
+    "tp": 340,
+    "fp": 5144,
+    "fn": 10,
+    "precision": 0.062,
+    "recall": 0.9714,
+    "f1": 0.1166
+   },
+   "per_density": {
+    "1": {
+     "gt": 55,
+     "tp": 55,
+     "fp": 511,
+     "fn": 0,
+     "recall": 1.0,
+     "precision": 0.0972,
+     "f1": 0.1771
+    },
+    "10+": {
+     "gt": 62,
+     "tp": 60,
+     "fp": 1002,
+     "fn": 2,
+     "recall": 0.9677,
+     "precision": 0.0565,
+     "f1": 0.1068
+    },
+    "3-4": {
+     "gt": 49,
+     "tp": 49,
+     "fp": 730,
+     "fn": 0,
+     "recall": 1.0,
+     "precision": 0.0629,
+     "f1": 0.1184
+    },
+    "5-9": {
+     "gt": 152,
+     "tp": 144,
+     "fp": 2347,
+     "fn": 8,
+     "recall": 0.9474,
+     "precision": 0.0578,
+     "f1": 0.109
+    },
+    "2": {
+     "gt": 32,
+     "tp": 32,
+     "fp": 554,
+     "fn": 0,
+     "recall": 1.0,
+     "precision": 0.0546,
+     "f1": 0.1036
+    }
+   }
+  },
+  "0.3": {
+   "overall": {
+    "tp": 291,
+    "fp": 566,
+    "fn": 59,
+    "precision": 0.3396,
+    "recall": 0.8314,
+    "f1": 0.4822
+   },
+   "per_density": {
+    "1": {
+     "gt": 55,
+     "tp": 53,
+     "fp": 79,
+     "fn": 2,
+     "recall": 0.9636,
+     "precision": 0.4015,
+     "f1": 0.5668
+    },
+    "10+": {
+     "gt": 62,
+     "tp": 39,
+     "fp": 83,
+     "fn": 23,
+     "recall": 0.629,
+     "precision": 0.3197,
+     "f1": 0.4239
+    },
+    "3-4": {
+     "gt": 49,
+     "tp": 47,
+     "fp": 98,
+     "fn": 2,
+     "recall": 0.9592,
+     "precision": 0.3241,
+     "f1": 0.4845
+    },
+    "5-9": {
+     "gt": 152,
+     "tp": 121,
+     "fp": 250,
+     "fn": 31,
+     "recall": 0.7961,
+     "precision": 0.3261,
+     "f1": 0.4627
+    },
+    "2": {
+     "gt": 32,
+     "tp": 31,
+     "fp": 56,
+     "fn": 1,
+     "recall": 0.9688,
+     "precision": 0.3563,
+     "f1": 0.521
+    }
+   }
+  },
+  "0.5": {
+   "overall": {
+    "tp": 165,
+    "fp": 65,
+    "fn": 185,
+    "precision": 0.7174,
+    "recall": 0.4714,
+    "f1": 0.569
+   },
+   "per_density": {
+    "1": {
+     "gt": 55,
+     "tp": 50,
+     "fp": 10,
+     "fn": 5,
+     "recall": 0.9091,
+     "precision": 0.8333,
+     "f1": 0.8696
+    },
+    "10+": {
+     "gt": 62,
+     "tp": 13,
+     "fp": 3,
+     "fn": 49,
+     "recall": 0.2097,
+     "precision": 0.8125,
+     "f1": 0.3333
+    },
+    "3-4": {
+     "gt": 49,
+     "tp": 27,
+     "fp": 13,
+     "fn": 22,
+     "recall": 0.551,
+     "precision": 0.675,
+     "f1": 0.6067
+    },
+    "5-9": {
+     "gt": 152,
+     "tp": 57,
+     "fp": 31,
+     "fn": 95,
+     "recall": 0.375,
+     "precision": 0.6477,
+     "f1": 0.475
+    },
+    "2": {
+     "gt": 32,
+     "tp": 18,
+     "fp": 8,
+     "fn": 14,
+     "recall": 0.5625,
+     "precision": 0.6923,
+     "f1": 0.6207
+    }
+   }
+  }
+ },
+ "3_density_area_small": {
+  "1": {
+   "n": 55,
+   "size": {
+    "large": 55
+   },
+   "small_ratio": 0.0,
+   "area_median": 0.63238,
+   "size_dist": {
+    "large": 55
+   }
+  },
+  "10+": {
+   "n": 62,
+   "size": {
+    "large": 33,
+    "medium": 26,
+    "small": 3
+   },
+   "small_ratio": 0.0484,
+   "area_median": 0.02155,
+   "size_dist": {
+    "large": 33,
+    "medium": 26,
+    "small": 3
+   }
+  },
+  "3-4": {
+   "n": 49,
+   "size": {
+    "large": 45,
+    "medium": 4
+   },
+   "small_ratio": 0.0,
+   "area_median": 0.10491,
+   "size_dist": {
+    "large": 45,
+    "medium": 4
+   }
+  },
+  "5-9": {
+   "n": 152,
+   "size": {
+    "medium": 19,
+    "large": 129,
+    "small": 4
+   },
+   "small_ratio": 0.0263,
+   "area_median": 0.04667,
+   "size_dist": {
+    "medium": 19,
+    "large": 129,
+    "small": 4
+   }
+  },
+  "2": {
+   "n": 32,
+   "size": {
+    "large": 32
+   },
+   "small_ratio": 0.0,
+   "area_median": 0.14778,
+   "size_dist": {
+    "large": 32
+   }
+  }
+ },
+ "4_spatial_crowding": {
+  "pair_iou_mean": 0.0116,
+  "pair_iou_median": 0.0,
+  "pair_iou_ge0.1_ratio": 0.0387,
+  "pair_iou_ge0.3_ratio": 0.0022,
+  "center_dist_mean": 0.2871,
+  "center_dist_lt0.2_ratio": 0.2884
+ },
+ "5_same_vs_mixed_dense": {
+  "finding": "all_dense_are_single_disease_cluster",
+  "min_dom_ratio": 0.9,
+  "n_dense_img": 28,
+  "same_class_dense": {
+   "img": 28,
+   "gt": 214,
+   "miss": 144,
+   "miss_rate": 0.6729
+  },
+  "mixed_dense": null,
+  "per_dominant_class": {
+   "Tomato leaf yellow virus": {
+    "img": 6,
+    "gt": 52,
+    "miss": 46,
+    "miss_rate": 0.8846
+   },
+   "Tomato mold leaf": {
+    "img": 3,
+    "gt": 22,
+    "miss": 19,
+    "miss_rate": 0.8636
+   },
+   "Tomato leaf mosaic virus": {
+    "img": 3,
+    "gt": 24,
+    "miss": 18,
+    "miss_rate": 0.75
+   },
+   "Tomato Early blight leaf": {
+    "img": 1,
+    "gt": 11,
+    "miss": 7,
+    "miss_rate": 0.6364
+   },
+   "Tomato leaf": {
+    "img": 4,
+    "gt": 30,
+    "miss": 19,
+    "miss_rate": 0.6333
+   },
+   "Tomato leaf late blight": {
+    "img": 2,
+    "gt": 13,
+    "miss": 7,
+    "miss_rate": 0.5385
+   },
+   "grape leaf black rot": {
+    "img": 2,
+    "gt": 17,
+    "miss": 9,
+    "miss_rate": 0.5294
+   },
+   "Apple Scab Leaf": {
+    "img": 3,
+    "gt": 20,
+    "miss": 10,
+    "miss_rate": 0.5
+   },
+   "Tomato Septoria leaf spot": {
+    "img": 2,
+    "gt": 15,
+    "miss": 7,
+    "miss_rate": 0.4667
+   },
+   "grape leaf": {
+    "img": 1,
+    "gt": 5,
+    "miss": 2,
+    "miss_rate": 0.4
+   },
+   "Apple leaf": {
+    "img": 1,
+    "gt": 5,
+    "miss": 0,
+    "miss_rate": 0.0
+   }
+  }
+ },
+ "6_miss_conf_dist": {
+  "miss_score_mean": 0.3408,
+  "miss_score_band": {
+   "lt0.1": 10,
+   "0.1-0.3": 49,
+   "0.3-0.5": 125,
+   "ge0.5": 0
+  }
+ },
+ "7_candidate_bands": {
+  "candidate_total": 32263,
+  "per_band": {
+   "lt0.1": {
+    "count": 26779,
+    "class_top": [
+     [
+      "Tomato leaf yellow virus",
+      3669
+     ],
+     [
+      "Tomato leaf bacterial spot",
+      2805
+     ],
+     [
+      "grape leaf",
+      2376
+     ],
+     [
+      "Tomato mold leaf",
+      2369
+     ],
+     [
+      "Tomato Septoria leaf spot",
+      2109
+     ]
+    ]
+   },
+   "0.1-0.3": {
+    "count": 4627,
+    "class_top": [
+     [
+      "Tomato leaf yellow virus",
+      948
+     ],
+     [
+      "Tomato leaf mosaic virus",
+      603
+     ],
+     [
+      "Tomato mold leaf",
+      601
+     ],
+     [
+      "Tomato leaf",
+      489
+     ],
+     [
+      "Tomato leaf bacterial spot",
+      401
+     ]
+    ]
+   },
+   "0.3-0.5": {
+    "count": 627,
+    "class_top": [
+     [
+      "Tomato leaf yellow virus",
+      139
+     ],
+     [
+      "Tomato leaf bacterial spot",
+      74
+     ],
+     [
+      "Tomato leaf mosaic virus",
+      73
+     ],
+     [
+      "Tomato leaf",
+      63
+     ],
+     [
+      "Tomato Septoria leaf spot",
+      56
+     ]
+    ]
+   },
+   "ge0.5": {
+    "count": 230,
+    "class_top": [
+     [
+      "Tomato Septoria leaf spot",
+      33
+     ],
+     [
+      "Tomato leaf",
+      32
+     ],
+     [
+      "Tomato leaf late blight",
+      25
+     ],
+     [
+      "Apple leaf",
+      24
+     ],
+     [
+      "grape leaf black rot",
+      23
+     ]
+    ]
+   }
+  }
+ },
+ "8_recall_recover_by_class": [
+  {
+   "class": "Tomato leaf yellow virus",
+   "gt": 57,
+   "recall@0.5": 0.1228,
+   "recall@0.3": 0.6842,
+   "recall@0.1": 0.9825,
+   "recover_0.3-0.5": 0.5614,
+   "recover_0.1-0.5": 0.8596
+  },
+  {
+   "class": "Tomato leaf mosaic virus",
+   "gt": 33,
+   "recall@0.5": 0.2727,
+   "recall@0.3": 0.7273,
+   "recall@0.1": 1.0,
+   "recover_0.3-0.5": 0.4545,
+   "recover_0.1-0.5": 0.7273
+  },
+  {
+   "class": "Tomato mold leaf",
+   "gt": 32,
+   "recall@0.5": 0.25,
+   "recall@0.3": 0.75,
+   "recall@0.1": 0.875,
+   "recover_0.3-0.5": 0.5,
+   "recover_0.1-0.5": 0.625
+  },
+  {
+   "class": "Tomato leaf",
+   "gt": 36,
+   "recall@0.5": 0.4167,
+   "recall@0.3": 0.7778,
+   "recall@0.1": 0.8889,
+   "recover_0.3-0.5": 0.3611,
+   "recover_0.1-0.5": 0.4722
+  },
+  {
+   "class": "Tomato Septoria leaf spot",
+   "gt": 37,
+   "recall@0.5": 0.5676,
+   "recall@0.3": 0.9459,
+   "recall@0.1": 1.0,
+   "recover_0.3-0.5": 0.3784,
+   "recover_0.1-0.5": 0.4324
+  },
+  {
+   "class": "Tomato Early blight leaf",
+   "gt": 21,
+   "recall@0.5": 0.5714,
+   "recall@0.3": 0.8571,
+   "recall@0.1": 1.0,
+   "recover_0.3-0.5": 0.2857,
+   "recover_0.1-0.5": 0.4286
+  },
+  {
+   "class": "grape leaf black rot",
+   "gt": 22,
+   "recall@0.5": 0.5455,
+   "recall@0.3": 0.8182,
+   "recall@0.1": 0.9545,
+   "recover_0.3-0.5": 0.2727,
+   "recover_0.1-0.5": 0.4091
+  },
+  {
+   "class": "Apple Scab Leaf",
+   "gt": 30,
+   "recall@0.5": 0.6,
+   "recall@0.3": 0.9667,
+   "recall@0.1": 1.0,
+   "recover_0.3-0.5": 0.3667,
+   "recover_0.1-0.5": 0.4
+  },
+  {
+   "class": "Tomato leaf bacterial spot",
+   "gt": 16,
+   "recall@0.5": 0.625,
+   "recall@0.3": 0.9375,
+   "recall@0.1": 1.0,
+   "recover_0.3-0.5": 0.3125,
+   "recover_0.1-0.5": 0.375
+  },
+  {
+   "class": "Tomato leaf late blight",
+   "gt": 26,
+   "recall@0.5": 0.6923,
+   "recall@0.3": 0.8462,
+   "recall@0.1": 1.0,
+   "recover_0.3-0.5": 0.1538,
+   "recover_0.1-0.5": 0.3077
+  },
+  {
+   "class": "grape leaf",
+   "gt": 14,
+   "recall@0.5": 0.7857,
+   "recall@0.3": 0.9286,
+   "recall@0.1": 1.0,
+   "recover_0.3-0.5": 0.1429,
+   "recover_0.1-0.5": 0.2143
+  },
+  {
+   "class": "Apple rust leaf",
+   "gt": 12,
+   "recall@0.5": 0.8333,
+   "recall@0.3": 1.0,
+   "recall@0.1": 1.0,
+   "recover_0.3-0.5": 0.1667,
+   "recover_0.1-0.5": 0.1667
+  },
+  {
+   "class": "Apple leaf",
+   "gt": 14,
+   "recall@0.5": 1.0,
+   "recall@0.3": 1.0,
+   "recall@0.1": 1.0,
+   "recover_0.3-0.5": 0.0,
+   "recover_0.1-0.5": 0.0
+  }
+ ],
+ "9_fp_gain": {
+  "fp@0.5_total": 65,
+  "fp@0.1_total": 5144,
+  "fp_gain_0.1-0.5": 5079,
+  "fp_gain_by_class_top": [
+   [
+    "Tomato leaf yellow virus",
+    1035
+   ],
+   [
+    "Tomato leaf mosaic virus",
+    665
+   ],
+   [
+    "Tomato mold leaf",
+    639
+   ],
+   [
+    "Tomato leaf",
+    535
+   ],
+   [
+    "Tomato leaf bacterial spot",
+    469
+   ],
+   [
+    "Tomato Septoria leaf spot",
+    374
+   ],
+   [
+    "Tomato Early blight leaf",
+    373
+   ],
+   [
+    "Tomato leaf late blight",
+    253
+   ]
+  ],
+  "fp_gain_by_density": {
+   "1": 501,
+   "3-4": 717,
+   "5-9": 2316,
+   "2": 546,
+   "10+": 999
+  }
+ },
+ "10_nms_suspect": {
+  "nms_suspect_gt": 2,
+  "nms_suspect_rate": 0.0057,
+  "gt_overlap04_both": 0,
+  "nms_suspect_by_class_top": [
+   [
+    "Tomato leaf bacterial spot",
+    1
+   ],
+   [
+    "grape leaf black rot",
+    1
+   ]
+  ]
+ },
+ "11_focus_dense": {
+  "Tomato leaf yellow virus": {
+   "dense_gt": 52,
+   "dense_miss": 46,
+   "dense_miss_rate": 0.8846,
+   "sparse_gt": 5,
+   "sparse_miss": 4,
+   "sparse_miss_rate": 0.8,
+   "n_dense_imgs": 6
+  },
+  "Tomato leaf mosaic virus": {
+   "dense_gt": 24,
+   "dense_miss": 18,
+   "dense_miss_rate": 0.75,
+   "sparse_gt": 9,
+   "sparse_miss": 6,
+   "sparse_miss_rate": 0.6667,
+   "n_dense_imgs": 3
+  },
+  "Tomato mold leaf": {
+   "dense_gt": 22,
+   "dense_miss": 19,
+   "dense_miss_rate": 0.8636,
+   "sparse_gt": 10,
+   "sparse_miss": 5,
+   "sparse_miss_rate": 0.5,
+   "n_dense_imgs": 3
+  },
+  "Tomato leaf bacterial spot": {
+   "dense_gt": 0,
+   "dense_miss": 0,
+   "dense_miss_rate": null,
+   "sparse_gt": 16,
+   "sparse_miss": 6,
+   "sparse_miss_rate": 0.375,
+   "n_dense_imgs": 0
+  },
+  "Tomato Septoria leaf spot": {
+   "dense_gt": 15,
+   "dense_miss": 7,
+   "dense_miss_rate": 0.4667,
+   "sparse_gt": 22,
+   "sparse_miss": 9,
+   "sparse_miss_rate": 0.4091,
+   "n_dense_imgs": 2
+  }
+ },
+ "per_class_miss": {
+  "11": {
+   "gt": 12,
+   "miss": 2,
+   "score_band": {
+    "0.3-0.5": 2
+   }
+  },
+  "1": {
+   "gt": 21,
+   "miss": 9,
+   "score_band": {
+    "0.1-0.3": 3,
+    "0.3-0.5": 6
+   }
+  },
+  "4": {
+   "gt": 16,
+   "miss": 6,
+   "score_band": {
+    "0.3-0.5": 5,
+    "0.1-0.3": 1
+   }
+  },
+  "6": {
+   "gt": 33,
+   "miss": 24,
+   "score_band": {
+    "0.3-0.5": 15,
+    "0.1-0.3": 9
+   }
+  },
+  "7": {
+   "gt": 57,
+   "miss": 50,
+   "score_band": {
+    "0.3-0.5": 32,
+    "0.1-0.3": 17,
+    "lt0.1": 1
+   }
+  },
+  "8": {
+   "gt": 32,
+   "miss": 24,
+   "score_band": {
+    "0.3-0.5": 16,
+    "lt0.1": 4,
+    "0.1-0.3": 4
+   }
+  },
+  "12": {
+   "gt": 14,
+   "miss": 3,
+   "score_band": {
+    "0.3-0.5": 2,
+    "0.1-0.3": 1
+   }
+  },
+  "13": {
+   "gt": 22,
+   "miss": 10,
+   "score_band": {
+    "0.3-0.5": 6,
+    "0.1-0.3": 3,
+    "lt0.1": 1
+   }
+  },
+  "9": {
+   "gt": 30,
+   "miss": 12,
+   "score_band": {
+    "0.3-0.5": 11,
+    "0.1-0.3": 1
+   }
+  },
+  "10": {
+   "gt": 14,
+   "miss": 0,
+   "score_band": {}
+  },
+  "2": {
+   "gt": 37,
+   "miss": 16,
+   "score_band": {
+    "0.3-0.5": 14,
+    "0.1-0.3": 2
+   }
+  },
+  "3": {
+   "gt": 36,
+   "miss": 21,
+   "score_band": {
+    "0.3-0.5": 13,
+    "0.1-0.3": 4,
+    "lt0.1": 4
+   }
+  },
+  "5": {
+   "gt": 26,
+   "miss": 7,
+   "score_band": {
+    "0.1-0.3": 4,
+    "0.3-0.5": 3
+   }
+  }
+ }
+}

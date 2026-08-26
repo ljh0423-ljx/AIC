@@ -1,0 +1,18 @@
+# ============================================================
+# B1 Smoke Test — 仅验证 B1 训练管线与 class-weight 机制, 不作为正式结果
+# 基于 ablation_dir3_B1.yml, 仅改 epoch/snapshot/scheduler/log_iter
+# 用法: python -u tools/train.py -c configs/ablation_dir3_B1_smoke.yml --eval
+# ============================================================
+_BASE_: ['./ablation_dir3_B1.yml']
+
+epoch: 2
+snapshot_epoch: 1
+log_iter: 10
+
+LearningRate:
+  schedulers:
+    - name: CosineDecay
+      max_epochs: 2   # 与 epoch=2 一致
+    - name: LinearWarmup
+      start_factor: 0.
+      epochs: 1

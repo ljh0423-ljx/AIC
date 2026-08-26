@@ -1,0 +1,97 @@
+WARNING: OMP_NUM_THREADS set to 12, not 1. The computation speed will not be optimized if you use data parallel. It will fail if this PaddlePaddle binary is compiled with OpenBlas since OpenBlas does not support multi-threads.
+PLEASE USE OMP_NUM_THREADS WISELY.
+Warning: Unable to use numba in PP-Tracking, please install numba, for example(python3.7): `pip install numba==0.56.4`
+Warning: Unable to use numba in PP-Tracking, please install numba, for example(python3.7): `pip install numba==0.56.4`
+[08/17 05:52:54] ppdet.utils.checkpoint INFO: Skipping import of the encryption module.
+loading annotations into memory...
+Done (t=0.01s)
+creating index...
+index created!
+[08/17 05:52:54] ppdet.data.source.coco INFO: Load [915 samples valid, 0 samples invalid] in file dataset/processed_detection/annotations/train.json.
+W0817 05:52:54.180620 221709 gpu_resources.cc:119] Please NOTE: device: 0, GPU Compute Capability: 8.9, Driver API Version: 13.0, Runtime API Version: 11.8
+W0817 05:52:54.181306 221709 gpu_resources.cc:164] device: 0, cuDNN Version: 9.1.
+[08/17 05:52:55] ppdet.utils.checkpoint INFO: The shape [365] in pretrained weight yolo_head.pred_cls.0.bias is unmatched with the shape [13] in model yolo_head.pred_cls.0.bias. And the weight yolo_head.pred_cls.0.bias will not be loaded
+[08/17 05:52:55] ppdet.utils.checkpoint INFO: The shape [365, 576, 3, 3] in pretrained weight yolo_head.pred_cls.0.weight is unmatched with the shape [13, 576, 3, 3] in model yolo_head.pred_cls.0.weight. And the weight yolo_head.pred_cls.0.weight will not be loaded
+[08/17 05:52:55] ppdet.utils.checkpoint INFO: The shape [365] in pretrained weight yolo_head.pred_cls.1.bias is unmatched with the shape [13] in model yolo_head.pred_cls.1.bias. And the weight yolo_head.pred_cls.1.bias will not be loaded
+[08/17 05:52:55] ppdet.utils.checkpoint INFO: The shape [365, 288, 3, 3] in pretrained weight yolo_head.pred_cls.1.weight is unmatched with the shape [13, 288, 3, 3] in model yolo_head.pred_cls.1.weight. And the weight yolo_head.pred_cls.1.weight will not be loaded
+[08/17 05:52:55] ppdet.utils.checkpoint INFO: The shape [365] in pretrained weight yolo_head.pred_cls.2.bias is unmatched with the shape [13] in model yolo_head.pred_cls.2.bias. And the weight yolo_head.pred_cls.2.bias will not be loaded
+[08/17 05:52:55] ppdet.utils.checkpoint INFO: The shape [365, 144, 3, 3] in pretrained weight yolo_head.pred_cls.2.weight is unmatched with the shape [13, 144, 3, 3] in model yolo_head.pred_cls.2.weight. And the weight yolo_head.pred_cls.2.weight will not be loaded
+[08/17 05:52:55] ppdet.utils.checkpoint INFO: Finish loading model weights: /root/.cache/paddle/weights/ppyoloe_crn_m_obj365_pretrained.pdparams
+[08/17 05:53:04] ppdet.engine.callbacks INFO: Epoch: [0] [ 0/57] learning_rate: 0.000000 loss: 4.841067 loss_cls: 3.572418 loss_iou: 0.232136 loss_dfl: 1.376619 loss_l1: 1.108619 eta: 0:17:18 batch_cost: 9.1062 data_cost: 8.0942 ips: 1.7570 images/s, max_mem_reserved: 12401 MB, max_mem_allocated: 10969 MB
+[08/17 05:53:30] ppdet.engine.callbacks INFO: Epoch: [0] [20/57] learning_rate: 0.000702 loss: 4.272947 loss_cls: 2.976139 loss_iou: 0.249378 loss_dfl: 1.263032 loss_l1: 0.722738 eta: 0:02:35 batch_cost: 1.2848 data_cost: 1.1225 ips: 12.4530 images/s, max_mem_reserved: 12401 MB, max_mem_allocated: 10969 MB
+[08/17 05:53:56] ppdet.engine.callbacks INFO: Epoch: [0] [40/57] learning_rate: 0.001404 loss: 3.569795 loss_cls: 2.390701 loss_iou: 0.236858 loss_dfl: 1.213400 loss_l1: 0.716245 eta: 0:01:48 batch_cost: 1.2532 data_cost: 1.0996 ips: 12.7678 images/s, max_mem_reserved: 18799 MB, max_mem_allocated: 14451 MB
+[08/17 05:54:19] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction_m/M_SCALEUP_100e/smoke/checkpoints
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/17 05:54:19] ppdet.data.source.coco INFO: Load [113 samples valid, 0 samples invalid] in file dataset/processed_detection/annotations/val.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/17 05:54:19] ppdet.engine.callbacks INFO: Eval iter: 0
+[08/17 05:54:23] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/17 05:54:23] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.46s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=0.73s).
+Accumulating evaluation results...
+DONE (t=0.41s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.031
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.058
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.025
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.059
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.027
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.101
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.323
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.379
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.193
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.413
+[08/17 05:54:24] ppdet.engine.callbacks INFO: Total sample number: 113, average FPS: 34.26204201202347
+[08/17 05:54:25] ppdet.engine INFO: Best test bbox ap is 0.031.
+[08/17 05:54:25] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction_m/M_SCALEUP_100e/smoke/checkpoints
+[08/17 05:54:30] ppdet.engine.callbacks INFO: Epoch: [1] [ 0/57] learning_rate: 0.002000 loss: 3.727414 loss_cls: 2.319233 loss_iou: 0.284035 loss_dfl: 1.330690 loss_l1: 0.892641 eta: 0:01:24 batch_cost: 1.5317 data_cost: 1.3852 ips: 10.4461 images/s, max_mem_reserved: 18799 MB, max_mem_allocated: 14451 MB
+[08/17 05:55:02] ppdet.engine.callbacks INFO: Epoch: [1] [20/57] learning_rate: 0.001452 loss: 3.745056 loss_cls: 2.122797 loss_iou: 0.332462 loss_dfl: 1.512647 loss_l1: 1.053780 eta: 0:00:55 batch_cost: 1.5729 data_cost: 1.4162 ips: 10.1720 images/s, max_mem_reserved: 18799 MB, max_mem_allocated: 14541 MB
+[08/17 05:55:26] ppdet.engine.callbacks INFO: Epoch: [1] [40/57] learning_rate: 0.000408 loss: 3.486903 loss_cls: 2.021480 loss_iou: 0.300826 loss_dfl: 1.406367 loss_l1: 0.911117 eta: 0:00:24 batch_cost: 1.1446 data_cost: 1.0038 ips: 13.9783 images/s, max_mem_reserved: 18799 MB, max_mem_allocated: 14541 MB
+[08/17 05:55:53] ppdet.utils.checkpoint INFO: Save checkpoint: ../experiments/direction_m/M_SCALEUP_100e/smoke/checkpoints
+[08/17 05:55:53] ppdet.engine.callbacks INFO: Eval iter: 0
+[08/17 05:55:57] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.00s)
+creating index...
+index created!
+[08/17 05:55:57] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.46s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=0.62s).
+Accumulating evaluation results...
+DONE (t=0.31s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.018
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.037
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.013
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.025
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.042
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.018
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.118
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.336
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.410
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.233
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.327
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.424
+[08/17 05:55:59] ppdet.engine.callbacks INFO: Total sample number: 113, average FPS: 29.308158151491618
+[08/17 05:55:59] ppdet.engine INFO: Best test bbox ap is 0.031.

@@ -1,0 +1,4 @@
+crop,n_classes,n_objects,n_images,mAP50,mAP50_95,mPrecision,mRecall,mF1,small_ratio,class_AP50_95
+Tomato,8,258,74,0.399,0.248,0.406,0.327,0.358,0.01,"{'Tomato Early blight leaf': 0.232, 'Tomato Septoria leaf spot': 0.448, 'Tomato leaf': 0.22, 'Tomato leaf bacterial spot': 0.24, 'Tomato leaf late blight': 0.429, 'Tomato leaf mosaic virus': 0.151, 'Tomato leaf yellow virus': 0.146, 'Tomato mold leaf': 0.121}"
+Apple,3,56,27,0.828,0.646,0.56,0.702,0.609,0.0,"{'Apple Scab Leaf': 0.541, 'Apple leaf': 0.758, 'Apple rust leaf': 0.64}"
+Grape,2,36,12,0.726,0.56,0.656,0.711,0.676,0.0,"{'grape leaf': 0.674, 'grape leaf black rot': 0.445}"

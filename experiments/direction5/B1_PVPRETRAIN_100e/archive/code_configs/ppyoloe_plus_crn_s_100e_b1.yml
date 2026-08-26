@@ -1,0 +1,42 @@
+# ============================================================
+# PP-YOLOE+ B1 — AIC2026 农业视觉目标检测 (PlantDoc 13类)
+# ============================================================
+# 与 A0 (ppyoloe_plus_crn_s_100e_agrivision.yml) 唯一差异:
+#   - pretrain_weights: obj365 URL -> 本地合并文件 (obj365 neck/head + PV backbone)
+#   - weights: 输出目录改为 ..._b1
+# 其余全部训练条件与 A0 完全一致 (epoch=100, base_lr 随 batch_size 线性缩放等)。
+# ============================================================
+_BASE_: [
+  './datasets/agrivision_detection.yml',
+  '../PaddleDetection/configs/runtime.yml',
+  '../PaddleDetection/configs/ppyoloe/_base_/optimizer_80e.yml',
+  '../PaddleDetection/configs/ppyoloe/_base_/ppyoloe_plus_crn.yml',
+  '../PaddleDetection/configs/ppyoloe/_base_/ppyoloe_plus_reader.yml',
+]
+
+log_iter: 20
+snapshot_epoch: 5
+weights: output/ppyoloe_plus_crn_s_100e_b1/model_final
+
+# 预训练: 合并权重 (obj365 neck/head + PV_CORE 预训练 backbone)
+pretrain_weights: /root/autodl-tmp/AIC2026_AgriVision/experiments/direction5/B1_PVPRETRAIN_100e/merge/B1_pretrain_combined.pdparams
+depth_mult: 0.33
+width_mult: 0.50
+
+# ---- 仅允许修改的训练参数 (与 A0 完全一致) ----
+epoch: 100
+
+LearningRate:
+  base_lr: 0.001   # 默认 bs=8; 若改 batch_size 须按线性缩放 (lr_new = 0.001 * bs/8)
+  schedulers:
+    - name: CosineDecay
+      max_epochs: 100   # 与 epoch=100 完全一致, lr 从 base_lr 余弦衰减到 0
+    - name: LinearWarmup
+      start_factor: 0.
+      epochs: 5
+
+TrainReader:
+  batch_size: 8   # 初始值; AutoDL 上按显存调整 (4GB→2, 8-11GB→8, 16GB+→16), 同步改 base_lr
+
+EvalReader:
+  batch_size: 2

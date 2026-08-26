@@ -1,0 +1,25 @@
+# ============================================================
+# PP-YOLOE+-s + S1 CG-ACS Smoke Test 配置
+# 基于 2e smoke 配置, 仅追加: 可选的图像级辅助分类头 CGACSAuxClsHead
+# 检测头 PPYOLOEHead 完全不变; lambda_cls=0.1 为唯一新增变量(固定, 不调参)
+# 该配置只用于 1~2 epoch smoke 验证, 不作为正式结果
+# ============================================================
+_BASE_: ['./ppyoloe_plus_crn_s_2e_smoke.yml']
+
+epoch: 2
+snapshot_epoch: 1
+log_iter: 1
+
+# ---- S1 CG-ACS: 图像级辅助分类头 (train-only, 推理旁路) ----
+YOLOv3:
+  backbone: CSPResNet
+  neck: CustomCSPPAN
+  yolo_head: PPYOLOEHead
+  aux_cls_head: CGACSAuxClsHead
+  post_process: ~
+
+CGACSAuxClsHead:
+  in_channels: 96        # P3 通道数 (neck 返回序 [P5,P4,P3] 中 index=2, stride 8)
+  num_classes: 13
+  lambda_cls: 0.1        # 唯一新增变量, 固定不调参
+  feat_idx: 2            # 2 = P3 (stride 8, 96ch)

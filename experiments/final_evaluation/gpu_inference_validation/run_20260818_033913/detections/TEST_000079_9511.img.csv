@@ -1,0 +1,4 @@
+image_name,class_id,class_name,confidence,x,y,width,height
+TEST_000079_9511.img.jpg,3,Tomato leaf,0.57168,276.97,176.73,136.67,130.35
+TEST_000079_9511.img.jpg,3,Tomato leaf,0.542335,276.0,175.86,93.33,131.56
+TEST_000079_9511.img.jpg,3,Tomato leaf,0.508498,46.24,266.97,72.76,125.47

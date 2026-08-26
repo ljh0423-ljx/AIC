@@ -1,0 +1,18 @@
+{
+ "enabled": true,
+ "alpha": 0.6,
+ "straggler": 0.3,
+ "tau": 0.15,
+ "lam": 0.05,
+ "min_agg": 0.8,
+ "use_rescore": true,
+ "name": "rescore t=0.15 l=0.05 m=0.8",
+ "train_mAP": 0.5948,
+ "train_recall": 0.7567,
+ "train_base_mAP": 0.5925155409192391,
+ "train_base": {
+  "mAP": 0.5925155409192391,
+  "mAP50": 0.7972659730225067,
+  "recall": 0.6982786619032153
+ }
+}

@@ -1,0 +1,9 @@
+{
+  "obj365": "/root/.cache/paddle/weights/ppyoloe_crn_s_obj365_pretrained.pdparams",
+  "pv_backbone": "experiments/direction5/B1_PVPRETRAIN_100e/pretrain/best_backbone.pdparams",
+  "merged": "experiments/direction5/B1_PVPRETRAIN_100e/merge/B1_pretrain_combined.pdparams",
+  "n_total": 429,
+  "n_backbone": 199,
+  "n_neck_head": 230,
+  "shape_mismatch": []
+}

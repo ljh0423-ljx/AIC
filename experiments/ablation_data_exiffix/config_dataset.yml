@@ -1,0 +1,25 @@
+# AIC2026 农业视觉 — PlantDoc 13类目标检测数据集配置
+# 数据格式: COCO JSON (由 YOLO TXT 转换而来)
+# 路径约定: dataset_dir 相对 PaddleDetection 根目录
+#            train 脚本会建立软链 PaddleDetection/dataset/processed_detection -> ../../dataset/processed_detection
+metric: COCO
+num_classes: 13
+
+TrainDataset:
+  name: COCODataSet
+  image_dir: images/train
+  anno_path: annotations/train.json
+  dataset_dir: dataset/processed_detection
+  data_fields: ['image', 'gt_bbox', 'gt_class', 'is_crowd']
+
+EvalDataset:
+  name: COCODataSet
+  image_dir: images/val
+  anno_path: annotations/val.json
+  dataset_dir: dataset/processed_detection
+  allow_empty: true
+
+TestDataset:
+  name: ImageFolder
+  anno_path: annotations/test.json
+  dataset_dir: dataset/processed_detection

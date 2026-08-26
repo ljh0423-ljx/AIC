@@ -1,0 +1,121 @@
+{
+  "timestamp": null,
+  "phase": null,
+  "files": {
+    "a0/best_model.pdparams": {
+      "md5": "1b4f669b5c8fe93a8662026123b4d8cc",
+      "size": 30844419,
+      "path": "/root/autodl-tmp/AIC2026_AgriVision/scripts/b1/../../experiments/baseline_v1/checkpoints/best_model.pdparams"
+    },
+    "a0/model_final.pdparams": {
+      "md5": "d76b60702c304f16bef4f231666a7756",
+      "size": 30844419,
+      "path": "/root/autodl-tmp/AIC2026_AgriVision/scripts/b1/../../experiments/baseline_v1/checkpoints/model_final.pdparams"
+    },
+    "checkpoints/best_model.pdparams": {
+      "md5": "19efd31fdd5c99946287e3a73ff25384",
+      "size": 30844419,
+      "path": "/root/autodl-tmp/AIC2026_AgriVision/scripts/b1/../../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints/best_model.pdparams"
+    },
+    "checkpoints/model_final.pdparams": {
+      "md5": "19efd31fdd5c99946287e3a73ff25384",
+      "size": 30844419,
+      "path": "/root/autodl-tmp/AIC2026_AgriVision/scripts/b1/../../experiments/direction5/B1_PVPRETRAIN_100e/checkpoints/model_final.pdparams"
+    },
+    "code/analyze_val.py": {
+      "md5": "4151917192a5cfe693d0d4e6b7c7e7a6",
+      "size": 8844,
+      "path": "/root/autodl-tmp/AIC2026_AgriVision/scripts/b1/../../scripts/analyze_val.py"
+    },
+    "code/compat_check.py": {
+      "md5": "fcf25684d76b384ef9a291ae1e627831",
+      "size": 5319,
+      "path": "/root/autodl-tmp/AIC2026_AgriVision/scripts/b1/../../scripts/b1/compat_check.py"
+    },
+    "code/merge_pv_backbone.py": {
+      "md5": "147349232880cfd02d7b977618884407",
+      "size": 3793,
+      "path": "/root/autodl-tmp/AIC2026_AgriVision/scripts/b1/../../scripts/b1/merge_pv_backbone.py"
+    },
+    "code/pv_cls_pretrain.py": {
+      "md5": "999c365dbe74b44334a5a4ebbc236889",
+      "size": 17871,
+      "path": "/root/autodl-tmp/AIC2026_AgriVision/scripts/b1/../../scripts/b1/pv_cls_pretrain.py"
+    },
+    "config/a0_agrivision.yml": {
+      "md5": "2bae51ad13025e0751aae7c3a2b8028b",
+      "size": 1636,
+      "path": "/root/autodl-tmp/AIC2026_AgriVision/scripts/b1/../../configs/ppyoloe_plus_crn_s_100e_agrivision.yml"
+    },
+    "config/b1.yml": {
+      "md5": "241b6e1e63538ec75acdf8b56e0ab960",
+      "size": 1712,
+      "path": "/root/autodl-tmp/AIC2026_AgriVision/scripts/b1/../../configs/ppyoloe_plus_crn_s_100e_b1.yml"
+    },
+    "config/b1_smoke.yml": {
+      "md5": "823256e24205a76d1a7380b09a3d140f",
+      "size": 1335,
+      "path": "/root/autodl-tmp/AIC2026_AgriVision/scripts/b1/../../configs/ppyoloe_plus_crn_s_100e_b1_smoke.yml"
+    },
+    "data/det_test.json": {
+      "md5": "2008eddc2aa4fcd63ba720c33cc678da",
+      "size": 61598,
+      "path": "/root/autodl-tmp/AIC2026_AgriVision/scripts/b1/../../dataset/processed_detection_exiffix/annotations/test.json"
+    },
+    "data/det_train.json": {
+      "md5": "df0ab46d4c9ea38bb532a51fc169bd5e",
+      "size": 752191,
+      "path": "/root/autodl-tmp/AIC2026_AgriVision/scripts/b1/../../dataset/processed_detection_exiffix/annotations/train.json"
+    },
+    "data/det_val.json": {
+      "md5": "167f568d0736dd11c5123e06f66a6124",
+      "size": 87407,
+      "path": "/root/autodl-tmp/AIC2026_AgriVision/scripts/b1/../../dataset/processed_detection_exiffix/annotations/val.json"
+    },
+    "data/pv_cls_index.csv": {
+      "md5": "b2188b09ae40d5ae5fd3e22e409284eb",
+      "size": 2586325,
+      "path": "/root/autodl-tmp/AIC2026_AgriVision/scripts/b1/../../experiments/direction5/pv_cls_index.csv"
+    },
+    "merge/B1_pretrain_combined.pdparams": {
+      "md5": "a87b725e59dc1ecf197d583e9d509a5d",
+      "size": 39364251,
+      "path": "/root/autodl-tmp/AIC2026_AgriVision/scripts/b1/../../experiments/direction5/B1_PVPRETRAIN_100e/merge/B1_pretrain_combined.pdparams"
+    },
+    "pretrain/best_backbone.pdparams": {
+      "md5": "1739e7e477db7e6bda51ba60ea63b5ef",
+      "size": 12022365,
+      "path": "/root/autodl-tmp/AIC2026_AgriVision/scripts/b1/../../experiments/direction5/B1_PVPRETRAIN_100e/pretrain/best_backbone.pdparams"
+    },
+    "pretrain/best_full.pdparams": {
+      "md5": "3cd64fa4fc7a3b185c3bf195e6d23219",
+      "size": 12050960,
+      "path": "/root/autodl-tmp/AIC2026_AgriVision/scripts/b1/../../experiments/direction5/B1_PVPRETRAIN_100e/pretrain/best_full.pdparams"
+    },
+    "pretrain/cfg.json": {
+      "md5": "522e9fed3f42621bb3356c566efe9e28",
+      "size": 988,
+      "path": "/root/autodl-tmp/AIC2026_AgriVision/scripts/b1/../../experiments/direction5/B1_PVPRETRAIN_100e/pretrain/cfg.json"
+    },
+    "pretrain/final_backbone.pdparams": {
+      "md5": "161e5f77d4f9d65a501cc9f59f9fd4ca",
+      "size": 12022365,
+      "path": "/root/autodl-tmp/AIC2026_AgriVision/scripts/b1/../../experiments/direction5/B1_PVPRETRAIN_100e/pretrain/final_backbone.pdparams"
+    },
+    "pretrain/final_full.pdparams": {
+      "md5": "8449ca84f3b3906c7efb45dd69b9ee88",
+      "size": 12050960,
+      "path": "/root/autodl-tmp/AIC2026_AgriVision/scripts/b1/../../experiments/direction5/B1_PVPRETRAIN_100e/pretrain/final_full.pdparams"
+    },
+    "pretrain/train.csv": {
+      "md5": "6d320c921392158f4e7c5c101228b305",
+      "size": 2327894,
+      "path": "/root/autodl-tmp/AIC2026_AgriVision/scripts/b1/../../experiments/direction5/B1_PVPRETRAIN_100e/pretrain/train.csv"
+    },
+    "pretrain/val.csv": {
+      "md5": "dcb14f6bebb5256c02f38fa0428b9dfa",
+      "size": 258455,
+      "path": "/root/autodl-tmp/AIC2026_AgriVision/scripts/b1/../../experiments/direction5/B1_PVPRETRAIN_100e/pretrain/val.csv"
+    }
+  }
+}

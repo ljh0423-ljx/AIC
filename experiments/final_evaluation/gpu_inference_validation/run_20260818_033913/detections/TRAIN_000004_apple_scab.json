@@ -1,0 +1,17 @@
+{
+  "image_name": "TRAIN_000004_apple_scab.jpg",
+  "total_targets": 1,
+  "inference_ms": 29.92,
+  "detections": [
+    {
+      "image_name": "TRAIN_000004_apple_scab.jpg",
+      "class_id": 9,
+      "class_name": "Apple Scab Leaf",
+      "confidence": 0.569851,
+      "x": 166.68,
+      "y": 105.84,
+      "width": 104.96,
+      "height": 87.61
+    }
+  ]
+}

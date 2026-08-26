@@ -1,0 +1,80 @@
+{
+  "timestamp": "2026-08-17",
+  "status": "PASS",
+  "md5_verification": {
+    "M_best_checkpoint": {
+      "match": true,
+      "md5": "18bd0e99329be2113f57280188c227b6"
+    },
+    "M_final_checkpoint": {
+      "match": true,
+      "md5": "b4e924053b69ce4ba555f4576736486d"
+    },
+    "M_formal_config": {
+      "match": true,
+      "md5": "c107b8797d866ed7b850f73708440af9"
+    },
+    "test_json": {
+      "match": true,
+      "md5": "2008eddc2aa4fcd63ba720c33cc678da"
+    },
+    "val_json": {
+      "match": true,
+      "md5": "167f568d0736dd11c5123e06f66a6124"
+    },
+    "a0_best_reference": {
+      "match": true,
+      "md5": "1b4f669b5c8fe93a8662026123b4d8cc"
+    }
+  },
+  "md5_all_pass": true,
+  "code_version": {
+    "git_head": "b25522a fix single gpu batch size to 4, total 32, for lr 0.0002 when using 8 gpus",
+    "ppdet_py_modified_since_M_start": [],
+    "untracked_leftovers": [
+      "ppdet/modeling/heads/cgacs_aux_cls_head.py (S1/CGPM, 2026-08-16)",
+      "ppdet/modeling/losses/confusion_margin_loss.py (S1/CGPM, 2026-08-15)"
+    ],
+    "note": "M实验期间未修改任何PaddleDetection代码; 仓库2015个M文件为克隆时预存状态"
+  },
+  "data": {
+    "symlink": "PaddleDetection/dataset/processed_detection -> dataset/processed_detection_exiffix",
+    "test.json": {
+      "images": 114,
+      "annotations": 423,
+      "categories": 13
+    },
+    "categories": [
+      "Tomato Early blight leaf",
+      "Tomato Septoria leaf spot",
+      "Tomato leaf",
+      "Tomato leaf bacterial spot",
+      "Tomato leaf late blight",
+      "Tomato leaf mosaic virus",
+      "Tomato leaf yellow virus",
+      "Tomato mold leaf",
+      "Apple Scab Leaf",
+      "Apple leaf",
+      "Apple rust leaf",
+      "grape leaf",
+      "grape leaf black rot"
+    ]
+  },
+  "config": {
+    "num_classes": 13,
+    "epoch": 100,
+    "metric": "COCO",
+    "m_config_md5_unchanged": true
+  },
+  "training_conditions": {
+    "batch_size": 16,
+    "base_lr": 0.002,
+    "model": "PP-YOLOE+-m (depth=0.67, width=0.75)",
+    "pretrain": "obj365 m (官方)",
+    "ema": true,
+    "dataset": "EXIF-fix (processed_detection_exiffix)",
+    "epochs": 100
+  },
+  "model_selection_basis": "仅使用VAL(113张)选择best checkpoint; TEST仅作最终独立泛化报告",
+  "final_model": "experiments/direction_m/M_SCALEUP_100e/checkpoints/best_model.pdparams (VAL mAP@0.5:0.95=0.428)"
+}

@@ -1,0 +1,1113 @@
+{
+  "top_worst": [
+    {
+      "img_id": 60,
+      "gt": 23,
+      "pred": 10,
+      "matched": 9,
+      "missed": 14,
+      "missed_cls": {
+        "Tomato leaf": 14
+      }
+    },
+    {
+      "img_id": 90,
+      "gt": 14,
+      "pred": 2,
+      "matched": 2,
+      "missed": 12,
+      "missed_cls": {
+        "Tomato leaf yellow virus": 12
+      }
+    },
+    {
+      "img_id": 62,
+      "gt": 14,
+      "pred": 3,
+      "matched": 3,
+      "missed": 11,
+      "missed_cls": {
+        "Tomato leaf": 11
+      }
+    },
+    {
+      "img_id": 69,
+      "gt": 12,
+      "pred": 2,
+      "matched": 1,
+      "missed": 11,
+      "missed_cls": {
+        "Tomato leaf bacterial spot": 11
+      }
+    },
+    {
+      "img_id": 59,
+      "gt": 18,
+      "pred": 10,
+      "matched": 9,
+      "missed": 9,
+      "missed_cls": {
+        "Tomato leaf": 9
+      }
+    },
+    {
+      "img_id": 92,
+      "gt": 10,
+      "pred": 2,
+      "matched": 2,
+      "missed": 8,
+      "missed_cls": {
+        "Tomato leaf yellow virus": 8
+      }
+    },
+    {
+      "img_id": 43,
+      "gt": 8,
+      "pred": 1,
+      "matched": 1,
+      "missed": 7,
+      "missed_cls": {
+        "Tomato Early blight leaf": 6,
+        "Tomato leaf": 1
+      }
+    },
+    {
+      "img_id": 89,
+      "gt": 10,
+      "pred": 3,
+      "matched": 3,
+      "missed": 7,
+      "missed_cls": {
+        "Tomato leaf yellow virus": 7
+      }
+    }
+  ],
+  "per_image": [
+    {
+      "img_id": 60,
+      "gt": 23,
+      "pred": 10,
+      "matched": 9,
+      "missed": 14,
+      "missed_cls": {
+        "Tomato leaf": 14
+      }
+    },
+    {
+      "img_id": 90,
+      "gt": 14,
+      "pred": 2,
+      "matched": 2,
+      "missed": 12,
+      "missed_cls": {
+        "Tomato leaf yellow virus": 12
+      }
+    },
+    {
+      "img_id": 62,
+      "gt": 14,
+      "pred": 3,
+      "matched": 3,
+      "missed": 11,
+      "missed_cls": {
+        "Tomato leaf": 11
+      }
+    },
+    {
+      "img_id": 69,
+      "gt": 12,
+      "pred": 2,
+      "matched": 1,
+      "missed": 11,
+      "missed_cls": {
+        "Tomato leaf bacterial spot": 11
+      }
+    },
+    {
+      "img_id": 59,
+      "gt": 18,
+      "pred": 10,
+      "matched": 9,
+      "missed": 9,
+      "missed_cls": {
+        "Tomato leaf": 9
+      }
+    },
+    {
+      "img_id": 92,
+      "gt": 10,
+      "pred": 2,
+      "matched": 2,
+      "missed": 8,
+      "missed_cls": {
+        "Tomato leaf yellow virus": 8
+      }
+    },
+    {
+      "img_id": 43,
+      "gt": 8,
+      "pred": 1,
+      "matched": 1,
+      "missed": 7,
+      "missed_cls": {
+        "Tomato Early blight leaf": 6,
+        "Tomato leaf": 1
+      }
+    },
+    {
+      "img_id": 89,
+      "gt": 10,
+      "pred": 3,
+      "matched": 3,
+      "missed": 7,
+      "missed_cls": {
+        "Tomato leaf yellow virus": 7
+      }
+    },
+    {
+      "img_id": 94,
+      "gt": 9,
+      "pred": 5,
+      "matched": 3,
+      "missed": 6,
+      "missed_cls": {
+        "Tomato leaf yellow virus": 6
+      }
+    },
+    {
+      "img_id": 6,
+      "gt": 6,
+      "pred": 2,
+      "matched": 1,
+      "missed": 5,
+      "missed_cls": {
+        "Tomato Early blight leaf": 5
+      }
+    },
+    {
+      "img_id": 77,
+      "gt": 11,
+      "pred": 8,
+      "matched": 6,
+      "missed": 5,
+      "missed_cls": {
+        "Tomato leaf late blight": 5
+      }
+    },
+    {
+      "img_id": 84,
+      "gt": 6,
+      "pred": 4,
+      "matched": 1,
+      "missed": 5,
+      "missed_cls": {
+        "Tomato leaf mosaic virus": 5
+      }
+    },
+    {
+      "img_id": 86,
+      "gt": 5,
+      "pred": 0,
+      "matched": 0,
+      "missed": 5,
+      "missed_cls": {
+        "Tomato leaf mosaic virus": 5
+      }
+    },
+    {
+      "img_id": 88,
+      "gt": 9,
+      "pred": 6,
+      "matched": 4,
+      "missed": 5,
+      "missed_cls": {
+        "Tomato leaf yellow virus": 5
+      }
+    },
+    {
+      "img_id": 91,
+      "gt": 5,
+      "pred": 3,
+      "matched": 0,
+      "missed": 5,
+      "missed_cls": {
+        "Tomato leaf yellow virus": 5
+      }
+    },
+    {
+      "img_id": 54,
+      "gt": 5,
+      "pred": 2,
+      "matched": 1,
+      "missed": 4,
+      "missed_cls": {
+        "Tomato Septoria leaf spot": 4
+      }
+    },
+    {
+      "img_id": 66,
+      "gt": 4,
+      "pred": 0,
+      "matched": 0,
+      "missed": 4,
+      "missed_cls": {
+        "Tomato leaf bacterial spot": 4
+      }
+    },
+    {
+      "img_id": 71,
+      "gt": 4,
+      "pred": 0,
+      "matched": 0,
+      "missed": 4,
+      "missed_cls": {
+        "Tomato leaf bacterial spot": 4
+      }
+    },
+    {
+      "img_id": 85,
+      "gt": 5,
+      "pred": 1,
+      "matched": 1,
+      "missed": 4,
+      "missed_cls": {
+        "Tomato leaf mosaic virus": 4
+      }
+    },
+    {
+      "img_id": 93,
+      "gt": 4,
+      "pred": 0,
+      "matched": 0,
+      "missed": 4,
+      "missed_cls": {
+        "Tomato leaf yellow virus": 4
+      }
+    },
+    {
+      "img_id": 98,
+      "gt": 4,
+      "pred": 0,
+      "matched": 0,
+      "missed": 4,
+      "missed_cls": {
+        "Tomato mold leaf": 4
+      }
+    },
+    {
+      "img_id": 101,
+      "gt": 5,
+      "pred": 1,
+      "matched": 1,
+      "missed": 4,
+      "missed_cls": {
+        "Tomato mold leaf": 4
+      }
+    },
+    {
+      "img_id": 107,
+      "gt": 7,
+      "pred": 3,
+      "matched": 3,
+      "missed": 4,
+      "missed_cls": {
+        "grape leaf": 4
+      }
+    },
+    {
+      "img_id": 108,
+      "gt": 13,
+      "pred": 11,
+      "matched": 9,
+      "missed": 4,
+      "missed_cls": {
+        "grape leaf": 4
+      }
+    },
+    {
+      "img_id": 25,
+      "gt": 7,
+      "pred": 6,
+      "matched": 4,
+      "missed": 3,
+      "missed_cls": {
+        "Apple leaf": 3
+      }
+    },
+    {
+      "img_id": 33,
+      "gt": 3,
+      "pred": 1,
+      "matched": 0,
+      "missed": 3,
+      "missed_cls": {
+        "Apple rust leaf": 3
+      }
+    },
+    {
+      "img_id": 49,
+      "gt": 8,
+      "pred": 5,
+      "matched": 5,
+      "missed": 3,
+      "missed_cls": {
+        "Tomato Septoria leaf spot": 3
+      }
+    },
+    {
+      "img_id": 63,
+      "gt": 3,
+      "pred": 0,
+      "matched": 0,
+      "missed": 3,
+      "missed_cls": {
+        "Tomato leaf": 3
+      }
+    },
+    {
+      "img_id": 68,
+      "gt": 3,
+      "pred": 0,
+      "matched": 0,
+      "missed": 3,
+      "missed_cls": {
+        "Tomato leaf": 1,
+        "Tomato leaf bacterial spot": 2
+      }
+    },
+    {
+      "img_id": 81,
+      "gt": 12,
+      "pred": 10,
+      "matched": 9,
+      "missed": 3,
+      "missed_cls": {
+        "Tomato leaf late blight": 3
+      }
+    },
+    {
+      "img_id": 87,
+      "gt": 3,
+      "pred": 3,
+      "matched": 0,
+      "missed": 3,
+      "missed_cls": {
+        "Tomato leaf": 1,
+        "Tomato leaf mosaic virus": 2
+      }
+    },
+    {
+      "img_id": 97,
+      "gt": 3,
+      "pred": 0,
+      "matched": 0,
+      "missed": 3,
+      "missed_cls": {
+        "Tomato mold leaf": 3
+      }
+    },
+    {
+      "img_id": 23,
+      "gt": 6,
+      "pred": 7,
+      "matched": 4,
+      "missed": 2,
+      "missed_cls": {
+        "Apple Scab Leaf": 2
+      }
+    },
+    {
+      "img_id": 51,
+      "gt": 4,
+      "pred": 2,
+      "matched": 2,
+      "missed": 2,
+      "missed_cls": {
+        "Tomato Septoria leaf spot": 1,
+        "Tomato leaf": 1
+      }
+    },
+    {
+      "img_id": 56,
+      "gt": 5,
+      "pred": 3,
+      "matched": 3,
+      "missed": 2,
+      "missed_cls": {
+        "Tomato Septoria leaf spot": 2
+      }
+    },
+    {
+      "img_id": 73,
+      "gt": 3,
+      "pred": 2,
+      "matched": 1,
+      "missed": 2,
+      "missed_cls": {
+        "Tomato leaf bacterial spot": 2
+      }
+    },
+    {
+      "img_id": 110,
+      "gt": 2,
+      "pred": 0,
+      "matched": 0,
+      "missed": 2,
+      "missed_cls": {
+        "grape leaf black rot": 2
+      }
+    },
+    {
+      "img_id": 1,
+      "gt": 2,
+      "pred": 1,
+      "matched": 1,
+      "missed": 1,
+      "missed_cls": {
+        "Apple Scab Leaf": 1
+      }
+    },
+    {
+      "img_id": 13,
+      "gt": 6,
+      "pred": 9,
+      "matched": 5,
+      "missed": 1,
+      "missed_cls": {
+        "Tomato leaf yellow virus": 1
+      }
+    },
+    {
+      "img_id": 26,
+      "gt": 6,
+      "pred": 9,
+      "matched": 5,
+      "missed": 1,
+      "missed_cls": {
+        "Apple leaf": 1
+      }
+    },
+    {
+      "img_id": 27,
+      "gt": 3,
+      "pred": 2,
+      "matched": 2,
+      "missed": 1,
+      "missed_cls": {
+        "Apple leaf": 1
+      }
+    },
+    {
+      "img_id": 37,
+      "gt": 5,
+      "pred": 5,
+      "matched": 4,
+      "missed": 1,
+      "missed_cls": {
+        "Apple rust leaf": 1
+      }
+    },
+    {
+      "img_id": 42,
+      "gt": 2,
+      "pred": 1,
+      "matched": 1,
+      "missed": 1,
+      "missed_cls": {
+        "Tomato Early blight leaf": 1
+      }
+    },
+    {
+      "img_id": 44,
+      "gt": 2,
+      "pred": 1,
+      "matched": 1,
+      "missed": 1,
+      "missed_cls": {
+        "Tomato Early blight leaf": 1
+      }
+    },
+    {
+      "img_id": 55,
+      "gt": 7,
+      "pred": 6,
+      "matched": 6,
+      "missed": 1,
+      "missed_cls": {
+        "Tomato Septoria leaf spot": 1
+      }
+    },
+    {
+      "img_id": 57,
+      "gt": 5,
+      "pred": 5,
+      "matched": 4,
+      "missed": 1,
+      "missed_cls": {
+        "Tomato Septoria leaf spot": 1
+      }
+    },
+    {
+      "img_id": 58,
+      "gt": 2,
+      "pred": 1,
+      "matched": 1,
+      "missed": 1,
+      "missed_cls": {
+        "Tomato Septoria leaf spot": 1
+      }
+    },
+    {
+      "img_id": 61,
+      "gt": 2,
+      "pred": 3,
+      "matched": 1,
+      "missed": 1,
+      "missed_cls": {
+        "Tomato leaf": 1
+      }
+    },
+    {
+      "img_id": 67,
+      "gt": 1,
+      "pred": 0,
+      "matched": 0,
+      "missed": 1,
+      "missed_cls": {
+        "Tomato leaf bacterial spot": 1
+      }
+    },
+    {
+      "img_id": 70,
+      "gt": 4,
+      "pred": 3,
+      "matched": 3,
+      "missed": 1,
+      "missed_cls": {
+        "Tomato leaf bacterial spot": 1
+      }
+    },
+    {
+      "img_id": 72,
+      "gt": 1,
+      "pred": 1,
+      "matched": 0,
+      "missed": 1,
+      "missed_cls": {
+        "Tomato leaf bacterial spot": 1
+      }
+    },
+    {
+      "img_id": 96,
+      "gt": 2,
+      "pred": 1,
+      "matched": 1,
+      "missed": 1,
+      "missed_cls": {
+        "Tomato mold leaf": 1
+      }
+    },
+    {
+      "img_id": 102,
+      "gt": 2,
+      "pred": 2,
+      "matched": 1,
+      "missed": 1,
+      "missed_cls": {
+        "Tomato mold leaf": 1
+      }
+    },
+    {
+      "img_id": 105,
+      "gt": 5,
+      "pred": 5,
+      "matched": 4,
+      "missed": 1,
+      "missed_cls": {
+        "grape leaf": 1
+      }
+    },
+    {
+      "img_id": 113,
+      "gt": 3,
+      "pred": 2,
+      "matched": 2,
+      "missed": 1,
+      "missed_cls": {
+        "grape leaf black rot": 1
+      }
+    },
+    {
+      "img_id": 2,
+      "gt": 2,
+      "pred": 2,
+      "matched": 2,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 3,
+      "gt": 1,
+      "pred": 1,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 4,
+      "gt": 1,
+      "pred": 1,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 5,
+      "gt": 1,
+      "pred": 1,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 7,
+      "gt": 2,
+      "pred": 2,
+      "matched": 2,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 8,
+      "gt": 2,
+      "pred": 4,
+      "matched": 2,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 9,
+      "gt": 1,
+      "pred": 1,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 10,
+      "gt": 1,
+      "pred": 1,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 11,
+      "gt": 1,
+      "pred": 1,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 12,
+      "gt": 1,
+      "pred": 2,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 14,
+      "gt": 1,
+      "pred": 1,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 15,
+      "gt": 1,
+      "pred": 2,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 16,
+      "gt": 1,
+      "pred": 1,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 17,
+      "gt": 1,
+      "pred": 3,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 18,
+      "gt": 2,
+      "pred": 3,
+      "matched": 2,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 19,
+      "gt": 1,
+      "pred": 1,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 20,
+      "gt": 1,
+      "pred": 1,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 21,
+      "gt": 1,
+      "pred": 2,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 22,
+      "gt": 1,
+      "pred": 1,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 24,
+      "gt": 1,
+      "pred": 1,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 28,
+      "gt": 3,
+      "pred": 3,
+      "matched": 3,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 29,
+      "gt": 2,
+      "pred": 2,
+      "matched": 2,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 30,
+      "gt": 1,
+      "pred": 1,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 31,
+      "gt": 5,
+      "pred": 5,
+      "matched": 5,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 32,
+      "gt": 5,
+      "pred": 5,
+      "matched": 5,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 34,
+      "gt": 1,
+      "pred": 1,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 35,
+      "gt": 1,
+      "pred": 1,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 36,
+      "gt": 1,
+      "pred": 1,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 38,
+      "gt": 2,
+      "pred": 2,
+      "matched": 2,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 39,
+      "gt": 1,
+      "pred": 2,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 40,
+      "gt": 1,
+      "pred": 1,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 41,
+      "gt": 1,
+      "pred": 1,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 45,
+      "gt": 1,
+      "pred": 1,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 46,
+      "gt": 3,
+      "pred": 4,
+      "matched": 3,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 47,
+      "gt": 2,
+      "pred": 2,
+      "matched": 2,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 48,
+      "gt": 1,
+      "pred": 1,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 50,
+      "gt": 1,
+      "pred": 2,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 52,
+      "gt": 7,
+      "pred": 8,
+      "matched": 7,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 53,
+      "gt": 3,
+      "pred": 3,
+      "matched": 3,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 64,
+      "gt": 2,
+      "pred": 2,
+      "matched": 2,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 65,
+      "gt": 1,
+      "pred": 1,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 74,
+      "gt": 1,
+      "pred": 1,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 75,
+      "gt": 1,
+      "pred": 1,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 76,
+      "gt": 1,
+      "pred": 1,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 78,
+      "gt": 1,
+      "pred": 1,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 79,
+      "gt": 1,
+      "pred": 1,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 80,
+      "gt": 1,
+      "pred": 2,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 82,
+      "gt": 3,
+      "pred": 3,
+      "matched": 3,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 83,
+      "gt": 1,
+      "pred": 1,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 95,
+      "gt": 1,
+      "pred": 1,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 99,
+      "gt": 1,
+      "pred": 1,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 100,
+      "gt": 1,
+      "pred": 1,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 103,
+      "gt": 1,
+      "pred": 1,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 104,
+      "gt": 1,
+      "pred": 1,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 106,
+      "gt": 1,
+      "pred": 1,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 109,
+      "gt": 1,
+      "pred": 2,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 111,
+      "gt": 2,
+      "pred": 2,
+      "matched": 2,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 112,
+      "gt": 1,
+      "pred": 1,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    },
+    {
+      "img_id": 114,
+      "gt": 1,
+      "pred": 1,
+      "matched": 1,
+      "missed": 0,
+      "missed_cls": {}
+    }
+  ]
+}

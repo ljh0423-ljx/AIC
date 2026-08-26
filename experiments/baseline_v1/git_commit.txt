@@ -1,0 +1,20 @@
+PaddleDetection Git 信息 (本机克隆时记录)
+==================================================
+仓库: https://github.com/PaddlePaddle/PaddleDetection
+版本标签: v2.9.0
+commit: b25522a0f4bde8c80603f3ba5e3472059972e3b5
+日期:   2026-03-16 15:42:54 +0800
+提交信息: fix single gpu batch size to 4, total 32, for lr 0.0002 when using 8 gpus
+
+兼容 PaddlePaddle 版本: 2.5.x / 2.6.x (推荐 2.6.2)
+  - install_env.sh 默认装 2.6.2, 可用 PADDLE_VERSION 覆盖
+  - CUDA: 11.8 (cu118) 或 12.x (cu120) 任一
+
+复现方式 (AutoDL):
+  cd AIC2026_AgriVision/PaddleDetection
+  git log -1   # 应显示上述 commit
+  git describe --tags   # 应显示 v2.9.0
+
+注意: 若 AutoDL 上重新 git clone, 默认拉取 develop 分支 (可能非 v2.9.0)。
+为保证复现, 本工程已内置完整 PaddleDetection 源码, 无需重新克隆;
+如需重新克隆, 请: git clone --branch release/2.9 https://github.com/PaddlePaddle/PaddleDetection.git

@@ -1,0 +1,17 @@
+# -*- coding: utf-8 -*-
+# inference 模块依赖（推理运行所需）
+# 说明：
+#   - PaddlePaddle 请按你的设备安装 GPU 或 CPU 版本。
+#     本项目正式训练/评估环境为 PaddlePaddle 2.6.2（AutoDL）；本地 Windows
+#     实测 3.3.0 推理可用，未验证 3.x 的训练侧兼容性。
+#   - 使用 PaddlePaddle 官方安装命令安装，例如 CPU 版：
+#       python -m pip install paddlepaddle==2.6.2
+#     或 GPU 版（按 CUDA 版本选择），Windows 用户见飞桨官网安装指南。
+#
+# 其余依赖如下（按需安装）：
+numpy>=1.21
+opencv-python>=4.5
+Pillow>=9.0
+pycocotools>=2.0
+tqdm>=4.60
+# 若需本机可视化训练曲线可加：visualdl

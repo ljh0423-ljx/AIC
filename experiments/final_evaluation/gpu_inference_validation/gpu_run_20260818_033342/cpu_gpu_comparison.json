@@ -1,0 +1,36 @@
+{
+  "note": "CPU 基线与 GPU 无需逐位一致；重点核对类别映射/bbox 格式/目标数/置信度量级",
+  "cpu_source": "web/demo_outputs/run_20260817_173307/detections/TRAIN_000004_apple_scab.json (Windows CPU, paddle 3.3.0)",
+  "cpu_total_targets": 1,
+  "gpu_total_targets": 1,
+  "targets_match": true,
+  "cpu_class_id": 9,
+  "gpu_class_id": 9,
+  "cpu_class_name": "Apple Scab Leaf",
+  "gpu_class_name": "Apple Scab Leaf",
+  "class_mapping_match": true,
+  "bbox_format": "x,y,width,height (左上角+宽高，原图坐标，两平台一致)",
+  "cpu_conf": 0.569842,
+  "gpu_conf": 0.569851,
+  "conf_delta": 9e-06,
+  "cpu_bbox": {
+    "x": 166.68,
+    "y": 105.84,
+    "width": 104.96,
+    "height": 87.61
+  },
+  "gpu_bbox": {
+    "x": 166.68,
+    "y": 105.84,
+    "width": 104.96,
+    "height": 87.61
+  },
+  "cpu_inference_ms": 1651.91,
+  "gpu_inference_ms": 504.29,
+  "bbox_delta": {
+    "x": 0.0,
+    "y": 0.0,
+    "width": 0.0,
+    "height": 0.0
+  }
+}

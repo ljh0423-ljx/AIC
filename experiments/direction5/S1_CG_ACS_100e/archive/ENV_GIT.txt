@@ -1,0 +1,7 @@
+== git ==
+PaddleDetection HEAD: b25522a0f4bde8c80603f3ba5e3472059972e3b5
+== env ==
+paddle 2.6.2 | python 3.12.3 | NVIDIA GeForce RTX 4090 (driver 580.76.05) | cuDNN 9.1
+OS: Linux 5.15.0-84-generic
+== 注意 ==
+PaddleDetection 工作树含全库行尾归一化改动(2011 files, 非本项目引入); 本项目改动文件已按哈希快照入档

@@ -1,0 +1,61 @@
+WARNING: OMP_NUM_THREADS set to 12, not 1. The computation speed will not be optimized if you use data parallel. It will fail if this PaddlePaddle binary is compiled with OpenBlas since OpenBlas does not support multi-threads.
+PLEASE USE OMP_NUM_THREADS WISELY.
+Warning: Unable to use numba in PP-Tracking, please install numba, for example(python3.7): `pip install numba==0.56.4`
+Warning: Unable to use numba in PP-Tracking, please install numba, for example(python3.7): `pip install numba==0.56.4`
+[08/17 01:04:48] ppdet.utils.checkpoint INFO: Skipping import of the encryption module.
+[data] train=17310 val=1923 -> /root/autodl-tmp/AIC2026_AgriVision/scripts/b1/../../experiments/direction5/B1_PVPRETRAIN_100e/pretrain/train.csv / /root/autodl-tmp/AIC2026_AgriVision/scripts/b1/../../experiments/direction5/B1_PVPRETRAIN_100e/pretrain/val.csv
+[train] decode cache: 17310 imgs @maxdim=384 (11s)
+
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+No stack trace in paddle, may be caused by external reasons.
+
+----------------------
+Error Message Summary:
+----------------------
+FatalError: `Termination signal` is detected by the operating system.
+  [TimeInfo: *** Aborted at 1786899902 (unix time) try "date -d @1786899902" if you are using GNU date ***]
+  [SignalInfo: *** SIGTERM (@0x202fe) received by PID 131934 (TID 0x7f3b95694740) from PID 131838 ***]
+
+
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+No stack trace in paddle, may be caused by external reasons.
+
+----------------------
+Error Message Summary:
+----------------------
+FatalError: `Termination signal` is detected by the operating system.
+  [TimeInfo: *** Aborted at 1786899902 (unix time) try "date -d @1786899902" if you are using GNU date ***]
+  [SignalInfo: *** SIGTERM (@0x202fe) received by PID 131928 (TID 0x7f3b95694740) from PID 131838 ***]
+
+[val] decode cache: 1923 imgs @maxdim=384 (3s)
+W0817 01:05:02.512739 131838 gpu_resources.cc:119] Please NOTE: device: 0, GPU Compute Capability: 8.9, Driver API Version: 13.0, Runtime API Version: 11.8
+W0817 01:05:02.513727 131838 gpu_resources.cc:164] device: 0, cuDNN Version: 9.1.
+[model] params=3007603 (backbone 同 PP-YOLOE+-s)
+=== PV_CORE 分类预训练开始 ===
+  [step 1/67] 27.413 s/step (累计 27.4 s)
+  [step 2/67] 13.961 s/step (累计 27.9 s)
+  [step 3/67] 9.441 s/step (累计 28.3 s)
+  [step 4/67] 7.206 s/step (累计 28.8 s)
+  [step 5/67] 5.925 s/step (累计 29.6 s)
+  [step 20/67] 2.186 s/step (累计 43.7 s)
+  [step 40/67] 1.726 s/step (累计 69.0 s)
+  [step 60/67] 1.467 s/step (累计 88.0 s)
+  [timing] train=89.5s val=1.9s
+[  1/2] train_loss=1.8162 | val_loss=2.5944 val_acc=0.3079 | best=0.3079@1 * | 91.5s | lr=0.10000
+  [step 1/67] 12.140 s/step (累计 12.1 s)
+  [step 2/67] 6.520 s/step (累计 13.0 s)
+  [step 3/67] 4.547 s/step (累计 13.6 s)
+  [step 4/67] 3.560 s/step (累计 14.2 s)
+  [step 5/67] 2.948 s/step (累计 14.7 s)
+  [step 20/67] 1.752 s/step (累计 35.0 s)
+  [step 40/67] 1.329 s/step (累计 53.1 s)
+  [step 60/67] 1.195 s/step (累计 71.7 s)
+  [timing] train=73.1s val=1.4s
+[  2/2] train_loss=0.9747 | val_loss=0.8518 val_acc=0.8799 | best=0.8799@2 * | 166.1s | lr=0.00000
+=== done: epochs=2 best_val_acc=0.8799@epoch2 total_time=166s steps=134 ===

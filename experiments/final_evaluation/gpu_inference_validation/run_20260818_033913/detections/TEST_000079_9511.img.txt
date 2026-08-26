@@ -1,0 +1,3 @@
+image: TEST_000079_9511.img.jpg
+total_targets: 3
+  class_id=3 name=Tomato leaf count=3 avg_conf=0.5408

@@ -1,0 +1,5 @@
+方向2 消融 A1 — 环境快照 (2026-08-15 13:29:30)
+====
+NVIDIA GeForce RTX 4090, 24564 MiB, 580.76.05
+Paddle 2.6.2 CUDA <function cuda at 0x7f18a6165300> GPU 1
+Python 3.12.3

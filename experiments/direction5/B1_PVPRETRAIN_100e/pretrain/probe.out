@@ -1,0 +1,57 @@
+WARNING: OMP_NUM_THREADS set to 12, not 1. The computation speed will not be optimized if you use data parallel. It will fail if this PaddlePaddle binary is compiled with OpenBlas since OpenBlas does not support multi-threads.
+PLEASE USE OMP_NUM_THREADS WISELY.
+Warning: Unable to use numba in PP-Tracking, please install numba, for example(python3.7): `pip install numba==0.56.4`
+Warning: Unable to use numba in PP-Tracking, please install numba, for example(python3.7): `pip install numba==0.56.4`
+[08/17 00:39:08] ppdet.utils.checkpoint INFO: Skipping import of the encryption module.
+[data] train=17310 val=1923 -> /root/autodl-tmp/AIC2026_AgriVision/scripts/b1/../../experiments/direction5/B1_PVPRETRAIN_100e/pretrain/train.csv / /root/autodl-tmp/AIC2026_AgriVision/scripts/b1/../../experiments/direction5/B1_PVPRETRAIN_100e/pretrain/val.csv
+[train] decode cache: 17310 imgs @maxdim=384 (11s)
+
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+No stack trace in paddle, may be caused by external reasons.
+
+----------------------
+Error Message Summary:
+----------------------
+FatalError: `Termination signal` is detected by the operating system.
+  [TimeInfo: *** Aborted at 1786898362 (unix time) try "date -d @1786898362" if you are using GNU date ***]
+  [SignalInfo: *** SIGTERM (@0x1d1a1) received by PID 119317 (TID 0x7f4a057be740) from PID 119201 ***]
+
+
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+No stack trace in paddle, may be caused by external reasons.
+
+----------------------
+Error Message Summary:
+----------------------
+FatalError: `Termination signal` is detected by the operating system.
+  [TimeInfo: *** Aborted at 1786898362 (unix time) try "date -d @1786898362" if you are using GNU date ***]
+  [SignalInfo: *** SIGTERM (@0x1d1a1) received by PID 119315 (TID 0x7f4a057be740) from PID 119201 ***]
+
+[val] decode cache: 1923 imgs @maxdim=384 (3s)
+W0817 00:39:22.514545 119201 gpu_resources.cc:119] Please NOTE: device: 0, GPU Compute Capability: 8.9, Driver API Version: 13.0, Runtime API Version: 11.8
+W0817 00:39:22.515556 119201 gpu_resources.cc:164] device: 0, cuDNN Version: 9.1.
+[model] params=3007603 (backbone 同 PP-YOLOE+-s)
+=== PV_CORE 分类预训练开始 ===
+[  1/2] train_loss=1.7810 | val_loss=3.2396 val_acc=0.1648 | best=0.1648@1 * | 240.7s | lr=0.10000
+
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+0   paddle::pybind::MultiDeviceFeedReader<paddle::operators::reader::LoDTensorBlockingQueue>::ReadNextList()
+1   paddle::pybind::MultiDeviceFeedReader<paddle::operators::reader::LoDTensorBlockingQueue>::CheckNextStatus()
+2   paddle::pybind::MultiDeviceFeedReader<paddle::operators::reader::LoDTensorBlockingQueue>::WaitFutures(std::__exception_ptr::exception_ptr*)
+
+----------------------
+Error Message Summary:
+----------------------
+FatalError: `Termination signal` is detected by the operating system.
+  [TimeInfo: *** Aborted at 1786898688 (unix time) try "date -d @1786898688" if you are using GNU date ***]
+  [SignalInfo: *** SIGTERM (@0x1db53) received by PID 119201 (TID 0x7f4a057be740) from PID 121683 ***]
+

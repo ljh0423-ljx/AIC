@@ -1,0 +1,13 @@
+{
+  "date": "2026-08-17",
+  "pv_core_images": 19233,
+  "plantdoc_images": 1142,
+  "md5_intersection": [],
+  "basename_intersection": [],
+  "by_split": {
+    "train": 915,
+    "val": 113,
+    "test": 114
+  },
+  "verdict": "PASS"
+}

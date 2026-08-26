@@ -1,0 +1,85 @@
+{
+  "run_id": "run_20260818_033913",
+  "created": "2026-08-18 03:39:14",
+  "config": {
+    "model_path": "/root/autodl-tmp/AIC2026_AgriVision/experiments/direction_m/M_SCALEUP_100e/checkpoints/best_model.pdparams",
+    "config_path": "/root/autodl-tmp/AIC2026_AgriVision/configs/ppyoloe_plus_crn_m_100e_agrivision.yml",
+    "dataset_dir": "/root/autodl-tmp/AIC2026_AgriVision/dataset/processed_detection_exiffix",
+    "anno_path": "/root/autodl-tmp/AIC2026_AgriVision/dataset/processed_detection_exiffix/annotations/val.json",
+    "backend": "paddle_gpu",
+    "device": "gpu",
+    "paddle_version": "2.6.2",
+    "conf_threshold": 0.5,
+    "input_size": 640,
+    "num_classes": 13
+  },
+  "performance": {
+    "total_images": 8,
+    "success_images": 8,
+    "failed_images": 0,
+    "total_time": 0.6233,
+    "average_time": 0.0779,
+    "fps": 12.8352
+  },
+  "failed": [],
+  "class_statistics": [
+    {
+      "class_id": 2,
+      "class_name": "Tomato Septoria leaf spot",
+      "num_images": 3,
+      "num_targets": 4,
+      "avg_confidence": 0.614029,
+      "max_confidence": 0.670609
+    },
+    {
+      "class_id": 3,
+      "class_name": "Tomato leaf",
+      "num_images": 1,
+      "num_targets": 3,
+      "avg_confidence": 0.540838,
+      "max_confidence": 0.57168
+    },
+    {
+      "class_id": 4,
+      "class_name": "Tomato leaf bacterial spot",
+      "num_images": 1,
+      "num_targets": 1,
+      "avg_confidence": 0.523734,
+      "max_confidence": 0.523734
+    },
+    {
+      "class_id": 9,
+      "class_name": "Apple Scab Leaf",
+      "num_images": 1,
+      "num_targets": 1,
+      "avg_confidence": 0.569851,
+      "max_confidence": 0.569851
+    },
+    {
+      "class_id": 11,
+      "class_name": "Apple rust leaf",
+      "num_images": 1,
+      "num_targets": 1,
+      "avg_confidence": 0.83604,
+      "max_confidence": 0.83604
+    },
+    {
+      "class_id": 12,
+      "class_name": "grape leaf",
+      "num_images": 1,
+      "num_targets": 1,
+      "avg_confidence": 0.926409,
+      "max_confidence": 0.926409
+    }
+  ],
+  "output_files": {
+    "originals_dir": "/root/autodl-tmp/AIC2026_AgriVision/experiments/final_evaluation/gpu_inference_validation/run_20260818_033913/originals",
+    "visualized_dir": "/root/autodl-tmp/AIC2026_AgriVision/experiments/final_evaluation/gpu_inference_validation/run_20260818_033913/visualized",
+    "detections_dir": "/root/autodl-tmp/AIC2026_AgriVision/experiments/final_evaluation/gpu_inference_validation/run_20260818_033913/detections",
+    "predictions_json": "/root/autodl-tmp/AIC2026_AgriVision/experiments/final_evaluation/gpu_inference_validation/run_20260818_033913/predictions.json",
+    "predictions_csv": "/root/autodl-tmp/AIC2026_AgriVision/experiments/final_evaluation/gpu_inference_validation/run_20260818_033913/predictions.csv",
+    "class_statistics_csv": "/root/autodl-tmp/AIC2026_AgriVision/experiments/final_evaluation/gpu_inference_validation/run_20260818_033913/class_statistics.csv",
+    "inference_summary_json": "/root/autodl-tmp/AIC2026_AgriVision/experiments/final_evaluation/gpu_inference_validation/run_20260818_033913/inference_summary.json",
+    "inference_log": "/root/autodl-tmp/AIC2026_AgriVision/experiments/final_evaluation/gpu_inference_validation/run_20260818_033913/inference.log"
+  }
+}

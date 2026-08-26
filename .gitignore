@@ -1,0 +1,49 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+*.egg-info/
+
+# ===== 第三方框架本地副本（作为依赖安装，不随仓库上传；见 README）=====
+/PaddleDetection/
+
+# ===== IDE / 系统 / 运行时缓存 =====
+.gradio/
+.idea/
+.vscode/
+*.DS_Store
+
+# ===== Web 运行时产物 =====
+/web/outputs/
+/web/tmp/
+/web/demo_cache/
+/web/demo_outputs/
+/web/app.py.backup_*
+/web/_*.log
+
+# ===== 推理运行时产物 =====
+/inference/outputs/
+
+# ===== 根目录运行时产物 =====
+/outputs/
+
+# ===== 数据集图片/标签/可视化（体积大或文件名超长，不随仓库上传；仅保留 COCO 标注）=====
+/dataset/*/images/
+/dataset/*/labels/
+/dataset/*/visual_check/
+
+# ===== 训练产物 =====
+*.pdopt
+*.pdema
+*.pdstates
+*.log
+vdlrecords/
+*.vdlrecords
+
+# 所有 checkpoint 权重排除（含最终模型；权重不随仓库上传，见 README）
+*.pdparams
+
+# ===== COCO 评估/预测产物（体积大、可再生成）=====
+bbox.json
+*_predictions.json
+*_bbox_*.json

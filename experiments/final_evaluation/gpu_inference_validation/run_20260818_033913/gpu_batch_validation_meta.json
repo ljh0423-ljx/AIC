@@ -1,0 +1,191 @@
+{
+  "run_id": "run_20260818_033913",
+  "created": "2026-08-18 03:39:14",
+  "load_seconds": 2.3582,
+  "warmup_runs": 2,
+  "warmup_seconds": 0.6118,
+  "official_total_seconds": 0.6233,
+  "official_avg_per_image_seconds": 0.0779,
+  "official_fps": 12.8352,
+  "success_images": 8,
+  "failed_images": 0,
+  "total_detection_targets": 11,
+  "vram_baseline_mib": 3,
+  "vram_peak_mib": 741,
+  "vram_peak_util_pct": 16,
+  "vram_monitor_samples": 13,
+  "test_isolation_violations": [],
+  "device": {
+    "backend": "paddle_gpu",
+    "device": "gpu",
+    "get_device": "gpu:0",
+    "param_place": "Place(gpu:0)"
+  },
+  "per_image": [
+    {
+      "image_name": "TEST_000018_0605_Rust-induced_leafspot.jpg",
+      "total_targets": 1,
+      "inference_ms": 31.64,
+      "detections": [
+        {
+          "image_name": "TEST_000018_0605_Rust-induced_leafspot.jpg",
+          "class_id": 11,
+          "class_name": "Apple rust leaf",
+          "confidence": 0.83604,
+          "x": 0.4,
+          "y": 7.89,
+          "width": 304.56,
+          "height": 175.95
+        }
+      ]
+    },
+    {
+      "image_name": "TEST_000028_early_blight1-150x150.jpg",
+      "total_targets": 0,
+      "inference_ms": 29.23,
+      "detections": []
+    },
+    {
+      "image_name": "TEST_000079_9511.img.jpg",
+      "total_targets": 3,
+      "inference_ms": 153.58,
+      "detections": [
+        {
+          "image_name": "TEST_000079_9511.img.jpg",
+          "class_id": 3,
+          "class_name": "Tomato leaf",
+          "confidence": 0.57168,
+          "x": 276.97,
+          "y": 176.73,
+          "width": 136.67,
+          "height": 130.35
+        },
+        {
+          "image_name": "TEST_000079_9511.img.jpg",
+          "class_id": 3,
+          "class_name": "Tomato leaf",
+          "confidence": 0.542335,
+          "x": 276.0,
+          "y": 175.86,
+          "width": 93.33,
+          "height": 131.56
+        },
+        {
+          "image_name": "TEST_000079_9511.img.jpg",
+          "class_id": 3,
+          "class_name": "Tomato leaf",
+          "confidence": 0.508498,
+          "x": 46.24,
+          "y": 266.97,
+          "width": 72.76,
+          "height": 125.47
+        }
+      ]
+    },
+    {
+      "image_name": "TEST_000106_depositphotos_3443387-stock-photo-the-green-grape-leaf-on.jpg",
+      "total_targets": 1,
+      "inference_ms": 45.18,
+      "detections": [
+        {
+          "image_name": "TEST_000106_depositphotos_3443387-stock-photo-the-green-grape-leaf-on.jpg",
+          "class_id": 12,
+          "class_name": "grape leaf",
+          "confidence": 0.926409,
+          "x": 186.02,
+          "y": 55.4,
+          "width": 574.21,
+          "height": 553.14
+        }
+      ]
+    },
+    {
+      "image_name": "TRAIN_000004_apple_scab.jpg",
+      "total_targets": 1,
+      "inference_ms": 29.92,
+      "detections": [
+        {
+          "image_name": "TRAIN_000004_apple_scab.jpg",
+          "class_id": 9,
+          "class_name": "Apple Scab Leaf",
+          "confidence": 0.569851,
+          "x": 166.68,
+          "y": 105.84,
+          "width": 104.96,
+          "height": 87.61
+        }
+      ]
+    },
+    {
+      "image_name": "TRAIN_000029_early-blight-of-tomato-tomato-1.jpg",
+      "total_targets": 2,
+      "inference_ms": 31.84,
+      "detections": [
+        {
+          "image_name": "TRAIN_000029_early-blight-of-tomato-tomato-1.jpg",
+          "class_id": 2,
+          "class_name": "Tomato Septoria leaf spot",
+          "confidence": 0.609751,
+          "x": 50.33,
+          "y": 9.36,
+          "width": 248.51,
+          "height": 272.39
+        },
+        {
+          "image_name": "TRAIN_000029_early-blight-of-tomato-tomato-1.jpg",
+          "class_id": 4,
+          "class_name": "Tomato leaf bacterial spot",
+          "confidence": 0.523734,
+          "x": 50.33,
+          "y": 9.36,
+          "width": 248.51,
+          "height": 272.39
+        }
+      ]
+    },
+    {
+      "image_name": "TRAIN_000037_Tomato+Problems+Septoria+Leaf+Spot.jpg",
+      "total_targets": 2,
+      "inference_ms": 42.45,
+      "detections": [
+        {
+          "image_name": "TRAIN_000037_Tomato+Problems+Septoria+Leaf+Spot.jpg",
+          "class_id": 2,
+          "class_name": "Tomato Septoria leaf spot",
+          "confidence": 0.670609,
+          "x": 71.03,
+          "y": 184.91,
+          "width": 209.86,
+          "height": 188.58
+        },
+        {
+          "image_name": "TRAIN_000037_Tomato+Problems+Septoria+Leaf+Spot.jpg",
+          "class_id": 2,
+          "class_name": "Tomato Septoria leaf spot",
+          "confidence": 0.642136,
+          "x": 19.9,
+          "y": 429.08,
+          "width": 186.8,
+          "height": 185.91
+        }
+      ]
+    },
+    {
+      "image_name": "TRAIN_000040_Septoria_leaf_spot_tomato.jpg",
+      "total_targets": 1,
+      "inference_ms": 31.53,
+      "detections": [
+        {
+          "image_name": "TRAIN_000040_Septoria_leaf_spot_tomato.jpg",
+          "class_id": 2,
+          "class_name": "Tomato Septoria leaf spot",
+          "confidence": 0.533621,
+          "x": 17.42,
+          "y": 16.94,
+          "width": 275.34,
+          "height": 284.41
+        }
+      ]
+    }
+  ]
+}

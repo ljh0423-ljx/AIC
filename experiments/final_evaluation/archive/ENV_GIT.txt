@@ -1,0 +1,23 @@
+=== 环境快照 (final TEST, 2026-08-17 11:02:08) ===
+--- 工作目录 ---
+/root/autodl-tmp/AIC2026_AgriVision
+
+--- PaddleDetection git HEAD ---
+b25522a0f4bde8c80603f3ba5e3472059972e3b5
+b25522a fix single gpu batch size to 4, total 32, for lr 0.0002 when using 8 gpus
+
+--- Python / Paddle 版本 ---
+python 3.12.3
+WARNING: OMP_NUM_THREADS set to 12, not 1. The computation speed will not be optimized if you use data parallel. It will fail if this PaddlePaddle binary is compiled with OpenBlas since OpenBlas does not support multi-threads.
+PLEASE USE OMP_NUM_THREADS WISELY.
+paddle 2.6.2 cuda <function cuda at 0x7f6036eed260> cudnn <function cudnn at 0x7f6036eed300>
+numpy 1.26.4
+
+--- GPU ---
+NVIDIA GeForce RTX 4090, 24564 MiB
+
+--- 评估命令 (eval.py) ---
+cd PaddleDetection && python tools/eval.py -c ../configs/ppyoloe_plus_crn_m_100e_agrivision.yml -o weights=../experiments/direction_m/M_SCALEUP_100e/checkpoints/best_model.pdparams EvalDataset.image_dir=images/test EvalDataset.anno_path=annotations/test.json --classwise > ../experiments/final_evaluation/test_eval.log 2>&1
+
+--- 分析命令 (analyze_test.py) ---
+python scripts/final_test/analyze_test.py --cfg configs/ppyoloe_plus_crn_m_100e_agrivision.yml --weights experiments/direction_m/M_SCALEUP_100e/checkpoints/best_model.pdparams --val_anno <abs test.json> --out experiments/final_evaluation/test_analyze.json --out_err experiments/final_evaluation/test_errors.json --conf_thr 0.5

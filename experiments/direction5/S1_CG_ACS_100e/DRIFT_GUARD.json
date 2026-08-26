@@ -1,0 +1,55 @@
+{
+  "recorded_at": "2026-08-16T20:03:00",
+  "bugfix_note": "20:00 首次启动发现 det loader 仍按 bs8(114 steps/epoch)。根因: cfg['TrainReader'] 是 SchemaDict(dict 子类无 __setattr__), 脚本属性式赋值 cfg.TrainReader.batch_size=16 写成实例属性未写入 dict key。已改 dict 式 cfg['TrainReader']['batch_size']=16 并加断言(实际 sampler bs != 请求则报错)。实测修复后 len(loader)=57, sampler bs=16。首次启动已中止, 无 checkpoint 产出, 未触碰任何数据。",
+  "purpose": "S1 CG-ACS 正式 100e 训练前防漂移哈希记录 (需求7): 训练前锁定数据/配置/基线, 训练后复核防漂移。",
+  "s1_config": {
+    "path": "configs/ppyoloe_plus_crn_s_100e_cgacs.yml",
+    "md5": "0f9d3b2a0d526b83211e699b60807e8f",
+    "aux_head": "CGACSAuxClsHead(in_channels=96, num_classes=13, lambda_cls=0.1, feat_idx=2)",
+    "base_lr_override": "0.002 (命令 -o LearningRate.base_lr=0.002, bs16 线性缩放与A0一致)"
+  },
+  "a0_config_reference": {
+    "path": "configs/ppyoloe_plus_crn_s_100e_agrivision.yml",
+    "md5": "2bae51ad13025e0751aae7c3a2b8028b",
+    "note": "A0 配置文件, S1 正式训练未修改 (git diff 复核)"
+  },
+  "pv_cls_index": {
+    "path": "experiments/direction5/pv_cls_index.csv",
+    "md5": "b2188b09ae40d5ae5fd3e22e409284eb",
+    "rows": 19233,
+    "class_counts": {"0":1000,"1":1771,"2":1591,"3":2127,"4":1909,"5":373,"6":5357,"7":952,"8":630,"9":1645,"10":275,"11":423,"12":1180}
+  },
+  "pv_core_data": {
+    "dir": "/root/autodl-tmp/PV_CORE_19233_audit/raw/color",
+    "image_count": 19233,
+    "filename_set_hash": "465ab251cf3ed36d37f3e43d9fc963c8",
+    "audit_report": "/root/autodl-tmp/PV_CORE_19233_audit/PV_CORE_REMOTE_AUDIT.md (Phase-1, 全PASS)"
+  },
+  "a0_baseline_pinned": {
+    "best_model.pdparams_md5": "1b4f669b5c8fe93a8662026123b4d8cc",
+    "model_final.pdparams_md5": "d76b60702c304f16bef4f231666a7756",
+    "checkpoint_dir": "experiments/baseline_v1/checkpoints",
+    "a0_train_log_val_series": [0.158,0.243,0.269,0.301,0.322,0.343,0.366,0.368,0.372,0.391,0.399,0.399,0.408,0.399,0.398,0.400,0.399,0.397,0.389,0.388],
+    "a0_best_val_map": {"value": 0.408, "epoch_1based": 65},
+    "a0_final_val_map": {"value": 0.388, "epoch_1based": 100},
+    "note": "A0 训练条件: bs16/lr0.002/epoch100/snapshot5/EMA0.9998/无enable_ce(种子未固定)/每5epoch VAL评估(EMA权重)"
+  },
+  "s1_sources_hashes": {
+    "scripts/train_cgacs.py": "7a1e8b99b68514f6cd03921b9e33f55f",
+    "scripts/cgacs/pv_cls_dataset.py": "b87c818b953a39d4aeeee66039780123",
+    "PaddleDetection/ppdet/modeling/heads/cgacs_aux_cls_head.py": "6be02d35b47158ae0847314ee7c51729",
+    "PaddleDetection/ppdet/modeling/architectures/yolo.py": "92944db402798f783c2a2662a2a3c5b2"
+  },
+  "s1_train_command": [
+    "cd /root/autodl-tmp/AIC2026_AgriVision",
+    "python -u scripts/train_cgacs.py -c configs/ppyoloe_plus_crn_s_100e_cgacs.yml",
+    "  --epoch 100 --det_batch 16 --cls_batch 16 --snapshot_epoch 5 --eval",
+    "  --cls_stream 1 --cls_workers 4 --seed 0",
+    "  --save_dir experiments/direction5/S1_CG_ACS_100e/checkpoints",
+    "  --cls_index experiments/direction5/pv_cls_index.csv",
+    "  --log_file experiments/direction5/S1_CG_ACS_100e/train.log",
+    "  --vdl_log_dir experiments/direction5/S1_CG_ACS_100e/logs",
+    "  -o LearningRate.base_lr=0.002"
+  ],
+  "success_criterion": "S1 VAL mAP@0.5:0.95 >= 0.4062 (用户正式要求10); A0对照以统一VAL评估复测为准"
+}

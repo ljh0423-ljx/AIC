@@ -1,0 +1,10 @@
+M 实验 环境与版本记录 (2026-08-17)
+==================================
+Paddle:  2.6.2 (cuda 11.8, cudnn 8.6.0 / runtime cudnn 9.1)
+PaddleDetection: v2.9.0, git HEAD b25522a0f4bde8c80603f3ba5e3472059972e3b5
+GPU:     RTX 4090 24GB (25.9GB 可寻址), CUDA_VISIBLE_DEVICES=0
+python:  3.12.3 | numpy 1.26.4 | opencv 4.5.5
+OMP_NUM_THREADS: 12 (默认)
+数据集: dataset/processed_detection_exiffix (13类, train915/val113/test114), EXIF-fix
+预训练: ~/.cache/paddle/weights/ppyoloe_crn_m_obj365_pretrained.pdparams (588 keys, 官方下载)
+A0 参照: experiments/baseline_v1 (s, obj365)

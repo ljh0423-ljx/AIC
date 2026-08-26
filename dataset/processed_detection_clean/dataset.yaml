@@ -1,0 +1,18 @@
+path: D:/Fruit/processed_detection
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: Tomato Early blight leaf
+  1: Tomato Septoria leaf spot
+  2: Tomato leaf
+  3: Tomato leaf bacterial spot
+  4: Tomato leaf late blight
+  5: Tomato leaf mosaic virus
+  6: Tomato leaf yellow virus
+  7: Tomato mold leaf
+  8: Apple Scab Leaf
+  9: Apple leaf
+  10: Apple rust leaf
+  11: grape leaf
+  12: grape leaf black rot

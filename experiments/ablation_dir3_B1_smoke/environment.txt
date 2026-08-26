@@ -1,0 +1,5 @@
+方向3 B1 (smoke) — 环境快照 (2026-08-15 19:58:33)
+====
+NVIDIA GeForce RTX 4090, 24564 MiB, 580.76.05
+Paddle 2.6.2 CUDA <function cuda at 0x7ff540411300> GPU 1
+Python 3.12.3

@@ -1,0 +1,35 @@
+PP-YOLOE+-s Baseline v1 — 训练环境记录 (实际回填 2026-08-14)
+==================================================
+训练平台: AutoDL (Linux x86_64)
+
+[GPU]
+  型号:        NVIDIA GeForce RTX 4090
+  显存:        24564 MiB (24 GB)
+  计算能力:    8.9
+  Driver:      580.76.05
+  数量:        1
+
+[Python]
+  版本:        3.12.3 (Anaconda)
+
+[PaddlePaddle]
+  版本:            2.6.2
+  compiled_with_cuda: True
+  CUDA 版本 (编译):  11.8 (cu118 wheel)
+  运行时 CUDA API:   Runtime 11.8 / Driver API 13.0
+  cuDNN (编译时):    8.6.0
+  cuDNN (运行时日志): 9.1 (见 train.log / eval log 启动行)
+  GPU 数量:          1
+
+[PaddleDetection]
+  版本标签:   v2.9.0
+  commit:     b25522a0f4bde8c80603f3ba5e3472059972e3b5
+  分支:       release/2.9
+  (详见 git_commit.txt)
+
+[显存占用实测]
+  训练 bs=16 @640: max_mem_reserved ≈ 10.9 GB / 24 GB (smoke test 实测)
+  推理 bs=1 @640:  ≈ 2.2 GB 左右
+
+[复现说明]
+  完整环境安装/检查脚本: scripts/install_env.sh, scripts/check_env.sh

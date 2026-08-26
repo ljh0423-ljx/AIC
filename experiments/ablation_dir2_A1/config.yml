@@ -1,0 +1,28 @@
+# ============================================================
+# A1 — Arm B(exiffix) + CGPM (Confusion-Guided Pair-Margin, guided)
+# 唯一变量: 分类损失机制 (新增 CGPM 辅助损失)。其余与 Arm B 逐字段一致。
+# 数据: dataset/processed_detection_exiffix | epoch=100 | bs=16 | lr=0.002 | seed=0
+# 混淆先验: experiments/direction2/confusion_prior_train_only.json (TRAIN-only, 冻结)
+# ============================================================
+_BASE_: [
+  './ppyoloe_plus_crn_s_100e_agrivision.yml',
+]
+
+epoch: 100
+
+LearningRate:
+  base_lr: 0.002   # bs=16 线性缩放 (0.001 * 16/8)
+
+TrainReader:
+  batch_size: 16
+
+EvalReader:
+  batch_size: 2
+
+# CGPM: confusion-guided pair margin (仅训练; 推理零开销)
+PPYOLOEHead:
+  use_cgpm: True
+  cgpm_mode: guided
+  cgpm_prior_path: /root/autodl-tmp/AIC2026_AgriVision/experiments/direction2/confusion_prior_train_only.json
+  cgpm_lambda: 0.25
+  cgpm_margin_base: 0.2

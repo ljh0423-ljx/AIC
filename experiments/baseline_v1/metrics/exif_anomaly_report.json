@@ -1,0 +1,230 @@
+[
+ {
+  "split": "train",
+  "file": "TEST_000185_20130610_110514.jpg",
+  "cv2_px_hw": [
+   3264,
+   2448
+  ],
+  "anno_hw": [
+   null,
+   null
+  ],
+  "size_swapped": false,
+  "orientation": 6,
+  "n_bbox": null,
+  "cats": []
+ },
+ {
+  "split": "train",
+  "file": "TEST_000266_Shoemaker_7068.JPG.jpg",
+  "cv2_px_hw": [
+   600,
+   450
+  ],
+  "anno_hw": [
+   null,
+   null
+  ],
+  "size_swapped": false,
+  "orientation": 6,
+  "n_bbox": null,
+  "cats": []
+ },
+ {
+  "split": "train",
+  "file": "TRAIN_000172_20130802_111648.jpg",
+  "cv2_px_hw": [
+   3264,
+   2448
+  ],
+  "anno_hw": [
+   2448,
+   3264
+  ],
+  "size_swapped": true,
+  "orientation": 6,
+  "n_bbox": 1,
+  "cats": [
+   "Apple rust leaf"
+  ]
+ },
+ {
+  "split": "train",
+  "file": "TRAIN_000198_20130610_110525.jpg",
+  "cv2_px_hw": [
+   3264,
+   2448
+  ],
+  "anno_hw": [
+   2448,
+   3264
+  ],
+  "size_swapped": true,
+  "orientation": 6,
+  "n_bbox": 1,
+  "cats": [
+   "Apple rust leaf"
+  ]
+ },
+ {
+  "split": "train",
+  "file": "TRAIN_000225_early-blight-in-high-tunnel-tomatoes-19tm74h.jpg",
+  "cv2_px_hw": [
+   2978,
+   2091
+  ],
+  "anno_hw": [
+   2091,
+   2978
+  ],
+  "size_swapped": true,
+  "orientation": 6,
+  "n_bbox": 1,
+  "cats": [
+   "Tomato Early blight leaf"
+  ]
+ },
+ {
+  "split": "train",
+  "file": "TRAIN_000246_spotonleaf1.jpg",
+  "cv2_px_hw": [
+   225,
+   300
+  ],
+  "anno_hw": [
+   225,
+   300
+  ],
+  "size_swapped": false,
+  "orientation": 0,
+  "n_bbox": 1,
+  "cats": [
+   "Tomato Early blight leaf"
+  ]
+ },
+ {
+  "split": "train",
+  "file": "TRAIN_000325_tomato-septoria-3.jpg",
+  "cv2_px_hw": [
+   1497,
+   1152
+  ],
+  "anno_hw": [
+   1152,
+   1497
+  ],
+  "size_swapped": true,
+  "orientation": 6,
+  "n_bbox": 1,
+  "cats": [
+   "Tomato Septoria leaf spot"
+  ]
+ },
+ {
+  "split": "train",
+  "file": "TRAIN_000329_tomato-septoria-5.jpg",
+  "cv2_px_hw": [
+   1500,
+   1154
+  ],
+  "anno_hw": [
+   1154,
+   1500
+  ],
+  "size_swapped": true,
+  "orientation": 8,
+  "n_bbox": 1,
+  "cats": [
+   "Tomato Septoria leaf spot"
+  ]
+ },
+ {
+  "split": "train",
+  "file": "TRAIN_000437_flies.jpg",
+  "cv2_px_hw": [
+   3888,
+   2592
+  ],
+  "anno_hw": [
+   2592,
+   3888
+  ],
+  "size_swapped": true,
+  "orientation": 6,
+  "n_bbox": 1,
+  "cats": [
+   "Tomato leaf"
+  ]
+ },
+ {
+  "split": "train",
+  "file": "TRAIN_000494_IMG_2348.jpg",
+  "cv2_px_hw": [
+   3264,
+   2448
+  ],
+  "anno_hw": [
+   2448,
+   3264
+  ],
+  "size_swapped": true,
+  "orientation": 6,
+  "n_bbox": 3,
+  "cats": [
+   "Tomato leaf bacterial spot"
+  ]
+ },
+ {
+  "split": "train",
+  "file": "TRAIN_000571_lateblightTom_lesion.jpg",
+  "cv2_px_hw": [
+   480,
+   640
+  ],
+  "anno_hw": [
+   480,
+   640
+  ],
+  "size_swapped": false,
+  "orientation": 0,
+  "n_bbox": 1,
+  "cats": [
+   "Tomato leaf late blight"
+  ]
+ },
+ {
+  "split": "val",
+  "file": "TRAIN_000054_happier-inside.jpg",
+  "cv2_px_hw": [
+   3888,
+   2592
+  ],
+  "anno_hw": [
+   null,
+   null
+  ],
+  "size_swapped": false,
+  "orientation": 8,
+  "n_bbox": null,
+  "cats": []
+ },
+ {
+  "split": "test",
+  "file": "TRAIN_000064_photo-1.jpg",
+  "cv2_px_hw": [
+   1000,
+   750
+  ],
+  "anno_hw": [
+   750,
+   1000
+  ],
+  "size_swapped": true,
+  "orientation": 6,
+  "n_bbox": 1,
+  "cats": [
+   "Tomato leaf bacterial spot"
+  ]
+ }
+]

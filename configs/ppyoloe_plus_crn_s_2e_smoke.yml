@@ -1,0 +1,18 @@
+# ============================================================
+# PP-YOLOE+-s Smoke Test 配置 — 仅验证训练管线, 不作为正式结果
+# 基于正式 Baseline 配置, 仅改: epoch / snapshot / scheduler / log_iter
+# 用法: python -u tools/train.py -c ../configs/ppyoloe_plus_crn_s_2e_smoke.yml --eval
+# ============================================================
+_BASE_: ['./ppyoloe_plus_crn_s_100e_agrivision.yml']
+
+epoch: 2
+snapshot_epoch: 1
+log_iter: 10
+
+LearningRate:
+  schedulers:
+    - name: CosineDecay
+      max_epochs: 2   # 与 epoch=2 一致
+    - name: LinearWarmup
+      start_factor: 0.
+      epochs: 1

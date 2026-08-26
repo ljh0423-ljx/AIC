@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+# web 模块依赖（在 inference/requirements_infer.txt 基础上追加）
+# Web 层复用 inference 推理核心，PaddlePaddle 安装见 inference/requirements_infer.txt。
+gradio>=6.0
+pandas>=1.5
+numpy>=1.21
+Pillow>=9.0
+opencv-python>=4.5
+pycocotools>=2.0

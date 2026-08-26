@@ -1,0 +1,5 @@
+arm,tag,n_gt,n_det,recall,tp,fn,confused
+clean,best,7,4,0.0,0,7,0
+clean,final,7,4,0.0,0,7,0
+exiffix,best,7,0,0.0,0,7,0
+exiffix,final,7,2,0.0,0,7,0

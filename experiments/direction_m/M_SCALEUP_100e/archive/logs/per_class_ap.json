@@ -1,0 +1,47 @@
+{
+ "a0_best": {
+  "Tomato Early blight leaf": 0.236,
+  "Tomato Septoria leaf spot": 0.448,
+  "Tomato leaf": 0.224,
+  "Tomato leaf bacterial spot": 0.269,
+  "Tomato leaf late blight": 0.438,
+  "Tomato leaf mosaic virus": 0.247,
+  "Tomato leaf yellow virus": 0.192,
+  "Tomato mold leaf": 0.16,
+  "Apple Scab Leaf": 0.54,
+  "Apple leaf": 0.787,
+  "Apple rust leaf": 0.658,
+  "grape leaf": 0.712,
+  "grape leaf black rot": 0.415
+ },
+ "m_best": {
+  "Tomato Early blight leaf": 0.282,
+  "Tomato Septoria leaf spot": 0.468,
+  "Tomato leaf": 0.241,
+  "Tomato leaf bacterial spot": 0.296,
+  "Tomato leaf late blight": 0.461,
+  "Tomato leaf mosaic virus": 0.231,
+  "Tomato leaf yellow virus": 0.208,
+  "Tomato mold leaf": 0.199,
+  "Apple Scab Leaf": 0.547,
+  "Apple leaf": 0.85,
+  "Apple rust leaf": 0.658,
+  "grape leaf": 0.712,
+  "grape leaf black rot": 0.414
+ },
+ "m_final": {
+  "Tomato Early blight leaf": 0.354,
+  "Tomato Septoria leaf spot": 0.437,
+  "Tomato leaf": 0.212,
+  "Tomato leaf bacterial spot": 0.276,
+  "Tomato leaf late blight": 0.519,
+  "Tomato leaf mosaic virus": 0.099,
+  "Tomato leaf yellow virus": 0.165,
+  "Tomato mold leaf": 0.136,
+  "Apple Scab Leaf": 0.562,
+  "Apple leaf": 0.801,
+  "Apple rust leaf": 0.641,
+  "grape leaf": 0.677,
+  "grape leaf black rot": 0.424
+ }
+}

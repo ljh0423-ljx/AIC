@@ -1,0 +1,2 @@
+image_name,class_id,class_name,confidence,x,y,width,height
+TRAIN_000040_Septoria_leaf_spot_tomato.jpg,2,Tomato Septoria leaf spot,0.533621,17.42,16.94,275.34,284.41
