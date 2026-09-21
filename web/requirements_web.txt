@@ -7,3 +7,27 @@ numpy>=1.21
 Pillow>=9.0
 opencv-python>=4.5
 pycocotools>=2.0
+
+# ---- 真实 VLM 视觉诊断（阶段2，未配置 API Key 时自动回退 mock，不影响 Web 启动）----
+# 通过 DashScope OpenAI 兼容接口调用 Qwen-VL；仅需 openai 客户端（httpx 已随 gradio 间接安装）。
+# 密钥经环境变量 DASHSCOPE_API_KEY / AGRI_VLM_API_KEY 注入，不写入源码。
+openai>=1.0
+
+# ---- 真实 RAG 知识库检索（阶段3，索引缺失/失败时自动回退本地 mock，不影响 Web 启动）----
+# 本地持久化向量库（纯 numpy 实现，见 web/services/vector_store.py）+ DashScope
+# text-embedding-v3（复用 DASHSCOPE_API_KEY）。numpy 已在上方声明。
+# 说明：本机 Chroma 原生扩展在写入向量时崩溃（Segfault），故暂不依赖 chromadb；
+# 若未来 chromadb 修复，可将 vector_store 替换为 chromadb（接口已对齐子集）。
+
+# ---- 可选：真实语音（阶段5.3，未安装时自动回退 mock，不影响 Web 启动）----
+# ASR 真实识别（推荐，轻量 CPU、无 torch）：
+#   sherpa-onnx>=1.13    # onnxruntime 版，支持 SenseVoice / Paraformer
+#   huggingface_hub      # 用于下载 SenseVoice 模型
+#   # 首次需下载模型（约 608MB）：
+#   #   from huggingface_hub import hf_hub_download
+#   #   hf_hub_download(repo_id="csukuangfj/sherpa-onnx-sense-voice-zh-en-ja-ko-yue-2024-07-17",
+#   #                   filename="model.onnx")
+# ASR 备选：funasr（依赖 torch）/ openai-whisper
+# TTS 真实合成：
+#   edge-tts>=6.0        # 微软 Edge 在线语音合成（轻量、无需本地模型、需联网）
+

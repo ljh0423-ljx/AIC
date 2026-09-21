@@ -47,3 +47,6 @@ vdlrecords/
 bbox.json
 *_predictions.json
 *_bbox_*.json
+
+# ===== RAG 知识库向量索引（体积大、可本地重建；原始笔记与来源清单保留）=====
+/knowledge/vector_db/

@@ -29,7 +29,24 @@ scripts/        # 训练 / 评估 / 环境安装 shell 脚本 + 分析脚本
 tools/          # 数据格式转换（yolo_to_coco.py）
 experiments/    # 消融实验报告（checkpoint 不随仓库上传）
 docs/           # 技术说明书与图素材
+knowledge/      # 农业病害知识库（笔记 + 来源清单 + 向量索引）
 ```
+
+## AI 智能诊断（V1.1 / V1.2）
+
+在检测平台基础上，V1.1/V1.2 新增真实 AI 智能诊断链路（VLM 视觉分析 / RAG 知识检索 / Agent 决策 / 中文语音问答 / 多会话隔离）。
+
+### AI 诊断验收报告（V1.1，位于【⬇️ 结果下载】）
+
+- **生成报告**：上传图片 → 点击「开始 AI 检测」→ 切换到【⬇️ 结果下载】→ 点击「生成验收报告」。
+- **报告预览 / 下载 PDF**：编号、生成时间、作物、病害类别、检测置信度、检测框面积代理指标、视觉证据、知识来源、人工复核建议与系统运行状态；中文 A4 排版、图片嵌入、可点击来源链接；**复用当前会话结果，不重复检测、不调用付费 API**。
+
+### 诊断流程图 / 可视化记录图（V1.2，独立顶部 Tab）
+
+- 顶部导航在【⬇️ 结果下载】之后新增 **【🧭 诊断流程图 / 可视化记录图】** Tab。
+- **生成流程图**：点击「生成诊断流程图」→ 生成 8 节点流程（原始图片 → PP-YOLOE 检测 → 检测框面积代理评估 → VLM 视觉分析 → RAG 知识检索 → Agent 综合建议 → 语音交互状态 → 验收报告状态）→ 页面预览 → 下载 PNG / PDF。
+
+> 报告与流程图均为「系统运行验收」记录，不等同于病害专业确诊；检测框面积占比为规则代理指标，未检出 ≠ 已确认健康；VLM 分析不等同于病原学确诊。
 
 ## 快速开始
 
@@ -79,6 +96,10 @@ bash scripts/eval_baseline.sh [WEIGHTS_PATH]            # 在独立 TEST 集评�
 ## 文档
 
 - 技术说明书：[docs/PROJECT_TECHNICAL_SPEC.md](docs/PROJECT_TECHNICAL_SPEC.md)
+- AI 智能模块指南（V1.0/V1.1 配置与架构）：[docs/V1.0_AI_MODULES_GUIDE.md](docs/V1.0_AI_MODULES_GUIDE.md)
+- V1.2 交付报告（诊断流程图 / 可视化记录图）：[docs/V1.2_DELIVERY_REPORT.md](docs/V1.2_DELIVERY_REPORT.md)
+- V1.1 交付报告（AI 诊断验收报告）：[docs/V1.1_DELIVERY_REPORT.md](docs/V1.1_DELIVERY_REPORT.md)
+- V1.0 交付报告：[docs/V1.0_DELIVERY_REPORT.md](docs/V1.0_DELIVERY_REPORT.md)
 - 事实库（所有实验数据与证据来源）：[PROJECT_FINAL_FACTS.md](PROJECT_FINAL_FACTS.md)
 - 实验总清单：[PROJECT_EXPERIMENT_INDEX.md](PROJECT_EXPERIMENT_INDEX.md)
 

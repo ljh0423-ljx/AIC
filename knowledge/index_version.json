@@ -1,0 +1,11 @@
+{
+  "built_at": "2026-09-20 18:57:48",
+  "total_chunks": 78,
+  "new_chunks": 28,
+  "embed_model": "text-embedding-v3",
+  "embed_backend": "dashscope",
+  "embed_dim": 1024,
+  "db_dir": "D:/Fruit/AIC2026_AgriVision/knowledge/vector_db",
+  "store_backend": "numpy_local",
+  "notes_dir": "D:/Fruit/AIC2026_AgriVision/knowledge/notes"
+}
